@@ -15,9 +15,9 @@
         <Patch Id="AvP9QJzfNzhPvcTLsp42xC">
           <Canvas Id="FRPuiq2XuK9MFALEf7s3be" CanvasType="Group">
             <Node Bounds="259,405,65,19" Id="IUbO7e0SclxMYFhyAqyL4n">
-              <p:NodeReference LastCategoryFullName="Interpolator.Players.App" LastDependency="VL.Interpolator.Players.vl">
+              <p:NodeReference LastCategoryFullName="Interpolator.Players.Runtime" LastDependency="VL.Interpolator.Players.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="Multitrack" />
+                <Choice Kind="ProcessAppFlag" Name="Multitrack_Runtime" />
               </p:NodeReference>
               <Pin Id="LJhFJ4rDQj5LeCzJaPJ9id" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="Brau7QQEIGVQQvhSWveVRP" Name="InputChannel" Kind="InputPin" />
@@ -34,8 +34,8 @@
               <Pin Id="QKNFHe04z3sOfrNUX4t3x7" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="V8DnuTJjIQ0MiO4Qqkye1a" Name="Input" Kind="InputPin" />
               <Pin Id="EhM3YwsZ052PYUpuEdaHSq" Name="DefaultValue" Kind="InputPin" />
-              <Pin Id="MGCXoJd7B5hOKrKQVXwbxT" Name="WaveformEnable" Kind="InputPin" IsHidden="true" />
               <Pin Id="T79LRqxI46QMOavibao4ff" Name="Target" Kind="InputPin" />
+              <Pin Id="MGCXoJd7B5hOKrKQVXwbxT" Name="WaveformEnable" Kind="InputPin" IsHidden="true" />
               <Pin Id="J4YvzZ5stBMNhVufSQmJCM" Name="Bounds" Kind="InputPin" />
               <Pin Id="TCtJw78eyCbMz6LZLCfosw" Name="Output" Kind="OutputPin" />
               <Pin Id="AOyK8wDViJRPU6nO29jEKs" Name="PlayerPosition" Kind="OutputPin" />
@@ -45,7 +45,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="NmSPlDahm0YMXooGUxDJAY" Name="Bounds" Kind="InputPin" DefaultValue="2552, 718, 1294, 734" IsHidden="true" />
+              <Pin Id="NmSPlDahm0YMXooGUxDJAY" Name="Bounds" Kind="InputPin" DefaultValue="2560, 726, 1280, 720" IsHidden="true" />
               <Pin Id="TlvQtAdE5e0P3Gz50D5Cn6" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
               <Pin Id="Kz7rw4QIabOMJrAZxwCqFb" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
               <Pin Id="LJrAmweiF1RMEYuzpwIkDJ" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -106,7 +106,7 @@
       </p:NodeReference>
       <Patch Id="KTefWksOS2aNZppspIagQ0">
         <Canvas Id="TK0op9nxoloPjeVOgwGaCw" CanvasType="Group">
-          <Node Bounds="351,510,66,19" Id="PC4xUNWxEGROO8rC6GvVkB">
+          <Node Bounds="206,499,66,19" Id="PC4xUNWxEGROO8rC6GvVkB">
             <p:NodeReference LastCategoryFullName="Interpolator" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TIMELIINER" />
@@ -155,7 +155,7 @@
             <Pin Id="SFmJFD38rr8P47YWGLYXEi" Name="Output" Kind="OutputPin" />
             <Pin Id="DhNFfP67ZLRL0AcF6rNn4e" Name="Value" Kind="OutputPin" />
           </Node>
-          <Pad Id="N2v9QdeckLoPbmlmSjFajO" SlotId="FPJhX8TluTtQOWK69x1LuC" Bounds="353,474" />
+          <Pad Id="N2v9QdeckLoPbmlmSjFajO" SlotId="FPJhX8TluTtQOWK69x1LuC" Bounds="208,463" />
           <Node Bounds="346,310,104,90" Id="QwOZ63py3mZLkJsdPHHHQe">
             <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -213,7 +213,6 @@
         <Link Id="GJjMEzwWatRLAulxVFfhnP" Ids="GiYUHmaGg3CLVIMzVMOkmg,ASnENqpwaHeLeK1q7X6xK3" />
         <Link Id="O6ftvCWnyuwPyjv8aIJ2mO" Ids="MTazcd14kmTQbt7XRmaR40,KHaJZheYDB6Ni6ohNxYECt" />
         <Link Id="DmXLhOQrwooPbnX5g50lJT" Ids="SFmJFD38rr8P47YWGLYXEi,ReXyw5pHxaHQGcndIPD74q" />
-        <Link Id="KXUJCkWrkduOio6mKO0Axz" Ids="N2v9QdeckLoPbmlmSjFajO,CaOJxNzYQWnNCSNwixV8BM" />
         <Link Id="UrWYi20syLzMgKmigUzYMM" Ids="KtO4AOLERyfOGPNLHezLLu,QEkRKOf8KkfN4GJNfd737H" IsHidden="true" />
         <Link Id="Niv3gfQw5NgNmsRWtEMr94" Ids="EfdxGQ22rMKMIkbwkZonqE,Ti2bWgpOFEUQJHKJlEjsAy" IsHidden="true" />
         <Link Id="BeKdMoagKYzPKukHRGH6P2" Ids="GiYUHmaGg3CLVIMzVMOkmg,RIDKBMZQvC9Olpm7U5EkKu" />
@@ -229,11 +228,12 @@
             </p:TypeArguments>
           </p:TypeAnnotation>
         </Slot>
+        <Link Id="Urw6h2xtfTRM9A57iNlifl" Ids="N2v9QdeckLoPbmlmSjFajO,CaOJxNzYQWnNCSNwixV8BM" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="FS8kDPyjJRePqPwlLqsmIu" Location="VL.Skia" Version="2024.6.0-0261-g38f7059b02" />
   <DocumentDependency Id="U5SjgVOXn4RQFIrMhoKkI6" Location="./VL.Interpolator.Editor.vl" />
   <DocumentDependency Id="B4UdveSAn1uOFpbgrClSyi" Location="./VL.Interpolator.Players.vl" />
-  <DocumentDependency Id="EcXU8ni06kANCokimDtcso" Location="../VL.Interpolator.vl" />
+  <DocumentDependency Id="EuuSC9j7oitOaUwDiDp8dP" Location="../VL.Interpolator/VL.Interpolator.vl" />
 </Document>
