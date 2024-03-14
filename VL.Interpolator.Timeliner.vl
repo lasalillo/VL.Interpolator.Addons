@@ -14,7 +14,7 @@
         </p:NodeReference>
         <Patch Id="AvP9QJzfNzhPvcTLsp42xC">
           <Canvas Id="FRPuiq2XuK9MFALEf7s3be" CanvasType="Group">
-            <Node Bounds="259,405,65,19" Id="IUbO7e0SclxMYFhyAqyL4n">
+            <Node Bounds="259,405,104,19" Id="IUbO7e0SclxMYFhyAqyL4n">
               <p:NodeReference LastCategoryFullName="Interpolator.Players.Runtime" LastDependency="VL.Interpolator.Players.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Multitrack_Runtime" />
@@ -26,7 +26,7 @@
               <Pin Id="IlzkxPQb2gtMXsuVq9MC4Z" Name="SetOSCSettings" Kind="ApplyPin" />
               <Pin Id="L9sEXnoM7aILk4dE8dJ8gk" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="259,447,93,19" Id="CeJMV7wIqpNNuL9PXRmvIn">
+            <Node Bounds="258,588,93,19" Id="CeJMV7wIqpNNuL9PXRmvIn">
               <p:NodeReference LastCategoryFullName="Interpolator.Editor.Editors" LastDependency="VL.Interpolator.Editor.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Multitrack_Editor" />
@@ -36,39 +36,10 @@
               <Pin Id="EhM3YwsZ052PYUpuEdaHSq" Name="DefaultValue" Kind="InputPin" />
               <Pin Id="T79LRqxI46QMOavibao4ff" Name="Target" Kind="InputPin" />
               <Pin Id="MGCXoJd7B5hOKrKQVXwbxT" Name="WaveformEnable" Kind="InputPin" IsHidden="true" />
-              <Pin Id="J4YvzZ5stBMNhVufSQmJCM" Name="Bounds" Kind="InputPin" />
-              <Pin Id="TCtJw78eyCbMz6LZLCfosw" Name="Output" Kind="OutputPin" />
-              <Pin Id="AOyK8wDViJRPU6nO29jEKs" Name="PlayerPosition" Kind="OutputPin" />
             </Node>
-            <Node Bounds="259,483,125,19" Id="QHu1oVt3BiPNvtNd4O7eXc">
-              <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="Renderer" />
-              </p:NodeReference>
-              <Pin Id="NmSPlDahm0YMXooGUxDJAY" Name="Bounds" Kind="InputPin" DefaultValue="2560, 726, 1280, 720" IsHidden="true" />
-              <Pin Id="TlvQtAdE5e0P3Gz50D5Cn6" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
-              <Pin Id="Kz7rw4QIabOMJrAZxwCqFb" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
-              <Pin Id="LJrAmweiF1RMEYuzpwIkDJ" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="LbTYnkI2tvhOuoteVdIkSw" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
-              <Pin Id="K5Btl9NylaJLRvAmgszWbV" Name="Input" Kind="InputPin" />
-              <Pin Id="OfITtUcYhjNLZc4QaBDsLU" Name="Color" Kind="InputPin" DefaultValue="0.09999999, 0.09999999, 0.09999999, 1" />
-              <Pin Id="B3pcCcdHj2VMw0voKqx9tX" Name="Clear" Kind="InputPin" />
-              <Pin Id="ExIuneEzNeoLjJ15zBVyB9" Name="Space" Kind="InputPin" />
-              <Pin Id="CCRVjITz4CMMPP5BSQs4wU" Name="Show Cursor" Kind="InputPin" />
-              <Pin Id="BToLcLVTIJcPkv0sMxQ0oP" Name="VSync" Kind="InputPin" />
-              <Pin Id="CSRIthQ89EZN2aLOuVJ8b1" Name="Commands" Kind="InputPin" IsHidden="true" />
-              <Pin Id="KAWLcZWAyHOQMRr3LtUcbz" Name="Enable Keyboard Shortcuts" Kind="InputPin" IsHidden="true" />
-              <Pin Id="KbM5d379OKAOyaS2pzcqAA" Name="Enabled" Kind="InputPin" />
-              <Pin Id="UMbYjUg4O4BLyLOIlUJuSE" Name="Form Bounds Notifications" Kind="OutputPin" IsHidden="true" />
-              <Pin Id="LwGta5CY8lgLl5zq7TMbXu" Name="Form" Kind="OutputPin" />
-              <Pin Id="HPN1RrDqULGL6TgMf3vSh2" Name="ClientBounds" Kind="OutputPin" />
-              <Pin Id="A1uCXK4HBnLMav8TbF90vK" Name="Render Time" Kind="OutputPin" />
-            </Node>
-            <Pad Id="FaniHyrheTTNDnj7oqSoZK" SlotId="TbTUnEX66WmNEmoAr32S38" Bounds="321,544" />
-            <Pad Id="D3kRNEbayJuMLFcH5qW62p" SlotId="TbTUnEX66WmNEmoAr32S38" Bounds="547,320" />
             <ControlPoint Id="E33xlwIH920M5yO27Bg7Cy" Bounds="262,320" />
-            <ControlPoint Id="Je0WYCWVoVaLeVPPG8JbF5" Bounds="349,320" />
-            <ControlPoint Id="Cy8XPMHcYrvNqnn3tYnemS" Bounds="429,320" />
+            <ControlPoint Id="Je0WYCWVoVaLeVPPG8JbF5" Bounds="304,481" />
+            <ControlPoint Id="Cy8XPMHcYrvNqnn3tYnemS" Bounds="347,512" />
           </Canvas>
           <Patch Id="TCtvWjoxLW2OiWqpPaDbCW" Name="Create" />
           <Patch Id="ABvYZVIxOnANgZ00Wm169c" Name="Update">
@@ -80,11 +51,7 @@
             <Fragment Id="HwTLi3vnDmvPPas2RuQ3x9" Patch="TCtvWjoxLW2OiWqpPaDbCW" Enabled="true" />
             <Fragment Id="SyXN1diiD1zPvMJrovhwbp" Patch="ABvYZVIxOnANgZ00Wm169c" Enabled="true" />
           </ProcessDefinition>
-          <Link Id="F5s10fxyz7ZOi0qGsUbmaM" Ids="TCtJw78eyCbMz6LZLCfosw,K5Btl9NylaJLRvAmgszWbV" />
           <Link Id="UcRMOgxuGIkLa1pxP9dq7Z" Ids="L9sEXnoM7aILk4dE8dJ8gk,V8DnuTJjIQ0MiO4Qqkye1a" />
-          <Slot Id="TbTUnEX66WmNEmoAr32S38" Name="ClientBounds" />
-          <Link Id="SRo5XsI4g65PiE8HkHthRY" Ids="HPN1RrDqULGL6TgMf3vSh2,FaniHyrheTTNDnj7oqSoZK" />
-          <Link Id="TNqoPF7twhnL9Da078lTgj" Ids="D3kRNEbayJuMLFcH5qW62p,J4YvzZ5stBMNhVufSQmJCM" />
           <Link Id="JILu6WkYW8rPY6I8otUvuw" Ids="E33xlwIH920M5yO27Bg7Cy,Brau7QQEIGVQQvhSWveVRP" />
           <Link Id="Szy9fSnOc5IOfaqbsojvro" Ids="IbmOOomevz7MUo8HMkoHsz,E33xlwIH920M5yO27Bg7Cy" IsHidden="true" />
           <Link Id="FvZ4ZOMu9KeMbMpjC2mtLu" Ids="Je0WYCWVoVaLeVPPG8JbF5,EhM3YwsZ052PYUpuEdaHSq" />
