@@ -26,26 +26,56 @@
               <Pin Id="IlzkxPQb2gtMXsuVq9MC4Z" Name="SetOSCSettings" Kind="ApplyPin" />
               <Pin Id="L9sEXnoM7aILk4dE8dJ8gk" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="258,588,93,19" Id="CeJMV7wIqpNNuL9PXRmvIn">
-              <p:NodeReference LastCategoryFullName="Interpolator.Editor.Editors" LastDependency="VL.Interpolator.Editor.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="Multitrack_Editor" />
-              </p:NodeReference>
-              <Pin Id="QKNFHe04z3sOfrNUX4t3x7" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="V8DnuTJjIQ0MiO4Qqkye1a" Name="Input" Kind="InputPin" />
-              <Pin Id="EhM3YwsZ052PYUpuEdaHSq" Name="DefaultValue" Kind="InputPin" />
-              <Pin Id="T79LRqxI46QMOavibao4ff" Name="Target" Kind="InputPin" />
-              <Pin Id="MGCXoJd7B5hOKrKQVXwbxT" Name="WaveformEnable" Kind="InputPin" IsHidden="true" />
-            </Node>
             <ControlPoint Id="E33xlwIH920M5yO27Bg7Cy" Bounds="262,320" />
-            <ControlPoint Id="Je0WYCWVoVaLeVPPG8JbF5" Bounds="304,481" />
-            <ControlPoint Id="Cy8XPMHcYrvNqnn3tYnemS" Bounds="347,512" />
+            <ControlPoint Id="Je0WYCWVoVaLeVPPG8JbF5" Bounds="290,457" />
+            <ControlPoint Id="Cy8XPMHcYrvNqnn3tYnemS" Bounds="320,497" />
+            <Node Bounds="246,589,117,80" Id="B4MEcj3lloVLwqhQMcm12x">
+              <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+                <Choice Kind="ApplicationStatefulRegion" Name="If" />
+              </p:NodeReference>
+              <Pin Id="SrRsNyr6h1OPFM942T9nSK" Name="Condition" Kind="InputPin" />
+              <Patch Id="CKMIFPvZkuFOVTFrb44IPd" ManuallySortedPins="true">
+                <Patch Id="K3HrysjGiFHPgIDtohS7ZI" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="EtDgYeemyGjO86oMJSOnuQ" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="258,621,93,19" Id="CeJMV7wIqpNNuL9PXRmvIn">
+                  <p:NodeReference LastCategoryFullName="Interpolator.Editor.Editors" LastDependency="VL.Interpolator.Editor.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="Multitrack_Editor" />
+                  </p:NodeReference>
+                  <Pin Id="QKNFHe04z3sOfrNUX4t3x7" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="V8DnuTJjIQ0MiO4Qqkye1a" Name="Input" Kind="InputPin" />
+                  <Pin Id="EhM3YwsZ052PYUpuEdaHSq" Name="DefaultValue" Kind="InputPin" />
+                  <Pin Id="T79LRqxI46QMOavibao4ff" Name="Target" Kind="InputPin" />
+                  <Pin Id="IP7S6MbCnUsNsXvZSQrImg" Name="ShowEditor" Kind="InputPin" />
+                </Node>
+              </Patch>
+            </Node>
+            <ControlPoint Id="DFy4orldDqCNijN8qJVveO" Bounds="349,539" />
+            <Node Bounds="246,556,65,19" Id="DSStZbkprd3OEja265MIPK">
+              <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <FullNameCategoryReference ID="Control" />
+                <Choice Kind="ProcessAppFlag" Name="MonoFlop (FrameBased)" />
+              </p:NodeReference>
+              <Pin Id="F0zwbO5yuGXNaxMj6hTOIx" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="HS0FNcbST4QO1jN6r2gk7q" Name="Set" Kind="InputPin" />
+              <Pin Id="CO51BRkyjq8POrtZqAf19M" Name="Frames" Kind="InputPin" DefaultValue="2" />
+              <Pin Id="OIsBMbvF5SjLyTkeEOyr70" Name="Retriggerable" Kind="InputPin" />
+              <Pin Id="UnhXVYp8gu1M0sO2X5dkfm" Name="Reset" Kind="InputPin" />
+              <Pin Id="Vzi9s9TlxGtP4c0z4a4flU" Name="Value" Kind="OutputPin" />
+              <Pin Id="UMffnviJqWSLNpCPm1t8DW" Name="Inverse Output" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="F5waFXAcc3HOpNim36drjh" Bounds="190,503" />
           </Canvas>
           <Patch Id="TCtvWjoxLW2OiWqpPaDbCW" Name="Create" />
           <Patch Id="ABvYZVIxOnANgZ00Wm169c" Name="Update">
             <Pin Id="IbmOOomevz7MUo8HMkoHsz" Name="InputChannel" Kind="InputPin" />
             <Pin Id="A3FIVMHjE6SO7V7undnjnv" Name="DefaultValue" Kind="InputPin" />
             <Pin Id="Cfu7IyuOYqQMNEdvQfGMb5" Name="Target" Kind="InputPin" />
+            <Pin Id="LzAMhnp1WbgPkDJUM5RebB" Name="Editor" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="EzyiqfY8WHDM7nK6DZ9P25" Name="Output" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="Ls7i6GxEmxjMS470KjILN5">
             <Fragment Id="HwTLi3vnDmvPPas2RuQ3x9" Patch="TCtvWjoxLW2OiWqpPaDbCW" Enabled="true" />
@@ -58,6 +88,12 @@
           <Link Id="JjMJ14hr8o3NDoerxu5JzY" Ids="A3FIVMHjE6SO7V7undnjnv,Je0WYCWVoVaLeVPPG8JbF5" IsHidden="true" />
           <Link Id="AqM75jgALbsNLKHhUE1T9o" Ids="Cy8XPMHcYrvNqnn3tYnemS,T79LRqxI46QMOavibao4ff" />
           <Link Id="KDCWpmDvToPMDJzOVJxBUx" Ids="Cfu7IyuOYqQMNEdvQfGMb5,Cy8XPMHcYrvNqnn3tYnemS" IsHidden="true" />
+          <Link Id="L4W4VTaHUjwOlzqlvwh3BR" Ids="DFy4orldDqCNijN8qJVveO,HS0FNcbST4QO1jN6r2gk7q" />
+          <Link Id="Fy6isJcbqLvNeD59NwLBGz" Ids="LzAMhnp1WbgPkDJUM5RebB,DFy4orldDqCNijN8qJVveO" IsHidden="true" />
+          <Link Id="IJbBILZ4HiANGLZVjzZKJ5" Ids="DFy4orldDqCNijN8qJVveO,IP7S6MbCnUsNsXvZSQrImg" />
+          <Link Id="OEaqadoRWZOMxH9BJI3Dyd" Ids="Vzi9s9TlxGtP4c0z4a4flU,SrRsNyr6h1OPFM942T9nSK" />
+          <Link Id="GdCFbWf5ZdwM5l9BlMNoZQ" Ids="L9sEXnoM7aILk4dE8dJ8gk,F5waFXAcc3HOpNim36drjh" />
+          <Link Id="NY3QJJMZFMsO7071umw24h" Ids="F5waFXAcc3HOpNim36drjh,EzyiqfY8WHDM7nK6DZ9P25" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>
@@ -73,16 +109,17 @@
       </p:NodeReference>
       <Patch Id="KTefWksOS2aNZppspIagQ0">
         <Canvas Id="TK0op9nxoloPjeVOgwGaCw" CanvasType="Group">
-          <Node Bounds="206,499,66,19" Id="PC4xUNWxEGROO8rC6GvVkB">
+          <Node Bounds="205,546,85,19" Id="PC4xUNWxEGROO8rC6GvVkB">
             <p:NodeReference LastCategoryFullName="Interpolator" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TIMELIINER" />
             </p:NodeReference>
             <Pin Id="JlrB2vffnCWMw82MHZ2Dfk" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="CaOJxNzYQWnNCSNwixV8BM" Name="InputChannel" Kind="InputPin" />
-            <Pin Id="NogekeNSHsIPYkBLAewyQm" Name="DefaultValue" Kind="InputPin" />
-            <Pin Id="LtWiNbblnBDPidPOqQxB4G" Name="Target" Kind="InputPin" />
-            <Pin Id="I3WUmrryOPvL7PikRouYZI" Name="Update" Kind="ApplyPin" />
+            <Pin Id="FGzGVLQoEbTOQdrKTM0808" Name="DefaultValue" Kind="InputPin" />
+            <Pin Id="JpHgX1yeQLGLI98JXt2nx8" Name="Target" Kind="InputPin" />
+            <Pin Id="QlaqlhBXVWgLr1qGpfN2AV" Name="Editor" Kind="InputPin" />
+            <Pin Id="E652PmCQ8C9Mlx7gBUvTFN" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="207,169,85,26" Id="A3XKbqizl8mM3DVP7o2XEc">
             <p:NodeReference LastCategoryFullName="Interpolator.MyType" LastDependency="VL.Interpolator.vl">
@@ -122,7 +159,7 @@
             <Pin Id="SFmJFD38rr8P47YWGLYXEi" Name="Output" Kind="OutputPin" />
             <Pin Id="DhNFfP67ZLRL0AcF6rNn4e" Name="Value" Kind="OutputPin" />
           </Node>
-          <Pad Id="N2v9QdeckLoPbmlmSjFajO" SlotId="FPJhX8TluTtQOWK69x1LuC" Bounds="208,463" />
+          <Pad Id="N2v9QdeckLoPbmlmSjFajO" SlotId="FPJhX8TluTtQOWK69x1LuC" Bounds="207,463" />
           <Node Bounds="346,310,104,90" Id="QwOZ63py3mZLkJsdPHHHQe">
             <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -159,6 +196,14 @@
               </Patch>
             </Patch>
           </Node>
+          <Pad Id="LC2IgR8qBpNLJhS7NGZ1NG" Comment="Editor" Bounds="287,494,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="DJi16J0Y2lYOvkuFRocZ0K" Name="Create" ParticipatingElements="VVBKfQ34JG5OVCzjpjOQH7,GJjMEzwWatRLAulxVFfhnP,O6ftvCWnyuwPyjv8aIJ2mO,DmXLhOQrwooPbnX5g50lJT" />
         <Patch Id="VzBegRiIHF3M8bOkAyUeP5" Name="Update" />
@@ -196,6 +241,7 @@
           </p:TypeAnnotation>
         </Slot>
         <Link Id="Urw6h2xtfTRM9A57iNlifl" Ids="N2v9QdeckLoPbmlmSjFajO,CaOJxNzYQWnNCSNwixV8BM" />
+        <Link Id="RPfgUloSVjjQRIdNdKupKo" Ids="LC2IgR8qBpNLJhS7NGZ1NG,QlaqlhBXVWgLr1qGpfN2AV" />
       </Patch>
     </Node>
   </Patch>
