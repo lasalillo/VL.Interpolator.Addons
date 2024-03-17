@@ -26,7 +26,7 @@
               <Pin Id="QFRBWTZWmAuO2NVsKYxQRi" Name="UpdateDriverSettings" Kind="InputPin" DefaultValue="True" />
               <Pin Id="IuMEVg32UYhMknfxyCrRI8" Name="UpdateAudioOut" Kind="InputPin" DefaultValue="True" />
               <Pin Id="HMD6OeGPqD3O1DRQ6e5vyK" Name="UpdateAudioAnalysis" Kind="InputPin" />
-              <Pin Id="KehKrtovMMPO2nBlrBzaH0" Name="UpdateOSC" Kind="InputPin" />
+              <Pin Id="KehKrtovMMPO2nBlrBzaH0" Name="UpdateOSC" Kind="InputPin" DefaultValue="True" />
               <Pin Id="L9sEXnoM7aILk4dE8dJ8gk" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="322,826,309,95" Id="B4MEcj3lloVLwqhQMcm12x">
@@ -136,7 +136,7 @@
             <ControlPoint Id="AyLfLefW98SMWQEhZgbjkz" Bounds="633,416" />
             <Pad Id="Pk3ot5dGgxvMFt5GuoC39D" SlotId="LifN76D4fq3QSJlfeFwVgs" Bounds="986,665" />
             <Pad Id="FaqEzMRkKk5QWoAQoc8QyQ" SlotId="Qf2akOvveEmMyOTt6UozCA" Bounds="1033,665" />
-            <Overlay Id="HiV3e586QNWMpiPg793tVb" Name="Relevant to create new Tracks" Bounds="896,587,292,130" />
+            <Overlay Id="HiV3e586QNWMpiPg793tVb" Name="Relevant to create new Tracks" Bounds="896,587,182,130" />
             <Pad Id="BrD0DAQUhTQM9HyCPpBfuN" SlotId="Jzkl4MjokwjLlnjMwsly5m" Bounds="336,799" />
             <Pad Id="A9Jr6Wu5Bs8PmCCERsKTCa" Comment="" Bounds="375,799,56,15" ShowValueBox="true" isIOBox="true" Value="UISettings">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -342,11 +342,6 @@
           <Patch Id="MuNnglbwn0EMCiOuZs5PZG" Name="Create" ParticipatingElements="KnCtfCB65yCPnpzuycI4nC,IxTW8NvghzaLF7dz2CkxiD,RPSlqXyhOgdQQE2kjyCdXo,On3x2WT2YM4QC1zoCsrBiD,NzMBAAFhoUCLrSnS7isLPA">
             <Pin Id="B46waXNCwNFOpFd0lpXh7d" Name="TargetAppModel" Kind="InputPin" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="LcOGuKxvPE1PuD70I1NoQc" IsHidden="true">
             <Fragment Id="CYmxXqwRyhQNJ2iyF9upwr" Patch="MuNnglbwn0EMCiOuZs5PZG" Enabled="true" />
             <Fragment Id="EIPa5c9SANcMcweoYslLen" Patch="Qh869JEBqNeMOUFTKVQuke" />
@@ -570,7 +565,7 @@
                 <Choice Kind="TypeFlag" Name="ChannelSelection" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="HOw4fhm9Vw5M4BpwBRLoHf" Comment="" Bounds="498,478,47,15" ShowValueBox="true" isIOBox="true" Value="UseA">
+            <Pad Id="HOw4fhm9Vw5M4BpwBRLoHf" Comment="" Bounds="499,478,47,15" ShowValueBox="true" isIOBox="true" Value="UseA">
               <p:TypeAnnotation LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="ChannelMergeInitialization" />
               </p:TypeAnnotation>
@@ -620,12 +615,17 @@
                 <Choice Kind="TypeFlag" Name="ChannelMergeInitialization" />
               </p:TypeAnnotation>
             </Pad>
+            <Node Bounds="433,614,103,19" Id="TIn8gQ1V8j3NzdoqGvEApo">
+              <p:NodeReference LastCategoryFullName="Interpolator.Players.TrackPlayers.InputChannel" LastDependency="VL.Interpolator.Players.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="ApplyTargetToPath" />
+              </p:NodeReference>
+              <Pin Id="NHgIWBXiZ6ZMIABV0C64xe" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="C8uS14cse6hPs9Vr2tV5ZN" Name="MultitrackChannel" Kind="InputPin" />
+              <Pin Id="T9B5LfLKI3OLuefinOJcYJ" Name="TargetApplicationChannel" Kind="InputPin" />
+            </Node>
+            <ControlPoint Id="F0ouKYPA8USOxDmc1OBRlf" Bounds="1206,603" />
           </Canvas>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="CAMPNQoP1frPi50Mfyzsht">
             <Fragment Id="Mob0Qel2ooTN1kZiVSzx5s" Patch="Bch2phGzzKjLYwtM8zaLhA" Enabled="true" />
             <Fragment Id="LEb32q3ytk7Lo5maVovXXD" Patch="VY6PYQDOP0sOM3ye25stjr" Enabled="true" />
@@ -689,6 +689,8 @@
           <Link Id="Rryv8UoU8CAOZUBHY4PVDs" Ids="KiALQL8MGfrQCho3MbxDyc,VGon2WWsZK6OIF2JCt2Nhz" />
           <Link Id="PVwqvwtFwp5NX3tpq6NDHS" Ids="DrhraYCTUF6Ojyw3dVnHHJ,IBFPDGQdWFfMzU0uHucWhZ" />
           <Link Id="FfApjKucdP1NX3KNbl5ECO" Ids="PQ7oNa8XU5fP7gkX3Xvlfj,LGj83z1Y1jFPxvygVB1ya1" />
+          <Link Id="ToUhaE4DRpqOxb2Q25mxPk" Ids="AhMI5ur3Mv6N0oSrJH8qOL,F0ouKYPA8USOxDmc1OBRlf,T9B5LfLKI3OLuefinOJcYJ" />
+          <Link Id="U7caenDMNwHN2SSvz7Hb7e" Ids="AjIhR3SNiRCLEWNKRM2anb,C8uS14cse6hPs9Vr2tV5ZN" />
         </Patch>
       </Node>
     </Canvas>
