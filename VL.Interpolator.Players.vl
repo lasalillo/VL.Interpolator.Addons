@@ -641,7 +641,7 @@
                   <Patch Id="Estq5RmA091MTeL0qdIta4" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="KPkwSTtfz3yPN9ZKjqhFvz" Name="Update" ManuallySortedPins="true" />
                   <Patch Id="FoLAPhafzNMPxY1iLAGL6h" Name="Dispose" ManuallySortedPins="true" />
-                  <Node Bounds="396,606,58,26" Id="QiCDELRD5FUPuXS1Fkejms">
+                  <Node Bounds="396,602,58,26" Id="QiCDELRD5FUPuXS1Fkejms">
                     <p:NodeReference LastCategoryFullName="Interpolator.Track" LastDependency="VL.Interpolator.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="RecordType" Name="Track" NeedsToBeDirectParent="true" />
@@ -5085,7 +5085,7 @@
                     <CategoryReference Kind="Category" Name="Primitive" />
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
                   </p:NodeReference>
-                  <Pin Id="Q2nnfcexgPLNcfkuumoX95" Name="Condition" Kind="InputPin" />
+                  <Pin Id="Q2nnfcexgPLNcfkuumoX95" Name="Condition" Kind="InputPin" DefaultValue="True" />
                   <ControlPoint Id="LXhHZXmayx0O3Z7LUNqWbj" Bounds="679,846" Alignment="Bottom" />
                   <ControlPoint Id="UENueH74iNGQFV5TTvpLM2" Bounds="638,386" Alignment="Top" />
                   <ControlPoint Id="As1UCcAsVqpMmKkWVjH2mD" Bounds="709,846" Alignment="Bottom" />
@@ -5259,7 +5259,7 @@
                   <Pin Id="Di8iBaw9ZwxQaayXkJ4AeD" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="H0YVniNgyPLOOQCMig53XN" Name="Value" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="519,335,62,26" Id="BZtBmabbkdeMyEwcVgi9rK">
+                <Node Bounds="517,326,62,26" Id="BZtBmabbkdeMyEwcVgi9rK">
                   <p:NodeReference LastCategoryFullName="Interpolator.Players.TrackPlayers.OSC.IPs_Manager" LastDependency="VL.Interpolator.Players.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="IPs_Manager" NeedsToBeDirectParent="true" />
@@ -5269,6 +5269,14 @@
                   <Pin Id="LYXBl6MEn39QWNZK3H8SqF" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="I21miDRe3lyQN4rPRxSGJV" Name="Enable" Kind="OutputPin" />
                 </Node>
+                <Pad Id="UOPCMmVZe1xOwwX7EuonRC" Comment="Condition" Bounds="438,293,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+                  </p:TypeAnnotation>
+                  <p:ValueBoxSettings>
+                    <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+                  </p:ValueBoxSettings>
+                </Pad>
               </Canvas>
               <ProcessDefinition Id="D5UMPnTbxRwPMK9iflERhJ">
                 <Fragment Id="JmDLURV3rPDOYw7XAWEqNr" Patch="H6k0FgmAMaqPKyB88s8SWx" Enabled="true" />
@@ -5326,7 +5334,7 @@
                 <Pin Id="VOZsYvZtTsNO7uoxXnAtbH" Name="Is Open" Kind="OutputPin" Bounds="708,884" />
               </Patch>
               <Link Id="JKpyQRImO9hMeetpr2p25f" Ids="H0YVniNgyPLOOQCMig53XN,IeQoySIPZjoP0JSMdNHrUF" />
-              <Link Id="UIyBkmYTs9uQaeNBbUnc6P" Ids="I21miDRe3lyQN4rPRxSGJV,Q2nnfcexgPLNcfkuumoX95" />
+              <Link Id="KSWJpO2o5d6PtttgYFLRPg" Ids="UOPCMmVZe1xOwwX7EuonRC,Q2nnfcexgPLNcfkuumoX95" />
             </Patch>
           </Node>
         </Canvas>
