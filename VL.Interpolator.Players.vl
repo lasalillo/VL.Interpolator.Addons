@@ -3388,7 +3388,7 @@
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="988,375,322,337" Id="GaVfO4kt8SoNSBTpMUm83N">
+              <Node Bounds="988,375,313,337" Id="GaVfO4kt8SoNSBTpMUm83N">
                 <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
@@ -3399,16 +3399,16 @@
                 <Pin Id="BXbLW3m3gxePqw5ZzHYf1q" Name="Reset" Kind="InputPin" />
                 <Pin Id="RTXdST3hRk8Ml9ZVRFAMKI" Name="Result" Kind="OutputPin" />
                 <Patch Id="Ckl5kXysFodQDNYs91FJQJ" ManuallySortedPins="true">
-                  <ControlPoint Id="KmxeCkSIRZSO6SN1KKoRGV" Bounds="1254,409" />
+                  <ControlPoint Id="KmxeCkSIRZSO6SN1KKoRGV" Bounds="1175,403" />
                   <ControlPoint Id="PRJTWfMCubuOjTfNbHct1Q" Bounds="1054,705" />
-                  <Node Bounds="1040,439,229,205" Id="Jt8sSgV2KYxPJHKTcFuZHe">
+                  <Node Bounds="1040,433,229,211" Id="Jt8sSgV2KYxPJHKTcFuZHe">
                     <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <CategoryReference Kind="Category" Name="Primitive" />
                       <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                     </p:NodeReference>
                     <Pin Id="BdCJdlz3wQMLL0wlXxy4k1" Name="Break" Kind="OutputPin" />
-                    <ControlPoint Id="LUu9nWgrZXsO3fBkhjEVpp" Bounds="1074,445" Alignment="Top" />
+                    <ControlPoint Id="LUu9nWgrZXsO3fBkhjEVpp" Bounds="1074,439" Alignment="Top" />
                     <ControlPoint Id="Nbp1ykqK5jeNVVHa3Y2mIn" Bounds="1054,638" Alignment="Bottom" />
                     <ControlPoint Id="EA5aP2m7CC5MKEKiJuYZQp" Bounds="1237,638" Alignment="Bottom" />
                     <Patch Id="IoYz5sVUq8qPxI9pIy0gvx" ManuallySortedPins="true">
@@ -3424,6 +3424,7 @@
                         <Pin Id="HOvKH529B2eNCCSfp9GzuK" Name="List" Kind="InputPin" />
                         <Pin Id="QZXYlFrYqY6M3WTIGvjLHJ" Name="Search Key" Kind="InputPin" />
                         <Pin Id="F3todwvGXo7OrLJWsFWRyj" Name="Property Paths" Kind="InputPin" IsHidden="true" />
+                        <Pin Id="Gzo5uerTSbfOPgjQ4wop6q" Name="ShowExtras" Kind="InputPin" />
                         <Pin Id="IUgHNXBdsrfP7aScYMcJtT" Name="Output" Kind="OutputPin" />
                         <Pin Id="HJKB6IToaYjMOTV8sUyGzb" Name="Lower Value" Kind="OutputPin" />
                         <Pin Id="Nv7UWspzwz3ObCusZmauzn" Name="Upper value" Kind="OutputPin" />
@@ -3436,7 +3437,7 @@
                         <Pin Id="MaC3IrgNSysL7pk6MYzYFM" Name="Success" Kind="OutputPin" />
                         <Pin Id="D5w9N9CkrjCPDlmYPs1Zfw" Name="Info" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="1092,471,144,19" Id="KfUxZohem0zPxhtBirgMeb">
+                      <Node Bounds="1092,456,144,19" Id="KfUxZohem0zPxhtBirgMeb">
                         <p:NodeReference LastCategoryFullName="Interpolator" LastDependency="VL.Interpolator.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="ProcessAppFlag" Name="GetKeyframesSortByPosition (Cached)" />
@@ -3483,6 +3484,14 @@
                         <Pin Id="MW9xe6qiJ9GP26ro5XmYWD" Name="Output" Kind="StateOutputPin" />
                         <Pin Id="QhV2h6TOqQDOgkiLdAtGbc" Name="Value" Kind="OutputPin" />
                       </Node>
+                      <Pad Id="StcXfOIUxt7Pp184EFq0ZS" Comment="ShowExtras" Bounds="1144,489,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+                        <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                          <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+                        </p:TypeAnnotation>
+                        <p:ValueBoxSettings>
+                          <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+                        </p:ValueBoxSettings>
+                      </Pad>
                     </Patch>
                   </Node>
                   <Patch Id="DGllMDi9crWNvQef3FjBH4" Name="Create" ManuallySortedPins="true" />
@@ -4139,6 +4148,7 @@
             <Link Id="Ki2H1NGdwcnNce0JRHOTyy" Ids="LVEtw3t1uT0NmAdRdoAxl1,NF7V3u8l7iPPsjwIyADjt8" />
             <Link Id="VmE9NvQwp2oLetddd5VBIC" Ids="LUu9nWgrZXsO3fBkhjEVpp,A6rEDWPdw70N0ol68999xW" />
             <Link Id="VDcJoUjs48SL0qqsIqSbVh" Ids="LAr2IpADYM5Oh6NmqOlLbS,KHODaeuMdtoN13tLONRKxv" />
+            <Link Id="Mnq0ZYgwvPnOIYFJAI4kpk" Ids="StcXfOIUxt7Pp184EFq0ZS,Gzo5uerTSbfOPgjQ4wop6q" />
           </Patch>
         </Node>
         <Canvas Id="GR8SslLV7IDPQRld45dr9Q" Name="OSC" Position="482,310">
