@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="I7dVCxgdGmCQAfXrupiHbk" LanguageVersion="2024.6.0-0254-g5387c3cd24" Version="0.128">
-  <NugetDependency Id="UlM8oE5weZyLwsXCtxiNDg" Location="VL.CoreLib" Version="2024.6.0-0254-g5387c3cd24" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="I7dVCxgdGmCQAfXrupiHbk" LanguageVersion="2024.6.0-0261-g38f7059b02" Version="0.128">
+  <NugetDependency Id="UlM8oE5weZyLwsXCtxiNDg" Location="VL.CoreLib" Version="2024.6.0-0261-g38f7059b02" />
   <Patch Id="VCXuvwfr22DNsZ6cNBlImg">
     <Canvas Id="VtEItcFxFG4L6rgp9xltbu" DefaultCategory="Interpolator.Timeliner" CanvasType="FullCategory">
       <!--
@@ -24,7 +24,7 @@
               <Pin Id="Brau7QQEIGVQQvhSWveVRP" Name="TargetApplicationChannel" Kind="InputPin" />
               <Pin Id="IMDQE6BLypWPzZnu3CmVFd" Name="Update" Kind="InputPin" DefaultValue="True" />
               <Pin Id="QFRBWTZWmAuO2NVsKYxQRi" Name="UpdateDriverSettings" Kind="InputPin" DefaultValue="True" />
-              <Pin Id="IuMEVg32UYhMknfxyCrRI8" Name="UpdateAudioOut" Kind="InputPin" DefaultValue="True" />
+              <Pin Id="GQGP6Vn3nGeMqyCYaMGbmG" Name="UpdateAudio" Kind="InputPin" DefaultValue="True" />
               <Pin Id="HMD6OeGPqD3O1DRQ6e5vyK" Name="UpdateAudioAnalysis" Kind="InputPin" />
               <Pin Id="KehKrtovMMPO2nBlrBzaH0" Name="UpdateOSC" Kind="InputPin" DefaultValue="True" />
               <Pin Id="L9sEXnoM7aILk4dE8dJ8gk" Name="Output" Kind="OutputPin" />
@@ -431,6 +431,14 @@
               <ControlPoint Id="DS3wpIOIrHIPZ5QF9MeMTS" Bounds="1100,669" Alignment="Top" />
             </Node>
             <Pad Id="GfJmnuHmnSVOapzXJPfaLr" Comment="Condition" Bounds="980,565,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="UtcsmVHVZuQN5pk3xwEJ6e" Comment="UpdateAudioListen" Bounds="441,153,35,35" ShowValueBox="true" isIOBox="true" Value="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -1838,7 +1846,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="FS8kDPyjJRePqPwlLqsmIu" Location="VL.Skia" Version="2024.6.0-0254-g5387c3cd24" />
+  <NugetDependency Id="FS8kDPyjJRePqPwlLqsmIu" Location="VL.Skia" Version="2024.6.0-0261-g38f7059b02" />
   <DocumentDependency Id="U5SjgVOXn4RQFIrMhoKkI6" Location="./VL.Interpolator.Editor.vl" />
   <DocumentDependency Id="B4UdveSAn1uOFpbgrClSyi" Location="./VL.Interpolator.Players.vl" />
   <DocumentDependency Id="EuuSC9j7oitOaUwDiDp8dP" Location="../VL.Interpolator/VL.Interpolator.vl" />
