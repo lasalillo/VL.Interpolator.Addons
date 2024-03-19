@@ -323,7 +323,7 @@
                 <Pin Id="IjsDihXduArPRGJVXJUpLZ" Name="Input" Kind="StateInputPin" />
                 <Pin Id="Om5CqIltKLNOvIIrqFRPsu" Name="Result" Kind="OutputPin" />
               </Node>
-              <Node Bounds="1952,1532,60,19" Id="QSTytJRr9WqNJu5dzRNhG4">
+              <Node Bounds="1952,1457,60,19" Id="QSTytJRr9WqNJu5dzRNhG4">
                 <p:NodeReference LastCategoryFullName="Audio.Sink" LastDependency="VL.Audio.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="AudioOut" />
@@ -332,7 +332,7 @@
                 <Pin Id="V6Jb9SpQwpDPOiB9IczyTb" Name="Input" Kind="InputPin" />
                 <Pin Id="MPDGxoSeFwrOnGyczaW9Tj" Name="Channel Offset" Kind="InputPin" DefaultValue="0" />
               </Node>
-              <Node Bounds="1940,724,872,769" Id="DuAvxeoRcs4NLUf8NO8WoL">
+              <Node Bounds="1940,724,874,694" Id="DuAvxeoRcs4NLUf8NO8WoL">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -355,7 +355,7 @@
                     <Pin Id="FZcJK03VIoxPM0c1t0OpCy" Name="Sources Count" Kind="OutputPin" />
                     <Pin Id="HagAPPYjjezPsSHWQNG4gw" Name="Channels Count" Kind="OutputPin" />
                   </Node>
-                  <Pad Id="FXc9PglArIhL1nIAZwldDu" Comment="Source Channels" Bounds="2084,752,20,111" ShowValueBox="true" isIOBox="true" Value="2, 2, 1, 1, 1, 1">
+                  <Pad Id="FXc9PglArIhL1nIAZwldDu" Comment="Source Channels" Bounds="2084,752,20,111" ShowValueBox="true" isIOBox="true" Value="2, 2, 2, 2">
                     <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="TypeFlag" Name="Spread" />
                       <p:TypeArguments>
@@ -368,7 +368,7 @@
                       <p:maxvisibleentries p:Type="Int32">8</p:maxvisibleentries>
                     </p:ValueBoxSettings>
                   </Pad>
-                  <Pad Id="NeZXKVxsO1jN6ZLPPXvXUq" Comment="" Bounds="1975,1127,185,111" ShowValueBox="true" isIOBox="true" Value="1, 0, 0, 0, 0, 0">
+                  <Pad Id="NeZXKVxsO1jN6ZLPPXvXUq" Comment="" Bounds="1975,1097,187,80" ShowValueBox="true" isIOBox="true" Value="1, 0, 0, 0">
                     <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="TypeFlag" Name="Spread" />
                       <p:TypeArguments>
@@ -386,12 +386,12 @@
                     </p:ValueBoxSettings>
                   </Pad>
                   <Pad Id="RFaJ9l6ubW5N1e2yNGjLMD" Comment="Channel Count" Bounds="2083,998,20,15" ShowValueBox="true" isIOBox="true" />
-                  <Pad Id="NAG9nh7etPLLDDrjWDpnyn" Comment="Channel Offset" Bounds="2000,938,33,111" ShowValueBox="true" isIOBox="true">
+                  <Pad Id="NAG9nh7etPLLDDrjWDpnyn" Comment="Channel Offset" Bounds="2000,938,20,111" ShowValueBox="true" isIOBox="true">
                     <p:ValueBoxSettings>
                       <p:maxvisibleentries p:Type="Int32">38</p:maxvisibleentries>
                     </p:ValueBoxSettings>
                   </Pad>
-                  <Pad Id="Okgw7MyTnkrM1AVqwnfPug" Comment="" Bounds="2182,1127,185,111" ShowValueBox="true" isIOBox="true" Value="0, 1, 0, 0, 0, 0">
+                  <Pad Id="Okgw7MyTnkrM1AVqwnfPug" Comment="" Bounds="2182,1097,187,80" ShowValueBox="true" isIOBox="true" Value="0, 1, 0, 0">
                     <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="TypeFlag" Name="Spread" />
                       <p:TypeArguments>
@@ -408,7 +408,7 @@
                       <p:sliderdirection p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SliderDirectionEnum">Horizontal</p:sliderdirection>
                     </p:ValueBoxSettings>
                   </Pad>
-                  <Pad Id="Ek80tql0iIkP4UR7S1fKOb" Comment="" Bounds="2389,1127,185,111" ShowValueBox="true" isIOBox="true" Value="0, 0, 0, 0, 0, 0">
+                  <Pad Id="Ek80tql0iIkP4UR7S1fKOb" Comment="" Bounds="2389,1097,187,80" ShowValueBox="true" isIOBox="true" Value="0, 0, 1, 0">
                     <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="TypeFlag" Name="Spread" />
                       <p:TypeArguments>
@@ -425,7 +425,7 @@
                       <p:sliderdirection p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SliderDirectionEnum">Horizontal</p:sliderdirection>
                     </p:ValueBoxSettings>
                   </Pad>
-                  <Pad Id="Rhe4zDTyDyfMuYmXBciOCH" Comment="" Bounds="2596,1127,185,111" ShowValueBox="true" isIOBox="true" Value="0, 0, 0, 0, 0, 0">
+                  <Pad Id="Rhe4zDTyDyfMuYmXBciOCH" Comment="" Bounds="2596,1097,187,80" ShowValueBox="true" isIOBox="true" Value="0, 0, 0, 1">
                     <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="TypeFlag" Name="Spread" />
                       <p:TypeArguments>
@@ -442,7 +442,7 @@
                       <p:sliderdirection p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SliderDirectionEnum">Horizontal</p:sliderdirection>
                     </p:ValueBoxSettings>
                   </Pad>
-                  <Node Bounds="1973,1264,626,19" Id="VrjbYQs95pePmNE02LGGx8">
+                  <Node Bounds="1973,1189,626,19" Id="VrjbYQs95pePmNE02LGGx8">
                     <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
@@ -454,7 +454,7 @@
                     <Pin Id="QeYTgn7vHqkQavfR4DgqDx" Name="Input 3" Kind="InputPin" />
                     <Pin Id="BR3hqqUochbPJKJ0jz4Vxv" Name="Input 4" Kind="InputPin" />
                   </Node>
-                  <Node Bounds="1952,1454,65,19" Id="EBVJrjkI1jcNpoQBLEhM16">
+                  <Node Bounds="1952,1379,65,19" Id="EBVJrjkI1jcNpoQBLEhM16">
                     <p:NodeReference LastCategoryFullName="Audio.Spatial" LastDependency="VL.Audio.Spatial.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="Speakers (Audio)" />
@@ -467,7 +467,7 @@
                     <Pin Id="JUCeplNNHVUPhuppvEOuBK" Name="Output" Kind="OutputPin" />
                   </Node>
                   <Pad Id="RUUYsSoeOsXLJskKJ1Dc50" Comment="Sources Count" Bounds="2042,968,20,15" ShowValueBox="true" isIOBox="true" />
-                  <Pad Id="Po7tgB56C6NPU6CltZLF6a" Comment="Speaker Gain" Bounds="1996,1327,132,106" ShowValueBox="true" isIOBox="true" Value="1, 1, 1, 1">
+                  <Pad Id="Po7tgB56C6NPU6CltZLF6a" Comment="Speaker Gain" Bounds="1996,1252,132,106" ShowValueBox="true" isIOBox="true" Value="1, 1, 1, 1">
                     <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="TypeFlag" Name="Spread" />
                       <p:TypeArguments>
@@ -485,7 +485,7 @@
                     </p:ValueBoxSettings>
                   </Pad>
                 </Patch>
-                <ControlPoint Id="K3zCQlUEVvKLguL2R4d4V2" Bounds="1954,1487" Alignment="Bottom" />
+                <ControlPoint Id="K3zCQlUEVvKLguL2R4d4V2" Bounds="1954,1412" Alignment="Bottom" />
                 <ControlPoint Id="R54eWAy1mkBPSo4oJcqskO" Bounds="1957,730" Alignment="Top" />
               </Node>
               <Node Bounds="2139,456,43,19" Id="NQYyLRDQpNoLQ8PlwXh0sL">
@@ -538,7 +538,7 @@
                 <ControlPoint Id="EHApXlV2KgbNWkw7YTiP8D" Bounds="1958,566" Alignment="Bottom" />
                 <ControlPoint Id="PfGb1naTTldNaEUINBF4nB" Bounds="1958,498" Alignment="Top" />
               </Node>
-              <Pad Id="T5qNlobjZGXNvCqzz2HKqi" Comment="Spatial Audio" Bounds="1772,411,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+              <Pad Id="T5qNlobjZGXNvCqzz2HKqi" Comment="Spatial Audio" Bounds="1772,410,35,35" ShowValueBox="true" isIOBox="true" Value="False">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
                 </p:TypeAnnotation>
@@ -554,7 +554,7 @@
                 <Pin Id="PTiKRdyyTgPQFJwKnBAnH8" Name="Input" Kind="StateInputPin" />
                 <Pin Id="FWYUWP1Dio9Oc62TCtExIq" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="RTAqsSyGiQuMD4N2guhFNm" SlotId="KPk5wjZxer4QQM3XHluM2R" Bounds="1852,1526" />
+              <Pad Id="RTAqsSyGiQuMD4N2guhFNm" SlotId="KPk5wjZxer4QQM3XHluM2R" Bounds="1852,1451" />
               <Pad Id="Aaj4rVgYyt7LE8AVmPQa5A" SlotId="KPk5wjZxer4QQM3XHluM2R" Bounds="1671,1144" />
               <ControlPoint Id="NZ9gPd2GvNPNEmjn66DFT0" Bounds="1671,1185" />
             </Canvas>
