@@ -2,167 +2,87 @@
 <!DOCTYPE ROOT PUBLIC "" ""[]>
 <Project_Model xmlns:r="reflection" r:Version="2">
   <AudioAnalysisSettings AudioMean="0" Autogain="False" DbRange="96" Enable="True" GainBeat="1, 1, 1, 1" GainFFT4="1, 1, 1, 1" MainGain="1" Max="0" Min="0" MinVelocity="0" PickFreq1="41" PickFreq2="265" PickFreq3="600" PickFreq4="11000" PickWidth="8" Pow="4" Smooth="0" />
-  <DriverSettings AnalizeMono="True" AnalysisChannels="0, 1" DeviceName="WASAPI: Current System Device" Enable="True" InputChannels="2" OutputChannels="2" OutputOffset="0" SampleRate="48000" WasapiInput="Default" />
-  <Multitrack Duration="123">
-    <TimelinerControls BaseFPS="60" BPM="120" FPS="60" LoopEnable="True" LoopFrom="0" LoopMode="True" LoopTo="122" PPQN="96" Volume="0.7" />
+  <DriverSettings AnalizeMono="True" AnalysisChannels="0, 1" DeviceName="WASAPI: Current System Device" Enable="True" EnableInput="True" InputChannels="2" InputOffset="0" OutputChannels="2" OutputOffset="0" SampleRate="48000" SpatialAudio="False" WasapiInput="Voicemeeter Out B1 (VB-Audio Voicemeeter VAIO)" />
+  <Multitrack Duration="240">
+    <TimelinerControls BaseFPS="60" BPM="120" FPS="60" LoopEnable="True" LoopFrom="0" LoopMode="True" LoopTo="215.76820688111877" PPQN="384" Volume="1" />
     <Tracks>
-      <Item ClientID="" Enable="True" Key="ec1b8db6-14d2-4e5c-a953-5c7a6dc24e7e" Name="Vector4Address" Target="OSC" TargetFound="True" TargetPath="">
-        <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-        <DefaultValue r:Type="Vector4 [3D]">0, 0, 0, 0</DefaultValue>
-        <KeyframeManager Key="8abca7ea-42df-42d3-91ab-f2f57d27e59d" LengthByKeyframe="True" LerpLength="0">
-          <Keyframes>
-            <Item Duration="0" Editable="True" GroupID="6" Key="2ad92e2d-0bc6-4cdb-8af1-2ed1c29db807" Name="" Position="121.67491149902344" TweenMode="InOut" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="Vector4 [3D]">1, 50, -100, 15</Value>
-            </Item>
-            <Item Duration="0" Editable="False" GroupID="6" Key="06d1c2ee-b707-41f1-84e7-b59161b83de4" Name="Init" Position="0" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="Vector4 [3D]">0, 0, 0, 0</Value>
-            </Item>
-          </Keyframes>
-        </KeyframeManager>
-      </Item>
-      <Item ClientID="" Enable="False" Key="efa7120c-a69b-4b83-8c91-0044cacc0764" Name="StringAddress" Target="OSC" TargetFound="True" TargetPath="">
-        <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-        <DefaultValue r:Type="String [Primitive]">text</DefaultValue>
-        <KeyframeManager Key="180d088e-0145-4588-8fb6-27fbe50e28a9" LengthByKeyframe="True" LerpLength="0">
-          <Keyframes>
-            <Item Duration="0" Editable="True" GroupID="5" Key="5a68309b-adaf-40f2-be91-b0b954f7419e" Name="" Position="1" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="String [Primitive]">text</Value>
-            </Item>
-            <Item Duration="0" Editable="False" GroupID="5" Key="fc06a544-f4ec-408e-a2e4-fff6153ed095" Name="Init" Position="0" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="String [Primitive]">text</Value>
-            </Item>
-          </Keyframes>
-        </KeyframeManager>
-      </Item>
-      <Item ClientID="" Enable="False" Key="f4381ed9-b822-4225-9ac3-713e73250f02" Name="BooleanAddress" Target="OSC" TargetFound="True" TargetPath="">
-        <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-        <DefaultValue r:Type="Boolean [Primitive]">False</DefaultValue>
-        <KeyframeManager Key="1be867ff-5c18-4747-b411-7f3116d62e62" LengthByKeyframe="True" LerpLength="0">
-          <Keyframes>
-            <Item Duration="13.989526748657227" Editable="True" GroupID="4" Key="46d7a34c-8a34-4eaa-947b-67b5eccfac8d" Name="" Position="30.74854850769043" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="Boolean [Primitive]">False</Value>
-            </Item>
-            <Item Duration="0" Editable="True" GroupID="4" Key="6d6509b6-c1a9-4003-8411-068ebf2d09c2" Name="" Position="24.07334327697754" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="Boolean [Primitive]">True</Value>
-            </Item>
-            <Item Duration="0" Editable="True" GroupID="4" Key="a186ecec-742d-4c19-873e-3725450e4c8d" Name="" Position="16.04889488220215" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="Boolean [Primitive]">False</Value>
-            </Item>
-            <Item Duration="0" Editable="True" GroupID="4" Key="10f0dcba-8154-4358-aa06-0a1b96e88be7" Name="" Position="12.001165390014648" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="Boolean [Primitive]">True</Value>
-            </Item>
-            <Item Duration="0" Editable="True" GroupID="4" Key="fca4d93f-60f9-43c1-85a1-a5963003ae8e" Name="" Position="4.686845302581787" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="Boolean [Primitive]">False</Value>
-            </Item>
-            <Item Duration="0" Editable="True" GroupID="4" Key="045339c6-1f15-465d-a73b-2c807e38cd39" Name="" Position="1" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="Boolean [Primitive]">True</Value>
-            </Item>
-            <Item Duration="0" Editable="False" GroupID="4" Key="195e2d7e-10a3-4ab0-ae36-2ee1570152ae" Name="Init" Position="0" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="Boolean [Primitive]">False</Value>
-            </Item>
-          </Keyframes>
-        </KeyframeManager>
-      </Item>
-      <Item ClientID="" Enable="False" Key="56b0ff60-787d-417e-9b2c-d42ddd16f2a1" Name="ColorAddress" Target="OSC" TargetFound="True" TargetPath="">
-        <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-        <DefaultValue r:Type="RGBA [Color]">1, 1, 1, 1</DefaultValue>
-        <KeyframeManager Key="d079f9a1-753d-4c60-958e-ddd1453aca68" LengthByKeyframe="True" LerpLength="0">
-          <Keyframes>
-            <Item Duration="0" Editable="True" GroupID="3" Key="6b0891b7-0559-4c9e-9357-b0393f9e71d3" Name="" Position="121.61200714111328" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="RGBA [Color]">1, 0, 0, 1</Value>
-            </Item>
-            <Item Duration="0" Editable="True" GroupID="3" Key="329676db-e936-45f9-9eb8-7059d9587a2d" Name="" Position="1" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="RGBA [Color]">1, 1, 1, 1</Value>
-            </Item>
-            <Item Duration="0" Editable="False" GroupID="3" Key="9d98dbd4-b5e3-49ca-afaa-000dcdf46196" Name="Init" Position="0" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="RGBA [Color]">1, 1, 1, 1</Value>
-            </Item>
-          </Keyframes>
-        </KeyframeManager>
-      </Item>
-      <Item ClientID="" Enable="True" Key="16683809-8c67-4d22-b83e-dab6e683a60c" Name="IntegerAddress" Target="OSC" TargetFound="True" TargetPath="">
-        <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-        <DefaultValue r:Type="Integer32 [Primitive]">0</DefaultValue>
-        <KeyframeManager Key="9ec76417-cb56-48c2-a4dc-4cb9d3e89769" LengthByKeyframe="True" LerpLength="0">
-          <Keyframes>
-            <Item Duration="0" Editable="True" GroupID="2" Key="b4f38cf8-d6ad-4f6e-808e-6758570c3cbc" Name="" Position="121.54908752441406" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="Integer32 [Primitive]">120</Value>
-            </Item>
-            <Item Duration="0" Editable="False" GroupID="2" Key="1b2fc688-e867-4026-ba23-869801cfd507" Name="Init" Position="0" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="Integer32 [Primitive]">0</Value>
-            </Item>
-          </Keyframes>
-        </KeyframeManager>
-      </Item>
-      <Item ClientID="" Enable="False" Key="3ea51a87-8436-4dae-aa9e-29352f444c3f" Name="FloatAddress" Target="OSC" TargetFound="True" TargetPath="">
-        <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-        <DefaultValue r:Type="Float32 [Primitive]">0</DefaultValue>
-        <KeyframeManager Key="afff8473-4f11-427b-8b7c-7ffac1b1031b" LengthByKeyframe="True" LerpLength="0">
-          <Keyframes>
-            <Item Duration="0" Editable="True" GroupID="1" Key="0b999424-1671-476d-825c-bda6002a0d2b" Name="" Position="1" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="Float32 [Primitive]">0</Value>
-            </Item>
-            <Item Duration="0" Editable="False" GroupID="1" Key="beaf8267-e482-48b6-abf0-2199028102bf" Name="Init" Position="0" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value r:Type="Float32 [Primitive]">0</Value>
-            </Item>
-          </Keyframes>
-        </KeyframeManager>
-      </Item>
-      <Item ClientID="" Enable="True" Key="40ca09cf-20fe-44a7-88dc-add8c0043551" Name="Audio" Target="Clip" TargetFound="True" TargetPath="">
+      <Item ClientID="" Enable="False" Key="85ac54c7-8b76-4a2d-aede-d62705fd3f9b" Name="Audio" Target="Clip" TargetFound="True" TargetPath="">
         <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
         <DefaultValue ClipLevel="1" ClipStart="0" End="0" FadeIn="0" FadeInTweenMode="In" FadeInTweenTransition="Circular" FadeOut="0" FadeOutTweenMode="Out" FadeOutTweenTransition="Circular" FileName="" Level="1" Loop="True" MediaDuration="0" Multi_Mono="False" PositionOnClip="0" Start="0" TrackID="0" r:Type="Clip [Interpolator]" />
-        <KeyframeManager Key="b8b1e3b6-3319-4c42-af28-655fec53f75e" LengthByKeyframe="True" LerpLength="0">
+        <KeyframeManager Key="592f4c28-1e8e-4e51-9905-b4bccc73ede2" LengthByKeyframe="True" LerpLength="0">
           <Keyframes>
-            <Item Duration="121.07937443256378" Editable="True" GroupID="0" Key="85daecb3-bcae-4fe1-8f9f-54f0f72a6dcc" Name="" Position="1E-06" TweenMode="In" TweenTransition="Linear">
+            <Item Duration="215.76820588111877" Editable="True" GroupID="2" Key="df9b4206-4ae9-4872-a8bd-a282d7d31648" Name="" Position="1E-06" TweenMode="In" TweenTransition="Linear">
+              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
+              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="0.4997226" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
+              <Value ClipLevel="1" ClipStart="0" End="0" FadeIn="0" FadeInTweenMode="In" FadeInTweenTransition="Circular" FadeOut="0" FadeOutTweenMode="Out" FadeOutTweenTransition="Circular" FileName="..\_NumaResidencia\Audio\Multichannel\Test.wav" Level="1" Loop="True" MediaDuration="0" Multi_Mono="False" PositionOnClip="0" Start="0" TrackID="0" r:Type="Clip [Interpolator]" />
+            </Item>
+            <Item Duration="0.1" Editable="False" GroupID="2" Key="5bbcb773-53ea-42b9-a9d7-d13b5f04baf6" Name="Init" Position="0" TweenMode="In" TweenTransition="Linear">
               <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
               <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
-              <Value ClipLevel="1" ClipStart="0" End="0" FadeIn="0" FadeInTweenMode="In" FadeInTweenTransition="Circular" FadeOut="0" FadeOutTweenMode="Out" FadeOutTweenTransition="Circular" FileName="..\..\Music_MP3\Andrew Pekler - Tristes Tropiques\Andrew Pekler - Tristes Tropiques - 09 Audio Liner Notes (Fait14).mp3" Level="1" Loop="True" MediaDuration="0" Multi_Mono="False" PositionOnClip="0" Start="0" TrackID="0" r:Type="Clip [Interpolator]" />
-            </Item>
-            <Item Duration="0.1" Editable="False" GroupID="0" Key="d230a183-a5b0-490c-9748-02a56f7bc3f5" Name="Init" Position="0" TweenMode="In" TweenTransition="Linear">
-              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="0" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="0" BreakPointVector3="0" BreakPointVector4="0" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
               <Value ClipLevel="1" ClipStart="0" End="0" FadeIn="0" FadeInTweenMode="In" FadeInTweenTransition="Circular" FadeOut="0" FadeOutTweenMode="Out" FadeOutTweenTransition="Circular" FileName="" Level="1" Loop="True" MediaDuration="0" Multi_Mono="False" PositionOnClip="0" Start="0" TrackID="0" r:Type="Clip [Interpolator]" />
             </Item>
-            <Item Duration="0.1" Editable="False" GroupID="0" Key="ff8a0fcd-44b9-4c93-a24d-5cda93fa0369" Name="End" Position="9999999999" TweenMode="In" TweenTransition="Linear">
+            <Item Duration="0.1" Editable="False" GroupID="2" Key="8063af6f-1b9c-415d-9ab4-7d60ff603b43" Name="End" Position="1.7976931348623157E+308" TweenMode="In" TweenTransition="Linear">
               <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
-              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="0" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="0" BreakPointVector3="0" BreakPointVector4="0" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
+              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
               <Value ClipLevel="1" ClipStart="0" End="0" FadeIn="0" FadeInTweenMode="In" FadeInTweenTransition="Circular" FadeOut="0" FadeOutTweenMode="Out" FadeOutTweenTransition="Circular" FileName="" Level="0" Loop="False" MediaDuration="0" Multi_Mono="False" PositionOnClip="0" Start="0" TrackID="0" r:Type="Clip [Interpolator]" />
+            </Item>
+          </Keyframes>
+        </KeyframeManager>
+      </Item>
+      <Item ClientID="" Enable="True" Key="d0dae2bc-5a43-49aa-82cd-6c644db35e78" Name="FloatAddress" Target="OSC" TargetFound="True" TargetPath="">
+        <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
+        <DefaultValue r:Type="Float32 [Primitive]">0</DefaultValue>
+        <KeyframeManager Key="f152216d-3c04-48b7-a3b0-07d690e0a23d" LengthByKeyframe="True" LerpLength="0">
+          <Keyframes>
+            <Item Duration="0" Editable="True" GroupID="1" Key="6146667f-fbff-4554-af31-1d3febf2d10e" Name="" Position="90.52387237548828" TweenMode="In" TweenTransition="Linear">
+              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
+              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
+              <Value r:Type="Float32 [Primitive]">15</Value>
+            </Item>
+            <Item Duration="0" Editable="True" GroupID="1" Key="c89e7f60-03ea-4b25-953a-458fdb0a335d" Name="ggggg" Position="75.57625579833984" TweenMode="In" TweenTransition="Linear">
+              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
+              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
+              <Value r:Type="Float32 [Primitive]">1</Value>
+            </Item>
+            <Item Duration="0" Editable="True" GroupID="1" Key="1e9fdcbd-6e21-468f-99d4-bad2df0a0935" Name="" Position="1" TweenMode="In" TweenTransition="Linear">
+              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
+              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
+              <Value r:Type="Float32 [Primitive]">0</Value>
+            </Item>
+            <Item Duration="0" Editable="False" GroupID="1" Key="ad8e63a6-830e-46ed-94cd-b431d7a42add" Name="Init" Position="0" TweenMode="In" TweenTransition="Linear">
+              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
+              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
+              <Value r:Type="Float32 [Primitive]">0</Value>
+            </Item>
+          </Keyframes>
+        </KeyframeManager>
+      </Item>
+      <Item ClientID="" Enable="True" Key="e178babe-077a-4267-9998-ae897a5d0e1d" Name="MySubType" Target="89416093-e533-41a3-8fe2-44def0628740" TargetFound="True" TargetPath="MySubType">
+        <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
+        <DefaultValue Boolean="True" Float="12" Integer="134" Key="89416093-e533-41a3-8fe2-44def0628740" Matrix="1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1" Path="" RGBA="1, 0.6600001, 0, 1" String="" Vector3="0.92, -0.48, 0.48" r:Type="MySubType_ [Interpolator.Timeliner]">
+          <SpreadVector2>
+            <Item>0, 0</Item>
+          </SpreadVector2>
+        </DefaultValue>
+        <KeyframeManager Key="f0fb9454-31a0-44c1-9e15-63603412eee9" LengthByKeyframe="True" LerpLength="0">
+          <Keyframes>
+            <Item Duration="0" Editable="True" GroupID="0" Key="58d1c450-cb32-4421-bd3c-fcdb2e5ab862" Name="" Position="240" TweenMode="In" TweenTransition="Linear">
+              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
+              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
+              <Value Boolean="True" Float="32" Integer="111" Key="89416093-e533-41a3-8fe2-44def0628740" Matrix="1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1" Path="" RGBA="1, 0, 0.17034721, 1" String="" Vector3="0.92, -0.48, 0.48" r:Type="MySubType_ [Interpolator.Timeliner]">
+                <SpreadVector2>
+                  <Item>0.4, -0.52</Item>
+                </SpreadVector2>
+              </Value>
+            </Item>
+            <Item Duration="0" Editable="False" GroupID="0" Key="bb3b552d-84ca-4440-b0e5-07efde0fb1d8" Name="Init" Position="0" TweenMode="In" TweenTransition="Linear">
+              <BlendingModes BooleanInterpol="Direct" FloatBlend="Direct" IntegerInterpol="Direct" RGBAInterpol="Direct" Vector2Interpol="Direct" Vector3Interpol="Direct" Vector4Interpol="Direct" />
+              <InterpolModes BooleanInterpol="Switch" BreakPointBoolean="1" BreakPointFloat="1" BreakPointGeneric="1" BreakPointInteger="1" BreakPointMatrix="1" BreakPointPath="1" BreakPointQuaternion="1" BreakPointRGBA="1" BreakPointSpreadCount="1" BreakPointString="1" BreakPointVector2="1" BreakPointVector3="1" BreakPointVector4="1" FloatInterpol="Interpolate" IntegerInterpol="Interpolate" MatrixInterpol="Interpolate" QuaternionInterpol="Interpolate" RGBAInterpol="Interpolate" SpreadCountInterpol="Interpolate" StringInterpol="Interpolate" Vector2Interpol="Interpolate" Vector3Interpol="Interpolate" Vector4Interpol="Interpolate" />
+              <Value Boolean="True" Float="0" Integer="0" Key="89416093-e533-41a3-8fe2-44def0628740" Matrix="-0.30900455, 0, -0.95106065, 0, 0.95106065, -1.1920929E-07, -0.30900446, 0, 0, -1.0000001, -1.1920929E-07, 0, 5.385, 3.59, 2.895, 1" Path="" RGBA="0.0063091516, 0.05019468, 1, 1" String="" Vector3="0.92, -0.48, 0.48" r:Type="MySubType_ [Interpolator.Timeliner]">
+                <SpreadVector2>
+                  <Item>0, 0</Item>
+                </SpreadVector2>
+              </Value>
             </Item>
           </Keyframes>
         </KeyframeManager>
@@ -171,8 +91,15 @@
   </Multitrack>
   <OSCNetwork Enable="False">
     <IPs>
-      <Item IP="127.0.0.1" Key="00000000-0000-0000-0000-000000000000" Name="Local" Port="9999" Send="True" />
+      <Item IP="127.0.0.1" Key="40d9bd5d-3bdf-4c2c-8aac-f3fddbb256c7" Name="Local" Port="9999" Send="True" />
     </IPs>
   </OSCNetwork>
-  <TimelinerSettings BPMExtrasEnable="False" HMSFEnable="False" InspectorEnable="False" KeyframeEnable="False" PlayOnStart="True" TimelinerEnable="True" TrackEnable="False" WaveformsEnable="True" />
+  <TargetAppModel A="15" B="32" C="111" Key="df331a50-fd12-408e-ac79-3cf2534c5f51" ListIndex="0" ListIndex_LerpPosition="0" ListIndex_Next="0" r:Type="MyType_ [Interpolator.Timeliner]">
+    <MySubType Boolean="True" Float="12" Integer="134" Key="89416093-e533-41a3-8fe2-44def0628740" Matrix="1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1" Path="" RGBA="1, 0.6600001, 0, 1" String="" Vector3="0.92, -0.48, 0.48">
+      <SpreadVector2>
+        <Item>0, 0</Item>
+      </SpreadVector2>
+    </MySubType>
+  </TargetAppModel>
+  <TimelinerSettings AudioLevelsEnable="True" BPMExtrasEnable="False" HMSFEnable="False" InspectorEnable="False" KeyframeEnable="True" PlayOnStart="True" TimelinerEnable="True" TrackEnable="False" WaveformsEnable="True" />
 </Project_Model>
