@@ -772,6 +772,182 @@
           <Link Id="GgS0BZL8cMEMaR51rIo4V9" Ids="OFZwGNCZS47Llc54BTpWjh,Q9lmNToHOH6QUaOJXE9QbO,BGOococNeWpNpc3trP5CHo" />
         </Patch>
       </Node>
+      <!--
+
+    ************************ SpatialAudio_Model ************************
+
+-->
+      <Node Name="SpatialAudio_Model" Bounds="489,293" Id="VR7snaSa3nuLCvM8nm0BGX">
+        <p:NodeReference>
+          <Choice Kind="RecordDefinition" />
+        </p:NodeReference>
+        <Patch Id="HQe27gOao08NExSR8yTNyr">
+          <Canvas Id="OY5TWkd7Jn5MabK8MvVDLJ" CanvasType="Group">
+            <Pad Id="LHmFkag8XjPMdlTUBtWOK7" SlotId="VZWeFx5sD1ZLGOGgHuxjYw" Bounds="337,313" />
+            <ControlPoint Id="GOiqTEwO0nyMl19m5GGjZE" Bounds="337,203" />
+            <ControlPoint Id="F6MtKwg2cfMNbEyUnB9Xlc" Bounds="337,400" />
+            <Pad Id="VjkiMHqZ7FwPtQRewG91gK" Comment="Sources" Bounds="191,212,35,34" ShowValueBox="true" isIOBox="true" Value="2">
+              <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Spread" />
+                <p:TypeArguments>
+                  <TypeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="Integer32" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="VGyMdIJtoyqOx7NW3hnJNm" SlotId="K75zzcOTKZDNy3NuWV5OQK" Bounds="538,313" />
+            <ControlPoint Id="BiettJP4tLgM71nRAHQL1D" Bounds="538,203" />
+            <ControlPoint Id="ORziBSte8GENaXJkYjLRQh" Bounds="538,401" />
+            <Node Bounds="428,249,39,19" Id="UsI192ijKMvMYXK52KSJSe">
+              <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="Cons" />
+              </p:NodeReference>
+              <Pin Id="FxWvlQmQ9C4OCDrcgUvePX" Name="Input" Kind="InputPin" />
+              <Pin Id="MSWombpuYfnPsd9c8Rp9ZE" Name="Input 2" Kind="InputPin" />
+              <Pin Id="GR0N6Ls0EjFMFaGLfrd6hO" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="428,213,70,26" Id="FT8rnK08RO8PN3d5jESf4K">
+              <p:NodeReference LastCategoryFullName="Audio.Spatial.Speaker_Model" LastDependency="VL.Audio.Spatial.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="RecordType" Name="Speaker_Model" />
+                <Choice Kind="OperationCallFlag" Name="Create" />
+              </p:NodeReference>
+              <Pin Id="Efp17Zguw5IQUwFtlNpurv" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="CHe6vr7LhIiMvtWUK7S9GA" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="404,338,44,26" Id="GUhxTlrc7MAN0e7Nz5q5aM">
+              <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="Count" />
+              </p:NodeReference>
+              <Pin Id="UwCPfm3dKheO4aa9hLfXkt" Name="Input" Kind="StateInputPin" />
+              <Pin Id="FBybSRsOjGWNOaFvNTGNK5" Name="Count" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="AyDzd4msuDZOtGDxicDIXZ" Bounds="406,400" />
+          </Canvas>
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="KFyi9rcmo2nLCkszjHDo9H" IsHidden="true">
+            <Fragment Id="UCwfXxR1Kv6NpcMx010RrQ" Patch="GewerSegVCaM3Wq2CtNuQp" Enabled="true" />
+            <Fragment Id="ScgnGUENyl0LSV3g7rCgoE" Patch="DOqPjeSZis4PFaa8rj2BlB" />
+            <Fragment Id="Q3LPIJ4imcQP5XTfLSJlNR" Patch="TVkHwnE9KNGMBPLEi33SOL" />
+            <Fragment Id="Sd76cNc6C9qL3LR6CQSWca" Patch="UjebNiF9Kh7NePn7qzvS9u" />
+          </ProcessDefinition>
+          <Slot Id="VZWeFx5sD1ZLGOGgHuxjYw" Name="SourceChannels">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="JMKALomNCCTPbuykJsEyjr" Ids="Oa9AZtyuKgJNZXhoRmO41z,GOiqTEwO0nyMl19m5GGjZE" IsHidden="true" />
+          <Link Id="DKPcP6jDUu2PuSqDJzgXSS" Ids="GOiqTEwO0nyMl19m5GGjZE,LHmFkag8XjPMdlTUBtWOK7" />
+          <Link Id="DEXAoqmySWZLIQR1uMervD" Ids="F6MtKwg2cfMNbEyUnB9Xlc,TFKJnk0pGzWQI5ufUPGTOa" IsHidden="true" />
+          <Link Id="ORqEhj1D7RtL0VMNKBj2L9" Ids="LHmFkag8XjPMdlTUBtWOK7,F6MtKwg2cfMNbEyUnB9Xlc" />
+          <Link Id="Jcz1tsUrmGSL9CncypuZhc" Ids="VjkiMHqZ7FwPtQRewG91gK,LHmFkag8XjPMdlTUBtWOK7" />
+          <Slot Id="K75zzcOTKZDNy3NuWV5OQK" Name="Speakers">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="Speaker_Model" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="TFDrz5RPNJzOaShqK6XmNw" Ids="LRIHURatcylP8032Massj2,BiettJP4tLgM71nRAHQL1D" IsHidden="true" />
+          <Link Id="RfxEQtj66r6NF2nFDJrNrg" Ids="BiettJP4tLgM71nRAHQL1D,VGyMdIJtoyqOx7NW3hnJNm" />
+          <Link Id="AJJ7vdImu4LN6Bf0NNORB3" Ids="ORziBSte8GENaXJkYjLRQh,DxadZ3utpiOMeG8MbWHWYY" IsHidden="true" />
+          <Link Id="CquW9Ka6EegNXh2nfN2dSh" Ids="VGyMdIJtoyqOx7NW3hnJNm,ORziBSte8GENaXJkYjLRQh" />
+          <Link Id="DIr4WZu4Y7ZPEW0xH8vLPm" Ids="GR0N6Ls0EjFMFaGLfrd6hO,VGyMdIJtoyqOx7NW3hnJNm" />
+          <Link Id="Kp2jMmLMwB4LowqJ3cyosR" Ids="CHe6vr7LhIiMvtWUK7S9GA,FxWvlQmQ9C4OCDrcgUvePX" />
+          <Link Id="D8pUQDpYuEqOiw5B5vmiPM" Ids="CHe6vr7LhIiMvtWUK7S9GA,MSWombpuYfnPsd9c8Rp9ZE" />
+          <Link Id="V8MpbwqrP3zO4dK06HVESC" Ids="LHmFkag8XjPMdlTUBtWOK7,UwCPfm3dKheO4aa9hLfXkt" />
+          <Link Id="KmogKnoUkl6NazPJf6jgE6" Ids="FBybSRsOjGWNOaFvNTGNK5,AyDzd4msuDZOtGDxicDIXZ" />
+          <Link Id="TGIxSUS3PVTOKOc0rfFnBI" Ids="AyDzd4msuDZOtGDxicDIXZ,TbwNG76bSKlOemHtBWFhdA" IsHidden="true" />
+          <Patch Id="GewerSegVCaM3Wq2CtNuQp" Name="Create" ParticipatingElements="Jcz1tsUrmGSL9CncypuZhc,DIr4WZu4Y7ZPEW0xH8vLPm" />
+          <Patch Id="DOqPjeSZis4PFaa8rj2BlB" Name="Split">
+            <Pin Id="TFKJnk0pGzWQI5ufUPGTOa" Name="Sources" Kind="OutputPin" />
+            <Pin Id="TbwNG76bSKlOemHtBWFhdA" Name="SourcesCount" Kind="OutputPin" />
+            <Pin Id="DxadZ3utpiOMeG8MbWHWYY" Name="Speakers" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="TVkHwnE9KNGMBPLEi33SOL" Name="SetSourceChannels">
+            <Pin Id="Oa9AZtyuKgJNZXhoRmO41z" Name="Sources" Kind="InputPin" />
+          </Patch>
+          <Patch Id="UjebNiF9Kh7NePn7qzvS9u" Name="SetSpeakers">
+            <Pin Id="LRIHURatcylP8032Massj2" Name="Speakers" Kind="InputPin" />
+          </Patch>
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Speaker_Model ************************
+
+-->
+      <Node Name="Speaker_Model" Bounds="489,332" Id="MjUynMbvgqrNj1uAT1Ydps">
+        <p:NodeReference>
+          <Choice Kind="RecordDefinition" />
+        </p:NodeReference>
+        <Patch Id="B1d6G3vSIVVQBovXub9Gtf">
+          <Canvas Id="Kk3aV6JB6cVONw8kStLtrA" CanvasType="Group">
+            <Pad Id="RfFYjPIzjg0Nlk9O2ONOmJ" SlotId="QD1LmyVkIFCPqUs153eHvX" Bounds="335,390" />
+            <ControlPoint Id="JsfyHImOipcMFJt2kOvsN0" Bounds="334,287" />
+            <ControlPoint Id="HKGz41fSVTWP4ZrgULGlHb" Bounds="337,459" />
+            <Pad Id="GeVr0Aj2MldOd1AQWfCEC9" Comment="SourceLevels" Bounds="201,263,35,34" ShowValueBox="true" isIOBox="true" Value="1">
+              <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Spread" />
+                <p:TypeArguments>
+                  <TypeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="Float32" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pad>
+          </Canvas>
+          <Patch Id="MIMFnAG5OE7PmkiBeX03Vw" Name="Create" ParticipatingElements="Ssc7ZBQQc8uOlEXV9xlKCx" />
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="F9C3PsabXedLWKtyhOH6u7" IsHidden="true">
+            <Fragment Id="TJQKmbp2C61OULHAHgrAsc" Patch="MIMFnAG5OE7PmkiBeX03Vw" Enabled="true" />
+            <Fragment Id="HhdeafV3QX7QWmfS96XSyt" Patch="Hp3EY13C4n6Mcj3tJtwcp9" />
+            <Fragment Id="VAxjecCfHGSPnvHg2ZWVKg" Patch="EYllwMw3EUYMZVpb0ayXu7" />
+          </ProcessDefinition>
+          <Slot Id="QD1LmyVkIFCPqUs153eHvX" Name="SourceLevels">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="Float32" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="U9eDrH8rEWZNOiZartJQY4" Ids="PyzaXsEPg82PCT1GU3JIhp,JsfyHImOipcMFJt2kOvsN0" IsHidden="true" />
+          <Link Id="FQesRMzCctWLpsuuwsUo3w" Ids="JsfyHImOipcMFJt2kOvsN0,RfFYjPIzjg0Nlk9O2ONOmJ" />
+          <Patch Id="Hp3EY13C4n6Mcj3tJtwcp9" Name="Split">
+            <Pin Id="TvmQflW9A4gNJTSQmtG0ud" Name="SourceLevels" Kind="OutputPin" />
+          </Patch>
+          <Link Id="SIdAiWFdKtKM2q3y3GhYHt" Ids="HKGz41fSVTWP4ZrgULGlHb,TvmQflW9A4gNJTSQmtG0ud" IsHidden="true" />
+          <Link Id="McEItVwfyklLIRWPg748Ko" Ids="RfFYjPIzjg0Nlk9O2ONOmJ,HKGz41fSVTWP4ZrgULGlHb" />
+          <Patch Id="EYllwMw3EUYMZVpb0ayXu7" Name="SetSourceLevels">
+            <Pin Id="PyzaXsEPg82PCT1GU3JIhp" Name="SourceLevels" Kind="InputPin" />
+          </Patch>
+          <Link Id="Ssc7ZBQQc8uOlEXV9xlKCx" Ids="GeVr0Aj2MldOd1AQWfCEC9,RfFYjPIzjg0Nlk9O2ONOmJ" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
