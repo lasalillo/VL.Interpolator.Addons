@@ -4355,7 +4355,7 @@
               <Pin Id="KC3OnqX01l0OF9OKgTb2fg" Name="Output" Kind="StateOutputPin" />
               <Pin Id="FgJarC93dycPCTUms8DPGM" Name="Value" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="SilZVwdB19tMW3daWl6isG" Bounds="247,291" />
+            <ControlPoint Id="SilZVwdB19tMW3daWl6isG" Bounds="242,298" />
             <Node Bounds="1172,902,25,19" Id="PwoeCMd5Q1uLd77JKNy6fK">
               <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -4877,37 +4877,6 @@
           <Link Id="BMmhlSohYDxP1Skd5SQnps" Ids="SilZVwdB19tMW3daWl6isG,BRtm83VrCNCPchpZn4SbbY" />
           <Link Id="Thdhw6PYILLLGr8fQDSXjP" Ids="HH0vj5V6S3QMXztUMjcX3D,K5xTbUoppsLPcAQDmP4mf1" IsHidden="true" />
           <Link Id="FUjFBfQK9oQPdRWKB1GptP" Ids="K5xTbUoppsLPcAQDmP4mf1,BNtdL1o5cauLbiIeflVnxZ" />
-          <Patch Id="FIVnRWHzEeVMQk49f8uDph" Name="Create" />
-          <Patch Id="OAdNZIjEvTpOAFpklCuNXJ" Name="Update" ParticipatingElements="CEnHCLdqQL9MhJI3VaX82j">
-            <Pin Id="SxulKF3NUz2NsR9avVMOXR" Name="Input" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Spread" />
-                <p:TypeArguments>
-                  <TypeReference>
-                    <Choice Kind="TypeFlag" Name="AudioSignal" />
-                  </TypeReference>
-                </p:TypeArguments>
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="HH0vj5V6S3QMXztUMjcX3D" Name="AudioAnalysisData" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Channel" />
-                <p:TypeArguments>
-                  <TypeReference>
-                    <Choice Kind="TypeFlag" Name="AudioAnalysisData" />
-                  </TypeReference>
-                </p:TypeArguments>
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="DThUDNA5kSGLwp9JHddImv" Name="SampleRate" Kind="InputPin" DefaultValue="48000">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="Integer32" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="ThYNbHur18LMKGCSUmGlsw" Name="BaseFPS" Kind="InputPin" DefaultValue="60" />
-            <Pin Id="GpErExdmpnsMMAjcWsrZfL" Name="AnimationFPS" Kind="InputPin" Bounds="623,552" DefaultValue="60" />
-            <Pin Id="DnL9vqnJnGQLdrNeuBQljE" Name="Output" Kind="OutputPin" />
-          </Patch>
           <Link Id="Bg7uqYX5uWYOx1elQNsprY" Ids="M2PRtweklRaQKRRqFy03Qd,HRsmpEAZxCVL1NeeWAdHOc" />
           <Link Id="IHYvspgviDdLAO8RDFNHXr" Ids="I1B59bYpttRQPfPex2CrkO,HP2zhFqRyNcPMzdwKv6Ujl" />
           <Link Id="SmfPtFHCiuhORHXjzg7YfL" Ids="OP7wPPp3LBqLMNtOwyolMg,IyvlneB5MWAORMFDC6w7zB" />
@@ -5002,6 +4971,37 @@
           <Link Id="RfFNCtTVn47PpXF6sURdCn" Ids="JRNrOKzXU4oMYm7Tv5Z4V7,HEWXfXPjzqZP0wlra1ljqG" />
           <Link Id="BpBjk2TjhH4QAIB6zZBVK3" Ids="N6LPf67Jw6XMaw7DyA1xBb,SeBpfQwgOwvNpNi9ZklJfp" />
           <Link Id="ToPDWwXWx4vM9dVlYgJJ1G" Ids="SeBpfQwgOwvNpNi9ZklJfp,VCzpYmtQKVBLYCmYv8kQBE" />
+          <Patch Id="FIVnRWHzEeVMQk49f8uDph" Name="Create" />
+          <Patch Id="OAdNZIjEvTpOAFpklCuNXJ" Name="Update" ParticipatingElements="CEnHCLdqQL9MhJI3VaX82j">
+            <Pin Id="SxulKF3NUz2NsR9avVMOXR" Name="Input" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Spread" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="AudioSignal" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="HH0vj5V6S3QMXztUMjcX3D" Name="AudioAnalysisData" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Channel" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="AudioAnalysisData" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="DThUDNA5kSGLwp9JHddImv" Name="SampleRate" Kind="InputPin" DefaultValue="48000">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="ThYNbHur18LMKGCSUmGlsw" Name="BaseFPS" Kind="InputPin" DefaultValue="60" />
+            <Pin Id="GpErExdmpnsMMAjcWsrZfL" Name="AnimationFPS" Kind="InputPin" Bounds="623,552" DefaultValue="60" />
+            <Pin Id="DnL9vqnJnGQLdrNeuBQljE" Name="Output" Kind="OutputPin" />
+          </Patch>
         </Patch>
       </Node>
       <!--
