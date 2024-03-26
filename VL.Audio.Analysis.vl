@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="PxhxFcpQyNNPxHWxsBYySX" LanguageVersion="2024.6.0-0261-g38f7059b02" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2024.6.0-0261-g38f7059b02" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="PxhxFcpQyNNPxHWxsBYySX" LanguageVersion="2024.6.0-0309-gb09c602211" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2024.6.0-0309-gb09c602211" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="AudioAnalysis" CanvasType="FullCategory">
       <!--
@@ -4595,7 +4595,7 @@
                       </p:NodeReference>
                       <Pin Id="SxZhXdJp6euNoGtFXb7j8i" Name="Node Context" Kind="InputPin" IsHidden="true" />
                       <Pin Id="KYEaUAnQm81OEu58aHURsp" Name="Input" Kind="InputPin" />
-                      <Pin Id="JDkiVVEPb7qPIrc76Z0U1V" Name="Bin Count" Kind="InputPin" DefaultValue="Bins_1024" />
+                      <Pin Id="JDkiVVEPb7qPIrc76Z0U1V" Name="Bin Count" Kind="InputPin" DefaultValue="1024" />
                       <Pin Id="NjSA48EZN6TL5rRdkx8qjd" Name="Window Function" Kind="InputPin" DefaultValue="Hann">
                         <p:TypeAnnotation LastCategoryFullName="Audio" LastDependency="VL.Audio.vl">
                           <Choice Kind="TypeFlag" Name="WindowFunction" />
@@ -4771,11 +4771,6 @@
                   <ControlPoint Id="ORzrnTDbOoiOLGl1nafHIw" Bounds="242,793" Alignment="Top" />
                   <ControlPoint Id="IMyiA3MUuZ7NVu0NPXRkxl" Bounds="242,880" Alignment="Bottom" />
                 </Node>
-                <Pad Id="Mq5UWOyE60FNMJX7G3sTWD" Comment="Bin Count" Bounds="519,1002,70,15" ShowValueBox="true" isIOBox="true" Value="Bins_1024">
-                  <p:TypeAnnotation LastCategoryFullName="VL.Audio" LastDependency="VL.Audio.vl">
-                    <Choice Kind="TypeFlag" Name="FFTBinCount" />
-                  </p:TypeAnnotation>
-                </Pad>
                 <Node Bounds="861,1004,177,219" Id="TZqzwNExGfUMfR0z3sl8vS">
                   <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -4846,6 +4841,11 @@
                   <Pin Id="JKo0ABM4PyTMYyDfAH878q" Name="Input 2" Kind="InputPin" />
                   <Pin Id="AKv16sJtSBTQB7tMZjFGam" Name="Output" Kind="OutputPin" />
                 </Node>
+                <Pad Id="SruxindZzqnMYwMnIOK3TX" Comment="Bin Count" Bounds="402,1025,47,15" ShowValueBox="true" isIOBox="true" Value="1024">
+                  <p:TypeAnnotation LastCategoryFullName="VL.Audio" LastDependency="VL.Audio.vl">
+                    <Choice Kind="TypeFlag" Name="FFTBinCountEnum" />
+                  </p:TypeAnnotation>
+                </Pad>
               </Patch>
               <ControlPoint Id="SeBpfQwgOwvNpNi9ZklJfp" Bounds="991,1317" Alignment="Bottom" />
             </Node>
@@ -4956,7 +4956,6 @@
           <Link Id="JoNJNHr0cL9MraXKfm3yUi" Ids="Sbrh2FC7142O30V59ewJo7,KIzT9slyRc5O1ZfU0dIpzQ" />
           <Link Id="CKh1OFFuWsKLQxJVfX4RYm" Ids="NKE4s9wTf1xO5z3UxDJBBA,O8WjQislhUNP7q9aYc3AmL" />
           <Link Id="AJXkMFm5dP8MfybPFRJlF1" Ids="O8WjQislhUNP7q9aYc3AmL,OOQmZtqHEyaLOObSs0L3JO" />
-          <Link Id="J7MWNzSHG7aLYDVwk4dBgT" Ids="Mq5UWOyE60FNMJX7G3sTWD,JDkiVVEPb7qPIrc76Z0U1V" />
           <Link Id="Vx5UyZIFrULLEVfHPNRwEL" Ids="HU0niFtEmwAOdFxtGMWLE6,IZRJdpAuh36NB4p8VWqSK0" />
           <Link Id="BUKKCIcjl8CNoS2sWpzgmh" Ids="IcYTf0AxtR8MEQAu4dPape,NGqrzmDAYuNPgwhDlqXuID" />
           <Link Id="Kn6MO3TpKjWOP8eAvFYrkQ" Ids="HEaKTS12csTNn1wRfsxx6y,N14tu49VOcYNz5af2B6Rvc" />
@@ -5002,6 +5001,7 @@
             <Pin Id="GpErExdmpnsMMAjcWsrZfL" Name="AnimationFPS" Kind="InputPin" Bounds="623,552" DefaultValue="60" />
             <Pin Id="DnL9vqnJnGQLdrNeuBQljE" Name="Output" Kind="OutputPin" />
           </Patch>
+          <Link Id="P0rqnt4BM3mPSAV0ubcA4a" Ids="SruxindZzqnMYwMnIOK3TX,JDkiVVEPb7qPIrc76Z0U1V" />
         </Patch>
       </Node>
       <!--
@@ -5096,7 +5096,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JBYu5xS08XeN9YRj2XW9QD" Location="VL.Skia" Version="2024.6.0-0261-g38f7059b02" />
-  <NugetDependency Id="T7vPGFRY7LGQWzgpXpCsuu" Location="VL.Serialization.FSPickler" Version="2024.6.0-0261-g38f7059b02" />
-  <NugetDependency Id="INZ3Mvh7C3PPwt5shPlWmb" Location="VL.Audio" Version="1.4.8-preview" />
+  <NugetDependency Id="JBYu5xS08XeN9YRj2XW9QD" Location="VL.Skia" Version="2024.6.0-0309-gb09c602211" />
+  <NugetDependency Id="T7vPGFRY7LGQWzgpXpCsuu" Location="VL.Serialization.FSPickler" Version="2024.6.0-0309-gb09c602211" />
+  <NugetDependency Id="INZ3Mvh7C3PPwt5shPlWmb" Location="VL.Audio" Version="1.5.0" />
 </Document>
