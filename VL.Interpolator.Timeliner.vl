@@ -63,9 +63,9 @@
                   <Pin Id="ItYgc3hSuQTPaaGZCtexUy" Name="OnKeyboardAction" Kind="InputPin" />
                   <Pin Id="H0FDlKRTBujM5q65zCwxqK" Name="ShowEditor" Kind="InputPin" />
                   <Pin Id="HXIBMDMTJHjNw5oxDPk557" Name="OnLoad" Kind="InputPin" />
-                  <Pin Id="J8stf8MScHxLN1OA20sbb5" Name="BinderValue" Kind="InputPin" />
-                  <Pin Id="MIKzswLyjIsLI9dAT7uMoL" Name="BinderTarget" Kind="InputPin" />
-                  <Pin Id="FHO8liQ9EhaP7oqJ5DLn5L" Name="BinderName" Kind="InputPin" />
+                  <Pin Id="Cno4SPFCOI6MFU7xWd51g0" Name="TargetAppEditorFactory" Kind="InputPin" />
+                  <Pin Id="Jrynkn5JS2KNpzJqSj0ZDX" Name="TargetApp" Kind="InputPin" />
+                  <Pin Id="UKrgVMMJPHdPhfFyI1LyHg" Name="TargetAppCopy" Kind="InputPin" />
                   <Pin Id="JYlCfPzoDOPNvgZX3b17v1" Name="ActiveForm" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="510,889,43,19" Id="M9HmuSqzYnsOZLsVGhO8JB">
@@ -224,7 +224,7 @@
             <Overlay Id="S7xwOcWBBMHMqMYp63E21w" Name="Timeliner Runtime" Bounds="364,199,305,256">
               <p:ColorIndex p:Type="Int32">5</p:ColorIndex>
             </Overlay>
-            <Overlay Id="CnbBXZKi20sMqYvHsvaxcD" Name="Timeliner Editor" Bounds="367,516,622,636">
+            <Overlay Id="CnbBXZKi20sMqYvHsvaxcD" Name="Timeliner Editor" Bounds="367,516,761,636">
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
             </Overlay>
             <ControlPoint Id="Dph6DrelkjeP9elmrtDDco" Bounds="890,415" />
@@ -311,10 +311,10 @@
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
-            <ControlPoint Id="IUMBdnKSRhUNyXBAE6uP4D" Bounds="872,779" />
-            <ControlPoint Id="VWxPcbjEMtINMLQvYjD2if" Bounds="892,803" />
-            <ControlPoint Id="PkqAHzjGCgeO6Xqm4pBI6T" Bounds="912,829" />
             <Pad Id="R1qx9R90mw8NM2hl4m30I6" SlotId="EURKGOEscqJNK4J0ReGOM7" Bounds="631,621" />
+            <ControlPoint Id="DbzYpD2UbqNQHZfLM79dl6" Bounds="873,749" />
+            <Pad Id="JRnBmBOAmcmOPqTsxd1CeA" SlotId="QX5OyoPchZePWc1RxxZhXC" Bounds="893,827" />
+            <Pad Id="Cfzy0KcU8evNLRotKym6nm" SlotId="VQaaOhEvb8zPwYu10xcgim" Bounds="913,851" />
           </Canvas>
           <Patch Id="TCtvWjoxLW2OiWqpPaDbCW" Name="Create" ParticipatingElements="D8OtOUfu0ayQBxNlNuCBas,QBae3LkQpGTLKEeU1z7cT2,TLTNbTf7lwZO82pVpBXQD3,KGe2DASe2GKNLTV1rjEZtf">
             <Pin Id="C8Ug1vqThu7OTpLjGEPNjm" Name="TargetAppModel" Kind="InputPin" />
@@ -410,17 +410,9 @@
           <Link Id="L3VkthNSDT8P52BACawGzV" Ids="RVUaCEPf97OPCwFBI9nzBC,E1uSLiAdTN2PEk8UloZAiy" />
           <Link Id="RyPgEDci8lRPmca6C9cm10" Ids="F8efjBN5S9KM7R3Nr2wO3v,SYKe4Q6qzRSO1A8M39XtVb" />
           <Link Id="KymVctgoISmNzqLPGRgd9W" Ids="FklFVkdgjn9OY3Ye4KOsX0,FuHAOdbzisfQbewqmeXPx1" />
-          <Link Id="V18mlTdCZNgOaUIHIp4FBq" Ids="IUMBdnKSRhUNyXBAE6uP4D,J8stf8MScHxLN1OA20sbb5" />
-          <Link Id="Gg5dTrvlVRrO1e5aahz62z" Ids="BLOXgK4aMyMPzc6sbpYmap,IUMBdnKSRhUNyXBAE6uP4D" IsHidden="true" />
-          <Link Id="OIfTlyH2FlANfveo9KQzre" Ids="VWxPcbjEMtINMLQvYjD2if,MIKzswLyjIsLI9dAT7uMoL" />
-          <Link Id="G1BDvh3zgYHO4jCOCiFavm" Ids="LrmNPFuPXkrQaTXLyLXg5U,VWxPcbjEMtINMLQvYjD2if" IsHidden="true" />
-          <Link Id="NKqNjV5BxNzLEuQQgoYqzK" Ids="PkqAHzjGCgeO6Xqm4pBI6T,FHO8liQ9EhaP7oqJ5DLn5L" />
-          <Link Id="DvCjcrEctVCOpkQ6LkTmp9" Ids="OjOrTVdVhQgP6yXMQj6gte,PkqAHzjGCgeO6Xqm4pBI6T" IsHidden="true" />
           <Link Id="AgVfj5ITurfNLzaumhreti" Ids="R1qx9R90mw8NM2hl4m30I6,V8DnuTJjIQ0MiO4Qqkye1a" />
           <Patch Id="IfBBYRtRXqRLHujfFTCcd7" Name="UpdateEditor">
-            <Pin Id="BLOXgK4aMyMPzc6sbpYmap" Name="BinderValue" Kind="InputPin" />
-            <Pin Id="LrmNPFuPXkrQaTXLyLXg5U" Name="BinderTarget" Kind="InputPin" />
-            <Pin Id="OjOrTVdVhQgP6yXMQj6gte" Name="BinderName" Kind="InputPin" />
+            <Pin Id="FflN5DPAhKHLHqGVrBBQDL" Name="TargetAppEditorFactory" Kind="InputPin" />
           </Patch>
           <ProcessDefinition Id="Ls7i6GxEmxjMS470KjILN5" HasStateOut="true">
             <Fragment Id="HwTLi3vnDmvPPas2RuQ3x9" Patch="TCtvWjoxLW2OiWqpPaDbCW" Enabled="true" />
@@ -433,6 +425,10 @@
             <Fragment Id="FQeHfagcPxOPgG32nBdcQ2" Patch="DAasxNwkqAaOXwnRGJQpMj" />
             <Fragment Id="CD2ueJyTGaDMozCZvSvorq" Patch="CAa0FiuB83oOHgzL1rMwSb" />
           </ProcessDefinition>
+          <Link Id="RTi4udPP1MuO0s1oMkL9fw" Ids="DbzYpD2UbqNQHZfLM79dl6,Cno4SPFCOI6MFU7xWd51g0" />
+          <Link Id="B1AbmtEfgElMTR77dejCyg" Ids="FflN5DPAhKHLHqGVrBBQDL,DbzYpD2UbqNQHZfLM79dl6" IsHidden="true" />
+          <Link Id="EjVwO3wd1byMhmn9GXQNHG" Ids="JRnBmBOAmcmOPqTsxd1CeA,Jrynkn5JS2KNpzJqSj0ZDX" />
+          <Link Id="KC4gucfrxIBPqnbD9dbxdH" Ids="Cfzy0KcU8evNLRotKym6nm,UKrgVMMJPHdPhfFyI1LyHg" />
         </Patch>
       </Node>
       <!--
