@@ -343,6 +343,20 @@
               <Pin Id="ImXxhC0wfXAMzQulDuH4uj" Name="Value" Kind="OutputPin" />
               <Pin Id="C2Iv1G6n5pRNUlgda2HJ9M" Name="On Data" Kind="OutputPin" />
             </Node>
+            <Node Bounds="1121,616,99,19" Id="MWWgRLzcTT0OJZ7EWUNU5r">
+              <p:NodeReference LastCategoryFullName="Interpolator.LaunchpadControl" LastDependency="VL.Interpolator.LaunchpadControl.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="LaunchPadControl" />
+              </p:NodeReference>
+              <Pin Id="LzNvk0gcWP0Na8Cz7N5zdI" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="Dt2KaAjCNGBLPvQ5MIBgYg" Name="MultitrackPlayer" Kind="InputPin" />
+              <Pin Id="M0DKoMq6ge3Lo26TgbJrF4" Name="Is Open" Kind="OutputPin" />
+            </Node>
+            <Pad Id="DcVU4U1kTBQN4LJu59CQAF" SlotId="EURKGOEscqJNK4J0ReGOM7" Bounds="1220,595" />
+            <Pad Id="Q7StGXgw9j6OQOcpShi8Zo" Comment="Is Open" Bounds="1123,666,35,35" ShowValueBox="true" isIOBox="true" />
+            <Overlay Id="OPcSJXG78SUMt9otcG73NT" Name="Launchpad StateMachine Control" Bounds="1028,516,325,228">
+              <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
+            </Overlay>
           </Canvas>
           <Link Id="OEaqadoRWZOMxH9BJI3Dyd" Ids="Vzi9s9TlxGtP4c0z4a4flU,SrRsNyr6h1OPFM942T9nSK" />
           <Link Id="PJYrNgNbZJBOvIdey1hhVV" Ids="TmkDqCUgRMVMRRYlUvKHm9,QuCYqSJyKUPOtC9QFCdv2n" IsFeedback="true" />
@@ -418,17 +432,6 @@
           <Link Id="RyPgEDci8lRPmca6C9cm10" Ids="F8efjBN5S9KM7R3Nr2wO3v,SYKe4Q6qzRSO1A8M39XtVb" />
           <Link Id="KymVctgoISmNzqLPGRgd9W" Ids="FklFVkdgjn9OY3Ye4KOsX0,FuHAOdbzisfQbewqmeXPx1" />
           <Link Id="AgVfj5ITurfNLzaumhreti" Ids="R1qx9R90mw8NM2hl4m30I6,V8DnuTJjIQ0MiO4Qqkye1a" />
-          <ProcessDefinition Id="Ls7i6GxEmxjMS470KjILN5" HasStateOut="true">
-            <Fragment Id="HwTLi3vnDmvPPas2RuQ3x9" Patch="TCtvWjoxLW2OiWqpPaDbCW" Enabled="true" />
-            <Fragment Id="SyXN1diiD1zPvMJrovhwbp" Patch="ABvYZVIxOnANgZ00Wm169c" Enabled="true" />
-            <Fragment Id="OoIAr5t5T3CQQngjLl4XL4" Patch="GbtFjvbETATLCPalhlKGms" Enabled="true" />
-            <Fragment Id="TMGfoQ286aYOfyAGoMu8YM" Patch="IfBBYRtRXqRLHujfFTCcd7" Enabled="true" />
-            <Fragment Id="NKyW4KDraJbO48QYbYflLB" Patch="RTfl9KfOE6lPmlOxQC6eUb" />
-            <Fragment Id="Q8kmr73K8DhONBnNBDmvlC" Patch="UdTf2rm362ANvQZdzuFyro" />
-            <Fragment Id="PxVjQjzAO4vNMr9wdf5pwZ" Patch="D3l7E1fctjwLeM49H2NDVn" />
-            <Fragment Id="FQeHfagcPxOPgG32nBdcQ2" Patch="DAasxNwkqAaOXwnRGJQpMj" />
-            <Fragment Id="CD2ueJyTGaDMozCZvSvorq" Patch="CAa0FiuB83oOHgzL1rMwSb" />
-          </ProcessDefinition>
           <Link Id="RTi4udPP1MuO0s1oMkL9fw" Ids="DbzYpD2UbqNQHZfLM79dl6,Cno4SPFCOI6MFU7xWd51g0" />
           <Link Id="B1AbmtEfgElMTR77dejCyg" Ids="FflN5DPAhKHLHqGVrBBQDL,DbzYpD2UbqNQHZfLM79dl6" IsHidden="true" />
           <Link Id="EjVwO3wd1byMhmn9GXQNHG" Ids="JRnBmBOAmcmOPqTsxd1CeA,Jrynkn5JS2KNpzJqSj0ZDX" />
@@ -456,7 +459,7 @@
           <Patch Id="CAa0FiuB83oOHgzL1rMwSb" Name="GetSpatialAudioCopy">
             <Pin Id="SoJyIFrsPBbLCMaWUQU7QH" Name="SpatialAudioCopy" Kind="OutputPin" />
           </Patch>
-          <Patch Id="IfBBYRtRXqRLHujfFTCcd7" Name="UpdateEditor" ParticipatingElements="QlK25HwTLJsLEXu1iHD6AP">
+          <Patch Id="IfBBYRtRXqRLHujfFTCcd7" Name="Editor" ParticipatingElements="QlK25HwTLJsLEXu1iHD6AP">
             <Pin Id="FflN5DPAhKHLHqGVrBBQDL" Name="TargetAppEditorFactory" Kind="InputPin" />
             <Pin Id="Nf9cRX7bgGeNvcYvGgwjYH" Name="Window Name" Kind="InputPin" Visibility="Optional" />
             <Pin Id="AbJeuaypesKOIWK3ps6hHM" Name="Closing Message" Kind="InputPin" Visibility="Optional" />
@@ -469,6 +472,21 @@
           <Link Id="S74eX90MqO6PVPrKX5cLqh" Ids="NVd6R4WvifWLdIR4ZGEApL,V7hkozFUSG2P9UUNgXOFVo" />
           <Link Id="URtKlnj2pHTMrvHM9EKAf6" Ids="Lrye2ygvKWFLaDgs6JxW9a,AFEsHjWJsuCQTwyjWJAOfD" />
           <Link Id="HOWKnuHJKMIPvmhx66pT6y" Ids="C2Iv1G6n5pRNUlgda2HJ9M,Stw0SpoR1IlPlrbThLpVXZ" />
+          <Link Id="NDwHFqqoD3EN3u9XIRuLI8" Ids="M0DKoMq6ge3Lo26TgbJrF4,Q7StGXgw9j6OQOcpShi8Zo" />
+          <Patch Id="Pw2E6gydlMTOwkR0dIEfNJ" Name="LaunchpadControl" ParticipatingElements="RiWAss4i4KSNhop4fAyZ1M" />
+          <ProcessDefinition Id="Ls7i6GxEmxjMS470KjILN5" HasStateOut="true">
+            <Fragment Id="HwTLi3vnDmvPPas2RuQ3x9" Patch="TCtvWjoxLW2OiWqpPaDbCW" Enabled="true" />
+            <Fragment Id="SyXN1diiD1zPvMJrovhwbp" Patch="ABvYZVIxOnANgZ00Wm169c" Enabled="true" />
+            <Fragment Id="OoIAr5t5T3CQQngjLl4XL4" Patch="GbtFjvbETATLCPalhlKGms" Enabled="true" />
+            <Fragment Id="TMGfoQ286aYOfyAGoMu8YM" Patch="IfBBYRtRXqRLHujfFTCcd7" Enabled="true" />
+            <Fragment Id="PN3Ghiby9qLL5Em2WJqwgY" Patch="Pw2E6gydlMTOwkR0dIEfNJ" Enabled="true" />
+            <Fragment Id="NKyW4KDraJbO48QYbYflLB" Patch="RTfl9KfOE6lPmlOxQC6eUb" />
+            <Fragment Id="Q8kmr73K8DhONBnNBDmvlC" Patch="UdTf2rm362ANvQZdzuFyro" />
+            <Fragment Id="PxVjQjzAO4vNMr9wdf5pwZ" Patch="D3l7E1fctjwLeM49H2NDVn" />
+            <Fragment Id="FQeHfagcPxOPgG32nBdcQ2" Patch="DAasxNwkqAaOXwnRGJQpMj" />
+            <Fragment Id="CD2ueJyTGaDMozCZvSvorq" Patch="CAa0FiuB83oOHgzL1rMwSb" />
+          </ProcessDefinition>
+          <Link Id="RiWAss4i4KSNhop4fAyZ1M" Ids="DcVU4U1kTBQN4LJu59CQAF,Dt2KaAjCNGBLPvQ5MIBgYg" />
         </Patch>
       </Node>
       <!--
@@ -1215,4 +1233,5 @@
   <DocumentDependency Id="AzZsIkAyVQqPOi6cI5SG5B" Location="./VL/VL.Interpolator.Editor.vl" IsForward="true" />
   <DocumentDependency Id="T0GPHNlHaddNrlQBxo9OR1" Location="./VL/VL.Interpolator.Players.vl" IsForward="true" />
   <DocumentDependency Id="HTFZsmHcIDWOkMhPBBlt2X" Location="../VL.Interpolator/VL.Interpolator.vl" IsForward="true" />
+  <DocumentDependency Id="LzfqBeHbfj9PcVVyMByHke" Location="./VL/VL.Interpolator.LaunchpadControl.vl" />
 </Document>
