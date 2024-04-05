@@ -303,7 +303,7 @@
             <ControlPoint Id="EnY7QlLzRAQL159lqTXYjW" Bounds="502,576" />
             <ControlPoint Id="Vx0X0IsNhkyMM3WN0SHuDa" Bounds="781,789" />
             <ControlPoint Id="LCG7FA2TD4gQMSbM0HFrvX" Bounds="803,810" />
-            <Node Bounds="1085,657,99,19" Id="MWWgRLzcTT0OJZ7EWUNU5r">
+            <Node Bounds="1173,725,99,19" Id="MWWgRLzcTT0OJZ7EWUNU5r">
               <p:NodeReference LastCategoryFullName="Interpolator.LaunchpadControl" LastDependency="VL.Interpolator.LaunchpadControl.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="LaunchPadControl" />
@@ -311,11 +311,12 @@
               <Pin Id="LzNvk0gcWP0Na8Cz7N5zdI" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="Dt2KaAjCNGBLPvQ5MIBgYg" Name="Multitrack_Runtime" Kind="InputPin" />
               <Pin Id="I3vHtp2NjlvQIK3hujEXKg" Name="Interaction" Kind="InputPin" />
+              <Pin Id="D2w5dMs5KH1PfhXz8siieM" Name="Enable" Kind="InputPin" />
               <Pin Id="M0DKoMq6ge3Lo26TgbJrF4" Name="Is Open" Kind="OutputPin" />
             </Node>
-            <Pad Id="DcVU4U1kTBQN4LJu59CQAF" SlotId="EURKGOEscqJNK4J0ReGOM7" Bounds="1182,619" />
-            <Pad Id="Q7StGXgw9j6OQOcpShi8Zo" Comment="Is Open" Bounds="1087,707,35,15" ShowValueBox="true" isIOBox="true" />
-            <Overlay Id="OPcSJXG78SUMt9otcG73NT" Name="Launchpad Track &amp; Keyframe Selector" Bounds="1028,516,206,228">
+            <Pad Id="DcVU4U1kTBQN4LJu59CQAF" SlotId="EURKGOEscqJNK4J0ReGOM7" Bounds="1175,706" />
+            <Pad Id="Q7StGXgw9j6OQOcpShi8Zo" Comment="Is Open" Bounds="1175,764,35,15" ShowValueBox="true" isIOBox="true" />
+            <Overlay Id="OPcSJXG78SUMt9otcG73NT" Name="Launchpad Track &amp; Keyframe Selector" Bounds="1028,516,379,307">
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
             </Overlay>
             <Node Bounds="1099,302,79,26" Id="M46CYYZ4C7iOVFu1tlHwAf">
@@ -366,7 +367,33 @@
             </Node>
             <Pad Id="Hib8HM4swhtN3IGwvATMah" SlotId="C4lRacDto3JPhkCM3gH4VU" Bounds="1059,350" />
             <Pad Id="NUwsmlcMoWQPBnxQWMWZnx" SlotId="C4lRacDto3JPhkCM3gH4VU" Bounds="823,841" />
-            <Pad Id="Tm5VL2MOJaLO7Fm10VnE4C" SlotId="C4lRacDto3JPhkCM3gH4VU" Bounds="1181,640" />
+            <Pad Id="Tm5VL2MOJaLO7Fm10VnE4C" SlotId="C4lRacDto3JPhkCM3gH4VU" Bounds="1175,670" />
+            <Pad Id="UeboGbYAs9vP0dtfjhJcZo" SlotId="DqOZ3VvcrL9PMx4l2bryQJ" Bounds="1229,627" />
+            <Node Bounds="1227,653,43,19" Id="Q78LqiKfIToPPh9uGebTZT">
+              <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Select (ByPath)" />
+              </p:NodeReference>
+              <Pin Id="CGxoBOJUyQpQBuabT0oUld" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="SnfZ1rOFgbrPS9m19zwGe5" Name="Input" Kind="InputPin" />
+              <Pin Id="KGDijOsO5U8NlsovUK9362" Name="Path" Kind="InputPin" />
+              <Pin Id="UyHQWuELeEtQZ6LmEOiMaY" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="GjnDCmeK0G0P1rVYfX7ebR" Comment="" Bounds="1245,627,93,15" ShowValueBox="true" isIOBox="true" Value="EnableInteraction">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="1227,683,45,26" Id="Stt9E41HDTNPW7T6O5bege">
+              <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="MutableInterfaceType" Name="Channel" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="Value" />
+              </p:NodeReference>
+              <Pin Id="EYBjOeODmsCNT9W6QRcEmp" Name="Input" Kind="StateInputPin" />
+              <Pin Id="Q2FhfZUKhkANIn07YtGnzi" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="NizZOFneEu1LKlnfrDyNoA" Name="Value" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <Link Id="OEaqadoRWZOMxH9BJI3Dyd" Ids="Vzi9s9TlxGtP4c0z4a4flU,SrRsNyr6h1OPFM942T9nSK" />
           <Link Id="PJYrNgNbZJBOvIdey1hhVV" Ids="TmkDqCUgRMVMRRYlUvKHm9,QuCYqSJyKUPOtC9QFCdv2n" IsFeedback="true" />
@@ -502,6 +529,10 @@
           <Link Id="CPnPkrjWvcqN2Ptjbd0aQP" Ids="DljsB5e8GEQOvzatnGL2lg,Hib8HM4swhtN3IGwvATMah" />
           <Link Id="NBSMzW3UwoIPVRVGU7RNXk" Ids="NUwsmlcMoWQPBnxQWMWZnx,MQcRvna4OgPNodrl7j1jHL" />
           <Link Id="GQRf1lYuLxRNvi2k5Ext9x" Ids="Tm5VL2MOJaLO7Fm10VnE4C,I3vHtp2NjlvQIK3hujEXKg" />
+          <Link Id="A6GTxphOPHgMJTk5TDh4VD" Ids="UeboGbYAs9vP0dtfjhJcZo,SnfZ1rOFgbrPS9m19zwGe5" />
+          <Link Id="IRrgk5hC3jTMGrNAdwObT3" Ids="GjnDCmeK0G0P1rVYfX7ebR,KGDijOsO5U8NlsovUK9362" />
+          <Link Id="CMFpcsZxxOZLbU6iexKhNR" Ids="UyHQWuELeEtQZ6LmEOiMaY,EYBjOeODmsCNT9W6QRcEmp" />
+          <Link Id="NIQX34D1n1NPsEvannzhg8" Ids="NizZOFneEu1LKlnfrDyNoA,D2w5dMs5KH1PfhXz8siieM" />
         </Patch>
       </Node>
       <!--
