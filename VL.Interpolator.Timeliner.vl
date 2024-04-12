@@ -155,6 +155,7 @@
                 <Choice Kind="ProcessAppFlag" Name="_SYSTEM" />
               </p:NodeReference>
               <Pin Id="KTF7BDQ2OzGOvYt3LPn7ek" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="GtheJfIkTZxLKww3jsojC2" Name="SettingsPath" Kind="InputPin" />
               <Pin Id="TfQMn0K4UHnPj8cZVrMC8z" Name="InitPath" Kind="InputPin" />
               <Pin Id="FkYH4vuKxBUOD3YM2dIVhz" Name="Model" Kind="InputPin" />
               <Pin Id="QTyqAqqWpxRNLsXd47UIVV" Name="Undo Levels" Kind="InputPin" IsHidden="true" />
@@ -174,7 +175,7 @@
               <Pin Id="TtNIyYbWDgBPN7mWiBPKwY" Name="Write" Kind="OutputPin" />
             </Node>
             <Pad Id="HUdbRF4F6tDLUinLK2bDrx" SlotId="PUZxIsT70lrLrMqFzeZIjb" Bounds="362,1167" />
-            <Pad Id="LqZjHaLHG0mMQ7b4AlKLTL" SlotId="PUZxIsT70lrLrMqFzeZIjb" Bounds="722,659" />
+            <Pad Id="LqZjHaLHG0mMQ7b4AlKLTL" SlotId="PUZxIsT70lrLrMqFzeZIjb" Bounds="722,656" />
             <Node Bounds="604,276,66,26" Id="GlT3J8BZ8gTLs7V0e6oO4T">
               <p:NodeReference LastCategoryFullName="Interpolator.Timeliner.Project_Model" LastDependency="VL.Interpolator.Timeliner.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -220,7 +221,7 @@
               <Pin Id="CCgt0uhj1b4QKC4IK24iAB" Name="Value" Kind="OutputPin" />
             </Node>
             <Pad Id="StPCXRdtvztLsoZ3dGx3ZK" SlotId="VQaaOhEvb8zPwYu10xcgim" Bounds="345,277" />
-            <Pad Id="DnBJAfJVI4MQHYEJ8B7SSX" SlotId="Jzkl4MjokwjLlnjMwsly5m" Bounds="612,659" />
+            <Pad Id="DnBJAfJVI4MQHYEJ8B7SSX" SlotId="Jzkl4MjokwjLlnjMwsly5m" Bounds="649,656" />
             <Overlay Id="SOyKSEG8CgAMClHgvyBfH2" Name="Sync" Bounds="1298,198,368,259">
               <p:ColorIndex p:Type="Int32">3</p:ColorIndex>
             </Overlay>
@@ -300,7 +301,7 @@
             <ControlPoint Id="DbzYpD2UbqNQHZfLM79dl6" Bounds="723,822" />
             <Pad Id="JRnBmBOAmcmOPqTsxd1CeA" SlotId="QX5OyoPchZePWc1RxxZhXC" Bounds="743,854" />
             <Pad Id="Cfzy0KcU8evNLRotKym6nm" SlotId="VQaaOhEvb8zPwYu10xcgim" Bounds="762,878" />
-            <ControlPoint Id="EnY7QlLzRAQL159lqTXYjW" Bounds="502,636" />
+            <ControlPoint Id="EnY7QlLzRAQL159lqTXYjW" Bounds="576,620" />
             <ControlPoint Id="Vx0X0IsNhkyMM3WN0SHuDa" Bounds="781,849" />
             <ControlPoint Id="LCG7FA2TD4gQMSbM0HFrvX" Bounds="803,870" />
             <Node Bounds="1173,725,99,19" Id="MWWgRLzcTT0OJZ7EWUNU5r">
@@ -394,6 +395,7 @@
               <Pin Id="Q2FhfZUKhkANIn07YtGnzi" Name="Output" Kind="StateOutputPin" />
               <Pin Id="NizZOFneEu1LKlnfrDyNoA" Name="Value" Kind="OutputPin" />
             </Node>
+            <ControlPoint Id="KP0IiEWF6NJPFaIy2W2CZB" Bounds="502,596" />
           </Canvas>
           <Link Id="OEaqadoRWZOMxH9BJI3Dyd" Ids="Vzi9s9TlxGtP4c0z4a4flU,SrRsNyr6h1OPFM942T9nSK" />
           <Link Id="PJYrNgNbZJBOvIdey1hhVV" Ids="TmkDqCUgRMVMRRYlUvKHm9,QuCYqSJyKUPOtC9QFCdv2n" IsFeedback="true" />
@@ -472,38 +474,11 @@
           <Link Id="KC4gucfrxIBPqnbD9dbxdH" Ids="Cfzy0KcU8evNLRotKym6nm,UKrgVMMJPHdPhfFyI1LyHg" />
           <Link Id="Iej1TsVmOVXMuL9BHwvtZp" Ids="EnY7QlLzRAQL159lqTXYjW,TfQMn0K4UHnPj8cZVrMC8z" />
           <Link Id="B32wXwCfIRnNU8dnxaXcdD" Ids="AmfY2qhqbgeQGt4Ly5PNxF,EnY7QlLzRAQL159lqTXYjW" IsHidden="true" />
-          <Patch Id="TCtvWjoxLW2OiWqpPaDbCW" Name="Create" ParticipatingElements="D8OtOUfu0ayQBxNlNuCBas,QBae3LkQpGTLKEeU1z7cT2,TLTNbTf7lwZO82pVpBXQD3,KGe2DASe2GKNLTV1rjEZtf,L2gkgis4YVZPZb2ZiWdkSP,N2B3WYCYN8kOJiMSXFHjOt,CPnPkrjWvcqN2Ptjbd0aQP">
-            <Pin Id="AmfY2qhqbgeQGt4Ly5PNxF" Name="InitPath" Kind="InputPin" DefaultValue="AppFiles\Files\Init.xml" />
-            <Pin Id="C8Ug1vqThu7OTpLjGEPNjm" Name="TargetAppModel" Kind="InputPin" />
-          </Patch>
-          <Patch Id="ABvYZVIxOnANgZ00Wm169c" Name="Update" />
-          <Patch Id="GbtFjvbETATLCPalhlKGms" Name="SyncModels" ParticipatingElements="NCbfgn5GT1fNlsPnJfji6m,LaNzWD2ZdwBNSRkIDTIg5Y,RyPgEDci8lRPmca6C9cm10" />
-          <Patch Id="RTfl9KfOE6lPmlOxQC6eUb" Name="GetMultitrackRuntime">
-            <Pin Id="LnevT4gezI2L9tCsiExd8S" Name="Multitrack_Runtime" Kind="OutputPin" />
-          </Patch>
-          <Patch Id="UdTf2rm362ANvQZdzuFyro" Name="GetModel">
-            <Pin Id="Ab7VPOKMfhOOmGp1uNZ1v0" Name="Model" Kind="OutputPin" />
-          </Patch>
-          <Patch Id="D3l7E1fctjwLeM49H2NDVn" Name="GetTargetApp">
-            <Pin Id="U0HA05K24rxMnn0HB3lPFX" Name="TargetApp" Kind="OutputPin" />
-          </Patch>
-          <Patch Id="DAasxNwkqAaOXwnRGJQpMj" Name="GetTargetAppCopy">
-            <Pin Id="Tj7TiSZ2i6MQddE8iRGDNl" Name="TargetAppCopy" Kind="OutputPin" />
-          </Patch>
-          <Patch Id="CAa0FiuB83oOHgzL1rMwSb" Name="GetSpatialAudioCopy">
-            <Pin Id="SoJyIFrsPBbLCMaWUQU7QH" Name="SpatialAudioCopy" Kind="OutputPin" />
-          </Patch>
-          <Patch Id="IfBBYRtRXqRLHujfFTCcd7" Name="Editor">
-            <Pin Id="FflN5DPAhKHLHqGVrBBQDL" Name="TargetAppEditorFactory" Kind="InputPin" />
-            <Pin Id="Nf9cRX7bgGeNvcYvGgwjYH" Name="Window Name" Kind="InputPin" Visibility="Optional" />
-            <Pin Id="AbJeuaypesKOIWK3ps6hHM" Name="Closing Message" Kind="InputPin" Visibility="Optional" />
-          </Patch>
           <Link Id="OrnCnIXcZGeQaUk9WLqfcu" Ids="Vx0X0IsNhkyMM3WN0SHuDa,IK4z8NOdrPgMOjMO1qWzAu" />
           <Link Id="CVebgIz8TAmPoHAlYzAlpI" Ids="Nf9cRX7bgGeNvcYvGgwjYH,Vx0X0IsNhkyMM3WN0SHuDa" IsHidden="true" />
           <Link Id="EDwQPYUR0EBNxwAheIRR35" Ids="LCG7FA2TD4gQMSbM0HFrvX,KwpCOlxLzQKL3rcWe8NaZg" />
           <Link Id="QJ2uBKouQcoLP37BkOY7Es" Ids="AbJeuaypesKOIWK3ps6hHM,LCG7FA2TD4gQMSbM0HFrvX" IsHidden="true" />
           <Link Id="NDwHFqqoD3EN3u9XIRuLI8" Ids="M0DKoMq6ge3Lo26TgbJrF4,Q7StGXgw9j6OQOcpShi8Zo" />
-          <Patch Id="Pw2E6gydlMTOwkR0dIEfNJ" Name="LaunchpadControl" ParticipatingElements="RiWAss4i4KSNhop4fAyZ1M" />
           <ProcessDefinition Id="Ls7i6GxEmxjMS470KjILN5" HasStateOut="true">
             <Fragment Id="HwTLi3vnDmvPPas2RuQ3x9" Patch="TCtvWjoxLW2OiWqpPaDbCW" Enabled="true" />
             <Fragment Id="SyXN1diiD1zPvMJrovhwbp" Patch="ABvYZVIxOnANgZ00Wm169c" Enabled="true" />
@@ -533,6 +508,36 @@
           <Link Id="IRrgk5hC3jTMGrNAdwObT3" Ids="GjnDCmeK0G0P1rVYfX7ebR,KGDijOsO5U8NlsovUK9362" />
           <Link Id="CMFpcsZxxOZLbU6iexKhNR" Ids="UyHQWuELeEtQZ6LmEOiMaY,EYBjOeODmsCNT9W6QRcEmp" />
           <Link Id="NIQX34D1n1NPsEvannzhg8" Ids="NizZOFneEu1LKlnfrDyNoA,D2w5dMs5KH1PfhXz8siieM" />
+          <Link Id="OtNlifJ9sLnPzXK23MQMjN" Ids="KP0IiEWF6NJPFaIy2W2CZB,GtheJfIkTZxLKww3jsojC2" />
+          <Link Id="GxKemObZ5oNPhvyDKe81Ez" Ids="DMnFCRsudPGOaSteImV26f,KP0IiEWF6NJPFaIy2W2CZB" IsHidden="true" />
+          <Patch Id="TCtvWjoxLW2OiWqpPaDbCW" Name="Create" ParticipatingElements="D8OtOUfu0ayQBxNlNuCBas,QBae3LkQpGTLKEeU1z7cT2,TLTNbTf7lwZO82pVpBXQD3,KGe2DASe2GKNLTV1rjEZtf,L2gkgis4YVZPZb2ZiWdkSP,N2B3WYCYN8kOJiMSXFHjOt,CPnPkrjWvcqN2Ptjbd0aQP">
+            <Pin Id="DMnFCRsudPGOaSteImV26f" Name="SettingsPath" Kind="InputPin" DefaultValue="Settings\GlobalSettings.xml" Visibility="Optional" />
+            <Pin Id="AmfY2qhqbgeQGt4Ly5PNxF" Name="InitPath" Kind="InputPin" DefaultValue="AppFiles\Files\Init.xml" Visibility="Optional" />
+            <Pin Id="C8Ug1vqThu7OTpLjGEPNjm" Name="TargetAppModel" Kind="InputPin" />
+          </Patch>
+          <Patch Id="ABvYZVIxOnANgZ00Wm169c" Name="Update" />
+          <Patch Id="GbtFjvbETATLCPalhlKGms" Name="SyncModels" ParticipatingElements="NCbfgn5GT1fNlsPnJfji6m,LaNzWD2ZdwBNSRkIDTIg5Y,RyPgEDci8lRPmca6C9cm10" />
+          <Patch Id="RTfl9KfOE6lPmlOxQC6eUb" Name="GetMultitrackRuntime">
+            <Pin Id="LnevT4gezI2L9tCsiExd8S" Name="Multitrack_Runtime" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="UdTf2rm362ANvQZdzuFyro" Name="GetModel">
+            <Pin Id="Ab7VPOKMfhOOmGp1uNZ1v0" Name="Model" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="D3l7E1fctjwLeM49H2NDVn" Name="GetTargetApp">
+            <Pin Id="U0HA05K24rxMnn0HB3lPFX" Name="TargetApp" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="DAasxNwkqAaOXwnRGJQpMj" Name="GetTargetAppCopy">
+            <Pin Id="Tj7TiSZ2i6MQddE8iRGDNl" Name="TargetAppCopy" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="CAa0FiuB83oOHgzL1rMwSb" Name="GetSpatialAudioCopy">
+            <Pin Id="SoJyIFrsPBbLCMaWUQU7QH" Name="SpatialAudioCopy" Kind="OutputPin" />
+          </Patch>
+          <Patch Id="IfBBYRtRXqRLHujfFTCcd7" Name="Editor">
+            <Pin Id="FflN5DPAhKHLHqGVrBBQDL" Name="TargetAppEditorFactory" Kind="InputPin" />
+            <Pin Id="Nf9cRX7bgGeNvcYvGgwjYH" Name="Window Name" Kind="InputPin" Visibility="Optional" />
+            <Pin Id="AbJeuaypesKOIWK3ps6hHM" Name="Closing Message" Kind="InputPin" Visibility="Optional" />
+          </Patch>
+          <Patch Id="Pw2E6gydlMTOwkR0dIEfNJ" Name="LaunchpadControl" ParticipatingElements="RiWAss4i4KSNhop4fAyZ1M" />
         </Patch>
       </Node>
       <!--
