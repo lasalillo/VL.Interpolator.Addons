@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="VloQWmJKfLaP5w7R1cYVxI" LanguageVersion="2024.6.0-0314-g35facf5fa7" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2024.6.0-0314-g35facf5fa7" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="VloQWmJKfLaP5w7R1cYVxI" LanguageVersion="2024.6.3-0001-g5adacc4504" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2024.6.3-0001-g5adacc4504" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="AudioAnalysis" CanvasType="FullCategory">
       <!--
@@ -412,7 +412,7 @@
             <Canvas Id="BWfeO7CvKBTQG8LOn1hDfp" CanvasType="Group">
               <ControlPoint Id="PxMXRieN67aOifdhyLp1Oa" Bounds="490,169" />
               <ControlPoint Id="HCoNwdm7PO4MzUCqcVH8Ab" Bounds="432,166" />
-              <ControlPoint Id="KcGG0fzfRbhNMryBn57JZI" Bounds="442,629" />
+              <ControlPoint Id="KcGG0fzfRbhNMryBn57JZI" Bounds="501,714" />
               <Node Bounds="432,200,25,19" Id="SZnifyVqYq9Nz33OfeUpug">
                 <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -422,14 +422,14 @@
                 <Pin Id="RQa7efkaITCLWTm7LdPfyB" Name="Input 2" Kind="InputPin" />
                 <Pin Id="Ev8YcF1DmAYMexTABN0ArO" Name="Result" Kind="OutputPin" />
               </Node>
-              <Node Bounds="432,235,310,358" Id="FONl5iIjxr5PMVCbB5RijD">
+              <Node Bounds="430,235,312,322" Id="FONl5iIjxr5PMVCbB5RijD">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <Choice Kind="ApplicationStatefulRegion" Name="If" />
                   <FullNameCategoryReference ID="Primitive" />
                 </p:NodeReference>
                 <Pin Id="DtEA8QNVnKfOlKieDiUVdR" Name="Condition" Kind="InputPin" />
-                <ControlPoint Id="HTFgI3XB31GNgYjbl4qSzd" Bounds="498,587" Alignment="Bottom" />
+                <ControlPoint Id="HTFgI3XB31GNgYjbl4qSzd" Bounds="498,551" Alignment="Bottom" />
                 <ControlPoint Id="BBMvS7fUeHvMQvpk9T8SO2" Bounds="463,241" Alignment="Top" />
                 <Patch Id="G940V6L76GUPG6vMPzR2kd" ManuallySortedPins="true">
                   <Patch Id="RgmhyQKkAX1NxhJe3Njdaj" Name="Create" ManuallySortedPins="true" />
@@ -502,15 +502,15 @@
                     <Pin Id="MSkUPZuNrrcLqVlnH8ofEB" Name="Maximum" Kind="InputPin" DefaultValue="1" />
                     <Pin Id="C0OIE6A0E6PNt5dCLS5OJ4" Name="Output" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="484,372,132,178" Id="IaFUnLXiErINiG1vB4gytA">
+                  <Node Bounds="482,383,134,154" Id="IaFUnLXiErINiG1vB4gytA">
                     <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                       <FullNameCategoryReference ID="Primitive" />
                     </p:NodeReference>
                     <Pin Id="AMjJhIAlTJ2OVTaqss64yV" Name="Break" Kind="OutputPin" />
-                    <ControlPoint Id="CbQAfK9L3nJNdGwWHUJXBn" Bounds="522,378" Alignment="Top" />
-                    <ControlPoint Id="BCTLiaj6J92NUUKu3HrXvQ" Bounds="498,544" Alignment="Bottom" />
+                    <ControlPoint Id="CbQAfK9L3nJNdGwWHUJXBn" Bounds="496,389" Alignment="Top" />
+                    <ControlPoint Id="BCTLiaj6J92NUUKu3HrXvQ" Bounds="498,531" Alignment="Bottom" />
                     <Patch Id="DIveajPNRR6OAHoWJdbtNN" ManuallySortedPins="true">
                       <Patch Id="KHLEedTM1wnNMVidqRkunz" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="TvDOI31mUf3NGCpZmvVY6m" Name="Update" ManuallySortedPins="true" />
@@ -580,10 +580,8 @@
             <Link Id="QmnRxSY9vWaNMj4NWLQtMi" Ids="C0OIE6A0E6PNt5dCLS5OJ4,SSTbVAfrWCgLyBNpndNnnx" />
             <Link Id="U5C90elVDDaMHX4d61k9ai" Ids="HCoNwdm7PO4MzUCqcVH8Ab,BBMvS7fUeHvMQvpk9T8SO2" />
             <Link Id="NaxknmikLQ2OUOyAX2VFjM" Ids="BBMvS7fUeHvMQvpk9T8SO2,CbQAfK9L3nJNdGwWHUJXBn" />
-            <Link Id="Jm27R00pTPfOivdy2nJwbB" Ids="HTFgI3XB31GNgYjbl4qSzd,KcGG0fzfRbhNMryBn57JZI" />
             <Link Id="GLNuOh1ya85NDRfLvjAKg6" Ids="CbQAfK9L3nJNdGwWHUJXBn,IQt5JWkSscbOvKg1zbYD7H" />
             <Link Id="ITigGQ8gymJL6vqJjFRJOy" Ids="CbQAfK9L3nJNdGwWHUJXBn,SLSfOO0ThDgMSAQ9IwIUbW" />
-            <Link Id="GTDfM03coZCPJwrejwNDZy" Ids="PSmlF1czsysLxAbknMfsZh,BCTLiaj6J92NUUKu3HrXvQ" />
             <Link Id="RFZ7AUO3asXMmn34HyXgbY" Ids="A0bedGZzJjxPvUPn7fu164,QuZ5yAIa9bfPJqlcyCKNwv" />
             <Link Id="PuK9OPwQL7sLkXOGzTc0J7" Ids="MA8FBh1TqqeM0WCSdmmyf5,DJEcpcENv9uP9ix0xDWphV" />
             <Link Id="PMMCmeC4X0vQIioa7vKn6k" Ids="CbQAfK9L3nJNdGwWHUJXBn,FoLMDMd1QTNPcqIeeO6Vv3" />
@@ -603,6 +601,8 @@
               <Pin Id="J8aRPEkY1NKM5Ulg009VQF" Name="Smooth" Kind="InputPin" Bounds="574,188" />
               <Pin Id="RKqRGkad3VZMsiMv19K9qV" Name="Output" Kind="OutputPin" Bounds="449,480" />
             </Patch>
+            <Link Id="AprJMJgGXHOMkwlceHWghL" Ids="PSmlF1czsysLxAbknMfsZh,BCTLiaj6J92NUUKu3HrXvQ" />
+            <Link Id="RtLm5TrkH80LeOO2AJjUl5" Ids="HTFgI3XB31GNgYjbl4qSzd,KcGG0fzfRbhNMryBn57JZI" />
           </Patch>
         </Node>
         <!--
@@ -5271,7 +5271,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JBYu5xS08XeN9YRj2XW9QD" Location="VL.Skia" Version="2024.6.0-0314-g35facf5fa7" />
-  <NugetDependency Id="T7vPGFRY7LGQWzgpXpCsuu" Location="VL.Serialization.FSPickler" Version="2024.6.0-0314-g35facf5fa7" />
+  <NugetDependency Id="JBYu5xS08XeN9YRj2XW9QD" Location="VL.Skia" Version="2024.6.3-0001-g5adacc4504" />
+  <NugetDependency Id="T7vPGFRY7LGQWzgpXpCsuu" Location="VL.Serialization.FSPickler" Version="2024.6.3-0001-g5adacc4504" />
   <NugetDependency Id="INZ3Mvh7C3PPwt5shPlWmb" Location="VL.Audio" Version="1.5.0" />
 </Document>

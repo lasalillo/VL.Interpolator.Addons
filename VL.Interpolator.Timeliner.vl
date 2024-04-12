@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="I7dVCxgdGmCQAfXrupiHbk" LanguageVersion="2024.6.1-0003-gf771bc5e18" Version="0.128">
-  <NugetDependency Id="UlM8oE5weZyLwsXCtxiNDg" Location="VL.CoreLib" Version="2024.6.1-0003-gf771bc5e18" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="I7dVCxgdGmCQAfXrupiHbk" LanguageVersion="2024.6.3-0001-g5adacc4504" Version="0.128">
+  <NugetDependency Id="UlM8oE5weZyLwsXCtxiNDg" Location="VL.CoreLib" Version="2024.6.3-0001-g5adacc4504" />
   <Patch Id="VCXuvwfr22DNsZ6cNBlImg">
     <Canvas Id="VtEItcFxFG4L6rgp9xltbu" DefaultCategory="Interpolator.Timeliner" CanvasType="FullCategory">
       <!--
@@ -939,7 +939,7 @@
                 </Node>
               </Patch>
             </Node>
-            <Node Bounds="1493,547,104,94" Id="DwdRiOviQYTPBcawx5LyiR">
+            <Node Bounds="1493,560,103,81" Id="DwdRiOviQYTPBcawx5LyiR">
               <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
@@ -955,7 +955,7 @@
                   <Pin Id="OToORekT66mLK7R8JIaZ1g" Name="Input 1" Kind="InputPin" />
                   <Pin Id="R1nBXItlXQpLZKm8j4VlWf" Name="Output" Kind="OutputPin" />
                 </Patch>
-                <ControlPoint Id="FsyLVSu6pQ5LJc8X9813yQ" Bounds="1541,555" />
+                <ControlPoint Id="FsyLVSu6pQ5LJc8X9813yQ" Bounds="1540,568" />
                 <ControlPoint Id="R3wZAqaG8G6Qd12lMA5pIY" Bounds="1507,634" />
                 <Node Bounds="1505,584,72,26" Id="JKjstY8TS0ALTOY9hPuPkm">
                   <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
@@ -1041,6 +1041,18 @@
               <Pin Id="CfULDAAtqwqPXyKuA7Tcso" Name="Apply" Kind="InputPin" />
               <Pin Id="GiXDuyWo6GQQJ8WRLHxWU2" Name="Output" Kind="StateOutputPin" />
             </Node>
+            <Node Bounds="1889,457,118,19" Id="Kfjt0hJ9qTAPhEK5GFCYDe">
+              <p:NodeReference LastCategoryFullName="ImGui.Extensions.Binder" LastDependency="VL.ImGui.Extensions.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="AvoidDuplicatedAndNullGUIDs" />
+              </p:NodeReference>
+              <Pin Id="Dak9XsaI32xMeIeY9XVlqy" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="C8jAfL8ouCxM5LWOMzDq4V" Name="Input" Kind="InputPin" />
+              <Pin Id="CHvpJtCwWdmP9rSOCSTtRY" Name="Paths" Kind="OutputPin" />
+              <Pin Id="Vumm2coVwsCQAlHhe8AziG" Name="On Data" Kind="OutputPin" />
+            </Node>
+            <Pad Id="JWSwKGeLty3M88r8t7Iiot" Comment="On Data" Bounds="1921,538,35,35" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="AthQLeX1a6ELSKnrp1mdsR" Comment="Paths" Bounds="1890,608,497,95" ShowValueBox="true" isIOBox="true" />
           </Canvas>
           <ProcessDefinition Id="CAMPNQoP1frPi50Mfyzsht">
             <Fragment Id="Mob0Qel2ooTN1kZiVSzx5s" Patch="Bch2phGzzKjLYwtM8zaLhA" Enabled="true" />
@@ -1141,6 +1153,9 @@
           <Link Id="Ch4KdckZeXCMgI5JRmFTLp" Ids="KwS3bCTqDSAPlzUJ6FITIQ,UI8hVQEKYBAMwWZCi9kyg0" />
           <Link Id="ODgKkUFpqpxNpl9sOC5dKP" Ids="G6uytu6P6LQQSxRG5kpoG7,G0W5ZGVWHGbMiialJI2J23" />
           <Link Id="N9eqePJLYMhM8GNEG8VsBy" Ids="HOEgcVOZP0DNd8eU34A58t,H9k8y9ZnuBeLaSmrZfFryj" />
+          <Link Id="ItPkS9xfa5eLspJq8pzosk" Ids="AhMI5ur3Mv6N0oSrJH8qOL,C8jAfL8ouCxM5LWOMzDq4V" />
+          <Link Id="AwRUjmycp3OQFrmlHvzg2s" Ids="Vumm2coVwsCQAlHhe8AziG,JWSwKGeLty3M88r8t7Iiot" />
+          <Link Id="FoJsEQJzFVeLrkSXnZKj86" Ids="CHvpJtCwWdmP9rSOCSTtRY,AthQLeX1a6ELSKnrp1mdsR" />
         </Patch>
       </Node>
       <!--
@@ -1544,7 +1559,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="FS8kDPyjJRePqPwlLqsmIu" Location="VL.Skia" Version="2024.6.1-0003-gf771bc5e18" />
+  <NugetDependency Id="FS8kDPyjJRePqPwlLqsmIu" Location="VL.Skia" Version="2024.6.3-0001-g5adacc4504" />
   <DocumentDependency Id="BIqAcaohfjfOr8WDq1zJ9s" Location="./VL/VL.Audio.Analysis/VL.Audio.Analysis.vl" IsForward="true" />
   <DocumentDependency Id="HC91bScuM4yPKTNVNMhbwv" Location="../VL.ImGui.Extensions/VL.ImGui.Extensions.vl" />
   <DocumentDependency Id="AzZsIkAyVQqPOi6cI5SG5B" Location="./VL/VL.Interpolator.Editor.vl" IsForward="true" />
