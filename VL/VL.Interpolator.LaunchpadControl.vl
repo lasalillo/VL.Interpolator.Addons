@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="QokRN7seIYqL3DoiKyJk2a" LanguageVersion="2024.6.1-0003-gf771bc5e18" Version="0.128">
-  <NugetDependency Id="FaayHn5WrLtQEq3dPIEzq3" Location="VL.CoreLib" Version="2024.6.1-0003-gf771bc5e18" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="QokRN7seIYqL3DoiKyJk2a" LanguageVersion="2024.6.3-0005-g72dc3a29e4" Version="0.128">
+  <NugetDependency Id="FaayHn5WrLtQEq3dPIEzq3" Location="VL.CoreLib" Version="2024.6.3-0005-g72dc3a29e4" />
   <Patch Id="Ftv4OeYKlLWLX6indymmJz">
     <Canvas Id="PP8hWbjWAZdLD4olAKI0dx" DefaultCategory="Interpolator.LaunchpadControl" CanvasType="FullCategory">
       <!--
@@ -159,8 +159,6 @@
               <Pin Id="BLRrlvpRDNwLU1TzNK5ziN" Name="Error Message" Kind="OutputPin" />
               <Pin Id="JtXzoZIRNwaL6kqFbRmJrD" Name="Exceptions" Kind="OutputPin" />
               <Patch Id="EuRhtxh77jNOfuwVcF0ubv" ManuallySortedPins="true">
-                <Patch Id="DkVQQfnNQcePbcprAfGwVT" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="G5kVOhexRLlQYiDIkN1lfx" Name="Update" ManuallySortedPins="true" />
                 <Node Bounds="198,885,33,19" Id="PADQWbYatTlPUW2EC6Wivl">
                   <p:NodeReference LastCategoryFullName="MiDi.LaunchPad" LastDependency="VL.MiDi.LaunchPad.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -170,6 +168,9 @@
                   <Pin Id="TGqxE5VlduuP43R9ITDidy" Name="Input" Kind="InputPin" />
                   <Pin Id="UlaxLEnK7SYQJg5R9AbY61" Name="Is Open" Kind="OutputPin" />
                 </Node>
+                <Patch Id="DkVQQfnNQcePbcprAfGwVT" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="G5kVOhexRLlQYiDIkN1lfx" Name="Update" ManuallySortedPins="true" />
+                <Patch Id="RJSwCQYsvxULEsdDWnxplH" Name="Dispose" />
               </Patch>
             </Node>
             <Node Bounds="228,499,109,86" Id="DL3FuiNFMXZLcIbMF4Y3T9">
@@ -188,9 +189,8 @@
               <Pin Id="VC0FjzCZ2VnOvAfBRtMXfW" Name="Failure" Kind="OutputPin" />
               <Pin Id="TMeBFCJLFOaNZzgLfmxJaP" Name="Error Message" Kind="OutputPin" />
               <Pin Id="LPpnn1KcniTNw6mA1jfJYk" Name="Exceptions" Kind="OutputPin" />
+              <ControlPoint Id="IX5ENOvtGZeP9qPNxCxPCT" Bounds="282,579" Alignment="Bottom" />
               <Patch Id="VANgM8OwoDRPljqNbUyCIU" ManuallySortedPins="true">
-                <Patch Id="GS1f7AacUc1LRzph7f3Xq7" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="E7hNA7Yrv65Mw0qAtrMuv0" Name="Update" ManuallySortedPins="true" />
                 <Node Bounds="240,538,85,19" Id="Rk3LYxbgagVLulR6lNEGDa">
                   <p:NodeReference LastCategoryFullName="MiDi.LaunchPad" LastDependency="VL.MiDi.LaunchPad.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -204,8 +204,10 @@
                   <Pin Id="H1WhJKvesQ7MJKvPb80Rfi" Name="Is Open" Kind="OutputPin" />
                   <Pin Id="MoRbMyOlShFPayx93mLK8q" Name="Launchpad X Enable" Kind="OutputPin" />
                 </Node>
+                <Patch Id="GS1f7AacUc1LRzph7f3Xq7" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="E7hNA7Yrv65Mw0qAtrMuv0" Name="Update" ManuallySortedPins="true" />
+                <Patch Id="Ayvqd1rzPJhLaCUXYf1MEb" Name="Dispose" />
               </Patch>
-              <ControlPoint Id="IX5ENOvtGZeP9qPNxCxPCT" Bounds="282,579" Alignment="Bottom" />
             </Node>
             <Pad Id="HN5wLmWiAIKNTmkbw7PnIP" Comment="" Bounds="245,1008,35,35" ShowValueBox="true" isIOBox="true" />
             <Node Bounds="198,719,185,19" Id="Ua74N8QcuwKPy9YyXdw6OW">

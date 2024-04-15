@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="QMAAJvWF39POrsgkQbJTOR" LanguageVersion="2024.6.1-0003-gf771bc5e18" Version="0.128">
-  <NugetDependency Id="NXdOhKmRXx1PYrk2puJlYy" Location="VL.CoreLib" Version="2024.6.1-0003-gf771bc5e18" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="QMAAJvWF39POrsgkQbJTOR" LanguageVersion="2024.6.3-0005-g72dc3a29e4" Version="0.128">
+  <NugetDependency Id="NXdOhKmRXx1PYrk2puJlYy" Location="VL.CoreLib" Version="2024.6.3-0005-g72dc3a29e4" />
   <Patch Id="PMMt4HNnbGvOYiTm4td4VC">
     <Canvas Id="UZiBwmuKqeRQC7OL2eGgar" DefaultCategory="Interpolator.Players" CanvasType="FullCategory">
       <Canvas Id="SkfwhS3jXGhPLP3fbTiMrW" Name="Runtime" Position="199,340">
@@ -8419,9 +8419,8 @@
                           <Pin Id="N11AO2eEGwOMI3wNOtjWLP" Name="Error Message" Kind="OutputPin" />
                           <Pin Id="GIxvNgUUoFXLeCLMEbGnS3" Name="Exceptions" Kind="OutputPin" />
                           <ControlPoint Id="DgJFD19ETCwNWUcUxNYuzT" Bounds="346,929" Alignment="Bottom" />
+                          <ControlPoint Id="ETlTcn1LdZ1NvL42Vsacmy" Bounds="419,929" Alignment="Bottom" />
                           <Patch Id="UsYlmMBCGCuQAFE2yrxdfi" ManuallySortedPins="true">
-                            <Patch Id="DTsTbWNVNSULWuBwwdHB9z" Name="Create" ManuallySortedPins="true" />
-                            <Patch Id="B2JmoBMaqDWMzQ5SqqPj4T" Name="Update" ManuallySortedPins="true" />
                             <Node Bounds="332,849,70,66" Id="FXUxuP35sHfLsGG7I5sfeR">
                               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -8482,8 +8481,10 @@
                               <Pin Id="JBHMXEpT92CPBKoWpv2UfA" Name="Input 2" Kind="InputPin" />
                               <Pin Id="ORh4egBXOZtO2qN1bn9Lm6" Name="Output" Kind="StateOutputPin" />
                             </Node>
+                            <Patch Id="DTsTbWNVNSULWuBwwdHB9z" Name="Create" ManuallySortedPins="true" />
+                            <Patch Id="B2JmoBMaqDWMzQ5SqqPj4T" Name="Update" ManuallySortedPins="true" />
+                            <Patch Id="UzWBov74HjaPmqWueRFdY6" Name="Dispose" />
                           </Patch>
-                          <ControlPoint Id="ETlTcn1LdZ1NvL42Vsacmy" Bounds="419,929" Alignment="Bottom" />
                         </Node>
                         <Node Bounds="275,993,326,226" Id="MgdP0IE8PZbMr1RcsLBKMj">
                           <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -9506,8 +9507,6 @@
                 <ControlPoint Id="HBTfY5gZqQrPWmv271nWDF" Bounds="293,880" Alignment="Bottom" />
                 <ControlPoint Id="SKvi5AOY5MUOIFcxJAcFkE" Bounds="342,880" Alignment="Bottom" />
                 <Patch Id="VlMVN8Xn5tLQDtPqDgZ3gA" ManuallySortedPins="true">
-                  <Patch Id="T1PJpVIGpAzNRH3O4NWhH9" Name="Create" ManuallySortedPins="true" />
-                  <Patch Id="IyRAYdRZ0gXMNGB8OkZG3K" Name="Update" ParticipatingElements="UiQVEBd42pULYY2DnVG6Ec,DQELv08hKnyLXZGCqlcSwm" ManuallySortedPins="true" />
                   <Node Bounds="291,781,165,19" Id="FS4Q039iI2yODzzZwe79Br">
                     <p:NodeReference LastCategoryFullName="Video" LastDependency="VL.Video.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -9566,6 +9565,9 @@
                     <Pin Id="KHO5ikerggHLJ460LwqV6D" Name="Apply" Kind="InputPin" />
                     <Pin Id="VCIfwrgLIeaMzq7V32fgYD" Name="Output" Kind="OutputPin" />
                   </Node>
+                  <Patch Id="T1PJpVIGpAzNRH3O4NWhH9" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="IyRAYdRZ0gXMNGB8OkZG3K" Name="Update" ParticipatingElements="UiQVEBd42pULYY2DnVG6Ec,DQELv08hKnyLXZGCqlcSwm" ManuallySortedPins="true" />
+                  <Patch Id="As4tKaJrEBIO6xob8e5ybo" Name="Dispose" />
                 </Patch>
               </Node>
               <ControlPoint Id="BNIr5zEExIVOhcIKAfcaoP" Bounds="525,454" />
@@ -9793,8 +9795,6 @@
                 <ControlPoint Id="BjEkKrNWIs6LE09FW7X3z9" Bounds="293,880" Alignment="Bottom" />
                 <ControlPoint Id="REnhUgyEDf4QOOLf2udMEk" Bounds="342,880" Alignment="Bottom" />
                 <Patch Id="E22PaazovkdLAssHDUNd3G" ManuallySortedPins="true">
-                  <Patch Id="HguhdDCHt7JMxA9COCSxXP" Name="Create" ManuallySortedPins="true" />
-                  <Patch Id="Llo3Ctm2bDVNvmLcva71Kg" Name="Update" ParticipatingElements="BuZntj8kDRYLtgyvSCamlD,DtnrqbNU9vlNXuWosdXz0d" ManuallySortedPins="true" />
                   <Node Bounds="291,781,165,19" Id="MVxEfLeyHWsOzGQDP4Uo86">
                     <p:NodeReference LastCategoryFullName="Video" LastDependency="VL.Video.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -9854,6 +9854,9 @@
                     <Pin Id="SmuYpDqG76EOtAQepdf0v7" Name="Apply" Kind="InputPin" />
                     <Pin Id="V6wYCkyrdtsLjwSAixJmTL" Name="Output" Kind="OutputPin" />
                   </Node>
+                  <Patch Id="HguhdDCHt7JMxA9COCSxXP" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="Llo3Ctm2bDVNvmLcva71Kg" Name="Update" ParticipatingElements="BuZntj8kDRYLtgyvSCamlD,DtnrqbNU9vlNXuWosdXz0d" ManuallySortedPins="true" />
+                  <Patch Id="M04hb09WrXoM4Bai1PUxzg" Name="Dispose" />
                 </Patch>
               </Node>
               <ControlPoint Id="PD39xpuASe3NDgJBwJTuDo" Bounds="525,454" />
@@ -10094,8 +10097,6 @@
                 <ControlPoint Id="Ib5ePco6mwaPS1AhB7dy4x" Bounds="293,857" Alignment="Bottom" />
                 <ControlPoint Id="EYZ1AEd7j4zOBw8k94lP2c" Bounds="342,857" Alignment="Bottom" />
                 <Patch Id="QXt0X5akqjBQODPFbaK52u" ManuallySortedPins="true">
-                  <Patch Id="LniUm0EkCAiQKS8N8tLpZB" Name="Create" ManuallySortedPins="true" />
-                  <Patch Id="Rq9zvDS2WKtLnFDo1AJISC" Name="Update" ManuallySortedPins="true" />
                   <Node Bounds="291,711,165,19" Id="DVpFnUxOHb6K9mXV77qw49">
                     <p:NodeReference LastCategoryFullName="Audio.Source" LastDependency="VL.Audio.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -10154,6 +10155,9 @@
                     <ControlPoint Id="MrY3IQwBJCwMUN5tX1BMMR" Bounds="293,753" Alignment="Top" />
                     <ControlPoint Id="MoYVZwk9zivNqZlwDurbev" Bounds="293,835" Alignment="Bottom" />
                   </Node>
+                  <Patch Id="LniUm0EkCAiQKS8N8tLpZB" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="Rq9zvDS2WKtLnFDo1AJISC" Name="Update" ManuallySortedPins="true" />
+                  <Patch Id="VjhLkAJB3aUQCBUgN7X5iM" Name="Dispose" />
                 </Patch>
               </Node>
               <ControlPoint Id="ESSmOZ1OOPvPUAZMoadjiF" Bounds="525,454" />
@@ -13369,10 +13373,10 @@
     </Node>
   </Patch>
   <NugetDependency Id="Gwe7Zjtqm5FLeAIRJCTdX9" Location="VL.Audio" Version="1.5.0" />
-  <NugetDependency Id="JRzWewSnj7INAUVLJ65LOe" Location="VL.IO.OSC" Version="1.1.0" />
-  <NugetDependency Id="HS5zeKPvcfZOCbNmLdZCz2" Location="VL.Video" Version="2024.6.1-0003-gf771bc5e18" />
+  <NugetDependency Id="JRzWewSnj7INAUVLJ65LOe" Location="VL.IO.OSC" Version="1.1.1" />
+  <NugetDependency Id="HS5zeKPvcfZOCbNmLdZCz2" Location="VL.Video" Version="2024.6.3-0005-g72dc3a29e4" />
   <NugetDependency Id="DnGmZIK3vrBO5QjDJcPoEL" Location="VL.MiDi.Music.Utils" IsForward="true" Version="1.0.9" />
-  <NugetDependency Id="QaPBOO2umKYNQUge9MRk9Y" Location="VL.Stride" Version="2024.6.1-0003-gf771bc5e18" />
+  <NugetDependency Id="QaPBOO2umKYNQUge9MRk9Y" Location="VL.Stride" Version="2024.6.3-0005-g72dc3a29e4" />
   <DocumentDependency Id="AOhxxzgodC4OBFk0TXBvoS" Location="./VL.Audio.Analysis/VL.Audio.Analysis.vl" IsForward="true" />
   <NugetDependency Id="J6kvUrFwXxYQdM9STHJEPo" Location="VL.Interpolator" IsForward="true" Version="1.1.5" />
 </Document>
