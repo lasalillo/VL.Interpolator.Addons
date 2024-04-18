@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="QMAAJvWF39POrsgkQbJTOR" LanguageVersion="2024.6.3-0005-g72dc3a29e4" Version="0.128">
-  <NugetDependency Id="NXdOhKmRXx1PYrk2puJlYy" Location="VL.CoreLib" Version="2024.6.3-0005-g72dc3a29e4" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="QMAAJvWF39POrsgkQbJTOR" LanguageVersion="2024.6.3-0010-gd977b12231" Version="0.128">
+  <NugetDependency Id="NXdOhKmRXx1PYrk2puJlYy" Location="VL.CoreLib" Version="2024.6.3-0010-gd977b12231" />
   <Patch Id="PMMt4HNnbGvOYiTm4td4VC">
     <Canvas Id="UZiBwmuKqeRQC7OL2eGgar" DefaultCategory="Interpolator.Players" CanvasType="FullCategory">
       <Canvas Id="SkfwhS3jXGhPLP3fbTiMrW" Name="Runtime" Position="199,340">
@@ -6745,7 +6745,7 @@
                   <Patch Id="EovTyuZWE16LoYdFPRwIbP" ManuallySortedPins="true">
                     <ControlPoint Id="MDaOKZmkjQ8PyOaj2FhzL8" Bounds="405,313" />
                     <ControlPoint Id="GqWMwrRUMENMeqHXWPotdj" Bounds="412,617" />
-                    <Node Bounds="403,335,333,199" Id="Rjhlcx7Ny5LNFUoZUzkgeT">
+                    <Node Bounds="403,335,330,199" Id="Rjhlcx7Ny5LNFUoZUzkgeT">
                       <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
                         <Choice Kind="OperationCallFlag" Name="Where" />
                         <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -6793,7 +6793,7 @@
                           <Pin Id="GqVxmFeqFeFQMk8k3qvYji" Name="Input 2" Kind="InputPin" />
                           <Pin Id="QxRxnFrh8MpMvPuxbLifzb" Name="Result" Kind="OutputPin" />
                         </Node>
-                        <Pad Id="LYmRMzCiKo5OdJIAvb1CXT" Comment="" Bounds="627,420,78,15" ShowValueBox="true" isIOBox="true" Value="StateMachine">
+                        <Pad Id="LYmRMzCiKo5OdJIAvb1CXT" Comment="" Bounds="624,425,78,15" ShowValueBox="true" isIOBox="true" Value="StateMachine">
                           <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                             <Choice Kind="TypeFlag" Name="String" />
                           </p:TypeAnnotation>
@@ -6929,7 +6929,7 @@
           <Patch Id="HBykIHbnt9xPGbpaZpKnlf" IsGeneric="true">
             <Canvas Id="HoIi86qisulPT8VBIG4AIl" CanvasType="Group">
               <ControlPoint Id="DVD0LLHUj39QPjDeGkxbfK" Bounds="185,1771" />
-              <Node Bounds="359,571,48,19" Id="LBlB0JLaPgMQGcHzT2eP8Q">
+              <Node Bounds="324,509,48,19" Id="LBlB0JLaPgMQGcHzT2eP8Q">
                 <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="CastAs" />
@@ -6939,7 +6939,7 @@
                 <Pin Id="S5CI5WmEN7CNunQ1GYCHlb" Name="Result" Kind="OutputPin" />
                 <Pin Id="NaD7Jjqxjd7LlC8wY2up0v" Name="Success" Kind="OutputPin" />
               </Node>
-              <Node Bounds="351,621,62,26" Id="EoPJoHOyjwpM4ZvhpcP3K1">
+              <Node Bounds="290,575,62,26" Id="EoPJoHOyjwpM4ZvhpcP3K1">
                 <p:NodeReference LastCategoryFullName="Interpolator.Marker" LastDependency="VL.Interpolator.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="Marker" NeedsToBeDirectParent="true" />
@@ -7618,16 +7618,6 @@
                     <Pin Id="MNJRTfTH3lkLsC3mIVTgvJ" Name="Output" Kind="StateOutputPin" />
                     <Pin Id="Bnub43NS3vtNf0wKx6E437" Name="Track" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="397,729,78,26" Id="MmDBEyLWtiYObP7D7Bbt7H">
-                    <p:NodeReference LastCategoryFullName="Interpolator.Marker" LastDependency="VL.Interpolator.vl">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <CategoryReference Kind="RecordType" Name="Marker" NeedsToBeDirectParent="true" />
-                      <Choice Kind="OperationCallFlag" Name="GetCommand" />
-                    </p:NodeReference>
-                    <Pin Id="RRgmPOkA76ULP1XxPjpBkG" Name="Input" Kind="StateInputPin" />
-                    <Pin Id="KwLtkR5l1jyO2pAteHNGCA" Name="Output" Kind="OutputPin" />
-                    <Pin Id="Qs67IMPjb11N5gp1yA6Whs" Name="Command" Kind="OutputPin" />
-                  </Node>
                   <Pad Id="HfeirPUIk1BPKzMJKZ3GgC" Comment="Command" Bounds="363,836,35,15" ShowValueBox="true" isIOBox="true" />
                   <Node Bounds="788,805,163,26" Id="VyzH5qcMbUfM0pJbIRkuJV">
                     <p:NodeReference LastCategoryFullName="Interpolator.KeyframeManager" LastDependency="VL.Interpolator.vl">
@@ -7676,11 +7666,11 @@
                 </p:NodeReference>
                 <Pin Id="BWGB7f1vbbZMAUaEBedEce" Name="CommandOperations" Kind="OutputPin" />
               </Node>
-              <Pad Id="MMJk2Q3xoJMLWVjFqMFPpr" SlotId="IgUeIjwevP9PpAsniZtBAG" Bounds="1070,557" />
-              <Pad Id="G0rr0fETWPCPpcYZ04r1o4" SlotId="RfsfeB4GFQgL1jvfsvwzb6" Bounds="1158,577" />
+              <Pad Id="MMJk2Q3xoJMLWVjFqMFPpr" SlotId="IgUeIjwevP9PpAsniZtBAG" Bounds="1099,555" />
+              <Pad Id="G0rr0fETWPCPpcYZ04r1o4" SlotId="RfsfeB4GFQgL1jvfsvwzb6" Bounds="1198,586" />
               <Pad Id="Bgvvtv3Kwz0NMV12nHAeDw" SlotId="IgUeIjwevP9PpAsniZtBAG" Bounds="267,1341" />
               <Pad Id="INDdIpSFTXPL3kBy4VS1oj" SlotId="RfsfeB4GFQgL1jvfsvwzb6" Bounds="274,1678" />
-              <Node Bounds="351,477,66,26" Id="EZkcgy4j3VuQOqSMnb6fEG">
+              <Node Bounds="263,459,66,26" Id="EZkcgy4j3VuQOqSMnb6fEG">
                 <p:NodeReference LastCategoryFullName="Interpolator.TrackTransfer" LastDependency="VL.Interpolator.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="GetLower" />
@@ -7689,7 +7679,7 @@
                 <Pin Id="Uo0wBvZAwz2ObeAMJmV3ou" Name="Output" Kind="OutputPin" />
                 <Pin Id="GYD4Hzh85P1PV3pq9KPFRQ" Name="Lower" Kind="OutputPin" />
               </Node>
-              <Node Bounds="347,670,37,19" Id="EacYhlR5AmnNucpM6MAJDl">
+              <Node Bounds="347,670,45,19" Id="EacYhlR5AmnNucpM6MAJDl">
                 <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <FullNameCategoryReference ID="Primitive.Boolean" />
@@ -7698,9 +7688,36 @@
                 <Pin Id="C2DwSoWGQy2OXngtD0Uacc" Name="Input" Kind="StateInputPin" />
                 <Pin Id="GioipJXQewZLhKzgbwdcDD" Name="Input 2" Kind="InputPin" />
                 <Pin Id="KFkA6gkOmaQPhLda27gQ4K" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="FpQ1QZ5o0HWLX8UAP8jN0Y" Name="Input 3" Kind="InputPin" />
               </Node>
-              <ControlPoint Id="D0N2SzzXq97LWqBfN7B94z" Bounds="353,399" />
+              <ControlPoint Id="D0N2SzzXq97LWqBfN7B94z" Bounds="265,423" />
               <ControlPoint Id="EAFuXm6uc8cLSSMZUrJum8" Bounds="250,1769" />
+              <Node Bounds="386,559,78,26" Id="MmDBEyLWtiYObP7D7Bbt7H">
+                <p:NodeReference LastCategoryFullName="Interpolator.Marker" LastDependency="VL.Interpolator.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="RecordType" Name="Marker" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="GetCommand" />
+                </p:NodeReference>
+                <Pin Id="RRgmPOkA76ULP1XxPjpBkG" Name="Input" Kind="StateInputPin" />
+                <Pin Id="KwLtkR5l1jyO2pAteHNGCA" Name="Output" Kind="OutputPin" />
+                <Pin Id="Qs67IMPjb11N5gp1yA6Whs" Name="Command" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="387,597,81,19" Id="GR5MLNulBBqPcv5mRIJflN">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="IsNullOrEmpty" />
+                </p:NodeReference>
+                <Pin Id="M0N6G3ERTTONsP4qvlRLaZ" Name="Input" Kind="StateInputPin" />
+                <Pin Id="OKeiTmCm5WjPctbEclDqsN" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="387,626,37,19" Id="Jtzw1SfxkFdNqgisgr8FNb">
+                <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="NOT" />
+                </p:NodeReference>
+                <Pin Id="CzyZeO774BVQDGtKS28BLr" Name="Input" Kind="StateInputPin" />
+                <Pin Id="CQkjIJmLaazM0vdJpJqC9x" Name="Output" Kind="StateOutputPin" />
+              </Node>
             </Canvas>
             <ProcessDefinition Id="G5Czm0zfnlFM03Q98ssdK3">
               <Fragment Id="JPb4cXPFSMvOcWqZwZN3ci" Patch="KFrKtPisTstLtHF0MVV4Wm" Enabled="true" />
@@ -7846,6 +7863,9 @@
               <Pin Id="L5m5wnbvcc6QcBHWx9jn1r" Name="RealtimeControls" Kind="InputPin" />
               <Pin Id="UCw5CPN86JbOtYsrJMSDGo" Name="TrackTransfer" Kind="InputPin" />
             </Patch>
+            <Link Id="RNH4iWGOgprMAQ7XpIFYCD" Ids="Qs67IMPjb11N5gp1yA6Whs,M0N6G3ERTTONsP4qvlRLaZ" />
+            <Link Id="QXUrIQM3udDQHX8OUEU78V" Ids="OKeiTmCm5WjPctbEclDqsN,CzyZeO774BVQDGtKS28BLr" />
+            <Link Id="CKtN9S5wgNLNmAIjcgtnpv" Ids="CQkjIJmLaazM0vdJpJqC9x,FpQ1QZ5o0HWLX8UAP8jN0Y" />
           </Patch>
         </Node>
         <!--
@@ -13374,9 +13394,9 @@
   </Patch>
   <NugetDependency Id="Gwe7Zjtqm5FLeAIRJCTdX9" Location="VL.Audio" Version="1.5.0" />
   <NugetDependency Id="JRzWewSnj7INAUVLJ65LOe" Location="VL.IO.OSC" Version="1.1.1" />
-  <NugetDependency Id="HS5zeKPvcfZOCbNmLdZCz2" Location="VL.Video" Version="2024.6.3-0005-g72dc3a29e4" />
-  <NugetDependency Id="DnGmZIK3vrBO5QjDJcPoEL" Location="VL.MiDi.Music.Utils" IsForward="true" Version="1.0.9" />
-  <NugetDependency Id="QaPBOO2umKYNQUge9MRk9Y" Location="VL.Stride" Version="2024.6.3-0005-g72dc3a29e4" />
+  <NugetDependency Id="HS5zeKPvcfZOCbNmLdZCz2" Location="VL.Video" Version="2024.6.3-0010-gd977b12231" />
+  <NugetDependency Id="DnGmZIK3vrBO5QjDJcPoEL" Location="VL.MiDi.Music.Utils" IsForward="true" Version="1.1.0" />
+  <NugetDependency Id="QaPBOO2umKYNQUge9MRk9Y" Location="VL.Stride" Version="2024.6.3-0010-gd977b12231" />
   <DocumentDependency Id="AOhxxzgodC4OBFk0TXBvoS" Location="./VL.Audio.Analysis/VL.Audio.Analysis.vl" IsForward="true" />
-  <NugetDependency Id="J6kvUrFwXxYQdM9STHJEPo" Location="VL.Interpolator" IsForward="true" Version="1.1.5" />
+  <NugetDependency Id="J6kvUrFwXxYQdM9STHJEPo" Location="VL.Interpolator" IsForward="true" Version="1.1.6" />
 </Document>
