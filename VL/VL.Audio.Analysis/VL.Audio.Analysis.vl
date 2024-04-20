@@ -3799,7 +3799,7 @@
             </Pad>
             <ControlPoint Id="UKIbJacQYAsN6bJ0nrhQfU" Bounds="3065,280" />
             <ControlPoint Id="OTjRPOBPTMAOQknwoxF1fy" Bounds="3076,362" />
-            <Overlay Id="CPSC7cEmRfxMi30J0tP96O" Name="Analysis" Bounds="2583,109,612,368">
+            <Overlay Id="CPSC7cEmRfxMi30J0tP96O" Name="" Bounds="2583,137,612,314">
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
             </Overlay>
             <Pad Id="SsbzCOwFHhQNDYSBPigkmA" SlotId="LafaIYaONP7LCO1oIDYBMO" Bounds="176,342" />
@@ -5094,8 +5094,8 @@
         </p:NodeReference>
         <Patch Id="F5WFG9bYkBsPfCJX9NGyLT">
           <Canvas Id="OdAFaJMildgNKIlF5nmKzA" CanvasType="Group">
-            <Pad Id="Lj0zoLWobjaLvfI9lntYIX" SlotId="HIGvawJ17rHQbN7xZhURgx" Bounds="399,400" />
-            <ControlPoint Id="TS9d6BBhD3JMwzYFYz9IIY" Bounds="397,456" />
+            <Pad Id="Lj0zoLWobjaLvfI9lntYIX" SlotId="HIGvawJ17rHQbN7xZhURgx" Bounds="356,400" />
+            <ControlPoint Id="TS9d6BBhD3JMwzYFYz9IIY" Bounds="356,456" />
             <Node Bounds="354,344,46,26" Id="Gj0GeQm8FdmN9kHRU3ppGz">
               <p:NodeReference LastCategoryFullName="System.GUID" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -5114,7 +5114,7 @@
               <Pin Id="NB61mzknkZJN0FGuQnxZFo" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="BMdTbTT1rdyMfD9QZqtVrU" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="606,354,39,19" Id="GvBNhudypq8NPRXICTXtCJ">
+            <Node Bounds="606,344,39,19" Id="GvBNhudypq8NPRXICTXtCJ">
               <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
@@ -5125,12 +5125,32 @@
             </Node>
             <Pad Id="U5YQHUqep8rL95YHag3RWA" SlotId="TSddq6qStHRMxWI5Zfj7mB" Bounds="608,400" />
             <ControlPoint Id="FzGHYrTzHvSMiDE4Xmx6Bq" Bounds="608,459" />
+            <Pad Id="KLKMZTKr0V8LU9uGqFii9E" SlotId="NgP1RiQCmujLSYiJg0ZGnX" Bounds="922,400" />
+            <ControlPoint Id="QLe91Cn5ofFOmjJ0vDH0Es" Bounds="922,310" />
+            <ControlPoint Id="JtwKaXECy4YOVn7q3emQ0I" Bounds="922,484" />
+            <Pad Id="NqQS9f7Jl9iO0jOYoQqWy3" Comment="UseStream" Bounds="856,340,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="TvIDuMAegBAPbYwfXqnSQ4" SlotId="ONWhG4x3vuMLW0IxtLMpEG" Bounds="1035,400" />
+            <ControlPoint Id="ElGdQRIPKj6QQmiYeL0hrz" Bounds="1035,310" />
+            <ControlPoint Id="LCVeCcR9ozlPVSoeyYZUs4" Bounds="1035,484" />
+            <Overlay Id="QxBauPj63ipLFiy7WyKp50" Name="Stream" Bounds="832,224,295,316">
+              <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
+            </Overlay>
           </Canvas>
-          <Patch Id="QWPwEjxtGxROHKd4IN9k2g" Name="Create" ParticipatingElements="Msu6QJa81LqMMoYKlFglfJ,JMRbTwbfo4iPmmqqkqoYBA" />
+          <Patch Id="QWPwEjxtGxROHKd4IN9k2g" Name="Create" ParticipatingElements="Msu6QJa81LqMMoYKlFglfJ,JMRbTwbfo4iPmmqqkqoYBA,LAORp2HH4RNNRkdA8Dc8I9" />
           <ProcessDefinition Id="CQrGFDCMYRpMjggcZa1hUl" IsHidden="true">
             <Fragment Id="LNPmE9kQ460OKLFjbe5o8T" Patch="QWPwEjxtGxROHKd4IN9k2g" Enabled="true" />
             <Fragment Id="LKhZ69X5jjzLcX76cJAfwm" Patch="ADvdJfJnY0VNjpw4Ytb7wD" />
             <Fragment Id="QsCyijDX0w8M9tgJHHfeoD" Patch="RtexInxitUjOsE1OOSwYcG" />
+            <Fragment Id="IkSVL84BBhTPtip76Q5rLd" Patch="NH81Zs3R56zQRdTuuYWBM3" />
+            <Fragment Id="KtJifE2NWkFO6c2EUi8e79" Patch="KHThXdiAchUL12B2wnCj16" />
+            <Fragment Id="ULN78L976qWOubEDQvy6cs" Patch="IdnD6GS3jdMPhRSXhK3frs" />
           </ProcessDefinition>
           <Slot Id="HIGvawJ17rHQbN7xZhURgx" Name="Key">
             <p:TypeAnnotation p:Type="TypeReference">
@@ -5151,6 +5171,35 @@
           <Patch Id="RtexInxitUjOsE1OOSwYcG" Name="GetAudioAnalysisSettings">
             <Pin Id="CPpbsS42sGVNV5LjNCb7sR" Name="AudioAnalysisSettings" Kind="OutputPin" />
           </Patch>
+          <Patch Id="NH81Zs3R56zQRdTuuYWBM3" Name="Split">
+            <Pin Id="Mi3tWaFjnwXPpeVJbYKsry" MergeId="155223" Name="UseStream" Kind="OutputPin" />
+            <Pin Id="H8MxmhRzSK0Nqiwl5QFlR7" MergeId="157926" Name="StreamOffset" Kind="OutputPin" />
+          </Patch>
+          <Slot Id="NgP1RiQCmujLSYiJg0ZGnX" Name="UseStream">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Patch Id="KHThXdiAchUL12B2wnCj16" Name="SetUseStream">
+            <Pin Id="IuIk3PYnCZPNofaLklNsD2" MergeId="155929" Name="UseStream" Kind="InputPin" />
+          </Patch>
+          <Slot Id="ONWhG4x3vuMLW0IxtLMpEG" Name="StreamOffset">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Patch Id="IdnD6GS3jdMPhRSXhK3frs" Name="SetStreamOffset">
+            <Pin Id="MDUWzysBl74PU21OxzocVW" MergeId="158633" Name="StreamOffset" Kind="InputPin" />
+          </Patch>
+          <Link Id="V3AwVzoW9TPL48W90SIBaO" Ids="IuIk3PYnCZPNofaLklNsD2,QLe91Cn5ofFOmjJ0vDH0Es" IsHidden="true" />
+          <Link Id="KYXu6lC93BRNPqdfYsTe19" Ids="QLe91Cn5ofFOmjJ0vDH0Es,KLKMZTKr0V8LU9uGqFii9E" />
+          <Link Id="OHR0MYe2Q08OJJSE9LrsF0" Ids="JtwKaXECy4YOVn7q3emQ0I,Mi3tWaFjnwXPpeVJbYKsry" IsHidden="true" />
+          <Link Id="GFMK4LLxskXN0Olw7pIWTa" Ids="KLKMZTKr0V8LU9uGqFii9E,JtwKaXECy4YOVn7q3emQ0I" />
+          <Link Id="LAORp2HH4RNNRkdA8Dc8I9" Ids="NqQS9f7Jl9iO0jOYoQqWy3,KLKMZTKr0V8LU9uGqFii9E" />
+          <Link Id="JVPDxuGY0YEOo6gaS4DmGs" Ids="MDUWzysBl74PU21OxzocVW,ElGdQRIPKj6QQmiYeL0hrz" IsHidden="true" />
+          <Link Id="RHEZpbOFui5P8ZUbiU6yXl" Ids="ElGdQRIPKj6QQmiYeL0hrz,TvIDuMAegBAPbYwfXqnSQ4" />
+          <Link Id="R19f8Ry0Ey1PucBqr32Rq3" Ids="LCVeCcR9ozlPVSoeyYZUs4,H8MxmhRzSK0Nqiwl5QFlR7" IsHidden="true" />
+          <Link Id="FAwce9fEilhPnMb53pzG3i" Ids="TvIDuMAegBAPbYwfXqnSQ4,LCVeCcR9ozlPVSoeyYZUs4" />
         </Patch>
       </Node>
       <!--
