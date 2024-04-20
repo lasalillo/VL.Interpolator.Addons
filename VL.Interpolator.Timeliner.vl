@@ -1237,9 +1237,9 @@
         <Patch Id="GPJHeb6cXzsLmzL6msZ8ny">
           <Canvas Id="AGM09NNevETMXZtSwTnpRi" CanvasType="Group">
             <ControlPoint Id="QaEQYiPyzWKNVdQwnn77uz" Bounds="299,255" />
-            <ControlPoint Id="TUqo0TIJ9KJNgJlxbPfjBt" Bounds="387,302" />
-            <ControlPoint Id="PtrUbkfPZRHNV0AJjjgc7g" Bounds="453,303" />
-            <Node Bounds="282,506,317,344" Id="M7BfNlg9wV3M3gxpRItzvx">
+            <ControlPoint Id="TUqo0TIJ9KJNgJlxbPfjBt" Bounds="415,255" />
+            <ControlPoint Id="PtrUbkfPZRHNV0AJjjgc7g" Bounds="481,255" />
+            <Node Bounds="282,506,317,323" Id="M7BfNlg9wV3M3gxpRItzvx">
               <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
@@ -1251,7 +1251,7 @@
               <Pin Id="HzE9MubZeAjMQ38IPs2DKG" Name="Result" Kind="OutputPin" />
               <Patch Id="SAt8Bs19fv7PAwWXWuxAZG" ManuallySortedPins="true">
                 <ControlPoint Id="TEAm8TkRoaGMVcc33S15IJ" Bounds="319,514" />
-                <ControlPoint Id="MuqXvn8BZPrMMl9RBimEaD" Bounds="328,843" />
+                <ControlPoint Id="MuqXvn8BZPrMMl9RBimEaD" Bounds="472,742" />
                 <Node Bounds="384,624,43,19" Id="Hj92K7Rn1a0OkH1cUeMvrg">
                   <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1341,7 +1341,7 @@
                 </Pad>
               </Patch>
             </Node>
-            <Node Bounds="451,374,41,19" Id="DqvmHc33ZgoQMFahPJCqaW">
+            <Node Bounds="282,449,41,19" Id="DqvmHc33ZgoQMFahPJCqaW">
               <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <FullNameCategoryReference ID="Reactive" />
@@ -1353,13 +1353,94 @@
               <Pin Id="KQC3tyQEmV0NyKok1RF63e" Name="Result" Kind="OutputPin" />
               <Pin Id="ScZ2eBGlQ7kOvtlgmwBccK" Name="Changed" Kind="OutputPin" />
             </Node>
-            <Node Bounds="487,334,95,19" Id="CtcJ2xWsj9QN0n3P4wmw8m">
+            <Node Bounds="318,420,95,19" Id="CtcJ2xWsj9QN0n3P4wmw8m">
               <p:NodeReference LastCategoryFullName="System.TimeSpan" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="FromMilliseconds" />
               </p:NodeReference>
               <Pin Id="BtvllXASRj6OsaXRpoFycp" Name="Value" Kind="InputPin" DefaultValue="120" />
               <Pin Id="DvRRHTGMIBDPdYtah7J11T" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="659,504,255,257" Id="MH6jDO6CtayPbOM4foAiAR">
+              <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
+                <Choice Kind="ProcessAppFlag" Name="ForEach" />
+              </p:NodeReference>
+              <Pin Id="R7z5wXvi85MNBMOXoOH7uN" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="ODFwmGpaIsCO6L7fDVMjZf" Name="Messages" Kind="InputPin" />
+              <Pin Id="FsSEub7OG45Ncs3JUFOHyf" Name="Reset" Kind="InputPin" />
+              <Pin Id="Fak05hHckUrQWOA8UUCPaz" Name="Result" Kind="OutputPin" />
+              <Patch Id="P1JowRAuIoCLZNwMVtEfR2" ManuallySortedPins="true">
+                <ControlPoint Id="ImRT6s6TtY7OxV4iYhmaqE" Bounds="696,512" />
+                <ControlPoint Id="FcCvP3HiocfNJ5cmeQESBl" Bounds="690,733" />
+                <Node Bounds="671,570,109,26" Id="ADpQ7z7uMrGLa5fm1qgx4t">
+                  <p:NodeReference LastCategoryFullName="Interpolator.Players.TrackPlayers.Multitrack_Player" LastDependency="VL.Interpolator.Players.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="GetRealtimeControls" />
+                  </p:NodeReference>
+                  <Pin Id="MXJsejn2AWNK9tYlDcDYCd" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="VMKKnJKHor4NOqUS657uqk" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="NH3WJyhNnxjL8L6M8FM5LX" Name="RealtimeControls" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="672,530,104,26" Id="UOgn2fV1IFpLw1OF9jtBHc">
+                  <p:NodeReference LastCategoryFullName="Interpolator.Players.Runtime.Multitrack_Runtime" LastDependency="VL.Interpolator.Players.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="GetMultitrackPlayer" />
+                  </p:NodeReference>
+                  <Pin Id="QMDH8yUAytaLe5msqZdLUS" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="QXROpr0UXzOOmPnrkT4roJ" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="IAxqI7vlqJEOWKrHwveO86" Name="MultitrackPlayer" Kind="OutputPin" />
+                </Node>
+                <Patch Id="GNlRyEFEkpUN9sSWByRQzJ" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="COW7Lmc7YOeQbZDU0CgQLk" Name="Update" ManuallySortedPins="true">
+                  <Pin Id="MHlQXZtP9qzMbIva1RvqDs" Name="Input 1" Kind="InputPin" />
+                  <Pin Id="JIe7NFbeHunNEDxbWGKFjg" Name="Output" Kind="OutputPin">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                </Patch>
+                <Node Bounds="775,611,45,26" Id="D7dkxZPMVJZPLL3yS9hcY6">
+                  <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="MutableInterfaceType" Name="Channel" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="Value" />
+                  </p:NodeReference>
+                  <Pin Id="LPFmU5CGYlmLJLRyboOZJ7" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="LDapueTkBH6LDHFyeBfoNP" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="ErTjcyxQSVgLvAlv02Pbo2" Name="Value" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="815,678,77,26" Id="NDgkFhsJdNcPL5jEQB0w8d">
+                  <p:NodeReference LastCategoryFullName="Interpolator.RealtimeControls" LastDependency="VL.Interpolator.Players.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="DoSeek" />
+                  </p:NodeReference>
+                  <Pin Id="CYG3epMSQlENRiWKNp83Q4" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="NAG5GJ6Uc1bLXB1GlDmoEw" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="775,715,55,26" Id="BMEt8v4o7rZO6RHkcJxnwz">
+                  <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="MutableInterfaceType" Name="Channel" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetValue" />
+                  </p:NodeReference>
+                  <Pin Id="NWlbxJRH7o5OEQR5D3Bxfs" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="TJRGoJIodLKMlnbFISGADC" Name="Value" Kind="InputPin" />
+                  <Pin Id="Ox5oKBaydBtPJfiLlJXIO4" Name="Author" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="C2xwnZ36bXGOdpqBDo9wST" Name="Apply" Kind="InputPin" />
+                  <Pin Id="BXC64kryLjFMgMvYS7pfiQ" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="815,645,87,26" Id="F2zGDk0lCH2LXGJLQaFLVe">
+                  <p:NodeReference LastCategoryFullName="Interpolator.RealtimeControls" LastDependency="VL.Interpolator.Players.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SetSeekPosition" />
+                  </p:NodeReference>
+                  <Pin Id="PRsqAvBWsprN9zdUmzkqjg" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="CbHDbK41tsVPPRfCrixjQ7" Name="SeekPosition" Kind="InputPin" />
+                  <Pin Id="Q6HDnje2UgoM03gKz9F4fB" Name="Output" Kind="StateOutputPin" />
+                </Node>
+              </Patch>
             </Node>
           </Canvas>
           <ProcessDefinition Id="FiQ3UWccmtmOBjTuX8Fm4q">
@@ -1408,6 +1489,16 @@
           </Patch>
           <Link Id="EytP43UbCJLMFUcuHeQxse" Ids="KQC3tyQEmV0NyKok1RF63e,UXllQnbbttvMUwFfkH5v3M" />
           <Link Id="Aa0gAkLdUfzLcUYdgyypOT" Ids="DvRRHTGMIBDPdYtah7J11T,K7SXZsPTiNCOPuBk7tXiqG" />
+          <Link Id="EXSfER2jykiNZgfTwXrupF" Ids="QaEQYiPyzWKNVdQwnn77uz,QMDH8yUAytaLe5msqZdLUS" />
+          <Link Id="RioPSqH7ca7MMIOVobjqrs" Ids="MHlQXZtP9qzMbIva1RvqDs,ImRT6s6TtY7OxV4iYhmaqE" IsHidden="true" />
+          <Link Id="TKEm7C4I3n2LUu5Oq4MKsD" Ids="FcCvP3HiocfNJ5cmeQESBl,JIe7NFbeHunNEDxbWGKFjg" IsHidden="true" />
+          <Link Id="GGjjJ8V7aNJPbHIR3bTn3h" Ids="IAxqI7vlqJEOWKrHwveO86,MXJsejn2AWNK9tYlDcDYCd" />
+          <Link Id="Or1sRonAZdwQJ3vRM4rkfA" Ids="PtrUbkfPZRHNV0AJjjgc7g,ODFwmGpaIsCO6L7fDVMjZf" />
+          <Link Id="QAgBwbgJbc0PxOh2KBjnc8" Ids="NH3WJyhNnxjL8L6M8FM5LX,LPFmU5CGYlmLJLRyboOZJ7" />
+          <Link Id="JRRDTe5XKXxQTX8gwNZeaB" Ids="NAG5GJ6Uc1bLXB1GlDmoEw,TJRGoJIodLKMlnbFISGADC" />
+          <Link Id="Ln4JU3hYQpoL5GataNO6cg" Ids="LDapueTkBH6LDHFyeBfoNP,NWlbxJRH7o5OEQR5D3Bxfs" />
+          <Link Id="Re1sHxVE73yOLxvLlMbdOU" Ids="ErTjcyxQSVgLvAlv02Pbo2,PRsqAvBWsprN9zdUmzkqjg" />
+          <Link Id="E7mf58dw3gbMAbz2BjW0zk" Ids="Q6HDnje2UgoM03gKz9F4fB,CYG3epMSQlENRiWKNp83Q4" />
         </Patch>
       </Node>
       <!--
