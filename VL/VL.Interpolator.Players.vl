@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="QMAAJvWF39POrsgkQbJTOR" LanguageVersion="2024.6.3-0012-g26a73f6763" Version="0.128">
-  <NugetDependency Id="NXdOhKmRXx1PYrk2puJlYy" Location="VL.CoreLib" Version="2024.6.3-0012-g26a73f6763" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="QMAAJvWF39POrsgkQbJTOR" LanguageVersion="2024.6.3-0013-g81d8e82257" Version="0.128">
+  <NugetDependency Id="NXdOhKmRXx1PYrk2puJlYy" Location="VL.CoreLib" Version="2024.6.3-0013-g81d8e82257" />
   <Patch Id="PMMt4HNnbGvOYiTm4td4VC">
     <Canvas Id="UZiBwmuKqeRQC7OL2eGgar" DefaultCategory="Interpolator.Players" CanvasType="FullCategory">
       <Canvas Id="SkfwhS3jXGhPLP3fbTiMrW" Name="Runtime" Position="199,340">
@@ -9973,13 +9973,13 @@
             </Canvas>
             <Patch Id="Ki261aMJMTMOvhK8P5NyD3" Name="Create" />
             <Patch Id="OWWu77FyDIlMGGfp1lcvvc" Name="Update">
-              <Pin Id="FaVSrqkl5HhPpI5HZT6AhC" Name="Multitrack" Kind="InputPin" />
-              <Pin Id="UyzbXdc4TWMM9G5W8jiwub" Name="BPMCycle" Kind="InputPin" />
               <Pin Id="Upm89crsRIKOHTlcefJJPG" Name="PlayState" Kind="InputPin" />
+              <Pin Id="LZGjNx8o1BZQGxaQxLysGZ" Name="SignatureStep" Kind="OutputPin" />
+              <Pin Id="UyzbXdc4TWMM9G5W8jiwub" Name="BPMCycle" Kind="InputPin" />
+              <Pin Id="FaVSrqkl5HhPpI5HZT6AhC" Name="Multitrack" Kind="InputPin" />
               <Pin Id="DoFUctNCWTxOeOfPfWw7yb" Name="SignatureInfo" Kind="OutputPin" />
               <Pin Id="PpCXLw8HOmXP4mxv8Fagev" Name="SignatureOnStart" Kind="OutputPin" />
               <Pin Id="VseKLLmOpJoMgiVhDVauts" Name="SignatureOnTrigger" Kind="OutputPin" />
-              <Pin Id="LZGjNx8o1BZQGxaQxLysGZ" Name="SignatureStep" Kind="OutputPin" />
             </Patch>
             <ProcessDefinition Id="VBT7lfdD1QDQdKqijlJw0X">
               <Fragment Id="NjUqdzsg1spLdU3NX6tsh4" Patch="Ki261aMJMTMOvhK8P5NyD3" Enabled="true" />
@@ -10758,15 +10758,15 @@
             </Canvas>
             <Patch Id="UG5Ple1guuiMPT8F2bVBxX" Name="Create" />
             <Patch Id="QUafqEunlfMMFSif5l2zMI" Name="Update" ParticipatingElements="F8MqSzauXfSK9ynU4SzsPC,OGJ7YlTLt1JObxP06CxRRH,MfzdOJ8dLJ2LXkShgNzwvK">
-              <Pin Id="LP4NV7dFGNCLSkRme6jGEt" Name="EnableInput" Kind="InputPin" DefaultValue="True" />
-              <Pin Id="Hq9qLHLETGUOlDCskqUtT0" Name="InputGain" Kind="InputPin" DefaultValue="1" />
               <Pin Id="EOEPh0qvXOkLW5EU3puy6d" Name="TracksTransfer" Kind="InputPin" />
               <Pin Id="A0KblDrX4dMOqx20tIZnvF" Name="PlayState" Kind="InputPin" />
               <Pin Id="Sy1qznnAMkNQMo6CrMh1Zm" Name="TimelinerControls" Kind="InputPin" />
-              <Pin Id="VnNDtQyjUI6LV2c3F0O38s" Name="RealtimeControls" Kind="InputPin" />
-              <Pin Id="Fvv7Qj3XtLSNVE53hxO6Ht" Name="AudioTracks" Kind="OutputPin" />
               <Pin Id="KMVcnWOEgc4P4AUmOMjBVw" Name="AudioEnable" Kind="InputPin" />
               <Pin Id="EvHcRkdk55rQZpvryxRmfW" Name="AudioEngineSampleRate" Kind="InputPin" />
+              <Pin Id="VnNDtQyjUI6LV2c3F0O38s" Name="RealtimeControls" Kind="InputPin" />
+              <Pin Id="Fvv7Qj3XtLSNVE53hxO6Ht" Name="AudioTracks" Kind="OutputPin" />
+              <Pin Id="LP4NV7dFGNCLSkRme6jGEt" Name="EnableInput" Kind="InputPin" DefaultValue="True" />
+              <Pin Id="Hq9qLHLETGUOlDCskqUtT0" Name="InputGain" Kind="InputPin" DefaultValue="1" />
             </Patch>
             <ProcessDefinition Id="Fzo30Ts7V1cPVc7eK3m19V">
               <Fragment Id="R63MrUavVOjMuT6ddibEXX" Patch="UG5Ple1guuiMPT8F2bVBxX" Enabled="true" />
@@ -14887,17 +14887,6 @@
               </Node>
               <Pad Id="Dmg8cPWKC6EMtDcHfqisIW" Comment="Filename" Bounds="439,715,201,15" ShowValueBox="true" isIOBox="true" />
               <ControlPoint Id="I0zuVqFx6nsNNMhJ4pwv1W" Bounds="1627,733" />
-              <Node Bounds="1531,982,105,19" Id="LfuozfvwRC9NR2QHSXHRKF">
-                <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessAppFlag" Name="FileWriter" />
-                </p:NodeReference>
-                <Pin Id="PuynX7cQKcxOfc7NvTxGyz" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                <Pin Id="PLpOGGoUFfVNktgZBkFfcK" Name="File Path" Kind="InputPin" />
-                <Pin Id="SsrjwdufVhnPy4b1DbyCmQ" Name="Data" Kind="InputPin" />
-                <Pin Id="BFYjPFLrxCJNXM5sRElRFN" Name="Append" Kind="InputPin" />
-                <Pin Id="UOJaFLiE7CCM3tnTiMpFTL" Name="Write" Kind="InputPin" />
-              </Node>
               <Pad Id="E3oXG8xwFt5PESLJ1zvQu4" Comment="File Path" Bounds="778,617,307,15" ShowValueBox="true" isIOBox="true" Value="..\..\StreamRecording\Audio.txt">
                 <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Path" />
@@ -15450,15 +15439,59 @@
                 <Pin Id="CNN0IEYZTX4OIrbdrLMgCF" Name="Inverse Output" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="GG9WS4HLHKiLB236htgzml" Bounds="637,1285" />
+              <Node Bounds="1511,935,129,80" Id="LGp6D31mvneL1h7m2Fx0Ls">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                </p:NodeReference>
+                <Pin Id="TmUc1KDIeUFOAE7E2DSpgd" Name="Condition" Kind="InputPin" />
+                <Patch Id="DHVwk2Chk7VLR4bj2jbXKF" ManuallySortedPins="true">
+                  <Patch Id="MN0yhHFfdVJOHMJlHODyAD" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="EEg1hjK6QonNb1t7cuktfz" Name="Then" ManuallySortedPins="true" />
+                  <Node Bounds="1523,967,105,19" Id="LfuozfvwRC9NR2QHSXHRKF">
+                    <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="ProcessAppFlag" Name="FileWriter" />
+                    </p:NodeReference>
+                    <Pin Id="PuynX7cQKcxOfc7NvTxGyz" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                    <Pin Id="PLpOGGoUFfVNktgZBkFfcK" Name="File Path" Kind="InputPin" />
+                    <Pin Id="SsrjwdufVhnPy4b1DbyCmQ" Name="Data" Kind="InputPin" />
+                    <Pin Id="BFYjPFLrxCJNXM5sRElRFN" Name="Append" Kind="InputPin" />
+                    <Pin Id="UOJaFLiE7CCM3tnTiMpFTL" Name="Write" Kind="InputPin" />
+                  </Node>
+                </Patch>
+              </Node>
+              <Node Bounds="1512,869,54,19" Id="QnKL9TYn6TgOCsA0SUsjC4">
+                <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="OnOpen" />
+                </p:NodeReference>
+                <Pin Id="J5lRw4nP2g0PTpfg32cfZp" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="QDMBnpuMZRlLvRsV2ZLLyr" Name="Simulate" Kind="InputPin" />
+                <Pin Id="G1wcyPQRy7cPmM1CxJ4dcH" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="1512,900,65,19" Id="QvoyQ8uDymDPA2SJdoyeCI">
+                <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="MonoFlop (FrameBased)" />
+                </p:NodeReference>
+                <Pin Id="E72xOpMgSBpO9sY9Ow2KjF" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                <Pin Id="KjdjI0b9xbqLUoaalkqN7B" Name="Set" Kind="InputPin" />
+                <Pin Id="KAY4vdU3UZ8QDYciE3cIgZ" Name="Frames" Kind="InputPin" DefaultValue="60" />
+                <Pin Id="M51FLpaSOovOuBhdrHxm45" Name="Retriggerable" Kind="InputPin" />
+                <Pin Id="EI915KRkDYDNNpcnrQFZyl" Name="Reset" Kind="InputPin" />
+                <Pin Id="IswDxYwhdAhMuurUYjZy06" Name="Value" Kind="OutputPin" />
+                <Pin Id="REJIVm0k4wpMgzyuFComVE" Name="Inverse Output" Kind="OutputPin" />
+              </Node>
             </Canvas>
             <Patch Id="C8IL2i2qINqP2MP4jmGahC" Name="Create" ParticipatingElements="MfIJyEqmUxpLEn6yqCob9p" />
             <Patch Id="LVNbxHxzwuSLHMx04pFpb8" Name="Update" ParticipatingElements="MYnRqlIAJRmLjvHTCmYkcM">
-              <Pin Id="OfJfhLx0uTsLZXpDOpGmsG" Name="Write" Kind="InputPin" Bounds="675,327" />
-              <Pin Id="R2I44jHwIChMcSjHVNXpcY" Name="Read" Kind="InputPin" Bounds="1062,328" />
-              <Pin Id="TLeRsi5gHBiQKwWsT4hLFu" Name="Empty" Kind="InputPin" Bounds="614,331" />
+              <Pin Id="NcITsmEwE0aM086ZGBUo8p" Name="Input" Kind="InputPin" />
               <Pin Id="TIVERaJm1lfPwEzfbfoeuP" Name="Data" Kind="InputPin" />
               <Pin Id="ADJmgj49l72MhZi1e4ZcRR" Name="Project Path" Kind="InputPin" />
-              <Pin Id="NcITsmEwE0aM086ZGBUo8p" Name="Input" Kind="InputPin" />
+              <Pin Id="OfJfhLx0uTsLZXpDOpGmsG" Name="Write" Kind="InputPin" Bounds="675,327" />
+              <Pin Id="R2I44jHwIChMcSjHVNXpcY" Name="Read" Kind="InputPin" Bounds="1062,328" />
               <Pin Id="AH6pdCgKB6ON1mAQBQnhdr" Name="AudioAnalysisData" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Channel" />
@@ -15481,6 +15514,7 @@
               </Pin>
               <Pin Id="EByv7pMTrWGL7dgurtYrKR" Name="TotalSize" Kind="OutputPin" />
               <Pin Id="DPdhkYQyzfIOl88AwrvsI8" Name="Current Key" Kind="OutputPin" />
+              <Pin Id="TLeRsi5gHBiQKwWsT4hLFu" Name="Empty" Kind="InputPin" Bounds="614,331" />
             </Patch>
             <ProcessDefinition Id="SteDIBbmVlZME4lXIe5tpQ">
               <Fragment Id="GcUy8IVJ4q1MiTkxUt24UU" Patch="C8IL2i2qINqP2MP4jmGahC" Enabled="true" />
@@ -15614,6 +15648,8 @@
             <Link Id="NzLHzEtuU1CMjABUK9QRoo" Ids="SJ9hAig3FwPN2WRD4HkSYu,Vf5KDO2kkjDQYFiEvUrSgA" />
             <Link Id="JGYtVuIFTjqPg4nzeXAuaY" Ids="NcITsmEwE0aM086ZGBUo8p,GG9WS4HLHKiLB236htgzml" IsHidden="true" />
             <Link Id="KZjFHzuVwrFM6EOaVeRIXt" Ids="GG9WS4HLHKiLB236htgzml,JThHViWlWNVOBbMWQFdESl" />
+            <Link Id="BAUgSgoJHOOMjZbu6Izjdv" Ids="G1wcyPQRy7cPmM1CxJ4dcH,KjdjI0b9xbqLUoaalkqN7B" />
+            <Link Id="KnAdFFymyepPUAS9nWN8rk" Ids="REJIVm0k4wpMgzyuFComVE,TmUc1KDIeUFOAE7E2DSpgd" />
           </Patch>
         </Node>
       </Canvas>
@@ -15641,9 +15677,9 @@
   </Patch>
   <NugetDependency Id="Gwe7Zjtqm5FLeAIRJCTdX9" Location="VL.Audio" Version="1.5.0" />
   <NugetDependency Id="JRzWewSnj7INAUVLJ65LOe" Location="VL.IO.OSC" Version="1.1.1" />
-  <NugetDependency Id="HS5zeKPvcfZOCbNmLdZCz2" Location="VL.Video" Version="2024.6.3-0012-g26a73f6763" />
+  <NugetDependency Id="HS5zeKPvcfZOCbNmLdZCz2" Location="VL.Video" Version="2024.6.3-0013-g81d8e82257" />
   <NugetDependency Id="DnGmZIK3vrBO5QjDJcPoEL" Location="VL.MiDi.Music.Utils" IsForward="true" Version="1.1.0" />
-  <NugetDependency Id="QaPBOO2umKYNQUge9MRk9Y" Location="VL.Stride" Version="2024.6.3-0012-g26a73f6763" />
+  <NugetDependency Id="QaPBOO2umKYNQUge9MRk9Y" Location="VL.Stride" Version="2024.6.3-0013-g81d8e82257" />
   <DocumentDependency Id="AOhxxzgodC4OBFk0TXBvoS" Location="./VL.Audio.Analysis/VL.Audio.Analysis.vl" IsForward="true" />
   <DocumentDependency Id="NqToBc0BPlcPN3TQQ9VCFB" Location="./VL.StreamRecorder.vl" />
   <NugetDependency Id="H9Dr7dbU0kQPYnjngEVIPG" Location="VL.Interpolator" IsForward="true" Version="1.1.9" />
