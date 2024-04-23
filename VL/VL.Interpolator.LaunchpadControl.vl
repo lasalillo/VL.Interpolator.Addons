@@ -133,7 +133,7 @@
               <Pin Id="Kr4sDsXyjKyPO8mgUPVcQN" Name="Simulate" Kind="InputPin" />
               <Pin Id="GEohJWj5zZNND6glruvHqo" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="177,1145,130,19" Id="B9aMNjMilItNMNAcbxc1pH">
+            <Node Bounds="177,1181,130,19" Id="B9aMNjMilItNMNAcbxc1pH">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="AND" />
@@ -142,7 +142,7 @@
               <Pin Id="ESDHgNvHHbEMXSYu3d1dog" Name="Input 2" Kind="InputPin" />
               <Pin Id="RVuee8zra56NekjKLqnryz" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <ControlPoint Id="D3sMxwqEL7NPHAcon7U5Kt" Bounds="178,1247" />
+            <ControlPoint Id="D3sMxwqEL7NPHAcon7U5Kt" Bounds="178,1277" />
             <ControlPoint Id="L5vHBFkp1R5LNBYg4ig4Oq" Bounds="203,203" />
             <Node Bounds="165,1044,57,86" Id="SOuuiEpAJ4LMS72szQ6SZl">
               <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
@@ -152,8 +152,8 @@
               <ControlPoint Id="SsFuEABzDkEPCmjv9AGtfi" Bounds="179,1124" Alignment="Bottom" />
               <Pin Id="Afdth5iBGezP0KaIvrEioa" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="P4AZP954QnoQKK3dPQxcnG" Name="User Exceptions Channel" Kind="InputPin" IsHidden="true" />
-              <Pin Id="NtPpVsCVBKlLH6VMFnZ6rs" Name="Stick To Last Valid Outputs" Kind="InputPin" />
-              <Pin Id="ChucIxfqZN6NaDXCLe6pZ2" Name="Reset Region On Failure" Kind="InputPin" />
+              <Pin Id="NtPpVsCVBKlLH6VMFnZ6rs" Name="Stick To Last Valid Outputs" Kind="InputPin" DefaultValue="False" />
+              <Pin Id="ChucIxfqZN6NaDXCLe6pZ2" Name="Reset Region On Failure" Kind="InputPin" DefaultValue="False" />
               <Pin Id="PG0w6yWopRoMWg6DMKj0yV" Name="Success" Kind="OutputPin" />
               <Pin Id="AEpBbrPOTnsOppZGNPPIRT" Name="Failure" Kind="OutputPin" />
               <Pin Id="BLRrlvpRDNwLU1TzNK5ziN" Name="Error Message" Kind="OutputPin" />
@@ -209,7 +209,7 @@
                 <Patch Id="Ayvqd1rzPJhLaCUXYf1MEb" Name="Dispose" />
               </Patch>
             </Node>
-            <Pad Id="HN5wLmWiAIKNTmkbw7PnIP" Comment="" Bounds="224,1196,35,35" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="HN5wLmWiAIKNTmkbw7PnIP" Comment="" Bounds="224,1232,35,35" ShowValueBox="true" isIOBox="true" />
             <Node Bounds="198,719,205,19" Id="Ua74N8QcuwKPy9YyXdw6OW">
               <p:NodeReference LastCategoryFullName="Interpolator.LaunchpadControl" LastDependency="VL.Interpolator.LaunchpadControl.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -361,6 +361,7 @@
               <ControlPoint Id="BDHQRXI4DljLtebB1QeTzo" Bounds="199,792" Alignment="Top" />
               <ControlPoint Id="N9r4KzCBDMXNQ7dE4UUwqL" Bounds="199,884" Alignment="Bottom" />
             </Node>
+            <ControlPoint Id="HMVvgigky7UL7QjrtuBCFp" Bounds="351,1277" />
           </Canvas>
           <ProcessDefinition Id="OpuRmE1eQZYQJKiouzanyQ">
             <Fragment Id="IN7ahwWye0hOIezJrFs6uu" Patch="TT9mypI1gOyLODDU5tz5ko" Enabled="true" />
@@ -394,6 +395,7 @@
             <Pin Id="S5u4N6WFZ0RMEEBQn8lNWS" Name="Is Open" Kind="OutputPin" Bounds="991,995" />
             <Pin Id="DtjoM8F60SaPXUsV1rQIby" Name="Interaction" Kind="InputPin" />
             <Pin Id="NCAHEZGQqSCMNwvtToSteH" Name="Enable" Kind="InputPin" />
+            <Pin Id="AK1BluxiGhwN1NRbBBGnkc" Name="Error Message" Kind="OutputPin" />
           </Patch>
           <Patch Id="BE0FwBQGDIdORfZdUjUNxh" Name="UpdateMatrix (Internal)" />
           <Link Id="TqjNQzyQ2K9LJeNYE8ypWY" Ids="UlaxLEnK7SYQJg5R9AbY61,SsFuEABzDkEPCmjv9AGtfi" />
@@ -436,6 +438,8 @@
           <Link Id="Ldd9lNaRrq4MlDy4r4rIaf" Ids="Km9nGwv0NLeP77irGSbOVM,T8z8MvuY1AsNPNgyWKVR7c" />
           <Link Id="PohLYLIUiTnMdA7rcgX9DH" Ids="LrKlWeDJ1iWOlzR8GGczhM,SEMC179KJb6Nx9zXU0Ppqh" />
           <Link Id="GtG0D4q5mpjMAEdR7mjGXH" Ids="HAth5IWf3JaOEJJdPQ48sg,NrCaHlhV5DcQC3bgMJ9tf0" />
+          <Link Id="R92ktI5bA3EMCci6wVSGkr" Ids="BLRrlvpRDNwLU1TzNK5ziN,HMVvgigky7UL7QjrtuBCFp" />
+          <Link Id="MqTgpCWLBA6MF39iqb70Fs" Ids="HMVvgigky7UL7QjrtuBCFp,AK1BluxiGhwN1NRbBBGnkc" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -2585,11 +2589,6 @@
             <Pin Id="JKj9nWPK4BMPZXB2f3rEYF" Name="Double Click" Kind="OutputPin" />
             <Pin Id="NatCOTRRKCALJzDTeM1gQZ" Name="Frames" Kind="InputPin" DefaultValue="15" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="UuPktir9chSOTYHDbQMmmp">
             <Fragment Id="Qs7CyId4JnoM6bhKNyLR45" Patch="ADlQ2R95vhmQNCDhSAXQFe" Enabled="true" />
             <Fragment Id="LSn37Pd9xZ0QTuE4h7STYe" Patch="JdTPqdRucHfLJXHn0TqenE" Enabled="true" />

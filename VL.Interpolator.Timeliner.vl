@@ -15,13 +15,14 @@
         </p:NodeReference>
         <Patch Id="AvP9QJzfNzhPvcTLsp42xC">
           <Canvas Id="FRPuiq2XuK9MFALEf7s3be" CanvasType="Group">
-            <Node Bounds="343,309,104,19" Id="IUbO7e0SclxMYFhyAqyL4n">
+            <Node Bounds="343,309,125,19" Id="IUbO7e0SclxMYFhyAqyL4n">
               <p:NodeReference LastCategoryFullName="Interpolator.Players.Runtime" LastDependency="VL.Interpolator.Players.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Multitrack_Runtime" />
               </p:NodeReference>
               <Pin Id="LJhFJ4rDQj5LeCzJaPJ9id" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="Brau7QQEIGVQQvhSWveVRP" Name="TargetApplicationChannel" Kind="InputPin" />
+              <Pin Id="FEPbOkybattQBmAeByvjDr" Name="ModelCopyChannel" Kind="InputPin" />
+              <Pin Id="M5Oaq66PZKVQFFno27iz7m" Name="ModelChannel" Kind="InputPin" />
               <Pin Id="IMDQE6BLypWPzZnu3CmVFd" Name="Update" Kind="InputPin" DefaultValue="True" />
               <Pin Id="QFRBWTZWmAuO2NVsKYxQRi" Name="UpdateDriverSettings" Kind="InputPin" DefaultValue="True" />
               <Pin Id="KehKrtovMMPO2nBlrBzaH0" Name="UpdateOSC" Kind="InputPin" DefaultValue="True" />
@@ -331,10 +332,11 @@
               <Pin Id="I3vHtp2NjlvQIK3hujEXKg" Name="Interaction" Kind="InputPin" />
               <Pin Id="D2w5dMs5KH1PfhXz8siieM" Name="Enable" Kind="InputPin" />
               <Pin Id="M0DKoMq6ge3Lo26TgbJrF4" Name="Is Open" Kind="OutputPin" />
+              <Pin Id="J1NE36iDlRIMnLgOGDCdtv" Name="Error Message" Kind="OutputPin" />
             </Node>
             <Pad Id="DcVU4U1kTBQN4LJu59CQAF" SlotId="EURKGOEscqJNK4J0ReGOM7" Bounds="1445,656" />
             <Pad Id="Q7StGXgw9j6OQOcpShi8Zo" Comment="Is Open" Bounds="1445,714,35,15" ShowValueBox="true" isIOBox="true" />
-            <Overlay Id="OPcSJXG78SUMt9otcG73NT" Name="Launchpad Track &amp; Keyframe Selector" Bounds="1298,496,379,257">
+            <Overlay Id="OPcSJXG78SUMt9otcG73NT" Name="Launchpad Track &amp; Keyframe Selector" Bounds="1298,496,553,264">
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
             </Overlay>
             <Node Bounds="1099,302,79,26" Id="M46CYYZ4C7iOVFu1tlHwAf">
@@ -433,6 +435,8 @@
             <Pad Id="KWG5Q8C7hziLR0nkWP7qqL" SlotId="Jzkl4MjokwjLlnjMwsly5m" Bounds="1501,843" />
             <Pad Id="Q3m2tm4gY5aPAm5M1OaZgh" Comment="Is Open" Bounds="1448,943,35,15" ShowValueBox="true" isIOBox="true" />
             <Pad Id="S8r6fgvClU0NMkAfZtaZ4o" SlotId="EURKGOEscqJNK4J0ReGOM7" Bounds="1014,698" />
+            <Pad Id="AX5jMywQqYNN9MZAJCITcr" Comment="" Bounds="1539,714,220,49" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="M5SYjkX0DAnMmu0FEaIKlO" SlotId="QX5OyoPchZePWc1RxxZhXC" Bounds="369,260" />
           </Canvas>
           <Link Id="OEaqadoRWZOMxH9BJI3Dyd" Ids="Vzi9s9TlxGtP4c0z4a4flU,SrRsNyr6h1OPFM942T9nSK" />
           <Link Id="PJYrNgNbZJBOvIdey1hhVV" Ids="TmkDqCUgRMVMRRYlUvKHm9,QuCYqSJyKUPOtC9QFCdv2n" IsFeedback="true" />
@@ -461,7 +465,6 @@
           <Link Id="NCbfgn5GT1fNlsPnJfji6m" Ids="F8efjBN5S9KM7R3Nr2wO3v,TKJURxhO3juNUrQKRNteeN" />
           <Link Id="LaNzWD2ZdwBNSRkIDTIg5Y" Ids="FklFVkdgjn9OY3Ye4KOsX0,U9gOxaWUvgIMDuRg0hJszv" />
           <Link Id="D8OtOUfu0ayQBxNlNuCBas" Ids="HYekIRyHcEdPqsck4eg2xL,C2gAVEvodm0M95KHZif7JN" />
-          <Link Id="SmZmwo64ZhNMfgoeQYsxpv" Ids="StPCXRdtvztLsoZ3dGx3ZK,Brau7QQEIGVQQvhSWveVRP" />
           <Link Id="Nk5ok6ch3xcMQKnyYaXhpR" Ids="DnBJAfJVI4MQHYEJ8B7SSX,FkYH4vuKxBUOD3YM2dIVhz" />
           <Slot Id="QX5OyoPchZePWc1RxxZhXC" Name="TargetApp" />
           <Link Id="LZeHIwt2QivOkRFdpIuRoC" Ids="QDtfODvygkVNaHe1bjjyqA,O5ab48wnWAhObqjubvXbXq" />
@@ -595,6 +598,9 @@
           <Link Id="G4EsiRBbN7zPFPgaMazgI5" Ids="DbzYpD2UbqNQHZfLM79dl6,Cno4SPFCOI6MFU7xWd51g0" />
           <Slot Id="BV3ji0618H0L0lWbm9eeZs" Name="TargetApp_Interpolated" />
           <Slot Id="OzwBm1mr010NWPn6PFo0OG" Name="SpatialAudio_Interpolated" />
+          <Link Id="CpWImrSV0YOPO5HL5IucD2" Ids="J1NE36iDlRIMnLgOGDCdtv,AX5jMywQqYNN9MZAJCITcr" />
+          <Link Id="KGCicLNLnKhMH5ly0qE7pY" Ids="StPCXRdtvztLsoZ3dGx3ZK,FEPbOkybattQBmAeByvjDr" />
+          <Link Id="BciFZL830ASM6xdCdsBgAo" Ids="M5SYjkX0DAnMmu0FEaIKlO,M5Oaq66PZKVQFFno27iz7m" />
         </Patch>
       </Node>
       <!--
