@@ -29,7 +29,7 @@
               <Pin Id="L9sEXnoM7aILk4dE8dJ8gk" Name="Output" Kind="OutputPin" />
               <Pin Id="CNfm9OvF9IiNWHQTPnQlIz" Name="UpdateStream" Kind="InputPin" DefaultValue="True" />
             </Node>
-            <Node Bounds="367,922,509,239" Id="B4MEcj3lloVLwqhQMcm12x">
+            <Node Bounds="367,922,529,239" Id="B4MEcj3lloVLwqhQMcm12x">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -41,7 +41,7 @@
               <Patch Id="CKMIFPvZkuFOVTFrb44IPd" ManuallySortedPins="true">
                 <Patch Id="K3HrysjGiFHPgIDtohS7ZI" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="EtDgYeemyGjO86oMJSOnuQ" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="379,1122,485,19" Id="CeJMV7wIqpNNuL9PXRmvIn">
+                <Node Bounds="379,1122,505,19" Id="CeJMV7wIqpNNuL9PXRmvIn">
                   <p:NodeReference LastCategoryFullName="Interpolator.Editor.Editors" LastDependency="VL.Interpolator.Editor.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="ProcessAppFlag" Name="Multitrack_Editor" />
@@ -73,6 +73,7 @@
                   <Pin Id="KwpCOlxLzQKL3rcWe8NaZg" Name="Closing Message" Kind="InputPin" />
                   <Pin Id="MQcRvna4OgPNodrl7j1jHL" Name="Interaction" Kind="InputPin" />
                   <Pin Id="JYlCfPzoDOPNvgZX3b17v1" Name="ActiveForm" Kind="OutputPin" />
+                  <Pin Id="HvKKGDkevEmP161ZSBuNNY" Name="ListOutputDevices" Kind="InputPin" />
                 </Node>
                 <Node Bounds="399,976,43,19" Id="NIo5fgzvHJJQWbRpuSxZLB">
                   <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
@@ -149,6 +150,15 @@
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
                 </Pad>
+                <Node Bounds="784,1084,99,19" Id="CAFrFEkbI78ObWlhhauCEU">
+                  <p:NodeReference LastCategoryFullName="IO.Midi" LastDependency="VL.IO.Midi.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="ListOutputDevices" />
+                  </p:NodeReference>
+                  <Pin Id="KEHWMwHooKRPJKrAaJZECW" Name="Node Context" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="F0rzmnq6OMzPruDbmXMzqf" Name="Refresh" Kind="ApplyPin" />
+                  <Pin Id="KA41xnyq3kHMZEvGdC7eYe" Name="Names" Kind="OutputPin" />
+                </Node>
               </Patch>
             </Node>
             <Node Bounds="368,771,65,19" Id="DSStZbkprd3OEja265MIPK">
@@ -322,7 +332,7 @@
             <ControlPoint Id="EnY7QlLzRAQL159lqTXYjW" Bounds="636,635" />
             <ControlPoint Id="Vx0X0IsNhkyMM3WN0SHuDa" Bounds="820,849" />
             <ControlPoint Id="LCG7FA2TD4gQMSbM0HFrvX" Bounds="842,870" />
-            <Node Bounds="1443,675,99,19" Id="MWWgRLzcTT0OJZ7EWUNU5r">
+            <Node Bounds="1358,695,99,19" Id="MWWgRLzcTT0OJZ7EWUNU5r">
               <p:NodeReference LastCategoryFullName="Interpolator.LaunchpadControl" LastDependency="VL.Interpolator.LaunchpadControl.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="LaunchPadControl" />
@@ -334,9 +344,9 @@
               <Pin Id="M0DKoMq6ge3Lo26TgbJrF4" Name="Is Open" Kind="OutputPin" />
               <Pin Id="J1NE36iDlRIMnLgOGDCdtv" Name="Error Message" Kind="OutputPin" />
             </Node>
-            <Pad Id="DcVU4U1kTBQN4LJu59CQAF" SlotId="EURKGOEscqJNK4J0ReGOM7" Bounds="1445,656" />
-            <Pad Id="Q7StGXgw9j6OQOcpShi8Zo" Comment="Is Open" Bounds="1445,714,35,15" ShowValueBox="true" isIOBox="true" />
-            <Overlay Id="OPcSJXG78SUMt9otcG73NT" Name="Launchpad Track &amp; Keyframe Selector" Bounds="1298,496,553,264">
+            <Pad Id="DcVU4U1kTBQN4LJu59CQAF" SlotId="EURKGOEscqJNK4J0ReGOM7" Bounds="1360,676" />
+            <Pad Id="Q7StGXgw9j6OQOcpShi8Zo" Comment="Is Open" Bounds="1360,734,35,15" ShowValueBox="true" isIOBox="true" />
+            <Overlay Id="OPcSJXG78SUMt9otcG73NT" Name="Launchpad Track &amp; Keyframe Selector" Bounds="1213,516,376,264">
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
             </Overlay>
             <Node Bounds="1099,302,79,26" Id="M46CYYZ4C7iOVFu1tlHwAf">
@@ -389,9 +399,9 @@
             </Node>
             <Pad Id="Hib8HM4swhtN3IGwvATMah" SlotId="C4lRacDto3JPhkCM3gH4VU" Bounds="1059,350" />
             <Pad Id="NUwsmlcMoWQPBnxQWMWZnx" SlotId="C4lRacDto3JPhkCM3gH4VU" Bounds="862,901" />
-            <Pad Id="Tm5VL2MOJaLO7Fm10VnE4C" SlotId="C4lRacDto3JPhkCM3gH4VU" Bounds="1445,620" />
-            <Pad Id="UeboGbYAs9vP0dtfjhJcZo" SlotId="DqOZ3VvcrL9PMx4l2bryQJ" Bounds="1499,577" />
-            <Node Bounds="1497,603,43,19" Id="Q78LqiKfIToPPh9uGebTZT">
+            <Pad Id="Tm5VL2MOJaLO7Fm10VnE4C" SlotId="C4lRacDto3JPhkCM3gH4VU" Bounds="1360,640" />
+            <Pad Id="UeboGbYAs9vP0dtfjhJcZo" SlotId="DqOZ3VvcrL9PMx4l2bryQJ" Bounds="1414,597" />
+            <Node Bounds="1412,623,43,19" Id="Q78LqiKfIToPPh9uGebTZT">
               <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Select (ByPath)" />
@@ -401,12 +411,12 @@
               <Pin Id="KGDijOsO5U8NlsovUK9362" Name="Path" Kind="InputPin" />
               <Pin Id="UyHQWuELeEtQZ6LmEOiMaY" Name="Output" Kind="OutputPin" />
             </Node>
-            <Pad Id="GjnDCmeK0G0P1rVYfX7ebR" Comment="" Bounds="1515,577,93,15" ShowValueBox="true" isIOBox="true" Value="EnableInteraction">
+            <Pad Id="GjnDCmeK0G0P1rVYfX7ebR" Comment="" Bounds="1430,597,93,15" ShowValueBox="true" isIOBox="true" Value="EnableInteraction">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pad>
-            <Node Bounds="1497,633,45,26" Id="Stt9E41HDTNPW7T6O5bege">
+            <Node Bounds="1412,653,45,26" Id="Stt9E41HDTNPW7T6O5bege">
               <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="MutableInterfaceType" Name="Channel" NeedsToBeDirectParent="true" />
@@ -418,7 +428,7 @@
             </Node>
             <ControlPoint Id="KP0IiEWF6NJPFaIy2W2CZB" Bounds="562,611" />
             <Pad Id="TX5KvPTDXpHLD84d7jisNM" Comment="" Bounds="443,1187,35,35" ShowValueBox="true" isIOBox="true" />
-            <Node Bounds="1446,904,58,19" Id="Uc2CQsyQk4APiGZnvUyWs3">
+            <Node Bounds="1361,924,58,19" Id="Uc2CQsyQk4APiGZnvUyWs3">
               <p:NodeReference LastCategoryFullName="Interpolator.Timeliner" LastDependency="VL.Interpolator.Timeliner.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="MTC_Out" />
@@ -428,14 +438,13 @@
               <Pin Id="HmXOX028TmIL6Fm5zI9moM" Name="Model" Kind="InputPin" />
               <Pin Id="VbjsoRHPuwbOwyFpTi3mOQ" Name="Is Open" Kind="OutputPin" />
             </Node>
-            <Pad Id="RQdnGhRYGIJLmY5taBmOBg" SlotId="EURKGOEscqJNK4J0ReGOM7" Bounds="1448,868" />
-            <Overlay Id="ApeiqqGEWvMMKjkBd0WfXC" Name="MTC &amp; Clock Out" Bounds="1298,792,269,192">
+            <Pad Id="RQdnGhRYGIJLmY5taBmOBg" SlotId="EURKGOEscqJNK4J0ReGOM7" Bounds="1363,888" />
+            <Overlay Id="ApeiqqGEWvMMKjkBd0WfXC" Name="MTC &amp; Clock Out" Bounds="1213,812,378,192">
               <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
             </Overlay>
-            <Pad Id="KWG5Q8C7hziLR0nkWP7qqL" SlotId="Jzkl4MjokwjLlnjMwsly5m" Bounds="1501,843" />
-            <Pad Id="Q3m2tm4gY5aPAm5M1OaZgh" Comment="Is Open" Bounds="1448,943,35,15" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="KWG5Q8C7hziLR0nkWP7qqL" SlotId="Jzkl4MjokwjLlnjMwsly5m" Bounds="1416,863" />
+            <Pad Id="Q3m2tm4gY5aPAm5M1OaZgh" Comment="Is Open" Bounds="1363,963,35,15" ShowValueBox="true" isIOBox="true" />
             <Pad Id="S8r6fgvClU0NMkAfZtaZ4o" SlotId="EURKGOEscqJNK4J0ReGOM7" Bounds="1014,698" />
-            <Pad Id="AX5jMywQqYNN9MZAJCITcr" Comment="" Bounds="1539,714,220,49" ShowValueBox="true" isIOBox="true" />
             <Pad Id="M5SYjkX0DAnMmu0FEaIKlO" SlotId="QX5OyoPchZePWc1RxxZhXC" Bounds="369,260" />
           </Canvas>
           <Link Id="OEaqadoRWZOMxH9BJI3Dyd" Ids="Vzi9s9TlxGtP4c0z4a4flU,SrRsNyr6h1OPFM942T9nSK" />
@@ -558,7 +567,7 @@
             <Pin Id="SoJyIFrsPBbLCMaWUQU7QH" Name="SpatialAudioCopy" Kind="OutputPin" />
           </Patch>
           <Patch Id="IfBBYRtRXqRLHujfFTCcd7" Name="Editor">
-            <Pin Id="FflN5DPAhKHLHqGVrBBQDL" Name="TargetAppEditorFactory" Kind="InputPin">
+            <Pin Id="FflN5DPAhKHLHqGVrBBQDL" Name="TargetAppEditorFactory" Kind="InputPin" Visibility="Optional">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Optional" />
                 <p:TypeArguments>
@@ -598,9 +607,9 @@
           <Link Id="G4EsiRBbN7zPFPgaMazgI5" Ids="DbzYpD2UbqNQHZfLM79dl6,Cno4SPFCOI6MFU7xWd51g0" />
           <Slot Id="BV3ji0618H0L0lWbm9eeZs" Name="TargetApp_Interpolated" />
           <Slot Id="OzwBm1mr010NWPn6PFo0OG" Name="SpatialAudio_Interpolated" />
-          <Link Id="CpWImrSV0YOPO5HL5IucD2" Ids="J1NE36iDlRIMnLgOGDCdtv,AX5jMywQqYNN9MZAJCITcr" />
           <Link Id="KGCicLNLnKhMH5ly0qE7pY" Ids="StPCXRdtvztLsoZ3dGx3ZK,FEPbOkybattQBmAeByvjDr" />
           <Link Id="BciFZL830ASM6xdCdsBgAo" Ids="M5SYjkX0DAnMmu0FEaIKlO,M5Oaq66PZKVQFFno27iz7m" />
+          <Link Id="SrDfpbR9w96NJXiGkeJPRt" Ids="KA41xnyq3kHMZEvGdC7eYe,HvKKGDkevEmP161ZSBuNNY" />
         </Patch>
       </Node>
       <!--
