@@ -28,7 +28,7 @@
             <Pin Id="N0KDtoPJv2WNwz2YfT4BnZ" Name="SyncModels" Kind="ApplyPin" DefaultValue="True" />
             <Pin Id="S68Q4Gf31g0MPDcfUPATZ0" Name="TargetAppEditorFactory" Kind="InputPin" />
             <Pin Id="Hm7F5Zv83TfO5cH2qtCKfT" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="JDmQClaUKh9PJsSwfyxats" Name="Window Name" Kind="InputPin" />
+            <Pin Id="JDmQClaUKh9PJsSwfyxats" Name="Window Name" Kind="InputPin" DefaultValue="Editor" />
             <Pin Id="Ia1MQOER1WmNim710ZRNKw" Name="Closing Message" Kind="InputPin" />
             <Pin Id="LVSxe4vQFPjLkseas5qHuH" Name="LaunchpadControl" Kind="InputPin" DefaultValue="True" />
             <Pin Id="PG9zz1pjwm7MoH4xsbrxLc" Name="MTC_Out" Kind="InputPin" DefaultValue="True" />
@@ -47,7 +47,7 @@
                 <Pad Id="QJoIaWDXs3OORB16A6XAle" SlotId="Hi8UZVBjQKJPqdrYBavR74" Bounds="438,303" />
                 <ControlPoint Id="MjAGTSTOiOaQVksaqK94WA" Bounds="438,363" />
                 <Pad Id="A9Ms9nbigHYNKrPzgwWq9y" SlotId="FfrSsCPRg8XMiX8qORrKSa" Bounds="248,303" />
-                <ControlPoint Id="NUrncMkngb2Mun6KiGFJ3D" Bounds="248,363" />
+                <ControlPoint Id="NUrncMkngb2Mun6KiGFJ3D" Bounds="248,329" />
                 <Node Bounds="231,253,46,26" Id="MuVnpGZ6eUzPpneAD7wnRK">
                   <p:NodeReference LastCategoryFullName="System.GUID" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -158,6 +158,15 @@
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
                 </Pad>
+                <Pad Id="SeiaDmgjyCUMctO3tXfeGe" Bounds="207,352,74,57" ShowValueBox="true" isIOBox="true" Value="Browsable Attribute = False">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                  <p:ValueBoxSettings>
+                    <p:fontsize p:Type="Int32">9</p:fontsize>
+                    <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  </p:ValueBoxSettings>
+                </Pad>
               </Canvas>
               <ProcessDefinition Id="OPmihtHbIk9OS6Uj4ciGze" IsHidden="true">
                 <Fragment Id="NhL5F2s6wjdP756NthJgL6" Patch="ORWrD7CPgZtNFxOLidJfq2" Enabled="true" />
@@ -177,7 +186,24 @@
                 <Pin Id="FpBSGvezUEeOrNcP5FrZnu" Name="MySubType2" Kind="OutputPin" />
                 <Pin Id="KdMtTaxlzKvLdj8aIBnxMt" Name="HereAFloat" Kind="OutputPin" />
               </Patch>
-              <Slot Id="FfrSsCPRg8XMiX8qORrKSa" Name="Key" />
+              <Slot Id="FfrSsCPRg8XMiX8qORrKSa" Name="Key">
+                <p:Attributes>
+                  <AttributeData>
+                    <p:TypeReference LastCategoryFullName="System.EditorAttributes" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="BrowsableAttribute" />
+                    </p:TypeReference>
+                    <p:Arguments>
+                      <AttributeArgument Name="Browsable">
+                        <p:Value SerializedValue="False">
+                          <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                            <Choice Kind="TypeFlag" Name="Boolean" />
+                          </p:TypeAnnotation>
+                        </p:Value>
+                      </AttributeArgument>
+                    </p:Arguments>
+                  </AttributeData>
+                </p:Attributes>
+              </Slot>
               <Link Id="I6GOExYUeMiMq12lHXsp96" Ids="A9Ms9nbigHYNKrPzgwWq9y,NUrncMkngb2Mun6KiGFJ3D" />
               <Link Id="EXK4rUPrUIvOdoIhuSMHSr" Ids="NUrncMkngb2Mun6KiGFJ3D,KrRvn3fXGXJNqe7S9bQpjg" IsHidden="true" />
               <Patch Id="LfwqTKkO8hIP5Dj1GNyYZ3" Name="GetKey">
@@ -253,9 +279,18 @@
                   <Pin Id="PMoCJliEoAEOJmo7yVsm4i" Name="Result" Kind="StateOutputPin" />
                   <Pin Id="HANeLJhSGtuOxUHLR9wfLI" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 </Node>
-                <Overlay Id="Ms25gpwFAMvQH8oPWJ1Zpg" Name="Important" Bounds="189,265,110,197">
+                <Overlay Id="Ms25gpwFAMvQH8oPWJ1Zpg" Name="Important" Bounds="189,265,110,283">
                   <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
                 </Overlay>
+                <Pad Id="Q8AX9eC1o6iMJhFRfvKmSz" Bounds="199,475,74,57" ShowValueBox="true" isIOBox="true" Value="Browsable Attribute = False">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                  <p:ValueBoxSettings>
+                    <p:fontsize p:Type="Int32">9</p:fontsize>
+                    <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  </p:ValueBoxSettings>
+                </Pad>
               </Canvas>
               <Patch Id="Re0fGatPFlqNEUVv8f883p" Name="Create" ParticipatingElements="NWisYiIzdAnMeNklLPj1DJ">
                 <Pin Id="L3J4waAXpr4QUM4NgJRBOj" Name="Float" Kind="InputPin" />
@@ -370,7 +405,24 @@
               <Link Id="EGljOGEsPgnOohZTT4TFqz" Ids="JxNb777sKxMQHMBS9soVzt,SoiftJ8YqtbOn8o1CE1fgo" />
               <Link Id="BKV00HTpTD1OtqJ42ngbiL" Ids="ERRBn44XZDgOR9UTo0NT4Q,RbOfEMM9osgNbFpAkBxq4G" IsHidden="true" />
               <Link Id="FOxZcGfEVmzPuYSNoNZURT" Ids="SoiftJ8YqtbOn8o1CE1fgo,ERRBn44XZDgOR9UTo0NT4Q" />
-              <Slot Id="KsjrK8hMK1aNZMtDGR1ApO" Name="Key" />
+              <Slot Id="KsjrK8hMK1aNZMtDGR1ApO" Name="Key">
+                <p:Attributes>
+                  <AttributeData>
+                    <p:TypeReference LastCategoryFullName="System.EditorAttributes" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="BrowsableAttribute" />
+                    </p:TypeReference>
+                    <p:Arguments>
+                      <AttributeArgument Name="Browsable">
+                        <p:Value SerializedValue="False">
+                          <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                            <Choice Kind="TypeFlag" Name="Boolean" />
+                          </p:TypeAnnotation>
+                        </p:Value>
+                      </AttributeArgument>
+                    </p:Arguments>
+                  </AttributeData>
+                </p:Attributes>
+              </Slot>
               <Patch Id="Arh109LMGc2ML9Bf6caRgN" Name="GetKey">
                 <Pin Id="Dt6gi7Vy9nBNiDy9qZC3nk" MergeId="105672" Name="Key" Kind="OutputPin" />
               </Patch>
@@ -400,7 +452,7 @@
             <Patch Id="C5gsnIpGMD3P7MV0bZ9sBH">
               <Canvas Id="HXVwgMSltVIORH0Nt191Kq" CanvasType="Group">
                 <Pad Id="HqFMbDquGTFOBa9V4IUsO5" SlotId="PIV0AWx0S3DQWYfD3nSJen" Bounds="238,376" />
-                <ControlPoint Id="FO8xIM6XhYEPlkg9cZg7f0" Bounds="238,435" />
+                <ControlPoint Id="FO8xIM6XhYEPlkg9cZg7f0" Bounds="238,416" />
                 <Node Bounds="221,316,46,26" Id="ChAmrsHlLOqPmmE7EKQmBt">
                   <p:NodeReference LastCategoryFullName="System.GUID" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -410,7 +462,7 @@
                   <Pin Id="P9BdW5heVDyOZc6OVl3Zgd" Name="Result" Kind="StateOutputPin" />
                   <Pin Id="E6lCmwy8eZCPr1NhWsYHF9" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 </Node>
-                <Overlay Id="EHen4OUdaXuLzH80a4Qlfc" Name="Important" Bounds="189,265,110,197">
+                <Overlay Id="EHen4OUdaXuLzH80a4Qlfc" Name="Important" Bounds="189,265,110,256">
                   <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
                 </Overlay>
                 <Pad Id="S3TRByaLTA3NQx7vxVNt57" SlotId="IlJIbnJjgzVQWQwemp4Mef" Bounds="523,593" />
@@ -609,6 +661,15 @@
                     <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   </p:ValueBoxSettings>
                 </Pad>
+                <Pad Id="ANw7vNfzgstOhcnOFGk3KH" Bounds="199,454,74,57" ShowValueBox="true" isIOBox="true" Value="Browsable Attribute = False">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                  <p:ValueBoxSettings>
+                    <p:fontsize p:Type="Int32">9</p:fontsize>
+                    <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  </p:ValueBoxSettings>
+                </Pad>
               </Canvas>
               <Patch Id="RNHsqroQoSsQUkQQTWnFNx" Name="Create" ParticipatingElements="UnZmmWkaLgsPFIFgepCe0Y">
                 <Pin Id="UgFzioL2qjfNTYFXzD0SvD" Name="ListIndex" Kind="InputPin" />
@@ -629,7 +690,24 @@
                 <Pin Id="RuRoGWUcSHyM7fHGko7rDz" Name="BBBB" Kind="OutputPin" />
                 <Pin Id="Ifw8SN38Y3kOR3Q4Zfwb5g" Name="CCCC" Kind="OutputPin" />
               </Patch>
-              <Slot Id="PIV0AWx0S3DQWYfD3nSJen" Name="Key" />
+              <Slot Id="PIV0AWx0S3DQWYfD3nSJen" Name="Key">
+                <p:Attributes>
+                  <AttributeData>
+                    <p:TypeReference LastCategoryFullName="System.EditorAttributes" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="BrowsableAttribute" />
+                    </p:TypeReference>
+                    <p:Arguments>
+                      <AttributeArgument Name="Browsable">
+                        <p:Value SerializedValue="False">
+                          <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                            <Choice Kind="TypeFlag" Name="Boolean" />
+                          </p:TypeAnnotation>
+                        </p:Value>
+                      </AttributeArgument>
+                    </p:Arguments>
+                  </AttributeData>
+                </p:Attributes>
+              </Slot>
               <Patch Id="KPo6wTL8LjxMWs8LnF5Nvt" Name="GetKey">
                 <Pin Id="PaCOvIJT34nPSVPMx39t2C" MergeId="105672" Name="Key" Kind="OutputPin" />
               </Patch>
@@ -1709,6 +1787,16 @@
             <Pin Id="TzFNoP4yaBPPHNZAhpAIz1" Name="Result" Kind="OutputPin" />
             <Pin Id="SGGdhKYdnCdLEiQo5djteH" Name="Unchanged" Kind="OutputPin" />
           </Node>
+          <Pad Id="Ao3INpnBMz8L8fCvgOPI1P" Comment="Window Name" Bounds="384,531,107,15" ShowValueBox="true" isIOBox="true" Value="My Project Timeliner">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="SFvUFpzL3nGQcRL2szqCMx" Comment="Closing Message for exported App" Bounds="404,566,73,15" ShowValueBox="true" isIOBox="true" Value="Closing...">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <Patch Id="Dvo0yaCOsCsNZ9nbmnbnVB" Name="Create" ParticipatingElements="TlAUV9EinosQToadfUl5Ew" />
         <Patch Id="H8eFsvTxjrNOA8fK5zaUi4" Name="Update" />
@@ -1854,6 +1942,8 @@
         <Link Id="TEvdu2ZO7xWOEgA5NFpZDU" Ids="PlPEx1GIFKLLvZTSJePmPD,DGzSkiJlkCROtzfjX7Ebls" />
         <Link Id="D8vaDWuFr5TMWVA8Zclbl9" Ids="TzFNoP4yaBPPHNZAhpAIz1,R5xe6VwmeVPLTy7QkYcST7" />
         <Link Id="DQ3PL4ARSytP1Ral3lq76w" Ids="UJ6YIrNyYpdONy3uIQFoKA,S5ksS7pEWqwNp0LV630wY5" />
+        <Link Id="GI5wN1HB9JWLrXBG8bqwWO" Ids="Ao3INpnBMz8L8fCvgOPI1P,JDmQClaUKh9PJsSwfyxats" />
+        <Link Id="RYKOIYed7SFLTC0iqxHowl" Ids="SFvUFpzL3nGQcRL2szqCMx,Ia1MQOER1WmNim710ZRNKw" />
       </Patch>
     </Node>
   </Patch>
