@@ -11104,10 +11104,10 @@
             </p:NodeReference>
             <Patch Id="NbNGCZdVqhbPsYyYeVDvvG">
               <Canvas Id="RgQet1Img5PNDe1AdvYIRp" CanvasType="Group">
-                <Pad Id="HFH7kcVoDuNPqe1mKi4GUx" SlotId="D0vWWs8zNcqQEh43N5yRgg" Bounds="334,260" />
-                <ControlPoint Id="Aj2yucVe65yMtvDg6l1yYG" Bounds="334,195" />
-                <ControlPoint Id="NIs6Qqw1o8FQRtJlgCoEEs" Bounds="334,312" />
-                <Pad Id="Btl7TYIG0UMMhtv7S1llKJ" Comment="Enable" Bounds="228,212,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+                <Pad Id="HFH7kcVoDuNPqe1mKi4GUx" SlotId="D0vWWs8zNcqQEh43N5yRgg" Bounds="334,254" />
+                <ControlPoint Id="Aj2yucVe65yMtvDg6l1yYG" Bounds="334,189" />
+                <ControlPoint Id="NIs6Qqw1o8FQRtJlgCoEEs" Bounds="334,306" />
+                <Pad Id="Btl7TYIG0UMMhtv7S1llKJ" Comment="SendMTC" Bounds="228,212,35,35" ShowValueBox="true" isIOBox="true" Value="True">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
                   </p:TypeAnnotation>
@@ -11115,26 +11115,26 @@
                     <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
                   </p:ValueBoxSettings>
                 </Pad>
-                <Pad Id="ONDffgoCw1DPRpnlzqisXk" SlotId="Rsp5GJxXVwaPgwhp4w24vn" Bounds="523,260" />
-                <ControlPoint Id="AlITunUlX4eLSnBP5kMCiG" Bounds="523,195" />
-                <ControlPoint Id="LlLaBauIKnPPMcajFDRUnT" Bounds="524,312" />
-                <Pad Id="N5ijn5ooEkkPTEZfQIDqhJ" Comment="DeviceName" Bounds="433,224,133,17" ShowValueBox="true" isIOBox="true" Value="loopMIDI Port">
+                <Pad Id="ONDffgoCw1DPRpnlzqisXk" SlotId="Rsp5GJxXVwaPgwhp4w24vn" Bounds="493,254" />
+                <ControlPoint Id="AlITunUlX4eLSnBP5kMCiG" Bounds="493,189" />
+                <ControlPoint Id="LlLaBauIKnPPMcajFDRUnT" Bounds="493,306" />
+                <Pad Id="N5ijn5ooEkkPTEZfQIDqhJ" Comment="MTCDeviceName" Bounds="403,212,133,17" ShowValueBox="true" isIOBox="true" Value="loopMIDI Port">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
                 </Pad>
-                <Pad Id="NlkF3WOElnAQHRkO3VI61n" SlotId="A8IFTOUi8jzLoyrMgPksxp" Bounds="699,260" />
-                <ControlPoint Id="FQSW3usq9o6M1irChBnQfx" Bounds="699,195" />
-                <ControlPoint Id="NjjTJqMOWhaLi1zRCPva9C" Bounds="699,312" />
-                <Pad Id="E5hi12qNi1yPZWGoL3M3Oi" Comment="SMPTE_Rate" Bounds="657,222,35,15" ShowValueBox="true" isIOBox="true" Value="3">
+                <Pad Id="NlkF3WOElnAQHRkO3VI61n" SlotId="A8IFTOUi8jzLoyrMgPksxp" Bounds="699,254" />
+                <ControlPoint Id="FQSW3usq9o6M1irChBnQfx" Bounds="699,189" />
+                <ControlPoint Id="NjjTJqMOWhaLi1zRCPva9C" Bounds="699,306" />
+                <Pad Id="E5hi12qNi1yPZWGoL3M3Oi" Comment="SMPTE_Rate" Bounds="657,212,35,15" ShowValueBox="true" isIOBox="true" Value="3">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="Integer32" />
                   </p:TypeAnnotation>
                 </Pad>
-                <Pad Id="U9hoLr3bS1yNMOGkZR4n9o" SlotId="KXMnFn0Nx41PgSCC7yp5uY" Bounds="860,257" />
-                <ControlPoint Id="SEt2a6rGgABPr6uOlO8KKc" Bounds="860,195" />
-                <ControlPoint Id="NmdgRGJPXqpPH9XipQw6Cv" Bounds="861,313" />
-                <Pad Id="H2fNmWiI3qdMKqDcAQwQic" Comment="SendClock" Bounds="803,219,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+                <Pad Id="U9hoLr3bS1yNMOGkZR4n9o" SlotId="KXMnFn0Nx41PgSCC7yp5uY" Bounds="1151,254" />
+                <ControlPoint Id="SEt2a6rGgABPr6uOlO8KKc" Bounds="1151,189" />
+                <ControlPoint Id="NmdgRGJPXqpPH9XipQw6Cv" Bounds="1152,306" />
+                <Pad Id="H2fNmWiI3qdMKqDcAQwQic" Comment="SendClock" Bounds="1094,212,35,35" ShowValueBox="true" isIOBox="true" Value="False">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
                   </p:TypeAnnotation>
@@ -11142,8 +11142,16 @@
                     <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
                   </p:ValueBoxSettings>
                 </Pad>
+                <Pad Id="IJsZ6pVCa0pLvcX49LLT1F" SlotId="ThZguLd4XPcPPtGZky9Z0u" Bounds="906,254" />
+                <ControlPoint Id="Rnky3q07P6VNTgostdfKQp" Bounds="906,189" />
+                <ControlPoint Id="S2d7wY5hyWeQZzYORxSTnH" Bounds="907,306" />
+                <Pad Id="VsY8zFFNoXVL3eGJvu9pfn" Comment="ClockOutDeviceName" Bounds="816,212,133,17" ShowValueBox="true" isIOBox="true" Value="loopMIDI Port">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pad>
               </Canvas>
-              <Patch Id="PdNSrxyWbDNM6FQrRDYAIO" Name="Create" ParticipatingElements="VWk8DnvgU2TPYtrZ3b1V2b,Iu14e2Fb22pOrKDPmHxVI4,DTIcRqPZhrtPoraPciLPls,BVj4WHgmvpvO8GAWK7vNs6" />
+              <Patch Id="PdNSrxyWbDNM6FQrRDYAIO" Name="Create" ParticipatingElements="VWk8DnvgU2TPYtrZ3b1V2b,Iu14e2Fb22pOrKDPmHxVI4,DTIcRqPZhrtPoraPciLPls,BVj4WHgmvpvO8GAWK7vNs6,Nm7rK9ko3UzNtFXV38hhoV" />
               <ProcessDefinition Id="CSziLGKCnhiMUUkzp1L61q" IsHidden="true">
                 <Fragment Id="KY72HZoXLLDLrGfeSGc3lM" Patch="PdNSrxyWbDNM6FQrRDYAIO" Enabled="true" />
                 <Fragment Id="QwtwAKPf8TKOcSZ1yZGzQj" Patch="Tbe0ZEbszvLNeIleDAdY8t" />
@@ -11151,27 +11159,28 @@
                 <Fragment Id="EKAZ81w9RxzLtOXsF4Pxjf" Patch="Ad5bw4i0bDbPRhjrQ120mA" />
                 <Fragment Id="RXugmvtpQxALgifHCpbuxn" Patch="S0e8iY3exGLP8BSzMiGcVp" />
                 <Fragment Id="VtWDWSIMdcyNQb7CG0MHaz" Patch="Ghwn9UbfKddOE47IP6fWQi" />
+                <Fragment Id="Cx3P7R3sYTWOJaWjVj8BzT" Patch="SAE6omTLFp0MbYVx9GV0zk" />
+                <Fragment Id="H60rzmm7pjoPW1k0nxfpma" Patch="Uyko8lNPaM6LqcshTTK9oU" />
               </ProcessDefinition>
-              <Slot Id="D0vWWs8zNcqQEh43N5yRgg" Name="Enable">
+              <Slot Id="D0vWWs8zNcqQEh43N5yRgg" Name="SendMTC">
                 <p:TypeAnnotation p:Type="TypeReference">
                   <Choice Kind="TypeFlag" Name="Boolean" />
                 </p:TypeAnnotation>
               </Slot>
-              <Link Id="NUIBsnRWGuMNLcpWYELugc" Ids="Vcre5iI5JKDMuD9aiAZT5d,Aj2yucVe65yMtvDg6l1yYG" IsHidden="true" />
+              <Link Id="NUIBsnRWGuMNLcpWYELugc" Ids="ImsJpkl2zOyPa7wmsywwxF,Aj2yucVe65yMtvDg6l1yYG" IsHidden="true" />
               <Link Id="PA2ufRs8CXzMPL1sd26vUI" Ids="Aj2yucVe65yMtvDg6l1yYG,HFH7kcVoDuNPqe1mKi4GUx" />
               <Patch Id="Tbe0ZEbszvLNeIleDAdY8t" Name="Split">
-                <Pin Id="VIbe5MPYYQaLMYkFAF9cPM" Name="Enable" Kind="OutputPin" />
-                <Pin Id="UNReNtPZY6ZQb79PMyTyCY" Name="DeviceName" Kind="OutputPin" />
+                <Pin Id="VIbe5MPYYQaLMYkFAF9cPM" Name="SendMTC" Kind="OutputPin" />
+                <Pin Id="UNReNtPZY6ZQb79PMyTyCY" Name="MTCDeviceName" Kind="OutputPin" />
                 <Pin Id="OxiFDc2gQs4NkaOROvBCyA" Name="SMPTE_Rate" Kind="OutputPin" />
+                <Pin Id="MZUhRk0M2JhM46O0UoR2ej" Name="ClockOutDeviceName" Kind="OutputPin" />
                 <Pin Id="Pbh2PAcTWlOPaVZ2B4tNS6" Name="SendClock" Kind="OutputPin" />
               </Patch>
               <Link Id="EO9nQlb2UMwMkCW17sv4M7" Ids="NIs6Qqw1o8FQRtJlgCoEEs,VIbe5MPYYQaLMYkFAF9cPM" IsHidden="true" />
               <Link Id="GlFmulXk5qAMvD3oqJ36VY" Ids="HFH7kcVoDuNPqe1mKi4GUx,NIs6Qqw1o8FQRtJlgCoEEs" />
-              <Patch Id="RTX42CcMt5sPQvpaKUcgjp" Name="SetEnable">
-                <Pin Id="Vcre5iI5JKDMuD9aiAZT5d" Name="Enable" Kind="InputPin" DefaultValue="True" />
-              </Patch>
+              <Patch Id="RTX42CcMt5sPQvpaKUcgjp" Name="SetEnable" />
               <Link Id="VWk8DnvgU2TPYtrZ3b1V2b" Ids="Btl7TYIG0UMMhtv7S1llKJ,HFH7kcVoDuNPqe1mKi4GUx" />
-              <Slot Id="Rsp5GJxXVwaPgwhp4w24vn" Name="DeviceName">
+              <Slot Id="Rsp5GJxXVwaPgwhp4w24vn" Name="MTCDeviceName">
                 <p:TypeAnnotation p:Type="TypeReference">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
@@ -11180,8 +11189,8 @@
               <Link Id="GKfN1YDgIqPNKvZwEwUYe3" Ids="AlITunUlX4eLSnBP5kMCiG,ONDffgoCw1DPRpnlzqisXk" />
               <Link Id="J0ADk0ODk5oOlma5hYx5mW" Ids="LlLaBauIKnPPMcajFDRUnT,UNReNtPZY6ZQb79PMyTyCY" IsHidden="true" />
               <Link Id="R8TDOeMWZrlN3BYEWya8Nj" Ids="ONDffgoCw1DPRpnlzqisXk,LlLaBauIKnPPMcajFDRUnT" />
-              <Patch Id="Ad5bw4i0bDbPRhjrQ120mA" Name="SetDeviceName">
-                <Pin Id="NWg1v4zwjwuLiY2JHFBu0J" Name="DeviceName" Kind="InputPin" />
+              <Patch Id="Ad5bw4i0bDbPRhjrQ120mA" Name="SetMTCDeviceName">
+                <Pin Id="NWg1v4zwjwuLiY2JHFBu0J" Name="MTCDeviceName" Kind="InputPin" />
               </Patch>
               <Link Id="Iu14e2Fb22pOrKDPmHxVI4" Ids="N5ijn5ooEkkPTEZfQIDqhJ,ONDffgoCw1DPRpnlzqisXk" />
               <Slot Id="A8IFTOUi8jzLoyrMgPksxp" Name="SMPTE_Rate">
@@ -11210,6 +11219,22 @@
                 <Pin Id="I18QZo3cYtqMZnTSvs7xow" Name="SendClock" Kind="InputPin" />
               </Patch>
               <Link Id="BVj4WHgmvpvO8GAWK7vNs6" Ids="H2fNmWiI3qdMKqDcAQwQic,U9hoLr3bS1yNMOGkZR4n9o" />
+              <Link Id="RyzMnKI72RvLSTgvkg4d9e" Ids="Rnky3q07P6VNTgostdfKQp,IJsZ6pVCa0pLvcX49LLT1F" />
+              <Link Id="L5xLAb2UcpMQcKVLnY4B04" Ids="IJsZ6pVCa0pLvcX49LLT1F,S2d7wY5hyWeQZzYORxSTnH" />
+              <Link Id="Nm7rK9ko3UzNtFXV38hhoV" Ids="VsY8zFFNoXVL3eGJvu9pfn,IJsZ6pVCa0pLvcX49LLT1F" />
+              <Link Id="KYiglnzJClBMfUbors5iOk" Ids="PGHzmyepMgCMryAZ6ouatb,Rnky3q07P6VNTgostdfKQp" IsHidden="true" />
+              <Slot Id="ThZguLd4XPcPPtGZky9Z0u" Name="ClockOutDeviceName">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Link Id="HhF9SohP2cLQGpgSbePjZl" Ids="S2d7wY5hyWeQZzYORxSTnH,MZUhRk0M2JhM46O0UoR2ej" IsHidden="true" />
+              <Patch Id="SAE6omTLFp0MbYVx9GV0zk" Name="SetClockOutDeviceName">
+                <Pin Id="PGHzmyepMgCMryAZ6ouatb" Name="ClockOutDeviceName" Kind="InputPin" />
+              </Patch>
+              <Patch Id="Uyko8lNPaM6LqcshTTK9oU" Name="SetSendMTC">
+                <Pin Id="ImsJpkl2zOyPa7wmsywwxF" Name="SendMTC" Kind="InputPin" DefaultValue="True" />
+              </Patch>
             </Patch>
           </Node>
         </Canvas>
