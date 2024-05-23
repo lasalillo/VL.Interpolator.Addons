@@ -1175,7 +1175,7 @@
             <Pin Id="J9dXn7f4Tk1NANHyj1msWW" Name="Value" Kind="OutputPin" />
           </Node>
           <Node Bounds="448,1514,89,26" Id="NXub2LnxQGONM9DNFCFKK2">
-            <p:NodeReference LastCategoryFullName="Interpolator.RealtimeControls" LastDependency="VL.Interpolator.vl">
+            <p:NodeReference LastCategoryFullName="Interpolator.Players.Model.RealtimeControls" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="4026531840" Name="RealtimeControls" />
               <Choice Kind="OperationCallFlag" Name="SetSeekPosition" />
@@ -1185,7 +1185,7 @@
             <Pin Id="LAvGs9xvya9LdSoKpDX4hV" Name="SeekPosition" Kind="InputPin" />
           </Node>
           <Node Bounds="448,1550,77,26" Id="IZgRgPb2cqSQCWCedk4wlU">
-            <p:NodeReference LastCategoryFullName="Interpolator.RealtimeControls" LastDependency="VL.Interpolator.vl">
+            <p:NodeReference LastCategoryFullName="Interpolator.Players.Model.RealtimeControls" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="DoSeek" />
             </p:NodeReference>
@@ -1240,7 +1240,7 @@
             <Pin Id="K6IUhRVzPJMOyuz9585qse" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="448,1676,77,26" Id="MaX3X6hFur5OfwgqQHtg0Z">
-            <p:NodeReference LastCategoryFullName="Interpolator.RealtimeControls" LastDependency="VL.Interpolator.vl">
+            <p:NodeReference LastCategoryFullName="Interpolator.Players.Model.RealtimeControls" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SetPlayState" />
             </p:NodeReference>
@@ -1447,7 +1447,7 @@
             <Pin Id="HjRAtWOUYhjOnkhnSEcMGu" Name="Output" Kind="StateOutputPin" />
             <Pin Id="QIeHmcOohTPNCdOpulIGmL" Name="MultitrackPlayer" Kind="OutputPin" />
           </Node>
-          <Node Bounds="863,1751,43,19" Id="SEZ9x3nPJ2xMNgXXADwmqL">
+          <Node Bounds="953,1751,43,19" Id="SEZ9x3nPJ2xMNgXXADwmqL">
             <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Select (ByPath)" />
@@ -1457,12 +1457,12 @@
             <Pin Id="Sul2LkBgRbkPos7LNRaRjl" Name="Path" Kind="InputPin" />
             <Pin Id="KTWIuYTvI9mPAiXhbTGvmd" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="Bd7k95myH2jQSomLoDdhVa" Comment="" Bounds="903,1715,68,15" ShowValueBox="true" isIOBox="true" Value="InputVolume">
+          <Pad Id="Bd7k95myH2jQSomLoDdhVa" Comment="" Bounds="993,1715,68,15" ShowValueBox="true" isIOBox="true" Value="InputVolume">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="957,1752,43,19" Id="UoRRAwFAyLFLr5wS6E2Ens">
+          <Node Bounds="1047,1752,43,19" Id="UoRRAwFAyLFLr5wS6E2Ens">
             <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Select (ByPath)" />
@@ -1472,12 +1472,12 @@
             <Pin Id="F0HUf39zvSRN1e3tSmpT8J" Name="Path" Kind="InputPin" />
             <Pin Id="OLHoVEPNievLmmYAu89x2b" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="KJQ2ibNMcVsL3q7W3Br0pc" Comment="" Bounds="997,1715,45,15" ShowValueBox="true" isIOBox="true" Value="Volume">
+          <Pad Id="KJQ2ibNMcVsL3q7W3Br0pc" Comment="" Bounds="1087,1715,45,15" ShowValueBox="true" isIOBox="true" Value="Volume">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="863,1806,72,26" Id="FwqZdttybe2PSVTitHH2T4">
+          <Node Bounds="953,1806,72,26" Id="FwqZdttybe2PSVTitHH2T4">
             <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="EnsureValue" />
@@ -1489,7 +1489,7 @@
             <Pin Id="L61aYPNWie2NtwreSl0lvr" Name="Apply" Kind="InputPin" DefaultValue="True" />
             <Pin Id="IEYScqQTOUJNv2ziSoIZRl" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="VPxMYeAnf9BLligredbHSY" Comment="" Bounds="1110,1674,35,146" ShowValueBox="true" isIOBox="true" Value="1">
+          <Pad Id="VPxMYeAnf9BLligredbHSY" Comment="" Bounds="1241,1657,35,146" ShowValueBox="true" isIOBox="true" Value="1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -1500,7 +1500,7 @@
               <p:sliderdirection p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SliderDirectionEnum">Vertical</p:sliderdirection>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="957,1806,72,26" Id="IIPhWi6UmYmPQ0sJ3R0I6f">
+          <Node Bounds="1047,1806,72,26" Id="IIPhWi6UmYmPQ0sJ3R0I6f">
             <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="EnsureValue" />
@@ -1512,7 +1512,7 @@
             <Pin Id="Df0LPEW8S88Ovhbl8iLmW7" Name="Apply" Kind="InputPin" DefaultValue="True" />
             <Pin Id="Ny92eKcmEFzMagKXdYi3Oi" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="TmD7Yea5983OFIMvCn78Uo" Comment="" Bounds="1194,1673,35,146" ShowValueBox="true" isIOBox="true" Value="1">
+          <Pad Id="TmD7Yea5983OFIMvCn78Uo" Comment="" Bounds="1297,1657,35,146" ShowValueBox="true" isIOBox="true" Value="1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -1523,7 +1523,7 @@
               <p:sliderdirection p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SliderDirectionEnum">Vertical</p:sliderdirection>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="FcHZ3tN2YdcK9jv67Fxq7Z" Name="Audio Levels" Bounds="739,1599,589,254">
+          <Overlay Id="FcHZ3tN2YdcK9jv67Fxq7Z" Name="Audio Levels" Bounds="739,1599,638,254">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
           <Pad Id="ToaC7SHp6j8LQJjwmhzWVf" Bounds="731,1577,505,25" ShowValueBox="true" isIOBox="true" Value="These are direct Volume controls without to update the Model">
@@ -1557,7 +1557,7 @@
           <ControlPoint Id="PVrcmmsc4kLO6urPonPEto" Bounds="2241,635" />
           <ControlPoint Id="IKslnNxVJdPPrDY1Y8mMlc" Bounds="1405,736" />
           <ControlPoint Id="GHF94BtTeuZQH4E1qFCqZV" Bounds="1405,635" />
-          <ControlPoint Id="EPjM9xfdwmkMlwqphnqeEs" Bounds="761,821" />
+          <ControlPoint Id="EPjM9xfdwmkMlwqphnqeEs" Bounds="761,816" />
           <ControlPoint Id="QiomUAnVukQLK7MatJhayK" Bounds="324,821" />
           <Overlay Id="Ozx58h1ZAN5MXAm1nSEr2n" Name="Not managed Interpolation, check MySubType2 to know more" Bounds="2694,1236,336,380">
             <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
@@ -1566,7 +1566,7 @@
           <ControlPoint Id="H4vPm5VvSeGOloFApI50ay" Bounds="3078,1112" />
           <ControlPoint Id="Quz5rf0ljmULULQNTltYMR" Bounds="3078,1136" />
           <ControlPoint Id="IWdA7E6zYCrN0ZvzbDlWWv" Bounds="3078,1159" />
-          <Node Bounds="867,1041,159,19" Id="J5qJEGDmaQ7LhQ4dP2uMrO">
+          <Node Bounds="900,1041,159,19" Id="J5qJEGDmaQ7LhQ4dP2uMrO">
             <p:NodeReference LastCategoryFullName="Interpolator.Editor.Navigation" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GoToPrevNextKeyframeByTrack" />
@@ -1607,13 +1607,13 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="FDsg4wm1dpsOuIqPnmej7Q" Comment="Tracks Count" Bounds="869,1117,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Cb9T4AsaI8yMRMuV5lZcFg" Comment="Keys Count" Bounds="869,1100,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FDsg4wm1dpsOuIqPnmej7Q" Comment="Tracks Count" Bounds="902,1117,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Cb9T4AsaI8yMRMuV5lZcFg" Comment="Keys Count" Bounds="902,1100,35,15" ShowValueBox="true" isIOBox="true" />
           <Overlay Id="VWLZyKqiuuXN7OQPGo04DA" Name="Keyframes Navigation" Bounds="815,926,445,557">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
-          <ControlPoint Id="Ukkc99H4SbhNWdbvYDOtUr" Bounds="869,821" />
-          <Pad Id="MkXt4GpCQgNNePJ7ErW6I8" Comment="TrackName" Bounds="869,1134,167,15" ShowValueBox="true" isIOBox="true" />
+          <ControlPoint Id="Ukkc99H4SbhNWdbvYDOtUr" Bounds="903,816" />
+          <Pad Id="MkXt4GpCQgNNePJ7ErW6I8" Comment="TrackName" Bounds="902,1134,167,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="867,1274,145,19" Id="LLlTu7QZOVaMlcybmAvMI1">
             <p:NodeReference LastCategoryFullName="Interpolator.Editor.Navigation" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1634,7 +1634,7 @@
             <Pin Id="OWZJVvo3ipkNCxM27kYUCr" Name="Keyframe Position" Kind="OutputPin" />
             <Pin Id="RTxzGZTUvyCQaIX1Es6kXg" Name="Keyframe Name" Kind="OutputPin" />
           </Node>
-          <ControlPoint Id="LraxTA1mup6Mq01f8KWxvv" Bounds="870,821" />
+          <ControlPoint Id="LraxTA1mup6Mq01f8KWxvv" Bounds="870,816" />
           <Pad Id="UNahG7eKQ5PMHBqviLdqT1" Comment="Keyframe" Bounds="963,1197,35,25" ShowValueBox="true" isIOBox="true" Value="4">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
@@ -1664,7 +1664,7 @@
           <Pad Id="JH1T6YWld0APEDfIz8lprx" Comment="Keyframe Index" Bounds="869,1404,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="GG3x0WvjBj3QBxPYwMFxmB" Comment="Track Index" Bounds="869,1350,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="448,1810,77,26" Id="LRNO240HjJJMnfTMuwlKJH">
-            <p:NodeReference LastCategoryFullName="Interpolator.RealtimeControls" LastDependency="VL.Interpolator.vl">
+            <p:NodeReference LastCategoryFullName="Interpolator.Players.Model.RealtimeControls" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Play" />
             </p:NodeReference>
@@ -1672,7 +1672,7 @@
             <Pin Id="VwFsNtJCbHNLcGfMSSa5Wq" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="448,1936,77,26" Id="M03kaDEAEHhNwHrmQ3BGSL">
-            <p:NodeReference LastCategoryFullName="Interpolator.RealtimeControls" LastDependency="VL.Interpolator.vl">
+            <p:NodeReference LastCategoryFullName="Interpolator.Players.Model.RealtimeControls" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Stop" />
             </p:NodeReference>
@@ -1801,6 +1801,44 @@
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
           <ControlPoint Id="FV8HXRlQ1OaLO8ecc3es3D" Bounds="926,411" />
+          <Node Bounds="863,1751,43,19" Id="P8gM2eEqj12ORrIqgnk7Co">
+            <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Select (ByPath)" />
+            </p:NodeReference>
+            <Pin Id="PSrMEAambeuMihnPTpNc4D" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VlRPsZkocKMMMiSHVKNmUx" Name="Input" Kind="InputPin" />
+            <Pin Id="RS0yGyAD2mPOYIsynQHubR" Name="Path" Kind="InputPin" />
+            <Pin Id="BQRlIANTptILYRUkG30ZtD" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="QWiiYIaW18BQCxyXaTMUIO" Comment="" Bounds="903,1715,73,15" ShowValueBox="true" isIOBox="true" Value="TracksVolume">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="863,1806,72,26" Id="RvVgNBwAByNOFTOKXs8HK6">
+            <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="EnsureValue" />
+            </p:NodeReference>
+            <Pin Id="KBGoTwWoZEJPqpy3LCeVTb" Name="Input" Kind="StateInputPin" />
+            <Pin Id="OzhKH98LI0MLz1Irxo4ArI" Name="Value" Kind="InputPin" />
+            <Pin Id="HuktpH6cVeXO8G3Db6GIHI" Name="Author" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IZxW4sAiNfcPH17I21d64g" Name="Force" Kind="InputPin" IsHidden="true" />
+            <Pin Id="K3tMSbl0WhdMquzuBQKgp3" Name="Apply" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="IvxW6W6nzJfQaHxKxcvlML" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="F8JBRybiiv5P83xKHP6muY" Comment="" Bounds="1185,1657,35,146" ShowValueBox="true" isIOBox="true" Value="1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Single">1</p:maximum>
+              <p:minimum p:Type="Single">0</p:minimum>
+              <p:showslider p:Type="Boolean">true</p:showslider>
+              <p:sliderdirection p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SliderDirectionEnum">Vertical</p:sliderdirection>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="Dvo0yaCOsCsNZ9nbmnbnVB" Name="Create" ParticipatingElements="TlAUV9EinosQToadfUl5Ew" />
         <Patch Id="H8eFsvTxjrNOA8fK5zaUi4" Name="Update" />
@@ -1948,9 +1986,13 @@
         <Link Id="DQ3PL4ARSytP1Ral3lq76w" Ids="UJ6YIrNyYpdONy3uIQFoKA,S5ksS7pEWqwNp0LV630wY5" />
         <Link Id="GI5wN1HB9JWLrXBG8bqwWO" Ids="Ao3INpnBMz8L8fCvgOPI1P,JDmQClaUKh9PJsSwfyxats" />
         <Link Id="RYKOIYed7SFLTC0iqxHowl" Ids="SFvUFpzL3nGQcRL2szqCMx,Ia1MQOER1WmNim710ZRNKw" />
+        <Link Id="UHIIQA2aBC5NnuvXho1JXU" Ids="QWiiYIaW18BQCxyXaTMUIO,RS0yGyAD2mPOYIsynQHubR" />
+        <Link Id="NOn7iLbGSDqL4ywtVXP3CV" Ids="SbtZ8V5GeKkNBlIYTzcoef,VlRPsZkocKMMMiSHVKNmUx" />
+        <Link Id="SdA80VxJjjXMdXTtTk2Bef" Ids="BQRlIANTptILYRUkG30ZtD,KBGoTwWoZEJPqpy3LCeVTb" />
+        <Link Id="KHzEIXWnxNTLwwJ96RubxI" Ids="F8JBRybiiv5P83xKHP6muY,OzhKH98LI0MLz1Irxo4ArI" />
       </Patch>
     </Node>
   </Patch>
   <DocumentDependency Id="Lm3g3exOgp8O7BPk0Ungrv" Location="./VL.Interpolator.Timeliner.vl" />
-  <NugetDependency Id="RLZab9mrMUfOsjtNijSf6D" Location="VL.Interpolator" Version="1.1.12" />
+  <NugetDependency Id="RLZab9mrMUfOsjtNijSf6D" Location="VL.Interpolator" Version="1.2.1" />
 </Document>
