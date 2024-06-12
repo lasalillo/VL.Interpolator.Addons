@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="I7dVCxgdGmCQAfXrupiHbk" LanguageVersion="2024.6.5-0018-g842dc04259" Version="0.128">
-  <NugetDependency Id="UlM8oE5weZyLwsXCtxiNDg" Location="VL.CoreLib" Version="2024.6.5-0018-g842dc04259" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="I7dVCxgdGmCQAfXrupiHbk" LanguageVersion="2024.6.5-0041-g7f25690525" Version="0.128">
+  <NugetDependency Id="UlM8oE5weZyLwsXCtxiNDg" Location="VL.CoreLib" Version="2024.6.5-0041-g7f25690525" />
   <Patch Id="VCXuvwfr22DNsZ6cNBlImg">
     <Canvas Id="VtEItcFxFG4L6rgp9xltbu" DefaultCategory="Interpolator.Timeliner" CanvasType="FullCategory">
       <!--
@@ -50,8 +50,8 @@
                   <Pin Id="KumxWwNuuAuM3C5ke2AoBt" Name="TimelinerSettings" Kind="InputPin" />
                   <Pin Id="H6VdcDcljxnOtExwTcL74l" Name="DriverSettings" Kind="InputPin" />
                   <Pin Id="RTNI93puxAJPkJS7e4YpvE" Name="OSCNetwork" Kind="InputPin" />
-                  <Pin Id="TVLSed09TPdNfCigoLd4cP" Name="SpatialAudio" Kind="InputPin" />
-                  <Pin Id="MJlg5ZOIG3ZNgjovkmF2vC" Name="SpatialAudioCopy" Kind="InputPin" />
+                  <Pin Id="TVLSed09TPdNfCigoLd4cP" Name="MultiChannelAudio" Kind="InputPin" />
+                  <Pin Id="CvpKNv3T7hgO1HGfbPLQIg" Name="MultiChannelAudioCopy" Kind="InputPin" />
                   <Pin Id="E1uSLiAdTN2PEk8UloZAiy" Name="AudioAnalysisChannel" Kind="InputPin" />
                   <Pin Id="Cno4SPFCOI6MFU7xWd51g0" Name="TargetAppEditorFactory" Kind="InputPin" />
                   <Pin Id="V8DnuTJjIQ0MiO4Qqkye1a" Name="Input" Kind="InputPin" />
@@ -125,7 +125,7 @@
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
                 </Pad>
-                <Pad Id="L7b4urNvvAbOdJLhz4EIVF" Comment="" Bounds="479,1023,70,15" ShowValueBox="true" isIOBox="true" Value="SpatialAudio">
+                <Pad Id="L7b4urNvvAbOdJLhz4EIVF" Comment="" Bounds="479,1023,97,15" ShowValueBox="true" isIOBox="true" Value="MultiChannelAudio">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -231,10 +231,10 @@
               <Pin Id="K9vtgUiCsOmL9BozlQd1EX" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="TKJURxhO3juNUrQKRNteeN" Name="MultitrackRuntime" Kind="InputPin" />
               <Pin Id="U9gOxaWUvgIMDuRg0hJszv" Name="ProjectModelChannel" Kind="InputPin" />
-              <Pin Id="D8aYvm18VrTLz62DbBpTXv" Name="SpatialAudioCopy" Kind="InputPin" />
-              <Pin Id="BSfGyVVf8p3Lq8Z4M5uUFc" Name="TargetAppModel" Kind="OutputPin" />
+              <Pin Id="USAKA0kOAQeNiA8rGhl5Vh" Name="MultiChannelAudioCopy" Kind="InputPin" />
               <Pin Id="KbQ8jbkHQnoQGlbo3FBPyH" Name="TargetAppCopy" Kind="InputPin" />
               <Pin Id="Fh0wu7gW6k6NCZLfRHTOAm" Name="OnLoad" Kind="InputPin" />
+              <Pin Id="BSfGyVVf8p3Lq8Z4M5uUFc" Name="TargetAppModel" Kind="OutputPin" />
             </Node>
             <Pad Id="F8efjBN5S9KM7R3Nr2wO3v" SlotId="EURKGOEscqJNK4J0ReGOM7" Bounds="1438,336" />
             <Pad Id="FklFVkdgjn9OY3Ye4KOsX0" SlotId="Jzkl4MjokwjLlnjMwsly5m" Bounds="1458,316" />
@@ -312,20 +312,20 @@
               <Pin Id="R59uR4CxkozPrykzFY2AVo" Name="Output" Kind="OutputPin" />
               <Pin Id="JX1JMwhiMCaNUCQ9s8TkfS" Name="Value" Kind="OutputPin" />
             </Node>
-            <Pad Id="HEzWunqRuLsNUaZ6GDQkMq" SlotId="OzwBm1mr010NWPn6PFo0OG" Bounds="912,377" />
+            <Pad Id="HEzWunqRuLsNUaZ6GDQkMq" SlotId="ADVg0UscsuQMWKcdhoNylp" Bounds="912,377" />
             <Node Bounds="604,307,311,26" Id="QEUSbzdYoFCMEri3cmIJdY">
               <p:NodeReference LastCategoryFullName="Interpolator.Timeliner.Project_Model" LastDependency="VL.Interpolator.Timeliner.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Project_Model" NeedsToBeDirectParent="true" />
-                <Choice Kind="OperationCallFlag" Name="GetSpatialAudio" />
+                <Choice Kind="OperationCallFlag" Name="GetMultiChannelAudio" />
               </p:NodeReference>
               <Pin Id="RbVqMIqf0LhPLqkBCk2aM6" Name="Input" Kind="StateInputPin" />
               <Pin Id="Mv4Z475VGyLLpgVID8B3Ds" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="QTbNbWtplPIMndAP09W2yn" Name="SpatialAudio" Kind="OutputPin" />
+              <Pin Id="QTbNbWtplPIMndAP09W2yn" Name="MultiChannelAudio" Kind="OutputPin" />
             </Node>
-            <Pad Id="PXQe2dqdw9uMaBg6la3nuG" SlotId="OzwBm1mr010NWPn6PFo0OG" Bounds="1478,295" />
+            <Pad Id="PXQe2dqdw9uMaBg6la3nuG" SlotId="ADVg0UscsuQMWKcdhoNylp" Bounds="1478,295" />
             <ControlPoint Id="Pes4xtwetw9N361xY0EG5l" Bounds="912,415" />
-            <Pad Id="PHqjPVmb8RKP4SlDveGjxJ" SlotId="OzwBm1mr010NWPn6PFo0OG" Bounds="462,839" />
+            <Pad Id="PHqjPVmb8RKP4SlDveGjxJ" SlotId="ADVg0UscsuQMWKcdhoNylp" Bounds="462,839" />
             <Pad Id="R1qx9R90mw8NM2hl4m30I6" SlotId="EURKGOEscqJNK4J0ReGOM7" Bounds="524,812" />
             <ControlPoint Id="DbzYpD2UbqNQHZfLM79dl6" Bounds="501,850" />
             <Pad Id="JRnBmBOAmcmOPqTsxd1CeA" SlotId="QX5OyoPchZePWc1RxxZhXC" Bounds="782,854" />
@@ -514,10 +514,8 @@
           <Link Id="LG98vmnAGHHLXOwyvU5Ii6" Ids="Quoh7Mk9Ng9MSLG5yDVLIY,RbVqMIqf0LhPLqkBCk2aM6" />
           <Link Id="MNsUmFePvyjPt63jcB3iZh" Ids="QTbNbWtplPIMndAP09W2yn,E2Y118hsu0MPEo1f4aGaoA" />
           <Link Id="Dtlc7QTrL30QXhx4lkEyxe" Ids="Mv4Z475VGyLLpgVID8B3Ds,HtOZhPiraNUNPexD2eWMd1" />
-          <Link Id="MudhwfCnnp1N1eb4TOVztg" Ids="PXQe2dqdw9uMaBg6la3nuG,D8aYvm18VrTLz62DbBpTXv" />
           <Link Id="S8tzWW5M8tIP3Q7AI6AktQ" Ids="HEzWunqRuLsNUaZ6GDQkMq,Pes4xtwetw9N361xY0EG5l" />
           <Link Id="C2xq9xmSowbNy5m0djWI0H" Ids="Pes4xtwetw9N361xY0EG5l,SoJyIFrsPBbLCMaWUQU7QH" IsHidden="true" />
-          <Link Id="UaFyI8W7dkYOSjtWBcXRIG" Ids="PHqjPVmb8RKP4SlDveGjxJ,MJlg5ZOIG3ZNgjovkmF2vC" />
           <Link Id="QJRLgSEUiL7M6DmnQUu8OG" Ids="JuM6ZA5vGDWPqcAGclZL98,SUBNG6oJo0YNRlyTlViC7o" />
           <Link Id="DbVvLDnsKVTP6BvdyStfri" Ids="ESa1ErAeu7VPEmtPq2yvJB,Dph6DrelkjeP9elmrtDDco" />
           <Link Id="KWooDJkSv2nM0UxfXVYYuI" Ids="BrD0DAQUhTQM9HyCPpBfuN,MUApphSz1eMO4cgP4irnfK" />
@@ -575,7 +573,7 @@
             <Pin Id="Tj7TiSZ2i6MQddE8iRGDNl" Name="TargetAppCopy" Kind="OutputPin" />
           </Patch>
           <Patch Id="CAa0FiuB83oOHgzL1rMwSb" Name="GetSpatialAudio_Interpolated">
-            <Pin Id="SoJyIFrsPBbLCMaWUQU7QH" Name="SpatialAudioCopy" Kind="OutputPin" />
+            <Pin Id="SoJyIFrsPBbLCMaWUQU7QH" Name="MultiChannelAudioCopy" Kind="OutputPin" />
           </Patch>
           <Patch Id="IfBBYRtRXqRLHujfFTCcd7" Name="Editor">
             <Pin Id="FflN5DPAhKHLHqGVrBBQDL" Name="TargetAppEditorFactory" Kind="InputPin" Visibility="Optional">
@@ -617,11 +615,13 @@
           <Link Id="HGvlBtZjxpAPU1qX8I5uFG" Ids="FaHl998SPHLNPVQcTwDp8M,CFL2CDSUyQAPNb8ZYkSvSc" />
           <Link Id="G4EsiRBbN7zPFPgaMazgI5" Ids="DbzYpD2UbqNQHZfLM79dl6,Cno4SPFCOI6MFU7xWd51g0" />
           <Slot Id="BV3ji0618H0L0lWbm9eeZs" Name="TargetApp_Interpolated" />
-          <Slot Id="OzwBm1mr010NWPn6PFo0OG" Name="SpatialAudio_Interpolated" />
           <Link Id="KGCicLNLnKhMH5ly0qE7pY" Ids="StPCXRdtvztLsoZ3dGx3ZK,FEPbOkybattQBmAeByvjDr" />
           <Link Id="BciFZL830ASM6xdCdsBgAo" Ids="M5SYjkX0DAnMmu0FEaIKlO,M5Oaq66PZKVQFFno27iz7m" />
           <Link Id="SrDfpbR9w96NJXiGkeJPRt" Ids="KA41xnyq3kHMZEvGdC7eYe,HvKKGDkevEmP161ZSBuNNY" />
           <Link Id="ETqTFCp1fvFLlBRO4QLdps" Ids="NCeubPIogCsLRYeD6uvIr8,Fh0wu7gW6k6NCZLfRHTOAm" />
+          <Slot Id="ADVg0UscsuQMWKcdhoNylp" Name="MultiChannelAudio_Interpolated" />
+          <Link Id="JyAHXzFalV3OqpNWn0jqLc" Ids="PHqjPVmb8RKP4SlDveGjxJ,CvpKNv3T7hgO1HGfbPLQIg" />
+          <Link Id="UFWU9QFFdWVPPF8rEQbyjt" Ids="PXQe2dqdw9uMaBg6la3nuG,USAKA0kOAQeNiA8rGhl5Vh" />
         </Patch>
       </Node>
       <!--
@@ -686,10 +686,10 @@
             <ControlPoint Id="UA37I8CCTH1QKTJN5kVMvT" Bounds="838,338" />
             <ControlPoint Id="Eq7eiQDrNDHLTtn9ga2EoV" Bounds="1002,338" />
             <ControlPoint Id="HbNcnlEeTzsLU0NPNpPieb" Bounds="1380,338" />
-            <Node Bounds="654,199,61,26" Id="F1BSVImMfW1LCQGhWLzJxi">
+            <Node Bounds="654,199,84,26" Id="F1BSVImMfW1LCQGhWLzJxi">
               <p:NodeReference LastCategoryFullName="Interpolator.Players.Audio.SpatialAudio" LastDependency="VL.Interpolator.Players.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="RecordType" Name="SpatialAudio" />
+                <CategoryReference Kind="RecordType" Name="MultiChannelAudio" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
               </p:NodeReference>
               <Pin Id="E4vNULoSrXBLMQe6yOj05j" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -777,12 +777,12 @@
           <Patch Id="FjtGbaO53HaOJlLAnBG0Am" Name="GetTargetApplicationModel">
             <Pin Id="HFKZotaGjahP4T9m6xbQmE" Name="TargetAppModel" Kind="OutputPin" />
           </Patch>
-          <Slot Id="RM5wpUM8TvAP2WJQpAaHen" Name="SpatialAudio" />
+          <Slot Id="RM5wpUM8TvAP2WJQpAaHen" Name="MultiChannelAudio" />
           <Link Id="PXGQSAnOoRDNwI7Zc7HcVJ" Ids="AHzLUNpIfTBQTEmXG6iLAH,NMPQKMppVftNUlNxCMNLFw" />
           <Link Id="JXtjAYzsnNuM6FfMDvaR9Y" Ids="NMPQKMppVftNUlNxCMNLFw,KIZUDSxpcz4Num2XJeO0f4" />
           <Link Id="GrpyZjjI8WtM1PhpdqRIUz" Ids="KIZUDSxpcz4Num2XJeO0f4,LIFiFNUB4fIM7CbaL4EtjR" IsHidden="true" />
-          <Patch Id="MfLIdKYi196NeULq7iAeKi" Name="GetSpatialAudio">
-            <Pin Id="LIFiFNUB4fIM7CbaL4EtjR" Name="SpatialAudio" Kind="OutputPin" />
+          <Patch Id="MfLIdKYi196NeULq7iAeKi" Name="GetMultiChannelAudio">
+            <Pin Id="LIFiFNUB4fIM7CbaL4EtjR" Name="MultiChannelAudio" Kind="OutputPin" />
           </Patch>
           <Slot Id="UYFKAgagfZiNwc3AbgCuo7" Name="AudioAnalysisData" />
           <Link Id="TivpwC2dTJTOLhDFRxFQ6Q" Ids="K38IdVjn6skNy3KLZkDzaj,EWNmVQuHWlWMUBTv3qmoZR" />
@@ -817,7 +817,7 @@
               <Pin Id="PtpWoC85qkwLrh41WBmMmQ" Name="OSCNetwork" Kind="OutputPin" />
               <Pin Id="RfuKQ4gp1brM9r1BTcUexm" Name="DriverSettings" Kind="OutputPin" />
               <Pin Id="UBhODditQqLPLkTBRRXyuZ" Name="AudioAnalysisData" Kind="OutputPin" />
-              <Pin Id="LWTzM0bgPN6L15SLGIVsi3" Name="SpatialAudio" Kind="OutputPin" />
+              <Pin Id="LWTzM0bgPN6L15SLGIVsi3" Name="MultiChannelAudio" Kind="OutputPin" />
             </Node>
             <Node Bounds="456,407,43,19" Id="IPErjltiVjdLjhu53OeYlK">
               <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
@@ -844,7 +844,7 @@
               <Pin Id="AZqkuoS1MhlMhSUn5JGuct" Name="Path" Kind="InputPin" />
               <Pin Id="Oyv7GasszJpN109BRofP1X" Name="Output" Kind="OutputPin" />
             </Node>
-            <Pad Id="KxuQfKdT20nLC2DV3Py5e9" Comment="" Bounds="673,378,64,15" ShowValueBox="true" isIOBox="true" Value="OSCNetwork">
+            <Pad Id="KxuQfKdT20nLC2DV3Py5e9" Comment="" Bounds="673,378,69,15" ShowValueBox="true" isIOBox="true" Value="OSCNetwork">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -972,7 +972,7 @@
               <Pin Id="JwKbluyTYu6NKmOv9DS3Ce" Name="Path" Kind="InputPin" />
               <Pin Id="Hx06EC0eLQvM60rzFMuNxc" Name="Output" Kind="OutputPin" />
             </Node>
-            <Pad Id="ROwg0MJW41tNM6a7IQs3Pn" Comment="" Bounds="1628,378,72,15" ShowValueBox="true" isIOBox="true" Value="SpatialAudio">
+            <Pad Id="ROwg0MJW41tNM6a7IQs3Pn" Comment="" Bounds="1628,378,96,15" ShowValueBox="true" isIOBox="true" Value="MultiChannelAudio">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -1266,12 +1266,12 @@
                 </p:TypeArguments>
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="UeFKQJDwB0XQRSs3cX37dk" Name="SpatialAudioCopy" Kind="InputPin">
+            <Pin Id="MyNcK9z9yBWNJ7Jm8OzIvj" Name="MultiChannelAudioCopy" Kind="InputPin">
               <p:TypeAnnotation LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Channel" />
                 <p:TypeArguments>
                   <TypeReference LastCategoryFullName="Interpolator.Players.Audio" LastDependency="VL.Interpolator.Players.vl">
-                    <Choice Kind="TypeFlag" Name="SpatialAudio" />
+                    <Choice Kind="TypeFlag" Name="MultiChannelAudio" />
                   </TypeReference>
                 </p:TypeArguments>
               </p:TypeAnnotation>
@@ -1303,7 +1303,6 @@
           <Link Id="UjF4C3iTX46LKOGpaDKHgf" Ids="HOw4fhm9Vw5M4BpwBRLoHf,ObxjzrtDiJBL45yxbe9M5A" />
           <Link Id="UrtNpXmRg6GQU5IiL4AHVW" Ids="HOw4fhm9Vw5M4BpwBRLoHf,MxS9KvVK4FYNVXv6E4EfMr" />
           <Link Id="DLbb2GjuJp1NFmDPiZqiWq" Ids="HOw4fhm9Vw5M4BpwBRLoHf,J400qLDiHYbMZ8D9YNGeNG" />
-          <Link Id="RjgMfHYp4eQOGuJRI5h8cj" Ids="UeFKQJDwB0XQRSs3cX37dk,DXsS3blgc6WN9zMmzIPQcb" IsHidden="true" />
           <Link Id="ABKFRBol6erNBxOor0nO39" Ids="Dv6QEfyGeDHMH4kD0w8ZUy,Bc5WZi1L9ecLzeRX35dFFU" />
           <Link Id="M8UNOs0K2c7MzI7QJ3MiUZ" Ids="PsTjIFRczSSQBdvwU0JVbA,MnALIerBT4ANnDe7i55Slu" />
           <Link Id="CA0726eNDlGLYSM24706fW" Ids="QmZ6oPqey8lQXR8tEvPOKw,NKn7WUNr7aRNghmn0Zy7pm" IsHidden="true" />
@@ -1330,7 +1329,6 @@
           <Link Id="MG3kWs58dErLit9TYEQcAE" Ids="IcDvw5BER4fMoHTnQfNJr8,UWU5nAx7ZiuL4idi3uQt0g" IsHidden="true" />
           <Link Id="Nl4q74wS4E5L8fKxZoXqP4" Ids="AhMI5ur3Mv6N0oSrJH8qOL,HzCXogd1Z62NUllJtToiKU" />
           <Link Id="SXTqWoxgZy5Ma5rGii6Ccl" Ids="V2emfEuxfNPNVSGliUMnxz,LVzodMJlqeyOw8p4rfi3PF" />
-          <Link Id="EZJB1m3mJ9YN8XKNWxcbHO" Ids="UeFKQJDwB0XQRSs3cX37dk,T6Dxhh1UJskOyg3UDAubBh" IsHidden="true" />
           <Link Id="DbaIAfGRs0NL8SDG8CBGRN" Ids="UT4AwJeycXZNudeyOW6abX,CfULDAAtqwqPXyKuA7Tcso" />
           <Link Id="IT4JTiM8EqzPQE3GD6lj2q" Ids="GgPZN3ofAkmOHu0JMUoCV1,FAQq5WRgCwMLiO3fv9yzK7" IsHidden="true" />
           <Link Id="QATafbuxXViNI6rBz0KYEj" Ids="FAQq5WRgCwMLiO3fv9yzK7,PcK3VeHSWAOMl3g5HICyk6" />
@@ -1346,6 +1344,8 @@
           <Link Id="Sj3WmuyPydTOyrudQfIz9J" Ids="UQhyVzZpJcxOzpeTFLK5Lo,A867onqvxTmLxQ2GBX17nS" />
           <Link Id="M8Wo2qJ55mhOqUpPQC29yY" Ids="T6Dxhh1UJskOyg3UDAubBh,TuHFNRPw4ebP7Kw7KYfQCh" />
           <Link Id="N1HXOMu5gA1MCyRm2L0kSt" Ids="LWTzM0bgPN6L15SLGIVsi3,HysQtoXXlDFPel7J9oVQxR,O2laenDTS0wMUKpgssXctx" />
+          <Link Id="LAwWlecZKCoNaYRzvimXS8" Ids="MyNcK9z9yBWNJ7Jm8OzIvj,T6Dxhh1UJskOyg3UDAubBh" IsHidden="true" />
+          <Link Id="COR9agw77E7LYXvRPsSKlg" Ids="MyNcK9z9yBWNJ7Jm8OzIvj,DXsS3blgc6WN9zMmzIPQcb" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -2346,7 +2346,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="FS8kDPyjJRePqPwlLqsmIu" Location="VL.Skia" Version="2024.6.5-0018-g842dc04259" />
+  <NugetDependency Id="FS8kDPyjJRePqPwlLqsmIu" Location="VL.Skia" Version="2024.6.5-0041-g7f25690525" />
   <DocumentDependency Id="BIqAcaohfjfOr8WDq1zJ9s" Location="./VL/VL.Audio.Analysis/VL.Audio.Analysis.vl" IsForward="true" />
   <DocumentDependency Id="HC91bScuM4yPKTNVNMhbwv" Location="../VL.ImGui.Extensions/VL.ImGui.Extensions.vl" />
   <DocumentDependency Id="AzZsIkAyVQqPOi6cI5SG5B" Location="./VL/VL.Interpolator.Editor.vl" IsForward="true" />

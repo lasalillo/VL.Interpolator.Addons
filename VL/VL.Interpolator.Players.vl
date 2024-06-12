@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="QMAAJvWF39POrsgkQbJTOR" LanguageVersion="2024.6.5-0029-g48c17b01e4" Version="0.128">
-  <NugetDependency Id="NXdOhKmRXx1PYrk2puJlYy" Location="VL.CoreLib" Version="2024.6.5-0029-g48c17b01e4" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="QMAAJvWF39POrsgkQbJTOR" LanguageVersion="2024.6.5-0041-g7f25690525" Version="0.128">
+  <NugetDependency Id="NXdOhKmRXx1PYrk2puJlYy" Location="VL.CoreLib" Version="2024.6.5-0041-g7f25690525" />
   <Patch Id="PMMt4HNnbGvOYiTm4td4VC">
     <Canvas Id="UZiBwmuKqeRQC7OL2eGgar" DefaultCategory="Interpolator.Players" CanvasType="FullCategory">
       <Canvas Id="SkfwhS3jXGhPLP3fbTiMrW" Name="Runtime" Position="199,377">
@@ -271,7 +271,7 @@
                 <Pin Id="Ae37amJqSWyOeGJljxf79a" Name="OutputOffset" Kind="OutputPin" />
                 <Pin Id="EC0eZUji38JMalyd4O23Ko" Name="Enable" Kind="OutputPin" />
                 <Pin Id="JM2RvjAiKZ6QdvrmApYYjM" Name="EnableInput" Kind="OutputPin" />
-                <Pin Id="BIGh4WjBzruN5azq6u3jJF" Name="SpatialAudio" Kind="OutputPin" />
+                <Pin Id="BIGh4WjBzruN5azq6u3jJF" Name="MultiChannelAudio" Kind="OutputPin" />
                 <Pin Id="T8LGaFUIIBFOwV1tq5nGaV" Name="PlayerSpeedCorrection" Kind="OutputPin" />
               </Node>
               <Pad Id="ITto3GI8mANLurC7N12wko" SlotId="CsJYZB9n7CjQQpoCICm3lO" Bounds="1392,573" />
@@ -376,10 +376,10 @@
                 <Pin Id="OTog54dJnxDNMNPxQAmmcA" Name="Value" Kind="OutputPin" />
                 <Pin Id="FolscAJk5xYMqLDQiycOHK" Name="Inverse Output" Kind="OutputPin" />
               </Node>
-              <Node Bounds="973,199,61,26" Id="MVQo6jICzQILj0JNFyRVf8">
+              <Node Bounds="973,199,84,26" Id="MVQo6jICzQILj0JNFyRVf8">
                 <p:NodeReference LastCategoryFullName="Interpolator.Players.Audio.SpatialAudio" LastDependency="VL.Interpolator.Players.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="RecordType" Name="SpatialAudio" />
+                  <CategoryReference Kind="RecordType" Name="MultiChannelAudio" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
                 </p:NodeReference>
                 <Pin Id="H0MaDNnujCaOU5NLRsvi1l" Name="Node Context" Kind="InputPin" IsHidden="true" />
@@ -396,12 +396,12 @@
                 <Pin Id="R0ORYqv3SGYQJZwLd1o9q8" Name="Output" Kind="OutputPin" />
                 <Pin Id="PLmE6r9dhkFLFfdXAZjA0D" Name="Value" Kind="OutputPin" />
               </Node>
-              <Pad Id="HyT1EvD0asOL2paLfygy4P" SlotId="DrXbi9FRffeMkhCStN09LX" Bounds="975,309" />
-              <Pad Id="BKGlt2iiJZMMgdOTK0Word" SlotId="DrXbi9FRffeMkhCStN09LX" Bounds="1362,1047" />
+              <Pad Id="HyT1EvD0asOL2paLfygy4P" SlotId="DBWTgRiLlzxPJL8UtfpLpU" Bounds="975,309" />
+              <Pad Id="BKGlt2iiJZMMgdOTK0Word" SlotId="DBWTgRiLlzxPJL8UtfpLpU" Bounds="1362,1047" />
               <ControlPoint Id="HuDKdZupPJpQSLGRVFJ19D" Bounds="1362,1093" />
-              <Pad Id="Qb0F6vozAmKLyURYi9G1SJ" SlotId="DrXbi9FRffeMkhCStN09LX" Bounds="1814,930" />
+              <Pad Id="Qb0F6vozAmKLyURYi9G1SJ" SlotId="DBWTgRiLlzxPJL8UtfpLpU" Bounds="1814,930" />
               <ControlPoint Id="OfqKz6C0uKfPJprisH8jtY" Bounds="1814,978" />
-              <Pad Id="TA6zt7NJVlRLMggqAillAA" SlotId="DrXbi9FRffeMkhCStN09LX" Bounds="1434,531" />
+              <Pad Id="TA6zt7NJVlRLMggqAillAA" SlotId="DBWTgRiLlzxPJL8UtfpLpU" Bounds="1434,531" />
               <Pad Id="NIlX5bUMxiONmEw0Ps8Slt" SlotId="PGo0APmTyXFQTnp1PHPdVY" Bounds="848,687" />
               <Pad Id="VoqrZMB7HPSQJHZgGnepwe" SlotId="PGo0APmTyXFQTnp1PHPdVY" Bounds="1719,548" />
               <Pad Id="RI53qI9cb1PM687K2V3tCz" SlotId="TEo7EJ2OQsINczJjOc0OrU" Bounds="1652,590" />
@@ -649,7 +649,7 @@
               <Pin Id="SRg1G3SpaUILchhZJC0zYl" Name="OSCNetwork" Kind="OutputPin" />
               <Pin Id="VoE2qocfOHWNewGs4P4jaR" Name="DriverSettings" Kind="OutputPin" />
               <Pin Id="MbgK0m2MQkNOAc92oyRGyz" Name="AudioAnalysisData" Kind="OutputPin" />
-              <Pin Id="RZ4zUgMSeAaPAMAUevHNir" Name="SpatialAudio" Kind="OutputPin" />
+              <Pin Id="RZ4zUgMSeAaPAMAUevHNir" Name="MultiChannelAudio" Kind="OutputPin" />
             </Patch>
             <Patch Id="NDwXm06OGnVORyLQFcR16E" Name="UpdateClock" />
             <Link Id="C5FxVJEvO0TLWcuFX4WFkN" Ids="NazOpsZpmGyQUAPwGo45zp,U115oXID7BTOgdzEsZNN8W" />
@@ -706,13 +706,12 @@
             <Link Id="DyHFSjXl9WcO6QtUTk7gJN" Ids="Oatp7EdQ7Z4O78BHQdmhil,FzFMgFFCmpfPJAnoHTv4UR" />
             <Link Id="FJEmxzvXAh4OFtmsHrhTtS" Ids="OTog54dJnxDNMNPxQAmmcA,UWifUDpin17LMl97EVdap1" />
             <Link Id="HCaPSm8nFaZLQRa3Yqsysh" Ids="T3MRV5V3KktLOATKfidHhD,M4i8c5stX8wM6EUhkyuHjo" />
-            <Slot Id="DrXbi9FRffeMkhCStN09LX" Name="SpatialAudio" />
             <Link Id="EhcKuXazVaCPkpKmwriURw" Ids="R0ORYqv3SGYQJZwLd1o9q8,HyT1EvD0asOL2paLfygy4P" />
             <Link Id="DwgZ5wADZuXPTgIO6kLobb" Ids="BKGlt2iiJZMMgdOTK0Word,HuDKdZupPJpQSLGRVFJ19D" />
             <Link Id="IGSy5l6dbzrPo93csldcX0" Ids="HuDKdZupPJpQSLGRVFJ19D,RZ4zUgMSeAaPAMAUevHNir" IsHidden="true" />
             <Link Id="FKiSd8gMILWNhry1sLf4M1" Ids="Qb0F6vozAmKLyURYi9G1SJ,OfqKz6C0uKfPJprisH8jtY" />
-            <Patch Id="Euo4BAXkxQYMJYSH0AVSmi" Name="GetSpatialAudio">
-              <Pin Id="CM2dA0bgVd2MfnB9qtM3f1" Name="SpatialAudio" Kind="OutputPin" />
+            <Patch Id="Euo4BAXkxQYMJYSH0AVSmi" Name="GetMultiChannelAudio">
+              <Pin Id="CM2dA0bgVd2MfnB9qtM3f1" Name="MultiChannelAudio" Kind="OutputPin" />
             </Patch>
             <Link Id="ELPoV8624LROU1sSBnBRQS" Ids="OfqKz6C0uKfPJprisH8jtY,CM2dA0bgVd2MfnB9qtM3f1" IsHidden="true" />
             <Link Id="HnzqIQYZal0N26lOu29PkU" Ids="TA6zt7NJVlRLMggqAillAA,QOIBV92igFoLnrzGnMQR46" />
@@ -833,6 +832,7 @@
             <Link Id="BzaxpXpY4sTPBePmlNGZc5" Ids="VDcQpLcniFiMm0eKEAYzH1,IVMZHEC8GyXME5vcJ8Twbq" IsHidden="true" />
             <Link Id="PnVx9H968ByL7EKxqQF4gA" Ids="QiLMxdGwSnVN5DnroOEcJQ,CXHkDEvRQzNPNJM2BaZhHB" IsHidden="true" />
             <Link Id="LJlJ48pN9JDNfPYL2lXJsW" Ids="T8LGaFUIIBFOwV1tq5nGaV,S7ymeApI6fJMtnFELqa0S7,D0P4j4rMrvpMpfJGlOi424" />
+            <Slot Id="DBWTgRiLlzxPJL8UtfpLpU" Name="MultiChannelAudio" />
           </Patch>
         </Node>
         <!--
@@ -3707,7 +3707,6 @@
                         <Pin Id="PhHZ9k6VKHyNVIf3RfmBl2" Name="Path" Kind="InputPin" />
                         <Pin Id="CRuLayChxG3MM3LRMxhdRA" Name="Value" Kind="InputPin" />
                         <Pin Id="V09jJdhyktsPpx57YBk0Wd" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="VDt7z0BlPmvL5Lk7XzBN7c" Name="Path Exists" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="820,716,91,19" Id="MvwkRE86mEBN9TP1kU0QL6">
                         <p:NodeReference LastCategoryFullName="System.Reflection.IVLObject" LastDependency="VL.CoreLib.vl">
@@ -3721,7 +3720,6 @@
                         <Pin Id="N2lkWFpcNfGOA8cg9olxWi" Name="Path" Kind="InputPin" />
                         <Pin Id="F7tBmtuQPqlMIOOA5YTOVi" Name="Value" Kind="InputPin" />
                         <Pin Id="JtAMyE0UpQqP0YN7uJYDf3" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="I9IjJljQcxnQd1RZWNv7kw" Name="Path Exists" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="820,760,91,19" Id="EWGgysWZFbXMwpl6aIaigy">
                         <p:NodeReference LastCategoryFullName="System.Reflection.IVLObject" LastDependency="VL.CoreLib.vl">
@@ -3735,7 +3733,6 @@
                         <Pin Id="S65tPA30S9vMoC5gm9Npb7" Name="Path" Kind="InputPin" />
                         <Pin Id="ElhyQJAO81ZMnrN7gchX5x" Name="Value" Kind="InputPin" />
                         <Pin Id="F7z1s1wuXzlQO2et8BcRMi" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="J3mCJEaMoK7LhqgPjwbA3X" Name="Path Exists" Kind="OutputPin" />
                       </Node>
                       <Pad Id="Uf7kbxyRF1lMQbgzHEMTAX" Comment="" Bounds="881,745,35,15" ShowValueBox="true" isIOBox="true" Value="True">
                         <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -3758,7 +3755,6 @@
                         <Pin Id="MeenCAiSCXkO6MbfGJ6wmk" Name="Path" Kind="InputPin" />
                         <Pin Id="QJ964BYnVTxMQG5gfZtL7m" Name="Value" Kind="InputPin" />
                         <Pin Id="HCD67RhQwiWLpThwnVX2bN" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="JNizdDv9r2ZNA4MnLOJxrQ" Name="Path Exists" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="820,848,91,19" Id="CGAOPnRMcBRL5HNtE37fVh">
                         <p:NodeReference LastCategoryFullName="System.Reflection.IVLObject" LastDependency="VL.CoreLib.vl">
@@ -3772,7 +3768,6 @@
                         <Pin Id="FAYb1uaVDNbLlVuyPkZYRK" Name="Path" Kind="InputPin" />
                         <Pin Id="U0LhVyH35AtNZD8Jv0lte7" Name="Value" Kind="InputPin" />
                         <Pin Id="SJKmyKV3aERQVjGhzDFEc7" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="VeIpFqMyyDaLLUOEgMwwxK" Name="Path Exists" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="820,892,91,19" Id="UCRq11Yd5dmOIlZ1F6kR8q">
                         <p:NodeReference LastCategoryFullName="System.Reflection.IVLObject" LastDependency="VL.CoreLib.vl">
@@ -3786,7 +3781,6 @@
                         <Pin Id="GSGDODR3IduMHzwa2OezKK" Name="Path" Kind="InputPin" />
                         <Pin Id="UaiaAVbVHobMbB022VUzxk" Name="Value" Kind="InputPin" />
                         <Pin Id="MslQcvJzDRDNkGUSqdsOxn" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="E9rjVlgLTNSQZjscFc5cXk" Name="Path Exists" Kind="OutputPin" />
                       </Node>
                       <Pad Id="RMEB8RzYRE6P5lvCGUH0kn" Comment="" Bounds="882,877,35,15" ShowValueBox="true" isIOBox="true" Value="0">
                         <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -3806,7 +3800,6 @@
                         <Pin Id="OX1f6No9VADPW2bkJIrr0Q" Name="Path" Kind="InputPin" />
                         <Pin Id="FF9N0n7UykVQVt74aqHBIj" Name="Value" Kind="InputPin" />
                         <Pin Id="OrQTpPo4GXAM9TZ35vMNQL" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="E1VeKzTpUQSNnSKr39Em5p" Name="Path Exists" Kind="OutputPin" />
                       </Node>
                       <Node Bounds="820,980,91,19" Id="UlqCB0MsKxpQHIHoL5wlaA">
                         <p:NodeReference LastCategoryFullName="System.Reflection.IVLObject" LastDependency="VL.CoreLib.vl">
@@ -3820,7 +3813,6 @@
                         <Pin Id="FkAhCEb655uNAGf82BsSxH" Name="Path" Kind="InputPin" />
                         <Pin Id="SlZhNRINs5YNBq32uWofQG" Name="Value" Kind="InputPin" />
                         <Pin Id="NBfk3GJQpW9OnP8JZUzfSu" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="RavnKvyKbtNOV4Huu8JC2z" Name="Path Exists" Kind="OutputPin" />
                       </Node>
                       <Pad Id="LYLMnpO9DG3MXjOIDSij9W" Comment="" Bounds="881,965,35,15" ShowValueBox="true" isIOBox="true" Value="1">
                         <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -3840,7 +3832,6 @@
                         <Pin Id="HGNpxWhpZlgNkP9qYl7Dbc" Name="Path" Kind="InputPin" />
                         <Pin Id="Kp1ZJxA6LutMM5fC78yMoN" Name="Value" Kind="InputPin" />
                         <Pin Id="CnW6U2btSnFNhgTXONjWgk" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="NGVDgu770DgO0OCkFjEL6S" Name="Path Exists" Kind="OutputPin" />
                       </Node>
                       <Pad Id="T8S3emThaGKPSXvBUahyOc" Comment="" Bounds="881,1018,35,15" ShowValueBox="true" isIOBox="true" Value="1">
                         <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -3860,7 +3851,6 @@
                         <Pin Id="AiMpFs9dwaYN5inWfNyBGB" Name="Path" Kind="InputPin" />
                         <Pin Id="G0t0sUlc2WtM8IK61CIbSK" Name="Value" Kind="InputPin" />
                         <Pin Id="LXi7zWJ4litME3WMReUUDm" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="RfORuPwZJsrO54mDqp7LZA" Name="Path Exists" Kind="OutputPin" />
                       </Node>
                       <Pad Id="PcXTkr9o5LOOK8rBZfXsMZ" Comment="" Bounds="880,1064,35,15" ShowValueBox="true" isIOBox="true">
                         <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -14281,7 +14271,7 @@
             <Link Id="CXeulCgprQHODT85ZiprRy" Ids="HLl7hHNibVeLtADL6CbGPV,FsBOAmjqPkzO6eRoYqSZdf" />
             <Link Id="JRZj3SkZE40Pjo17R2oVYE" Ids="FsBOAmjqPkzO6eRoYqSZdf,Tw7wWAC3okJMBLeipFv4Cq" IsHidden="true" />
             <Link Id="CBBnkfJbPTTPO4KT4B0cn2" Ids="QwtbBynF4ryP3eqy5nWSFE,NiDb8JohqkXQJni6B2Q6i5" />
-            <Slot Id="BbZE83IWf5OOa2aoGSBLCx" Name="SpatialAudio">
+            <Slot Id="BbZE83IWf5OOa2aoGSBLCx" Name="MultiChannelAudio">
               <p:TypeAnnotation p:Type="TypeReference">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -14323,7 +14313,7 @@
               <Pin Id="BGoUFm11LlCNraOxC3Cw0z" Name="OutputOffset" Kind="OutputPin" />
               <Pin Id="Fp1DdFsRfzYLR2qbtL670X" Name="Enable" Kind="OutputPin" />
               <Pin Id="VErWD0i1bt7Mxl0flXpQ4K" Name="EnableInput" Kind="OutputPin" />
-              <Pin Id="N0KUk5BzVfZLarrlxEh0tr" Name="SpatialAudio" Kind="OutputPin" />
+              <Pin Id="N0KUk5BzVfZLarrlxEh0tr" Name="MultiChannelAudio" Kind="OutputPin" />
               <Pin Id="AqQKgmYghAKNJUkXs0AHqG" Name="PlayerSpeedCorrection" Kind="OutputPin" />
             </Patch>
             <Patch Id="VHUTRCfGqFjPuEu8yfwEO8" Name="Join">
@@ -14370,11 +14360,11 @@
             <Patch Id="RdTCuERLvkjMUyoLVB8byR" Name="GetWasapiInput">
               <Pin Id="Tw7wWAC3okJMBLeipFv4Cq" Name="WasapiInput" Kind="OutputPin" />
             </Patch>
-            <Patch Id="RnkIFjcm1pWNIJjA4XBb1X" Name="SetSpatialAudio">
-              <Pin Id="N9XA7MqqZWCOGhggCITTQa" Name="SpatialAudio" Kind="InputPin" />
+            <Patch Id="RnkIFjcm1pWNIJjA4XBb1X" Name="SetMultiChannelAudio">
+              <Pin Id="N9XA7MqqZWCOGhggCITTQa" Name="MultiChannelAudio" Kind="InputPin" />
             </Patch>
-            <Patch Id="MZkf3VJS9C9LFBm90RVehX" Name="GetSpatialAudio">
-              <Pin Id="ObyHxXkYfejMmaxDilcMnc" Name="SpatialAudio" Kind="OutputPin" />
+            <Patch Id="MZkf3VJS9C9LFBm90RVehX" Name="GetMultiChannelAudio">
+              <Pin Id="ObyHxXkYfejMmaxDilcMnc" Name="MultiChannelAudio" Kind="OutputPin" />
             </Patch>
             <Patch Id="NyOL7WAturJL9qIAzulP64" Name="SetInputOffset">
               <Pin Id="ShSxhclnB9fLG2rmGacxxn" Name="InputOffset" Kind="InputPin" />
@@ -15206,7 +15196,7 @@
                   <Node Bounds="472,770,101,26" Id="OOr6yaPKmX8OsTkizSB142">
                     <p:NodeReference LastCategoryFullName="Interpolator.Players.Audio.SpatialAudio" LastDependency="VL.Interpolator.Players.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <CategoryReference Kind="RecordType" Name="SpatialAudio" />
+                      <CategoryReference Kind="RecordType" Name="MultiChannelAudio" />
                       <Choice Kind="OperationCallFlag" Name="Split" />
                     </p:NodeReference>
                     <Pin Id="US9yx4PHQdEPk4yRIhtC8q" Name="Input" Kind="StateInputPin" />
@@ -15513,7 +15503,7 @@
                 <Pin Id="JTPAhA9QIjlLNEjymZQuHf" Name="Path" Kind="InputPin" />
                 <Pin Id="NofTmsggGwQNDjN9AB9GWn" Name="Output" Kind="OutputPin" />
               </Node>
-              <Pad Id="FT7RoDA4yZLPqwYW99jK6A" Comment="" Bounds="241,248,68,15" ShowValueBox="true" isIOBox="true" Value="SpatialAudio">
+              <Pad Id="FT7RoDA4yZLPqwYW99jK6A" Comment="" Bounds="241,248,98,15" ShowValueBox="true" isIOBox="true" Value="MultiChannelAudio">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
@@ -16418,10 +16408,10 @@
         </Node>
         <!--
 
-    ************************ SpatialAudio ************************
+    ************************ MultiChannelAudio ************************
 
 -->
-        <Node Name="SpatialAudio" Bounds="772,247" Id="T3057ODYapHOvoxfc0xELa">
+        <Node Name="MultiChannelAudio" Bounds="772,247" Id="T3057ODYapHOvoxfc0xELa">
           <p:NodeReference>
             <Choice Kind="RecordDefinition" />
           </p:NodeReference>
@@ -25300,9 +25290,9 @@
   </Patch>
   <NugetDependency Id="Gwe7Zjtqm5FLeAIRJCTdX9" Location="VL.Audio" Version="1.8.2" />
   <NugetDependency Id="JRzWewSnj7INAUVLJ65LOe" Location="VL.IO.OSC" Version="1.1.3" />
-  <NugetDependency Id="HS5zeKPvcfZOCbNmLdZCz2" Location="VL.Video" Version="2024.6.5-0029-g48c17b01e4" />
+  <NugetDependency Id="HS5zeKPvcfZOCbNmLdZCz2" Location="VL.Video" Version="2024.6.5-0041-g7f25690525" />
   <NugetDependency Id="DnGmZIK3vrBO5QjDJcPoEL" Location="VL.MiDi.Music.Utils" IsForward="true" Version="1.1.0" />
-  <NugetDependency Id="QaPBOO2umKYNQUge9MRk9Y" Location="VL.Stride" Version="2024.6.5-0029-g48c17b01e4" />
+  <NugetDependency Id="QaPBOO2umKYNQUge9MRk9Y" Location="VL.Stride" Version="2024.6.5-0041-g7f25690525" />
   <DocumentDependency Id="AOhxxzgodC4OBFk0TXBvoS" Location="./VL.Audio.Analysis/VL.Audio.Analysis.vl" IsForward="true" />
   <DocumentDependency Id="NqToBc0BPlcPN3TQQ9VCFB" Location="./VL.StreamRecorder.vl" />
   <NugetDependency Id="E1idY3ZzsITNwtXoKijMyp" Location="VL.Interpolator" IsForward="true" Version="1.2.1" />
