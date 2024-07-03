@@ -2713,8 +2713,7 @@
               <Node Bounds="229,672,65,19" Id="GzUF5KLOv5FLNY0aYSzZKQ">
                 <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <FullNameCategoryReference ID="Control" />
-                  <Choice Kind="ProcessNode" Name="MonoFlop (FrameBased Version 1)" />
+                  <Choice Kind="ProcessAppFlag" Name="MonoFlop (FrameBased)" />
                 </p:NodeReference>
                 <Pin Id="SMR4llXo0bZNwsX3IqTni0" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="Mgrp7Q5eKNaNbjr5QlUcAd" Name="Set" Kind="InputPin" />
@@ -2723,6 +2722,7 @@
                 <Pin Id="LdUr1tWI8ZGLu2t4XKoNvi" Name="Reset" Kind="InputPin" />
                 <Pin Id="EFQw7FZ8TdjOFwfcMP98um" Name="Value" Kind="OutputPin" />
                 <Pin Id="UyacGYX3s3UMUkD3gAwyaN" Name="Inverse Output" Kind="OutputPin" />
+                <Pin Id="O2JDfeLJBieNPfsnCpzgvF" Name="Current Frame" Kind="OutputPin" />
               </Node>
               <Pad Id="TKqc0QuHghiLJHL6f3YETl" Comment="On Data" Bounds="250,631,35,35" ShowValueBox="true" isIOBox="true" />
               <Node Bounds="627,585,25,19" Id="MF6yUvxoF2zLm64FTL5xmC">
@@ -8859,7 +8859,7 @@
                         <Node Bounds="519,793,65,19" Id="KWgtMg0iRNrQOFG3erHwdi">
                           <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                            <Choice Kind="ProcessNode" Name="MonoFlop (FrameBased Version 1)" />
+                            <Choice Kind="ProcessAppFlag" Name="MonoFlop (FrameBased)" />
                           </p:NodeReference>
                           <Pin Id="P3tX0lHfK01Npuzv8Wqxlj" Name="Node Context" Kind="InputPin" IsHidden="true" />
                           <Pin Id="EnuDYX8T7bOPlQI3dVLRdF" Name="Set" Kind="InputPin" />
@@ -8868,6 +8868,7 @@
                           <Pin Id="MJlQZAHGFboPRj5Zg4xeLQ" Name="Reset" Kind="InputPin" />
                           <Pin Id="PAFOMvFl4lkL3W1xiv77Lh" Name="Value" Kind="OutputPin" />
                           <Pin Id="OAMokTmQHfkNLYTRkFyuJT" Name="Inverse Output" Kind="OutputPin" />
+                          <Pin Id="OL5qBzfKD85OE5eEc5gkEB" Name="Current Frame" Kind="OutputPin" />
                         </Node>
                         <Node Bounds="275,943,309,19" Id="Iqxc1VDrC42LfGt8oZSy6b">
                           <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
@@ -17825,7 +17826,7 @@
               <Node Bounds="1362,1409,65,19" Id="RoiIdRJV0GBML8NDlJLQyu">
                 <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessNode" Name="MonoFlop (FrameBased Version 1)" />
+                  <Choice Kind="ProcessAppFlag" Name="MonoFlop (FrameBased)" />
                 </p:NodeReference>
                 <Pin Id="Q7hxFksdEyBPbKzs2tqOjF" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="HQun8mnxht9QTiIjI7Jowi" Name="Set" Kind="InputPin" />
@@ -17834,6 +17835,7 @@
                 <Pin Id="OBNoUk96C8yP53dMdrY26e" Name="Reset" Kind="InputPin" />
                 <Pin Id="CSBxGVXC44cN01XDos1FYL" Name="Value" Kind="OutputPin" />
                 <Pin Id="DgrUd8RIL4CPLKQDv3dVxy" Name="Inverse Output" Kind="OutputPin" />
+                <Pin Id="Cx2FEukPKjYMrOrlhx3hHd" Name="Current Frame" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="ME2BVXU6wE5O7Ge6RYnUPn" Bounds="1324,1255" />
               <ControlPoint Id="UyG9fj5oQgROsHnM3hOMGo" Bounds="755,1569" />
@@ -17908,7 +17910,7 @@
                 <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <FullNameCategoryReference ID="Control" />
-                  <Choice Kind="ProcessNode" Name="MonoFlop (FrameBased Version 1)" />
+                  <Choice Kind="ProcessAppFlag" Name="MonoFlop (FrameBased)" />
                 </p:NodeReference>
                 <Pin Id="C82SKaJRhrTPpjJnRJbz0Q" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="DpXiCL0wv8gMY3jjQDXrt1" Name="Set" Kind="InputPin" />
@@ -17917,6 +17919,7 @@
                 <Pin Id="Qft0p3xpBZVMuhcTiDqW1x" Name="Reset" Kind="InputPin" />
                 <Pin Id="RgvA1MpUXA3LHsIaFpPuwV" Name="Value" Kind="OutputPin" />
                 <Pin Id="C0mvVITfq8bNHtx30QZdrg" Name="Inverse Output" Kind="OutputPin" />
+                <Pin Id="QLvCaIoLwYVNTWvrqkMCe1" Name="Current Frame" Kind="OutputPin" />
               </Node>
               <Node Bounds="1385,845,56,19" Id="FtiJf0bM67CNvXUCAaXbi9">
                 <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
@@ -17950,7 +17953,7 @@
                 <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <FullNameCategoryReference ID="Control" />
-                  <Choice Kind="ProcessNode" Name="MonoFlop (FrameBased Version 1)" />
+                  <Choice Kind="ProcessAppFlag" Name="MonoFlop (FrameBased)" />
                 </p:NodeReference>
                 <Pin Id="BUBU4UIG4r0MCvSpr2lWqz" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="Qz0N5ztL0r4LMUjmTl22Ia" Name="Set" Kind="InputPin" />
@@ -17959,6 +17962,7 @@
                 <Pin Id="P2Ltki9fHlcOb1r0Q00w8v" Name="Reset" Kind="InputPin" />
                 <Pin Id="A8TbgZLAtnONg1DFFnIPqN" Name="Value" Kind="OutputPin" />
                 <Pin Id="CNN0IEYZTX4OIrbdrLMgCF" Name="Inverse Output" Kind="OutputPin" />
+                <Pin Id="OKanR4uIzhXNQ88lwxHXyR" Name="Current Frame" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="GG9WS4HLHKiLB236htgzml" Bounds="637,1285" />
               <Node Bounds="1511,935,129,80" Id="LGp6D31mvneL1h7m2Fx0Ls">
@@ -17996,7 +18000,7 @@
               <Node Bounds="1512,900,65,19" Id="QvoyQ8uDymDPA2SJdoyeCI">
                 <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="ProcessNode" Name="MonoFlop (FrameBased Version 1)" />
+                  <Choice Kind="ProcessAppFlag" Name="MonoFlop (FrameBased)" />
                 </p:NodeReference>
                 <Pin Id="E72xOpMgSBpO9sY9Ow2KjF" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="KjdjI0b9xbqLUoaalkqN7B" Name="Set" Kind="InputPin" />
@@ -18005,6 +18009,7 @@
                 <Pin Id="EI915KRkDYDNNpcnrQFZyl" Name="Reset" Kind="InputPin" />
                 <Pin Id="IswDxYwhdAhMuurUYjZy06" Name="Value" Kind="OutputPin" />
                 <Pin Id="REJIVm0k4wpMgzyuFComVE" Name="Inverse Output" Kind="OutputPin" />
+                <Pin Id="TWNv0Kvzs52NyOlIseFe0S" Name="Current Frame" Kind="OutputPin" />
               </Node>
             </Canvas>
             <Patch Id="C8IL2i2qINqP2MP4jmGahC" Name="Create" ParticipatingElements="MfIJyEqmUxpLEn6yqCob9p" />
