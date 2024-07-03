@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="VloQWmJKfLaP5w7R1cYVxI" LanguageVersion="2024.6.5-0041-g7f25690525" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2024.6.5-0041-g7f25690525" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="VloQWmJKfLaP5w7R1cYVxI" LanguageVersion="2024.6.7-0003-gda7bfe6f68" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2024.6.7-0003-gda7bfe6f68" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="AudioAnalysis" CanvasType="FullCategory">
       <!--
@@ -2978,40 +2978,6 @@
               <ControlPoint Id="KR2zYOmexmgPNOEOjUbISD" Bounds="450,156" />
               <ControlPoint Id="DvM3HYoPdjUO7RDXNZ5wzl" Bounds="468,176" />
               <ControlPoint Id="U84vp9sttQ0ObMOhgmArmV" Bounds="164,485" />
-              <Node Bounds="285,1453,84,86" Id="C4WyAJHlxFgMCOp4TeukhT">
-                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                  <Choice Kind="ApplicationStatefulRegion" Name="If" />
-                  <FullNameCategoryReference ID="Primitive" />
-                </p:NodeReference>
-                <Pin Id="C9D4OgkF0DfN87L6ASnAoE" Name="Condition" Kind="InputPin" />
-                <ControlPoint Id="Non0JSICAw9MLMUoAxYu2I" Bounds="301,1533" Alignment="Bottom" />
-                <ControlPoint Id="Uv2kFIwAMcSM84y7rG0FIV" Bounds="301,1459" Alignment="Top" />
-                <Patch Id="LbFtbdjNiJsNiWGyGcq6Gw" ManuallySortedPins="true">
-                  <Patch Id="HCi0My2W6g2LiGRBgWAEFf" Name="Create" ManuallySortedPins="true" />
-                  <Patch Id="OvgbEOhK7s2QIAFYYnWP8p" Name="Then" ManuallySortedPins="true" />
-                  <Node Bounds="299,1476,54,19" Id="C7sb299O9bCOhqqgiwjYPu">
-                    <p:NodeReference LastCategoryFullName="Serialization.FSPickler" LastDependency="VL.Serialization.FSPickler.vl">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="OperationCallFlag" Name="Serialize (Binary)" />
-                      <FullNameCategoryReference ID="Serialization.FSPickler" />
-                    </p:NodeReference>
-                    <Pin Id="OFDK7hdLKIUQa6zJQFBYyo" Name="Input" Kind="InputPin" />
-                    <Pin Id="MAl991lQMpzL67266ybNh2" Name="Force Little Endian" Kind="InputPin" />
-                    <Pin Id="SJ8Ia6YRrBnPUS2u3poQtP" Name="Result" Kind="OutputPin" />
-                  </Node>
-                  <Node Bounds="297,1499,60,19" Id="DdGF6vJzQ1WPPtUbdZAphm">
-                    <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="OperationCallFlag" Name="ToStream" />
-                      <CategoryReference Kind="MutableInterfaceType" Name="Sequence" NeedsToBeDirectParent="true" />
-                    </p:NodeReference>
-                    <Pin Id="ArQ1k6zar1eLSWtxlTok3S" Name="Input" Kind="StateInputPin" />
-                    <Pin Id="Dhm6bdYQUHtPSnlwSeUwr3" Name="Writeable" Kind="InputPin" />
-                    <Pin Id="RecefcymcbjOd6jTtbs0LR" Name="Result" Kind="OutputPin" />
-                  </Node>
-                </Patch>
-              </Node>
               <ControlPoint Id="APIH8BFmP31LqzyyUhTkke" Bounds="505,196" />
               <ControlPoint Id="MqNdUaP9I9UPXMl47FsBXt" Bounds="523,219" />
               <ControlPoint Id="AYeymv2cDM0PCCz9CCkTkq" Bounds="547,247" />
@@ -3070,9 +3036,6 @@
             <Link Id="SmXV18vGYYZNIVoxDMTRhl" Ids="MHnf9vh6F6HNrwow6MfkaQ,DvM3HYoPdjUO7RDXNZ5wzl" IsHidden="true" />
             <Link Id="Ku3NjxGnjSUO8wRVHFJA8p" Ids="QBrUukT0Bj5O6dWn6Ybff3,U84vp9sttQ0ObMOhgmArmV" />
             <Link Id="E3jInMXS07LOyhCIfAcMdc" Ids="U84vp9sttQ0ObMOhgmArmV,E2WWAzahoerLa0o904TY2m" IsHidden="true" />
-            <Link Id="Lg8ebdz605vMscosR3PjUz" Ids="SJ8Ia6YRrBnPUS2u3poQtP,ArQ1k6zar1eLSWtxlTok3S" />
-            <Link Id="BMKphSHbYgOMK42BuPzSKV" Ids="Uv2kFIwAMcSM84y7rG0FIV,Non0JSICAw9MLMUoAxYu2I" IsFeedback="true" />
-            <Link Id="SAmYIsK4XnSM8a6UZ5Ctks" Ids="RecefcymcbjOd6jTtbs0LR,Non0JSICAw9MLMUoAxYu2I" />
             <Link Id="U61ZVY3wO3MLmTbVkkA0rF" Ids="RvospqRN1TxPMYR9xv23Aw,JdtMX6naMk4MVMJhf18efV" />
             <Link Id="H4AHvssrvJvLo70P6mmqxl" Ids="H7hE5ToZ1geLMc5BOm1YHG,RhXOZO4vyxgLFwhIOfEPLK" />
             <Link Id="AD3HVkQeKcCNHS8Nn3q6bf" Ids="APIH8BFmP31LqzyyUhTkke,H7hE5ToZ1geLMc5BOm1YHG" />
@@ -5374,7 +5337,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JBYu5xS08XeN9YRj2XW9QD" Location="VL.Skia" Version="2024.6.5-0041-g7f25690525" />
-  <NugetDependency Id="T7vPGFRY7LGQWzgpXpCsuu" Location="VL.Serialization.FSPickler" Version="2024.6.5-0041-g7f25690525" />
+  <NugetDependency Id="JBYu5xS08XeN9YRj2XW9QD" Location="VL.Skia" Version="2024.6.7-0003-gda7bfe6f68" />
+  <NugetDependency Id="T7vPGFRY7LGQWzgpXpCsuu" Location="VL.Serialization.FSPickler" Version="2024.6.7-0003-gda7bfe6f68" />
   <NugetDependency Id="INZ3Mvh7C3PPwt5shPlWmb" Location="VL.Audio" Version="1.8.2" />
 </Document>
