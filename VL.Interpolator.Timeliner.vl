@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="I7dVCxgdGmCQAfXrupiHbk" LanguageVersion="2024.6.5-0041-g7f25690525" Version="0.128">
-  <NugetDependency Id="UlM8oE5weZyLwsXCtxiNDg" Location="VL.CoreLib" Version="2024.6.5-0041-g7f25690525" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="I7dVCxgdGmCQAfXrupiHbk" LanguageVersion="2024.6.7-0003-gda7bfe6f68" Version="0.128">
+  <NugetDependency Id="UlM8oE5weZyLwsXCtxiNDg" Location="VL.CoreLib" Version="2024.6.7-0003-gda7bfe6f68" />
   <Patch Id="VCXuvwfr22DNsZ6cNBlImg">
     <Canvas Id="VtEItcFxFG4L6rgp9xltbu" DefaultCategory="Interpolator.Timeliner" CanvasType="FullCategory">
       <!--
@@ -174,6 +174,7 @@
               <Pin Id="UnhXVYp8gu1M0sO2X5dkfm" Name="Reset" Kind="InputPin" />
               <Pin Id="Vzi9s9TlxGtP4c0z4a4flU" Name="Value" Kind="OutputPin" />
               <Pin Id="UMffnviJqWSLNpCPm1t8DW" Name="Inverse Output" Kind="OutputPin" />
+              <Pin Id="EWxu1LLTWYlQSeax6ayRRl" Name="Current Frame" Kind="OutputPin" />
             </Node>
             <Node Bounds="560,696,225,19" Id="KneZ3s4JdYFLoQdwQavwcS">
               <p:NodeReference LastCategoryFullName="ImGui.Extensions.System" LastDependency="VL.ImGui.Extensions.vl">
@@ -2176,7 +2177,7 @@
             <Node Bounds="661,374,65,19" Id="I3L1GZYkuJiO6JsS91ZSzs">
               <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="MonoFlop (FrameBased)" />
+                <Choice Kind="ProcessNode" Name="MonoFlop (FrameBased Version 1)" />
               </p:NodeReference>
               <Pin Id="JrxVaGuv5bvOBr7RqCeH9L" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="Lrj54jZS2NoOCCrgNqitG9" Name="Set" Kind="InputPin" />
@@ -2246,7 +2247,7 @@
             <Node Bounds="274,668,65,19" Id="Fv0zZ02OLs9OwOu73eN0lf">
               <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="MonoFlop (FrameBased)" />
+                <Choice Kind="ProcessNode" Name="MonoFlop (FrameBased Version 1)" />
               </p:NodeReference>
               <Pin Id="BF4p81lrufvLyoMU7hNcR4" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="AnPe3UZxn7eLgDyrizBZvb" Name="Set" Kind="InputPin" />
@@ -2346,12 +2347,12 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="FS8kDPyjJRePqPwlLqsmIu" Location="VL.Skia" Version="2024.6.5-0041-g7f25690525" />
+  <NugetDependency Id="FS8kDPyjJRePqPwlLqsmIu" Location="VL.Skia" Version="2024.6.7-0003-gda7bfe6f68" />
   <DocumentDependency Id="BIqAcaohfjfOr8WDq1zJ9s" Location="./VL/VL.Audio.Analysis/VL.Audio.Analysis.vl" IsForward="true" />
-  <DocumentDependency Id="HC91bScuM4yPKTNVNMhbwv" Location="../VL.ImGui.Extensions/VL.ImGui.Extensions.vl" />
   <DocumentDependency Id="AzZsIkAyVQqPOi6cI5SG5B" Location="./VL/VL.Interpolator.Editor.vl" IsForward="true" />
   <DocumentDependency Id="T0GPHNlHaddNrlQBxo9OR1" Location="./VL/VL.Interpolator.Players.vl" IsForward="true" />
   <DocumentDependency Id="LzfqBeHbfj9PcVVyMByHke" Location="./VL/VL.Interpolator.LaunchpadControl.vl" />
-  <NugetDependency Id="I7NGLGpQEEwNwLspMuzraV" Location="VL.MiDi.Music.Utils" Version="1.1.0" />
+  <NugetDependency Id="I7NGLGpQEEwNwLspMuzraV" Location="VL.MiDi.Music.Utils" Version="1.1.2" />
   <NugetDependency Id="TCdMD8FegRDOKU96G5axAP" Location="VL.IO.Midi" Version="1.1.1" />
+  <NugetDependency Id="N7uYXSAsGlTNsnqzxves9N" Location="VL.ImGui.Extensions" Version="1.0.2" />
 </Document>
