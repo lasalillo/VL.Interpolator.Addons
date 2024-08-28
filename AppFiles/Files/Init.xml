@@ -10,12 +10,22 @@
       </Item>
     </AudioAnalysisSettings>
   </AudioAnalysisData>
-  <DriverSettings DeviceName="WASAPI: Current System Device" Enable="True" EnableInput="False" InputChannels="2" InputOffset="0" OutputChannels="0" OutputOffset="0" PlayerSpeedCorrection="False" SampleRate="48000" SpatialAudio="False" WasapiInput="Default" />
+  <DriverSettings DeviceName="WASAPI: Current System Device" Enable="True" EnableInput="False" InputChannels="2" InputOffset="0" MultiChannelAudio="False" OutputChannels="0" OutputOffset="0" PlayerSpeedCorrection="False" SampleRate="48000" WasapiInput="Default" />
   <MTCSettings ClockOutDeviceName="" MTCDeviceName="" SendClock="False" SendMTC="False" SMPTE_Rate="3" />
+  <MultiChannelAudio NormalizeAudio="False">
+    <Sources>
+      <Item AudioChannels="0" Source="bf7b352f-a537-4d12-84cc-3aace1103cba" />
+      <Item AudioChannels="1" Source="bf7b352f-a537-4d12-84cc-3aace1103cba" />
+    </Sources>
+    <Speakers>
+      <Item SourceLevels="1, 0" SpeakerLevel="2" />
+      <Item SourceLevels="0, 1" SpeakerLevel="2" />
+    </Speakers>
+  </MultiChannelAudio>
   <Multitrack Duration="240">
     <TimelinerControls BaseFPS="60" BPM="120" FPS="60" InputVolume="1" LoopEnable="False" LoopFrom="174.64593505859375" LoopMode="True" LoopTo="174.64593505859375" PPQN="384" SignatureDenominator="4" SignatureNumerator="4" TracksVolume="1" Volume="1" />
     <Tracks>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="bf7b352f-a537-4d12-84cc-3aace1103cba" LerpPositionName="" Name="Audio" NextIndexName="" Target="Clip" TargetFound="True" TargetPath="">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="bf7b352f-a537-4d12-84cc-3aace1103cba" LastKeyIsEnd="False" LerpPositionName="" Name="Audio" NextIndexName="" Target="Clip" TargetFound="True" TargetPath="">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue ClipLevel="1" ClipStart="0" End="0" FadeIn="0" FadeInTweenMode="In" FadeInTweenTransition="Circular" FadeOut="0" FadeOutTweenMode="Out" FadeOutTweenTransition="Circular" FileName="" Level="1" Loop="False" MediaDuration="0" Multi_Mono="False" PositionOnClip="0" Start="0" TrackID="0" r:Type="Clip [Interpolator]" />
         <KeyframeManager Key="a7aa6479-f985-4bc2-a17d-4379155abef1" LengthByKeyframe="True" LerpLength="0">
@@ -38,7 +48,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="6d18c1f1-0927-4aae-8783-c451904a211d" LerpPositionName="" Name="" NextIndexName="" Target="BPM" TargetFound="True" TargetPath="">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="6d18c1f1-0927-4aae-8783-c451904a211d" LastKeyIsEnd="False" LerpPositionName="" Name="" NextIndexName="" Target="BPM" TargetFound="True" TargetPath="">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue r:Type="Float64 [Primitive]">120</DefaultValue>
         <KeyframeManager Key="c85495f2-6f2d-43c4-82c6-0a9520fa37d8" LengthByKeyframe="True" LerpLength="0">
@@ -66,7 +76,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="False" InterpolationArgument="NotManaged" Key="db743464-6111-4f3b-8e26-4b80118008b5" LerpPositionName="ListIndex_LerpPosition" Name="" NextIndexName="ListIndex_Next" Target="cfdb290f-240a-4495-b8bd-48c541862e85.ListIndex" TargetFound="True" TargetPath="MySubType2.ListIndex">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="False" InterpolationArgument="NotManaged" Key="db743464-6111-4f3b-8e26-4b80118008b5" LastKeyIsEnd="False" LerpPositionName="ListIndex_LerpPosition" Name="" NextIndexName="ListIndex_Next" Target="cfdb290f-240a-4495-b8bd-48c541862e85.ListIndex" TargetFound="True" TargetPath="MySubType2.ListIndex">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue r:Type="Integer32 [Primitive]">0</DefaultValue>
         <KeyframeManager Key="8477a823-012b-4030-bab8-03947ad9ddeb" LengthByKeyframe="True" LerpLength="0">
@@ -104,7 +114,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="False" InterpolationArgument="Maximum" Key="c97a7709-2f9b-44e6-bc68-fdb3c831eb6e" LerpPositionName="" Name="" NextIndexName="" Target="cfdb290f-240a-4495-b8bd-48c541862e85.CCCC" TargetFound="True" TargetPath="MySubType2.CCCC">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="False" InterpolationArgument="Maximum" Key="c97a7709-2f9b-44e6-bc68-fdb3c831eb6e" LastKeyIsEnd="False" LerpPositionName="" Name="" NextIndexName="" Target="cfdb290f-240a-4495-b8bd-48c541862e85.CCCC" TargetFound="True" TargetPath="MySubType2.CCCC">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue r:Type="Integer32 [Primitive]">0</DefaultValue>
         <KeyframeManager Key="451148e8-734b-4047-ad7f-49c7bb8495d0" LengthByKeyframe="True" LerpLength="0">
@@ -127,7 +137,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="False" InterpolationArgument="Minimum" Key="563ef53c-c53e-4d03-bfb4-1fccb5a2922d" LerpPositionName="" Name="" NextIndexName="" Target="cfdb290f-240a-4495-b8bd-48c541862e85.BBBB" TargetFound="True" TargetPath="MySubType2.BBBB">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="False" InterpolationArgument="Minimum" Key="563ef53c-c53e-4d03-bfb4-1fccb5a2922d" LastKeyIsEnd="False" LerpPositionName="" Name="" NextIndexName="" Target="cfdb290f-240a-4495-b8bd-48c541862e85.BBBB" TargetFound="True" TargetPath="MySubType2.BBBB">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue r:Type="Integer32 [Primitive]">0</DefaultValue>
         <KeyframeManager Key="54684cc6-4dff-44df-847d-21b7ae0dbfd7" LengthByKeyframe="True" LerpLength="0">
@@ -150,7 +160,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="False" InterpolationArgument="Interpolate" Key="77f337bb-6998-4bff-8d9c-ead2696f7330" LerpPositionName="" Name="" NextIndexName="" Target="cfdb290f-240a-4495-b8bd-48c541862e85.AAAA" TargetFound="True" TargetPath="MySubType2.AAAA">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="False" InterpolationArgument="Interpolate" Key="77f337bb-6998-4bff-8d9c-ead2696f7330" LastKeyIsEnd="False" LerpPositionName="" Name="" NextIndexName="" Target="cfdb290f-240a-4495-b8bd-48c541862e85.AAAA" TargetFound="True" TargetPath="MySubType2.AAAA">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue r:Type="Float32 [Primitive]">0</DefaultValue>
         <KeyframeManager Key="4cdd10b2-348c-4e39-b225-305dab7b7a48" LengthByKeyframe="True" LerpLength="0">
@@ -173,7 +183,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="22e01ef1-0088-4bed-9e17-9a31e8abc126" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.Vector3" TargetFound="True" TargetPath="MySubType1.Vector3">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="22e01ef1-0088-4bed-9e17-9a31e8abc126" LastKeyIsEnd="False" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.Vector3" TargetFound="True" TargetPath="MySubType1.Vector3">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue r:Type="Vector3 [3D]">0, 0, 0</DefaultValue>
         <KeyframeManager Key="4cbe906a-0cc4-4fde-b02d-1da9fedf6e9e" LengthByKeyframe="True" LerpLength="0">
@@ -196,7 +206,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="711a2519-bf7b-4486-9e94-f1a7520f2b5a" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.String" TargetFound="True" TargetPath="MySubType1.String">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="711a2519-bf7b-4486-9e94-f1a7520f2b5a" LastKeyIsEnd="False" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.String" TargetFound="True" TargetPath="MySubType1.String">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue r:Type="String [Primitive]"></DefaultValue>
         <KeyframeManager Key="4da443c4-fb32-4bfc-96bf-ee677f9f7a13" LengthByKeyframe="True" LerpLength="0">
@@ -219,7 +229,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="f0b39964-1f95-4fa5-90db-44b5341605b1" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.SpreadVector2" TargetFound="True" TargetPath="MySubType1.SpreadVector2">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="f0b39964-1f95-4fa5-90db-44b5341605b1" LastKeyIsEnd="False" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.SpreadVector2" TargetFound="True" TargetPath="MySubType1.SpreadVector2">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue r:Type="Spread [Collections]&lt;Vector2 [2D]&gt;" />
         <KeyframeManager Key="3d991cb5-96a8-4f6d-b32e-ca7547dab7c0" LengthByKeyframe="True" LerpLength="0">
@@ -268,7 +278,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="f5d22e65-a826-4e18-b8e8-6df3451fa8dc" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.RGBA" TargetFound="True" TargetPath="MySubType1.RGBA">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="f5d22e65-a826-4e18-b8e8-6df3451fa8dc" LastKeyIsEnd="False" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.RGBA" TargetFound="True" TargetPath="MySubType1.RGBA">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue r:Type="RGBA [Color]">1, 1, 1, 1</DefaultValue>
         <KeyframeManager Key="74c98f0c-bae4-4500-b443-398712774d67" LengthByKeyframe="True" LerpLength="0">
@@ -296,7 +306,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="3f65ceaa-1688-4690-b41f-cba25b68f57b" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.Path" TargetFound="True" TargetPath="MySubType1.Path">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="3f65ceaa-1688-4690-b41f-cba25b68f57b" LastKeyIsEnd="False" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.Path" TargetFound="True" TargetPath="MySubType1.Path">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue r:Type="Path [IO]"></DefaultValue>
         <KeyframeManager Key="17783562-b6ca-4b19-9595-bf864875d6c4" LengthByKeyframe="True" LerpLength="0">
@@ -319,7 +329,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="aed52b34-402f-43d1-b5ff-25680d1ae260" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.Matrix" TargetFound="True" TargetPath="MySubType1.Matrix">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="aed52b34-402f-43d1-b5ff-25680d1ae260" LastKeyIsEnd="False" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.Matrix" TargetFound="True" TargetPath="MySubType1.Matrix">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue r:Type="Matrix [3D]">1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1</DefaultValue>
         <KeyframeManager Key="11477ce7-783e-4d36-a810-aebab71b5034" LengthByKeyframe="True" LerpLength="0">
@@ -342,7 +352,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="0621d8e0-eb83-4074-af26-a2370c8c8cf6" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.Integer" TargetFound="True" TargetPath="MySubType1.Integer">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="0621d8e0-eb83-4074-af26-a2370c8c8cf6" LastKeyIsEnd="False" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.Integer" TargetFound="True" TargetPath="MySubType1.Integer">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue r:Type="Integer32 [Primitive]">0</DefaultValue>
         <KeyframeManager Key="a84b067a-660d-456f-bc13-2794c337c2cc" LengthByKeyframe="True" LerpLength="0">
@@ -365,7 +375,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="1bf0b0c7-0fa5-4667-a40d-0df6c94c22fe" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.Float" TargetFound="True" TargetPath="MySubType1.Float">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="1bf0b0c7-0fa5-4667-a40d-0df6c94c22fe" LastKeyIsEnd="False" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.Float" TargetFound="True" TargetPath="MySubType1.Float">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue r:Type="Float32 [Primitive]">0</DefaultValue>
         <KeyframeManager Key="16920713-aaaa-4ce8-b760-c3ae5636b813" LengthByKeyframe="True" LerpLength="0">
@@ -388,7 +398,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="1496018b-fba9-4b41-9ed7-a8d29f9c8678" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.Boolean" TargetFound="True" TargetPath="MySubType1.Boolean">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="1496018b-fba9-4b41-9ed7-a8d29f9c8678" LastKeyIsEnd="False" LerpPositionName="" Name="" NextIndexName="" Target="fc5f97f9-9071-4cd2-a338-bea54cd35c96.Boolean" TargetFound="True" TargetPath="MySubType1.Boolean">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue r:Type="Boolean [Primitive]">False</DefaultValue>
         <KeyframeManager Key="317024dc-eac8-4252-9478-bdb0655d1298" LengthByKeyframe="True" LerpLength="0">
@@ -411,7 +421,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="15560333-dcf2-4849-8d28-985169a2369a" LerpPositionName="" Name="" NextIndexName="" Target="c1e0f7ff-8bd7-4cef-894c-25578d71e83d.HereAFloat" TargetFound="True" TargetPath="HereAFloat">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="50" Cyclic="True" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="15560333-dcf2-4849-8d28-985169a2369a" LastKeyIsEnd="True" LerpPositionName="" Name="" NextIndexName="" Target="c1e0f7ff-8bd7-4cef-894c-25578d71e83d.HereAFloat" TargetFound="True" TargetPath="HereAFloat">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue r:Type="Float32 [Primitive]">0</DefaultValue>
         <KeyframeManager Key="c10adb48-9519-4d02-be89-e5bf642f39bd" LengthByKeyframe="True" LerpLength="0">
@@ -434,7 +444,7 @@
           </Keyframes>
         </KeyframeManager>
       </Item>
-      <Item ClientID="" ColourSpace="Xyz" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="3a786c5e-52e6-43e9-9f2f-3ad4b919f3c3" LerpPositionName="" Name="" NextIndexName="" Target="StateMachine" TargetFound="True" TargetPath="">
+      <Item ClientID="" ColourSpace="Xyz" CycleEnd="0" CycleStart="0" Cyclic="False" Enable="True" Interpolate="True" InterpolationArgument="Interpolate" Key="3a786c5e-52e6-43e9-9f2f-3ad4b919f3c3" LastKeyIsEnd="False" LerpPositionName="" Name="" NextIndexName="" Target="StateMachine" TargetFound="True" TargetPath="">
         <BlendingModes BooleanBlend="Direct" FloatBlend="Direct" IntegerBlend="Direct" RGBABlend="Direct" Vector2Blend="Direct" Vector3Blend="Direct" Vector4Blend="Direct" />
         <DefaultValue Command="stop" Enable="True" r:Type="Marker [Interpolator]" />
         <KeyframeManager Key="a76784ba-3ee3-45c1-b903-57c56841840b" LengthByKeyframe="True" LerpLength="0">
@@ -464,16 +474,6 @@
       <Item IP="127.0.0.1" Key="a8d1d508-850f-4e6e-a0a3-f07073ac3a5d" Name="Local" Port="9999" Send="True" />
     </IPs>
   </OSCNetwork>
-  <MultiChannelAudio>
-    <Sources>
-      <Item AudioChannels="0" Source="bf7b352f-a537-4d12-84cc-3aace1103cba" />
-      <Item AudioChannels="1" Source="bf7b352f-a537-4d12-84cc-3aace1103cba" />
-    </Sources>
-    <Speakers>
-      <Item SourceLevels="1, 0" SpeakerLevel="2" />
-      <Item SourceLevels="0, 1" SpeakerLevel="2" />
-    </Speakers>
-  </MultiChannelAudio>
   <TargetAppModel HereAFloat="0" Key="c1e0f7ff-8bd7-4cef-894c-25578d71e83d" r:Type="MyProjectType [Main]">
     <MySubType1 Boolean="False" Float="0" Integer="0" Key="fc5f97f9-9071-4cd2-a338-bea54cd35c96" Matrix="1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1" Path="" RGBA="1, 1, 1, 1" String="" Vector3="0, 0, 0">
       <SpreadVector2>
@@ -482,5 +482,5 @@
     </MySubType1>
     <MySubType2 AAAA="0" BBBB="0" CCCC="0" Key="cfdb290f-240a-4495-b8bd-48c541862e85" ListIndex="0" ListIndex_LerpPosition="0" ListIndex_Next="0" />
   </TargetAppModel>
-  <TimelinerSettings AlwaysOnTop="False" AudioAnalysis="False" AudioAnalysisMonitor="False" AudioAnalysisSize="1.45" AudioLevelsEnable="True" BinderEnable="False" BPMEnable="True" EnableInteraction="True" HMSFEnable="False" InitialVerticalZoom="0.45236507" InspectorEnable="False" InspectorSize="4" KeyframeEnable="False" PlayOnStart="True" SpatialAudio="True" TimelinerEnable="True" TrackEnable="False" WaveformsEnable="True" />
+  <TimelinerSettings AlwaysOnTop="False" AudioAnalysis="False" AudioAnalysisMonitor="False" AudioAnalysisSize="1.45" AudioLevelsEnable="True" BinderEnable="False" BPMEnable="True" EnableInteraction="True" HMSFEnable="False" InitialVerticalZoom="0.45236507" InspectorEnable="False" InspectorSize="4" KeyframeEnable="False" MultiChannelAudio="False" PlayOnStart="True" TimelinerEnable="True" TrackEnable="False" WaveformsEnable="True" />
 </Project_Model>
