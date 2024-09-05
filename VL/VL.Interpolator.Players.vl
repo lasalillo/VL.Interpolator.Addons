@@ -1759,7 +1759,7 @@
                 <Pin Id="JkcAD4JGvSXPcKq72BkkR3" Name="Input" Kind="StateInputPin" />
                 <Pin Id="N9CFH4JBS2pNnGTWj3Uk3N" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="254,892,735,1371" Id="KO7h9ohVEldOpYj7b9gqr3">
+              <Node Bounds="254,892,684,1371" Id="KO7h9ohVEldOpYj7b9gqr3">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -1769,7 +1769,7 @@
                 <ControlPoint Id="QbHQb0WE5HvObl2XUqCCLY" Bounds="424,2257" Alignment="Bottom" />
                 <ControlPoint Id="BBotwx3DXuJMd9TfehLzaA" Bounds="430,898" Alignment="Top" />
                 <Patch Id="RIqIE4pJMcHQOUqtIB5IVY" ManuallySortedPins="true">
-                  <Node Bounds="306,1071,581,1172" Id="FlsTTBxCWkTNtu69wJvT3B">
+                  <Node Bounds="306,1071,620,1172" Id="FlsTTBxCWkTNtu69wJvT3B">
                     <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
@@ -1789,7 +1789,7 @@
                         <Pin Id="HF9x9wMRZccNj06z7P6aVp" Name="Output" Kind="OutputPin" />
                         <Pin Id="RWyLVkF9fyCLE2y1PutxA1" Name="Enable" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="329,1187,546,1003" Id="NATfria6E3SPLme6n0du6y">
+                      <Node Bounds="329,1187,585,1003" Id="NATfria6E3SPLme6n0du6y">
                         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                           <Choice Kind="ApplicationStatefulRegion" Name="If" />
                           <FullNameCategoryReference ID="Primitive" />
@@ -1851,7 +1851,7 @@
                             <Pin Id="KItEfoIsER1PwA20QGP9QJ" Name="Sample Rate" Kind="OutputPin" />
                             <Pin Id="OVxVOO0T2vnQHKHl4oeoXf" Name="Original Format" Kind="OutputPin" />
                           </Node>
-                          <Pad Id="FvfxC3EGE1wPhiIfEy8AHz" Comment="Position" Bounds="504,1811,88,15" ShowValueBox="true" isIOBox="true">
+                          <Pad Id="FvfxC3EGE1wPhiIfEy8AHz" Comment="Position" Bounds="504,1811,93,15" ShowValueBox="true" isIOBox="true">
                             <p:ValueBoxSettings>
                               <p:precision p:Type="Int32">6</p:precision>
                               <p:stepsize p:Type="Single">0.01</p:stepsize>
@@ -2256,9 +2256,9 @@
                             <ControlPoint Id="D0GtP3fZsZJLdhRdXyDe5i" Bounds="424,2164" Alignment="Bottom" />
                           </Node>
                           <Pad Id="Nx3Qkp8BdJRNEHfmZe4cuQ" Comment="Is Empty" Bounds="536,2055,35,35" ShowValueBox="true" isIOBox="true" />
-                          <Pad Id="ODKdCF98ZbQNCa4wkkui7a" Comment="PositionOnClip" Bounds="504,1829,86,15" ShowValueBox="true" isIOBox="true">
+                          <Pad Id="ODKdCF98ZbQNCa4wkkui7a" Comment="PositionOnClip" Bounds="504,1829,93,15" ShowValueBox="true" isIOBox="true">
                             <p:ValueBoxSettings>
-                              <p:precision p:Type="Int32">4</p:precision>
+                              <p:precision p:Type="Int32">6</p:precision>
                               <p:stepsize p:Type="Single">0.01</p:stepsize>
                             </p:ValueBoxSettings>
                           </Pad>
@@ -2348,6 +2348,60 @@
                             <Pin Id="KeSt9DthFpaNIkHMMFwKuH" Name="Input 2" Kind="InputPin" />
                             <Pin Id="AHOUsVScSJrMjMKHASZK9N" Name="Output" Kind="StateOutputPin" />
                           </Node>
+                          <Node Bounds="780,1477,57,19" Id="RwsMhuMBR43OqENj8ON0my">
+                            <p:NodeReference LastCategoryFullName="IO.Path" LastDependency="VL.CoreLib.vl">
+                              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                              <Choice Kind="OperationCallFlag" Name="Filename (Split)" />
+                            </p:NodeReference>
+                            <Pin Id="RVf1oWSgXEMPmz1d8qew20" Name="Input" Kind="StateInputPin" />
+                            <Pin Id="Tft2GWhprhQPrJ7FIvoDY9" Name="Directory" Kind="OutputPin" />
+                            <Pin Id="APIOm0EwWh2M0kLa0amLrX" Name="Filename" Kind="OutputPin" />
+                            <Pin Id="SnXsRiIawPzPTRfZrSdLff" Name="Extension" Kind="OutputPin" />
+                          </Node>
+                          <Node Bounds="814,1511,25,19" Id="KuOaLw6e5k8MquxOqDBgww">
+                            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                              <Choice Kind="OperationCallFlag" Name="=" />
+                            </p:NodeReference>
+                            <Pin Id="D64XjedQGzMOcfsCJtJ7tS" Name="Input" Kind="InputPin" />
+                            <Pin Id="V7mFTcoWcJSOOWpfTmoikX" Name="Input 2" Kind="InputPin" />
+                            <Pin Id="URN6uMKMdW8OxOFXOR5zSR" Name="Result" Kind="OutputPin" />
+                          </Node>
+                          <Node Bounds="814,1549,69,63" Id="KmyeLQLHPUBMSmPulfGTr9">
+                            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                              <CategoryReference Kind="Category" Name="Primitive" />
+                              <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                            </p:NodeReference>
+                            <Pin Id="BZuslZ58sb5QFVp7mulQCu" Name="Condition" Kind="InputPin" />
+                            <Patch Id="BresSpgGparOIehAHmkXgJ" ManuallySortedPins="true">
+                              <Patch Id="SXnrXixw99CPJ2rGxS7PWd" Name="Create" ManuallySortedPins="true" />
+                              <Patch Id="Hwz06ahl2mbM73kQkGskuq" Name="Then" ManuallySortedPins="true" />
+                              <Node Bounds="834,1573,37,19" Id="LZEl5btIzOoPd3ddgpe0wG">
+                                <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
+                                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                                  <Choice Kind="OperationCallFlag" Name="NOT" />
+                                </p:NodeReference>
+                                <Pin Id="NJtfNH2XgZ5PLHUw4XSdOA" Name="Input" Kind="StateInputPin" />
+                                <Pin Id="PTnbMSYFiM9MS2cElfOWAG" Name="Output" Kind="StateOutputPin" />
+                              </Node>
+                            </Patch>
+                            <ControlPoint Id="EFEt8HbXzH3PxNbYGMkn7t" Bounds="836,1606" Alignment="Bottom" />
+                            <ControlPoint Id="L08RWZ4PTU6OOLNCZyOVZj" Bounds="835,1555" Alignment="Top" />
+                          </Node>
+                          <Pad Id="ILlBz52MOcoLTmZ1bjRh26" Comment="" Bounds="836,1532,35,15" ShowValueBox="true" isIOBox="true" Value="True">
+                            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+                            </p:TypeAnnotation>
+                            <p:ValueBoxSettings>
+                              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+                            </p:ValueBoxSettings>
+                          </Pad>
+                          <Pad Id="Q36YOHhJLXnNcznf2oEk5R" Comment="" Bounds="848,1492,35,15" ShowValueBox="true" isIOBox="true" Value="flac">
+                            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                              <Choice Kind="TypeFlag" Name="String" />
+                            </p:TypeAnnotation>
+                          </Pad>
                         </Patch>
                         <ControlPoint Id="FEO77j5M4WFPQbc2Ia8bDa" Bounds="614,2184" Alignment="Bottom" />
                         <ControlPoint Id="VWqdk0tfvj9NcVUuRTB9eB" Bounds="598,1193" Alignment="Top" />
@@ -2470,14 +2524,6 @@
                       <Choice Kind="TypeFlag" Name="Float32" />
                     </p:TypeAnnotation>
                   </Pad>
-                  <Node Bounds="940,991,37,19" Id="LZEl5btIzOoPd3ddgpe0wG">
-                    <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="OperationCallFlag" Name="NOT" />
-                    </p:NodeReference>
-                    <Pin Id="NJtfNH2XgZ5PLHUw4XSdOA" Name="Input" Kind="StateInputPin" />
-                    <Pin Id="PTnbMSYFiM9MS2cElfOWAG" Name="Output" Kind="StateOutputPin" />
-                  </Node>
                 </Patch>
                 <ControlPoint Id="P8uV9RxNV8gMCe5G5WLH7P" Bounds="737,2257" Alignment="Bottom" />
                 <ControlPoint Id="H9P7y0PVCOZPHyAQGQBrf0" Bounds="736,898" Alignment="Top" />
@@ -2804,7 +2850,7 @@
               <ControlPoint Id="Gl9MhGipcjANwuZKZ9OC5t" Bounds="1530,656" />
               <ControlPoint Id="TFIwm9ldDtSOmbx3uheMFF" Bounds="737,2328" />
               <ControlPoint Id="LWUwOCav0ppPcMDWNGulEH" Bounds="1268,656" />
-              <Pad Id="GrJMrpX4PoHLYqQbK6YoHw" Bounds="987,1000,272,19" ShowValueBox="true" isIOBox="true" Value="It looks Seeking while playing causes Crash!!">
+              <Pad Id="GrJMrpX4PoHLYqQbK6YoHw" Bounds="924,1532,338,19" ShowValueBox="true" isIOBox="true" Value="It looks Seeking flac files while playing causes Crash!!">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
@@ -3046,8 +3092,15 @@
             <Link Id="DEjFDO6eClZOdonAOCKZmP" Ids="GhllFBIAxaeNX2OAlIQEIl,LWUwOCav0ppPcMDWNGulEH" IsHidden="true" />
             <Link Id="ENtxJfhzZfMOKLHHJQkChC" Ids="O4V5B9GADPfQELqOxIx8Wb,V3tQ6ULSlrxPGemFvRLO0X" />
             <Link Id="B5iNFJmiYg5PMWh9i0zVvq" Ids="AHOUsVScSJrMjMKHASZK9N,SZkVfjxRO4dP2AqbTzKqCz" />
-            <Link Id="LcInnwyuFFLOJ9FQTVP8OL" Ids="PTnbMSYFiM9MS2cElfOWAG,KeSt9DthFpaNIkHMMFwKuH" />
             <Link Id="UhlXrb4B1yCNVg7jLg0KGd" Ids="C7iFcqg9KPtNPwqN6i3pJo,NJtfNH2XgZ5PLHUw4XSdOA" />
+            <Link Id="Ma0cuibTdvTMQDzJLfVDEb" Ids="KxNz7RM3pB8MTCuoLPRCJe,RVf1oWSgXEMPmz1d8qew20" />
+            <Link Id="FO3LnaKSLQzPAHAwXy8mBT" Ids="SnXsRiIawPzPTRfZrSdLff,D64XjedQGzMOcfsCJtJ7tS" />
+            <Link Id="KfFq0j0po1yPJKt9xVMLYl" Ids="Q36YOHhJLXnNcznf2oEk5R,V7mFTcoWcJSOOWpfTmoikX" />
+            <Link Id="OYSjuawqmFQO03F3cHnf8l" Ids="URN6uMKMdW8OxOFXOR5zSR,BZuslZ58sb5QFVp7mulQCu" />
+            <Link Id="KzgKIkt9TCVLwanoB0oMmh" Ids="L08RWZ4PTU6OOLNCZyOVZj,EFEt8HbXzH3PxNbYGMkn7t" IsFeedback="true" />
+            <Link Id="INZabilSwmTLcNrdX3uWWV" Ids="PTnbMSYFiM9MS2cElfOWAG,EFEt8HbXzH3PxNbYGMkn7t" />
+            <Link Id="GAYK1djGEnmObAny2DbEKM" Ids="EFEt8HbXzH3PxNbYGMkn7t,KeSt9DthFpaNIkHMMFwKuH" />
+            <Link Id="UygMp5FO47cOMhvXs1UOP1" Ids="ILlBz52MOcoLTmZ1bjRh26,L08RWZ4PTU6OOLNCZyOVZj" />
           </Patch>
         </Node>
         <!--
