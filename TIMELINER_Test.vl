@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EGBRog0VOtWP9H2V0S7VUU" LanguageVersion="2024.6.7-0136-ga34ff89f71" Version="0.128">
-  <NugetDependency Id="EzB9BxZq14BPoLDr2Tooqg" Location="VL.CoreLib" Version="2024.6.7-0136-ga34ff89f71" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="EGBRog0VOtWP9H2V0S7VUU" LanguageVersion="2024.6.7-0148-g892efc0a20" Version="0.128">
+  <NugetDependency Id="EzB9BxZq14BPoLDr2Tooqg" Location="VL.CoreLib" Version="2024.6.7-0148-g892efc0a20" />
   <Patch Id="NLP1vsAFBC1QBqXwCMMkkO">
     <Canvas Id="K9mjpkT3CnWOnUVFlOVSs5" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="SPRCgYBJMJkOE6NaevPz0t">
         <Canvas Id="PdS2QIEC024NZViVENbekd" CanvasType="Group">
-          <Node Bounds="302,610,145,19" Id="Jsnkk0fiZ3vQY07EZ9dncp">
+          <Node Bounds="302,610,125,19" Id="Jsnkk0fiZ3vQY07EZ9dncp">
             <p:NodeReference LastCategoryFullName="Interpolator.Timeliner" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TIMELINER" />
@@ -26,8 +26,8 @@
             <Pin Id="QIDrjiVeEcNLUulPOohtt9" Name="InitPath" Kind="InputPin" IsHidden="true" />
             <Pin Id="IfXumSpUjfHMxtabe3C6qJ" Name="Update" Kind="ApplyPin" DefaultValue="True" />
             <Pin Id="N0KDtoPJv2WNwz2YfT4BnZ" Name="SyncModels" Kind="ApplyPin" DefaultValue="True" />
-            <Pin Id="S68Q4Gf31g0MPDcfUPATZ0" Name="TargetAppEditorFactory" Kind="InputPin" />
             <Pin Id="Hm7F5Zv83TfO5cH2qtCKfT" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="EXG3X1wIizBOgPZ7jTCOsk" Name="TargetAppEditorFactory" Kind="InputPin" IsHidden="true" />
             <Pin Id="JDmQClaUKh9PJsSwfyxats" Name="Window Name" Kind="InputPin" DefaultValue="Editor" />
             <Pin Id="Ia1MQOER1WmNim710ZRNKw" Name="Closing Message" Kind="InputPin" />
             <Pin Id="LVSxe4vQFPjLkseas5qHuH" Name="LaunchpadControl" Kind="InputPin" DefaultValue="True" />
@@ -1814,12 +1814,12 @@
             <Pin Id="TzFNoP4yaBPPHNZAhpAIz1" Name="Result" Kind="OutputPin" />
             <Pin Id="SGGdhKYdnCdLEiQo5djteH" Name="Unchanged" Kind="OutputPin" />
           </Node>
-          <Pad Id="Ao3INpnBMz8L8fCvgOPI1P" Comment="Window Name" Bounds="384,531,107,15" ShowValueBox="true" isIOBox="true" Value="My Project Timeliner">
+          <Pad Id="Ao3INpnBMz8L8fCvgOPI1P" Comment="Window Name" Bounds="364,531,107,15" ShowValueBox="true" isIOBox="true" Value="My Project Timeliner">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="SFvUFpzL3nGQcRL2szqCMx" Comment="Closing Message for exported App" Bounds="404,566,73,15" ShowValueBox="true" isIOBox="true" Value="Closing...">
+          <Pad Id="SFvUFpzL3nGQcRL2szqCMx" Comment="Closing Message for exported App" Bounds="384,566,73,15" ShowValueBox="true" isIOBox="true" Value="Closing...">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

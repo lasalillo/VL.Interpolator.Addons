@@ -14482,26 +14482,11 @@
               <ControlPoint Id="KRPgZdttGZZLMcnqnlIFUw" Bounds="1517,590" />
               <ControlPoint Id="CRmEFfQxHFfLdTkPlD5pXl" Bounds="461,656" />
               <ControlPoint Id="CPbtkTeurANLAMr4Tgw3os" Bounds="273,627" />
-              <Pad Id="HIZt3Z14e6TPaPg7tj4nwY" Comment="SampleRate" Bounds="487,398,59,15" ShowValueBox="true" isIOBox="true" Value="48000">
-                <p:TypeAnnotation LastCategoryFullName="Audio" LastDependency="VL.Audio.vl">
-                  <Choice Kind="TypeFlag" Name="AudioSampleRate" />
-                </p:TypeAnnotation>
-              </Pad>
-              <Pad Id="BN90or0DqgaLfumlnGQhd5" Comment="Wasapi Input" Bounds="648,370,324,15" ShowValueBox="true" isIOBox="true" Value="Default">
-                <p:TypeAnnotation LastCategoryFullName="Audio" LastDependency="VL.Audio.vl">
-                  <Choice Kind="TypeFlag" Name="WasapiInputDevice" />
-                </p:TypeAnnotation>
-              </Pad>
               <Pad Id="HLl7hHNibVeLtADL6CbGPV" SlotId="R3hi250hcNUNrKtJJComH7" Bounds="613,557" />
               <ControlPoint Id="IwzeatXCGQKPLxKnzGYnbC" Bounds="564,477" />
               <ControlPoint Id="RUlwjntWlj5LsYSjMAk7ql" Bounds="613,587" />
               <ControlPoint Id="CPujSwmowm1PV7o2uz1ONe" Bounds="612,504" />
               <ControlPoint Id="FsBOAmjqPkzO6eRoYqSZdf" Bounds="642,645" />
-              <Pad Id="QwtbBynF4ryP3eqy5nWSFE" Comment="DeviceName" Bounds="277,355,314,15" ShowValueBox="true" isIOBox="true" Value="WASAPI: Current System Device">
-                <p:TypeAnnotation LastCategoryFullName="Audio" LastDependency="VL.Audio.vl">
-                  <Choice Kind="TypeFlag" Name="AudioDevice" />
-                </p:TypeAnnotation>
-              </Pad>
               <Pad Id="KZE4KY5KqDiPVeYcLV87Sb" SlotId="BbZE83IWf5OOa2aoGSBLCx" Bounds="1998,525" />
               <ControlPoint Id="MwykqlQHXBAO5Ow5bpcGxo" Bounds="1999,467" />
               <ControlPoint Id="G7CNOqMMqvlL4O40yCNaZa" Bounds="1998,594" />
@@ -14525,6 +14510,21 @@
               <ControlPoint Id="IhEp58JzHgxNIMfJlvrAnY" Bounds="2196,462" />
               <ControlPoint Id="QfvyZBocllDOHQQAUtdBuE" Bounds="2195,581" />
               <ControlPoint Id="FTAAoYNc3rQQUvPJ7zggTz" Bounds="2243,622" />
+              <Pad Id="CjtSIVK1Ya8NofTUAlHLGO" Comment="WasapiInput" Bounds="615,358,140,15" ShowValueBox="true" isIOBox="true" Value="Default">
+                <p:TypeAnnotation LastCategoryFullName="Audio" LastDependency="VL.Audio.vl">
+                  <Choice Kind="TypeFlag" Name="WasapiInputDevice" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="NlnXziDjXgTOKnj4NLjmrY" Comment="SampleRate" Bounds="439,311,221,15" ShowValueBox="true" isIOBox="true" Value="No entries found for AudioSampleRate">
+                <p:TypeAnnotation LastCategoryFullName="Audio" LastDependency="VL.Audio.vl">
+                  <Choice Kind="TypeFlag" Name="AudioSampleRate" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Pad Id="HSDjjOc341RLK7i01CBSOq" Comment="DeviceName" Bounds="332,266,128,15" ShowValueBox="true" isIOBox="true" Value="Default">
+                <p:TypeAnnotation LastCategoryFullName="Audio" LastDependency="VL.Audio.vl">
+                  <Choice Kind="TypeFlag" Name="AudioDevice" />
+                </p:TypeAnnotation>
+              </Pad>
             </Canvas>
             <ProcessDefinition Id="MDUbN7LbXHBLANvcFDB2Br" IsHidden="true">
               <Fragment Id="QDCWViFtmwmO5Kq3lkcMv9" Patch="U95GvgKwP6lOyXcZHJPNcz" Enabled="true" />
@@ -14622,7 +14622,6 @@
             <Link Id="QLCeDU9Wfq7MgOCK2mPB0R" Ids="CRmEFfQxHFfLdTkPlD5pXl,JOnHdkKFURkOD9SE1PK9hl" IsHidden="true" />
             <Link Id="IWL9RpN5xokNpia4TgfiRp" Ids="NiDb8JohqkXQJni6B2Q6i5,CPbtkTeurANLAMr4Tgw3os" />
             <Link Id="AsiltWn8BHBOJX2n0b5Bhe" Ids="CPbtkTeurANLAMr4Tgw3os,Re1zjOwenZPNlzhdLpXRl4" IsHidden="true" />
-            <Link Id="DeOE6UlQ3v3O2nUyk8qwFl" Ids="HIZt3Z14e6TPaPg7tj4nwY,UViQmxC8GKfPRn7lGPnEz8" />
             <Slot Id="R3hi250hcNUNrKtJJComH7" Name="WasapiInput">
               <p:TypeAnnotation p:Type="TypeReference">
                 <Choice Kind="TypeFlag" Name="WasapiInputDevice" />
@@ -14634,10 +14633,8 @@
             <Link Id="Q6xyzmYdxDsMQef9LKmLyI" Ids="HLl7hHNibVeLtADL6CbGPV,RUlwjntWlj5LsYSjMAk7ql" />
             <Link Id="G3leqsTykEYLBSnuGJ0gkr" Ids="CPujSwmowm1PV7o2uz1ONe,HLl7hHNibVeLtADL6CbGPV" />
             <Link Id="OHunk90GhcMOJyOLEG4xIC" Ids="GOQl3cNtvmuOwzo5IGTcr7,CPujSwmowm1PV7o2uz1ONe" IsHidden="true" />
-            <Link Id="JMIg9YDNIt6PWPSEh26rkZ" Ids="BN90or0DqgaLfumlnGQhd5,HLl7hHNibVeLtADL6CbGPV" />
             <Link Id="CXeulCgprQHODT85ZiprRy" Ids="HLl7hHNibVeLtADL6CbGPV,FsBOAmjqPkzO6eRoYqSZdf" />
             <Link Id="JRZj3SkZE40Pjo17R2oVYE" Ids="FsBOAmjqPkzO6eRoYqSZdf,Tw7wWAC3okJMBLeipFv4Cq" IsHidden="true" />
-            <Link Id="CBBnkfJbPTTPO4KT4B0cn2" Ids="QwtbBynF4ryP3eqy5nWSFE,NiDb8JohqkXQJni6B2Q6i5" />
             <Slot Id="BbZE83IWf5OOa2aoGSBLCx" Name="MultiChannelAudio">
               <p:TypeAnnotation p:Type="TypeReference">
                 <Choice Kind="TypeFlag" Name="Boolean" />
@@ -14669,7 +14666,7 @@
             <Link Id="DB8r7yFqSdANaYl9pSHn6F" Ids="B8inqQkobYPOGNdVLy1p58,DoVFKApMUPnQBSAtYE76AE" />
             <Link Id="KtFPMpaF7W0PJkMBuBpsYs" Ids="CBEYiyWo2lfL6hs3SiRusz,VErWD0i1bt7Mxl0flXpQ4K" IsHidden="true" />
             <Link Id="PNhpjQ7QK4aP1DxjwdKdLv" Ids="DoVFKApMUPnQBSAtYE76AE,CBEYiyWo2lfL6hs3SiRusz" />
-            <Patch Id="U95GvgKwP6lOyXcZHJPNcz" Name="Create" ParticipatingElements="C234adtCPaZQNQo9UORO73,LgI8DUNFy0AOWzjkAmquoF,DuJY0YwrL7xPYcbkY8Cu7v,DeOE6UlQ3v3O2nUyk8qwFl,JMIg9YDNIt6PWPSEh26rkZ,CBBnkfJbPTTPO4KT4B0cn2,LTu4VR7y5pvQa4ku46rVlF" />
+            <Patch Id="U95GvgKwP6lOyXcZHJPNcz" Name="Create" ParticipatingElements="C234adtCPaZQNQo9UORO73,LgI8DUNFy0AOWzjkAmquoF,DuJY0YwrL7xPYcbkY8Cu7v,LTu4VR7y5pvQa4ku46rVlF,EJ79FabxltjNQGjoMkH4PY,GVEX2mmedEuPIHKMB6vT5C,GJaHSl8CszsONEGAoX7vIm" />
             <Patch Id="EwwfnyrUTUbPUXKqX9B1jb" Name="Split">
               <Pin Id="DQnkOvqSMrBNs4mZFYBU0x" Name="DeviceName" Kind="OutputPin" />
               <Pin Id="G277KXAAT5SQD3it77kHhz" Name="SampleRate" Kind="OutputPin" />
@@ -14754,6 +14751,9 @@
             <Patch Id="IZOCrE0XnYZMTJNQTxizB4" Name="GetPlayerSpeedCorrection">
               <Pin Id="TPiOI8rrOhzL7md3xMdQ95" Name="PlayerSpeedCorrection" Kind="OutputPin" />
             </Patch>
+            <Link Id="EJ79FabxltjNQGjoMkH4PY" Ids="CjtSIVK1Ya8NofTUAlHLGO,HLl7hHNibVeLtADL6CbGPV" />
+            <Link Id="GVEX2mmedEuPIHKMB6vT5C" Ids="NlnXziDjXgTOKnj4NLjmrY,UViQmxC8GKfPRn7lGPnEz8" />
+            <Link Id="GJaHSl8CszsONEGAoX7vIm" Ids="HSDjjOc341RLK7i01CBSOq,NiDb8JohqkXQJni6B2Q6i5" />
           </Patch>
         </Node>
         <!--
