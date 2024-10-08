@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="VloQWmJKfLaP5w7R1cYVxI" LanguageVersion="2024.6.7-0136-ga34ff89f71" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2024.6.7-0136-ga34ff89f71" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="VloQWmJKfLaP5w7R1cYVxI" LanguageVersion="2024.6.7-0185-g7d063e105d" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2024.6.7-0185-g7d063e105d" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="AudioAnalysis" CanvasType="FullCategory">
       <!--
@@ -5103,6 +5103,19 @@
             <ControlPoint Id="JEDspmOZXzBOwFtRPI8YHj" Bounds="485,368" />
             <ControlPoint Id="BI9MxkiZgLCOKspk1ANEKR" Bounds="510,406" />
             <ControlPoint Id="N86Ec0mnc2jNApM7fxh1VF" Bounds="366,267" />
+            <Pad Id="LkWJidtsTyVN2taKXp8C2p" SlotId="V5CYwbYjAA5NR3eS6jrUlL" Bounds="902,327" />
+            <ControlPoint Id="VV3qlryBz33OCSj6eiL7gC" Bounds="1024,244" />
+            <ControlPoint Id="HdyRGrX6CQeOpXwVyQ0der" Bounds="901,355" />
+            <ControlPoint Id="QOu95HC2enPMui3xopqZv2" Bounds="905,242" />
+            <ControlPoint Id="C0ttwlcxy7dQBgBMnp1rf7" Bounds="936,391" />
+            <Pad Id="IJLAyAjfOFiOh6GH631qeT" Comment="SplitAlongSpeakers" Bounds="829,165,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
           </Canvas>
           <ProcessDefinition Id="CdSgHH3ihjDLAqXYZWJQ3z" IsHidden="true">
             <Fragment Id="PCduvUVA2L7QHEFMUZWVUv" Patch="Gf2YlIO6Hw4OTmXQfrk0gI" Enabled="true" />
@@ -5112,6 +5125,8 @@
             <Fragment Id="IseLs3x8Yx5QLr6YvbDs23" Patch="AxhyOlhqh2ILcvvupzX82v" />
             <Fragment Id="PxuzyBkrOyvNQ51BmWiVwG" Patch="OvjNWEHR85kQIXdZyxWQNl" />
             <Fragment Id="AtHn7uIBZ9lNcbtZ9H6wth" Patch="TZuS3sZF5DDPNvKsGzHvWV" />
+            <Fragment Id="M8eddKwallKL5IHaBjTHXE" Patch="P1iTRVPfvrJP9KAIPHcKtz" />
+            <Fragment Id="KH5GSbtu5H3OrGPvaOFX3I" Patch="QFueNcIHT9tMFdKA1p00nz" />
           </ProcessDefinition>
           <Slot Id="DtUhaGcNBsBMcbJfHsnM0G" Name="AudioChannels">
             <p:TypeAnnotation p:Type="TypeReference">
@@ -5145,14 +5160,16 @@
           <Link Id="BrxYoBQvUrjOJbnAkLl2ob" Ids="S7oGLIU3ZfXPsnHwfI2eeP,Mj9JzmK5NTlO9tKPErHfDs" />
           <Link Id="P1zKRAKCiD6LvlGQYsHJjp" Ids="N86Ec0mnc2jNApM7fxh1VF,SZZWbvSgUEAPhV51m2ZAMJ" />
           <Link Id="BIs70ViME0HMNb7sPRioRQ" Ids="UIVibh5HUIOPqiGYSWDSXT,N86Ec0mnc2jNApM7fxh1VF" IsHidden="true" />
-          <Patch Id="Gf2YlIO6Hw4OTmXQfrk0gI" Name="Create" ParticipatingElements="BrxYoBQvUrjOJbnAkLl2ob" />
+          <Patch Id="Gf2YlIO6Hw4OTmXQfrk0gI" Name="Create" ParticipatingElements="BrxYoBQvUrjOJbnAkLl2ob,H7HPCuUaAryO2gJ555wRPu" />
           <Patch Id="JNRU2vFgXUoNzqXlwSKuvP" Name="Split">
             <Pin Id="Jijsg7dNg0vNrbIwmz8zhZ" MergeId="155623" Name="Source" Kind="OutputPin" />
             <Pin Id="TYfElrAyFo0NLhPLwOMfhb" MergeId="155553" Name="AudioChannels" Kind="OutputPin" />
+            <Pin Id="HPg5ZLo6ov7LXuJfAhxSqI" Name="SplitAlongSpeakers" Kind="OutputPin" />
           </Patch>
           <Patch Id="LVQem7a3UtPMjUut6ME7S2" Name="Join">
             <Pin Id="CdPV1TlKyQ7ODQD5UmuJIi" MergeId="155617" Name="Source" Kind="InputPin" />
             <Pin Id="OYkIgNmSna1QDAVG8pe2fU" MergeId="155548" Name="AudioChannels" Kind="InputPin" />
+            <Pin Id="Hh8DFgEwhysMNceME0004e" Name="SplitAlongSpeakers" Kind="InputPin" />
           </Patch>
           <Patch Id="FX6RuEj4CeIOynN0VlcyWI" Name="SetAudioChannels">
             <Pin Id="CgJjzZiYAslN7LmCJHwTrf" MergeId="155561" Name="AudioChannels" Kind="InputPin" />
@@ -5166,6 +5183,26 @@
           <Patch Id="TZuS3sZF5DDPNvKsGzHvWV" Name="SetSource">
             <Pin Id="UIVibh5HUIOPqiGYSWDSXT" Name="Source" Kind="InputPin" />
           </Patch>
+          <Slot Id="V5CYwbYjAA5NR3eS6jrUlL" Name="SplitAlongSpeakers">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Patch Id="P1iTRVPfvrJP9KAIPHcKtz" Name="SetSplitAlongSpeakers">
+            <Pin Id="J14Y4E01SYYMR2zd0v9WkY" MergeId="13526" Name="SplitAlongSpeakers" Kind="InputPin" />
+          </Patch>
+          <Patch Id="QFueNcIHT9tMFdKA1p00nz" Name="GetSplitAlongSpeakers">
+            <Pin Id="HWH6Braa7PHLOlbfVB2KFM" MergeId="13534" Name="SplitAlongSpeakers" Kind="OutputPin" />
+          </Patch>
+          <Link Id="TzxfdGpNwFwP0yG606X0L4" Ids="J14Y4E01SYYMR2zd0v9WkY,VV3qlryBz33OCSj6eiL7gC" IsHidden="true" />
+          <Link Id="JidJCEPfJTZPlDsfutc4JS" Ids="VV3qlryBz33OCSj6eiL7gC,LkWJidtsTyVN2taKXp8C2p" />
+          <Link Id="D7ute4UlSUOM9IOcqknHaO" Ids="HdyRGrX6CQeOpXwVyQ0der,HPg5ZLo6ov7LXuJfAhxSqI" IsHidden="true" />
+          <Link Id="C6FSdsl7KxPNzHAvLYbE5U" Ids="LkWJidtsTyVN2taKXp8C2p,HdyRGrX6CQeOpXwVyQ0der" />
+          <Link Id="NAvBrurXROiMg8SyZ3S84P" Ids="QOu95HC2enPMui3xopqZv2,LkWJidtsTyVN2taKXp8C2p" />
+          <Link Id="QyiDlhBTiGyLsak8iOlHXD" Ids="Hh8DFgEwhysMNceME0004e,QOu95HC2enPMui3xopqZv2" IsHidden="true" />
+          <Link Id="RqvtsLCNCODLuqm198KiPQ" Ids="LkWJidtsTyVN2taKXp8C2p,C0ttwlcxy7dQBgBMnp1rf7" />
+          <Link Id="CnJRB31XaJ9PYOGNYfb9SZ" Ids="C0ttwlcxy7dQBgBMnp1rf7,HWH6Braa7PHLOlbfVB2KFM" IsHidden="true" />
+          <Link Id="H7HPCuUaAryO2gJ555wRPu" Ids="IJLAyAjfOFiOh6GH631qeT,LkWJidtsTyVN2taKXp8C2p" />
         </Patch>
       </Node>
       <!--
@@ -5281,6 +5318,7 @@
                       <Pin Id="FT5YETabGXvMJwJ4XszyHR" Name="Output" Kind="OutputPin" IsHidden="true" />
                       <Pin Id="EoVU2UWVEfDPfK3ksAIRmB" Name="Source" Kind="OutputPin" />
                       <Pin Id="O087or1IhCYMrkt5fuCgv1" Name="AudioChannels" Kind="OutputPin" />
+                      <Pin Id="GTneMDYUEwcL38EC02cbnG" Name="SplitAlongSpeakers" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="565,531,52,26" Id="NoFjRxiFRrIP3uBKfZmHb1">
                       <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
@@ -5475,7 +5513,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JBYu5xS08XeN9YRj2XW9QD" Location="VL.Skia" Version="2024.6.7-0136-ga34ff89f71" />
-  <NugetDependency Id="T7vPGFRY7LGQWzgpXpCsuu" Location="VL.Serialization.FSPickler" Version="2024.6.7-0136-ga34ff89f71" />
+  <NugetDependency Id="JBYu5xS08XeN9YRj2XW9QD" Location="VL.Skia" Version="2024.6.7-0185-g7d063e105d" />
+  <NugetDependency Id="T7vPGFRY7LGQWzgpXpCsuu" Location="VL.Serialization.FSPickler" Version="2024.6.7-0185-g7d063e105d" />
   <NugetDependency Id="INZ3Mvh7C3PPwt5shPlWmb" Location="VL.Audio" Version="1.8.4" />
 </Document>
