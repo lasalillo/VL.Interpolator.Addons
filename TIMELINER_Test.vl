@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EGBRog0VOtWP9H2V0S7VUU" LanguageVersion="2024.6.7-0185-g7d063e105d" Version="0.128">
-  <NugetDependency Id="EzB9BxZq14BPoLDr2Tooqg" Location="VL.CoreLib" Version="2024.6.7-0185-g7d063e105d" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="EGBRog0VOtWP9H2V0S7VUU" LanguageVersion="2024.6.7-0189-g929ec01221" Version="0.128">
+  <NugetDependency Id="EzB9BxZq14BPoLDr2Tooqg" Location="VL.CoreLib" Version="2024.6.7-0189-g929ec01221" />
   <Patch Id="NLP1vsAFBC1QBqXwCMMkkO">
     <Canvas Id="K9mjpkT3CnWOnUVFlOVSs5" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -1097,7 +1097,7 @@
           <Pad Id="GNpDLDbUyvqLrScUV5KkXp" Comment="AAAA" Bounds="1836,1256,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="OnjnqazU6lcL2fJszeXUJa" Comment="BBBB" Bounds="1868,1283,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="PgoffMKf2MbPKI0WaVpg8u" Comment="CCCC" Bounds="1900,1307,35,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="319,1011,120,26" Id="MC5OvSo36hUQMA9JExcrHn">
+          <Node Bounds="319,1011,154,26" Id="MC5OvSo36hUQMA9JExcrHn">
             <p:NodeReference LastCategoryFullName="Interpolator.Players.TrackPlayers.Multitrack_Player" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetSecondsObservable" />
@@ -1124,7 +1124,7 @@
             <Pin Id="DNGdDwuCkCkMrFAGFteJpw" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Jru5wUmLKIuLhiuBJJOuPG" Name="Multitrack_Runtime" Kind="OutputPin" />
           </Node>
-          <Node Bounds="319,1052,115,26" Id="UEJglBbrrM6LgfE8rORACF">
+          <Node Bounds="319,1052,154,26" Id="UEJglBbrrM6LgfE8rORACF">
             <p:NodeReference LastCategoryFullName="Interpolator.Players.TrackPlayers.Multitrack_Player" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetFramesObservable" />
@@ -1142,7 +1142,7 @@
             <Pin Id="LlC8JpnB85JM2TJLI6Abc9" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Pu6GnvZDdnPLf6zDyWxb7x" Name="BPMFrameClockObservable" Kind="OutputPin" />
           </Node>
-          <Node Bounds="319,1134,125,26" Id="IFxuWNbISLILAZxpkl5MT1">
+          <Node Bounds="319,1134,154,26" Id="IFxuWNbISLILAZxpkl5MT1">
             <p:NodeReference LastCategoryFullName="Interpolator.Players.TrackPlayers.Multitrack_Player" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetBPMCycleObservable" />
@@ -1516,7 +1516,7 @@
             <Pin Id="L61aYPNWie2NtwreSl0lvr" Name="Apply" Kind="InputPin" DefaultValue="True" />
             <Pin Id="IEYScqQTOUJNv2ziSoIZRl" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="VPxMYeAnf9BLligredbHSY" Comment="" Bounds="1241,1657,35,146" ShowValueBox="true" isIOBox="true" Value="1">
+          <Pad Id="VPxMYeAnf9BLligredbHSY" Comment="In" Bounds="1250,1657,35,146" ShowValueBox="true" isIOBox="true" Value="1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -1539,7 +1539,7 @@
             <Pin Id="Df0LPEW8S88Ovhbl8iLmW7" Name="Apply" Kind="InputPin" DefaultValue="True" />
             <Pin Id="Ny92eKcmEFzMagKXdYi3Oi" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="TmD7Yea5983OFIMvCn78Uo" Comment="" Bounds="1297,1657,35,146" ShowValueBox="true" isIOBox="true" Value="1">
+          <Pad Id="TmD7Yea5983OFIMvCn78Uo" Comment="Listen" Bounds="1328,1657,35,146" ShowValueBox="true" isIOBox="true" Value="1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -1550,10 +1550,10 @@
               <p:sliderdirection p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SliderDirectionEnum">Vertical</p:sliderdirection>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="FcHZ3tN2YdcK9jv67Fxq7Z" Name="Audio Levels" Bounds="739,1599,638,254">
+          <Overlay Id="FcHZ3tN2YdcK9jv67Fxq7Z" Name="Audio Levels" Bounds="739,1599,672,254">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
-          <Pad Id="ToaC7SHp6j8LQJjwmhzWVf" Bounds="731,1577,505,25" ShowValueBox="true" isIOBox="true" Value="These are direct Volume controls without to update the Model">
+          <Pad Id="ToaC7SHp6j8LQJjwmhzWVf" Bounds="731,1569,505,25" ShowValueBox="true" isIOBox="true" Value="These are direct Volume controls without to update the Model">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1562,7 +1562,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QYZPMfHkAN0QIPJmjGvDmL" Bounds="729,1870,680,25" ShowValueBox="true" isIOBox="true" Value="&quot;The ones in the Settings panel are stored in the Model and will trigger Undo &amp; Redo&quot;">
+          <Pad Id="QYZPMfHkAN0QIPJmjGvDmL" Bounds="729,1872,680,25" ShowValueBox="true" isIOBox="true" Value="&quot;The ones in the Settings panel are stored in the Model and will trigger Undo &amp; Redo&quot;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1574,7 +1574,7 @@
           <Overlay Id="CuEMdTIFEhHNy5DguG7vzp" Name="These are Special, check MySubType2 to know more" Bounds="3056,1235,198,184">
             <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
           </Overlay>
-          <Overlay Id="FV3XWiO1D6xPGlqMoLQ8Sq" Name="Model (This is the initial model edited in the inspector)" Bounds="1424,677,685,862">
+          <Overlay Id="FV3XWiO1D6xPGlqMoLQ8Sq" Name="Model (This is the initial model edited in the inspector)" Bounds="1424,677,685,870">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
           <Overlay Id="Az4S2B9bbGTMMB9qhS8eij" Name="Interpolated (This will control your app)" Bounds="2264,672,1045,987">
@@ -1855,7 +1855,7 @@
             <Pin Id="K3tMSbl0WhdMquzuBQKgp3" Name="Apply" Kind="InputPin" DefaultValue="True" />
             <Pin Id="IvxW6W6nzJfQaHxKxcvlML" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="F8JBRybiiv5P83xKHP6muY" Comment="" Bounds="1185,1657,35,146" ShowValueBox="true" isIOBox="true" Value="1">
+          <Pad Id="F8JBRybiiv5P83xKHP6muY" Comment="Track" Bounds="1170,1657,35,146" ShowValueBox="true" isIOBox="true" Value="1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -1967,13 +1967,19 @@
             <ControlPoint Id="VNjdRB1lhcuMm2pKybn2FB" Bounds="1622,1874" Alignment="Bottom" />
             <ControlPoint Id="PitQxTONYfNLlR7Z6theW7" Bounds="1667,1874" Alignment="Bottom" />
           </Node>
-          <Pad Id="Ru2HszIinAjPy6YuXXxwYy" Comment="" Bounds="1622,1924,75,38" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="IcMRoAS0XH9ONjn2Id7Ry9" Comment="" Bounds="1717,1924,80,107" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Ru2HszIinAjPy6YuXXxwYy" Comment="Mean" Bounds="1622,1924,75,38" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IcMRoAS0XH9ONjn2Id7Ry9" Comment="FFT4" Bounds="1747,1924,80,107" ShowValueBox="true" isIOBox="true" />
           <ControlPoint Id="KvM5HnBqGMpMEuZY2BsrXB" Bounds="1342,816" />
           <ControlPoint Id="MGmrR9NqX68PDff3S7hWQh" Bounds="1342,1491" />
           <Overlay Id="Blz2NPlqs2iNQTfAWfZ0BA" Name="Audio Analysis" Bounds="1436,1597,473,480">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
+          <Pad Id="Lennd4KF5yJLx31jDYRrvZ" Comment="" Bounds="567,1078,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="KsSoUAtr41YMbJD7SVn1Bp" Comment="" Bounds="567,1119,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <Patch Id="Dvo0yaCOsCsNZ9nbmnbnVB" Name="Create" ParticipatingElements="TlAUV9EinosQToadfUl5Ew" />
         <Patch Id="H8eFsvTxjrNOA8fK5zaUi4" Name="Update" />
@@ -2025,7 +2031,6 @@
         <Link Id="FbNSV7mxCjTQBGnBzAxZEv" Ids="EsxbQgU2yrLMmfAcYEywrB,A1rVLEccmUzMVcMFdUIdTN" />
         <Link Id="QcE10aAhXoEO6ntR7fspiy" Ids="LPA15jdAgCcPlSmYgxZZ9p,Jtqh113Qd0yOaGCdE26pT7" />
         <Link Id="Chp7HszTmV8OJqfngCCfos" Ids="Mas5W5Mgeh1NXLc6Z4oXbI,JYPdNBpcyl3MxGmpBUjPpE" />
-        <Link Id="S51U0XZqWS7O0K5ykuvxP7" Ids="LlC8JpnB85JM2TJLI6Abc9,NGop3SI1iQCN8eUnt2QDui" />
         <Link Id="JLWGbyzXxbFMqAPE3E5BUe" Ids="GnD3z4yvC3GL6NS9t0GOVV,IIVLuW8vlAtNoXoC33ZfKU" />
         <Link Id="KKtnYHyZNIoM7dLUSINGEu" Ids="MDiIh6y9hOqM78znmI10Vl,DpQxBPKHqSANLFXyIvebAC" />
         <Link Id="Rg23GLyxXTgQCXNXvl8iT3" Ids="GJ4MAYnWqL0PRe9HmJ6Hzk,CSfbHdcKq33QBcqAjHeqB3" />
@@ -2143,9 +2148,12 @@
         <Link Id="CeMFCwuJ9j9PuaoKhE0CqH" Ids="RwbMGavHwvxPXL0CHzBMI5,ABYTHPOESo0OY83gkI2rjx" />
         <Link Id="TPCpNMLp4PeMypNBETrfnE" Ids="ABYTHPOESo0OY83gkI2rjx,PitQxTONYfNLlR7Z6theW7" />
         <Link Id="Dcn2SEFLHI9NHHpq1JT0Tx" Ids="PitQxTONYfNLlR7Z6theW7,IcMRoAS0XH9ONjn2Id7Ry9" />
+        <Link Id="PiIzhtdliYvPjpNwsmBlAv" Ids="Gizc29dqu6mNi8uZUGJWpa,Lennd4KF5yJLx31jDYRrvZ" />
+        <Link Id="PGyr7x3LXXmOGzp2XZ4wBS" Ids="GiTG3J0rTWcPK3CqAL4BNe,KsSoUAtr41YMbJD7SVn1Bp" />
+        <Link Id="PDae4jd7Ma0OGafocwNZ4Z" Ids="LlC8JpnB85JM2TJLI6Abc9,NGop3SI1iQCN8eUnt2QDui" />
       </Patch>
     </Node>
   </Patch>
   <DocumentDependency Id="Lm3g3exOgp8O7BPk0Ungrv" Location="./VL.Interpolator.Timeliner.vl" />
-  <NugetDependency Id="RLZab9mrMUfOsjtNijSf6D" Location="VL.Interpolator" Version="1.2.4" />
+  <NugetDependency Id="RLZab9mrMUfOsjtNijSf6D" Location="VL.Interpolator" Version="1.2.5" />
 </Document>
