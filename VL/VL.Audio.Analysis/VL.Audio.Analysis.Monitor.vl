@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="UDJYn19ZLtHPHHlCnJtIwo" LanguageVersion="2024.6.7-0181-gdf16f593e1" Version="0.128">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2024.6.7-0181-gdf16f593e1" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="UDJYn19ZLtHPHHlCnJtIwo" LanguageVersion="2024.6.7-0195-gbeba45077f" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2024.6.7-0195-gbeba45077f" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="UI" CanvasType="FullCategory">
       <!--
@@ -579,7 +579,7 @@
     ************************ MultiChannelDraw ************************
 
 -->
-      <Node Name="MultiChannelDraw" Bounds="199,286" Id="RfNFfJRYlZwN6x7Vj6MArQ">
+      <Node Name="MultiChannelDraw" Bounds="199,281" Id="RfNFfJRYlZwN6x7Vj6MArQ">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -2477,7 +2477,7 @@
     ************************ MultiAudioAnalysisLayer ************************
 
 -->
-      <Node Name="MultiAudioAnalysisLayer" Bounds="199,343" Id="JS4ShdwROUaLhcQPwBvwYn">
+      <Node Name="MultiAudioAnalysisLayer" Bounds="199,333" Id="JS4ShdwROUaLhcQPwBvwYn">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -2761,7 +2761,7 @@
     ************************ AudioScopeMonitor ************************
 
 -->
-      <Node Name="AudioScopeMonitor" Bounds="199,392" Id="VopvMvmkX1wOAxHpdRROoH">
+      <Node Name="AudioScopeMonitor" Bounds="199,385" Id="VopvMvmkX1wOAxHpdRROoH">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" />
         </p:NodeReference>
@@ -2902,11 +2902,6 @@
             <Pin Id="Q0nEyPAz2F1MtrPCPlgADo" Name="Output" Kind="OutputPin" />
             <Pin Id="A3hS083HEnMN2RrhXtGQET" Name="Enable" Kind="InputPin" DefaultValue="True" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="Fc9PyPF8WedMivlVZESNqV">
             <Fragment Id="JJWVCIT6uhsPDj2BW6L8S5" Patch="RbmvveQkpRoNOStgreNbDu" Enabled="true" />
             <Fragment Id="UbPfs28VH7JMAregULJBBW" Patch="RuPYwP2915GLSgRIYj9eCo" Enabled="true" />
@@ -2943,7 +2938,7 @@
     ************************ PickLevelsMonitor ************************
 
 -->
-      <Node Name="PickLevelsMonitor" Bounds="222,440" Id="ThQikHJa2OnO10QLD8uJze">
+      <Node Name="PickLevelsMonitor" Bounds="199,437" Id="ThQikHJa2OnO10QLD8uJze">
         <p:NodeReference>
           <Choice Kind="ContainerDefinition" />
         </p:NodeReference>
@@ -3453,11 +3448,6 @@
             <Pin Id="TYInz3npZecM68eWj09ZoA" Name="Text Paint" Kind="InputPin" />
             <Pin Id="LHs6bLYUxuYQTEmtHVEPJe" Name="Text Size" Kind="InputPin" DefaultValue="3.5" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="Lxd9RSLqJymPn61OTZ27Q0">
             <Fragment Id="RoS8aqftyoHLD89mFfaT2S" Patch="OjDiXvYdpuKNyZNxncp5FA" Enabled="true" />
             <Fragment Id="NJJhCyf6EJlMqA4KPbTdtN" Patch="RsItmrCGgRZMRkMcaRKMTw" Enabled="true" />
@@ -3572,6 +3562,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="FDrtMWpIL6AP768rdfa0My" Location="VL.Skia" Version="2024.6.7-0181-gdf16f593e1" />
+  <NugetDependency Id="FDrtMWpIL6AP768rdfa0My" Location="VL.Skia" Version="2024.6.7-0195-gbeba45077f" />
   <DocumentDependency Id="VqIhvGXfVEILYs02neYA2d" Location="./VL.Audio.Analysis.vl" />
 </Document>
