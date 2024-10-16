@@ -15,24 +15,24 @@
       </p:NodeReference>
       <Patch Id="SPRCgYBJMJkOE6NaevPz0t">
         <Canvas Id="PdS2QIEC024NZViVENbekd" CanvasType="Group">
-          <Node Bounds="216,957,64,19" Id="Jsnkk0fiZ3vQY07EZ9dncp">
+          <Node Bounds="216,956,64,19" Id="Jsnkk0fiZ3vQY07EZ9dncp">
             <p:NodeReference LastCategoryFullName="Interpolator.Timeliner" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TIMELINER" />
             </p:NodeReference>
             <Pin Id="RfNDajKbG0vLB9q3Fv1Ww3" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="I2iUbXoI9FDPAe0IjOtjbY" Name="SettingsPath" Kind="InputPin" IsHidden="true" />
             <Pin Id="R7Pl31zmR3VOBx5ZNFycMW" Name="TargetAppModel" Kind="InputPin" />
-            <Pin Id="KFwHadAY7sSOYBlfeVmK4y" Name="InitPath" Kind="InputPin" IsHidden="true" />
+            <Pin Id="OY5n0ILyPOHLHFoV6sI8rr" Name="SettingsPath" Kind="InputPin" IsHidden="true" />
+            <Pin Id="NZs7AeJUayYPva9NlTyARD" Name="InitPath" Kind="InputPin" IsHidden="true" />
             <Pin Id="LApUP4aZfmFMOR2eeGU0VL" Name="UpdateDummy" Kind="InputPin" DefaultValue="True" IsHidden="true" />
             <Pin Id="JQW245uSNs4OrAIOSkWdd2" Name="SyncModelDummy" Kind="InputPin" DefaultValue="True" IsHidden="true" />
-            <Pin Id="SgBENRbmvH0LY7UxGESmIC" Name="TargetAppEditorFactory" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DSfFWeBvAOIPF81o8IDSqH" Name="TargetAppEditorFactory" Kind="InputPin" IsHidden="true" />
             <Pin Id="JDmQClaUKh9PJsSwfyxats" Name="Window Name" Kind="InputPin" DefaultValue="Editor" />
             <Pin Id="Hm7F5Zv83TfO5cH2qtCKfT" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Qz5AtDOHhmBNKoxNUPHotk" Name="UpdateDummy" Kind="OutputPin" IsHidden="true" />
             <Pin Id="Qh8hSNkqPj9M7FXsLhQPF7" Name="SyncModelDummy" Kind="OutputPin" IsHidden="true" />
             <Pin Id="M7wfXAkOhHILc97GCUy61U" Name="EditorDummy" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="BF1VpAdafdEN80s9zUWXVa" Name="Closing Message" Kind="InputPin" IsHidden="true" />
+            <Pin Id="CsiluAdhclbPbl5XG82nhN" Name="Closing Message" Kind="InputPin" IsHidden="true" />
             <Pin Id="C2QR3crKi8eQFjnDfFVxHa" Name="EditorDummy" Kind="InputPin" DefaultValue="False" IsHidden="true" />
             <Pin Id="LtIyl7MZq9FPpaiZnttqIE" Name="LaunchpadDummy" Kind="InputPin" DefaultValue="False" IsHidden="true" />
             <Pin Id="CIUGhsGR3HaNqEVQ9EGavO" Name="MTCDummy" Kind="InputPin" DefaultValue="False" IsHidden="true" />
@@ -1901,7 +1901,6 @@
             <Pin Id="DHb8BPAG22lNGZk8cC2Uop" Name="Result" Kind="OutputPin" />
             <Pin Id="IIeDV8vBC2IMKsTPG2vDa6" Name="Unchanged" Kind="OutputPin" />
           </Node>
-          <Pad Id="P1eOpbtA9KyL4jAYKKFnnM" Comment="Success" Bounds="2438,1163,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="TPiBEv02BMoNbODZhT42p5" Comment="ListIndex_Next" Bounds="1730,1474,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="1706,2115,96,26" Id="RIRUV9z5q0ELWijjJixxk4">
             <p:NodeReference LastCategoryFullName="Interpolator.Players.Runtime.Multitrack_Runtime" LastDependency="VL.Interpolator.Timeliner.vl">
@@ -1982,7 +1981,7 @@
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="JnIt3DPQrmeP8ETU3Lpkuh" Bounds="601,761,182,19" ShowValueBox="true" isIOBox="true" Value="...\AppFiles\Assets\Typo.xml">
+          <Pad Id="JnIt3DPQrmeP8ETU3Lpkuh" Bounds="559,798,182,19" ShowValueBox="true" isIOBox="true" Value="...\AppFiles\Assets\Typo.xml">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1990,7 +1989,7 @@
               <p:fontsize p:Type="Int32">9</p:fontsize>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="HmPAOVH1Fz2MCoqXdr7a6C" Bounds="601,782,182,19" ShowValueBox="true" isIOBox="true" Value="...\AppFiles\ico.ico">
+          <Pad Id="HmPAOVH1Fz2MCoqXdr7a6C" Bounds="559,819,182,19" ShowValueBox="true" isIOBox="true" Value="...\AppFiles\ico.ico">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1998,7 +1997,7 @@
               <p:fontsize p:Type="Int32">9</p:fontsize>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="G1MqMoXigecOzrjvWjvX7i" Bounds="601,711,342,19" ShowValueBox="true" isIOBox="true" Value="If there is not folder structure, it will be created on start">
+          <Pad Id="G1MqMoXigecOzrjvWjvX7i" Bounds="559,748,342,19" ShowValueBox="true" isIOBox="true" Value="If there is not folder structure, it will be created on start">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2007,7 +2006,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Q7ImBhhbky9M3BwI9PU5b6" Bounds="601,736,188,19" ShowValueBox="true" isIOBox="true" Value="Just copy these files manually">
+          <Pad Id="Q7ImBhhbky9M3BwI9PU5b6" Bounds="559,773,188,19" ShowValueBox="true" isIOBox="true" Value="Just copy these files manually">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2025,7 +2024,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TwTnpPKYssyNxpRtUql852" Bounds="282,964,169,19" ShowValueBox="true" isIOBox="true" Value="&lt;- Right Click &amp; Configure">
+          <Pad Id="TwTnpPKYssyNxpRtUql852" Bounds="295,965,173,19" ShowValueBox="true" isIOBox="true" Value="&lt;- Right Click &amp; Configure">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2173,7 +2172,7 @@
           <ControlPoint Id="Q0rfLjSjYMbLZhIClJ1iEh" Bounds="682,2051" />
           <ControlPoint Id="L9ufwNTwF0JOw7wOs5E92m" Bounds="650,981" />
           <ControlPoint Id="QEP2QoOckwVP4hhIAxIdnv" Bounds="650,2417" />
-          <Pad Id="LPvqZDX0aJJN4dECny6GaN" Bounds="192,267,460,19" ShowValueBox="true" isIOBox="true" Value="-Connect your project Record &amp; create Tracks of the Properties you want">
+          <Pad Id="LPvqZDX0aJJN4dECny6GaN" Bounds="192,267,460,19" ShowValueBox="true" isIOBox="true" Value="-Connect your project Record &amp; Bind Properties with Tracks">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2182,7 +2181,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Rf4MQxCPZaWQJH16RAxlC0" Bounds="192,347,266,19" ShowValueBox="true" isIOBox="true" Value="-Audio Clips &amp; Multichannel Audio Support">
+          <Pad Id="Rf4MQxCPZaWQJH16RAxlC0" Bounds="192,347,349,19" ShowValueBox="true" isIOBox="true" Value="-Audio Clips, Audio Input &amp; Multichannel Audio Support">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2272,7 +2271,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KsEmTYWGMVTMLMQERNYtD0" Bounds="192,387,377,19" ShowValueBox="true" isIOBox="true" Value="-Audio Tracks Level, Listen Level, Input Level &amp; BPM as Tracks">
+          <Pad Id="KsEmTYWGMVTMLMQERNYtD0" Bounds="192,387,377,19" ShowValueBox="true" isIOBox="true" Value="-Audio Tracks Level, Listen Level, Input Level &amp; BPM Tracks">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2300,15 +2299,6 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="Vcb3oyjVuwlOKIZ0v9CWmd" Bounds="192,327,305,19" ShowValueBox="true" isIOBox="true" Value="-Keyframe interpolation based on Tweener Curves">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="BJOweb2V1ffQCMmNnqQoQy" Bounds="192,587,168,19" ShowValueBox="true" isIOBox="true" Value="-Tested with real projects">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2481,7 +2471,6 @@
         <Link Id="O9B3g2LKrjCOkiAoxUlk6j" Ids="TrSPoiIDxgiLEoDkhzFcv0,L61aYPNWie2NtwreSl0lvr" />
         <Link Id="IF0hAFxlZdROV5L1lebC3B" Ids="TmD7Yea5983OFIMvCn78Uo,I9lLN2zENMfLjtOMp01yu2" />
         <Link Id="M5L24wh5cfGNbgrNQI7c7c" Ids="DHb8BPAG22lNGZk8cC2Uop,Df0LPEW8S88Ovhbl8iLmW7" />
-        <Link Id="HquYsUlaTUqN96luPB2xNZ" Ids="FaFA3VooZGXOKeZ80PJNV5,P1eOpbtA9KyL4jAYKKFnnM" />
         <Link Id="LgZq1PlhvkuMuqeSIhHJDT" Ids="HayUSx5WueHOp1j7OJDaG4,TPiBEv02BMoNbODZhT42p5" />
         <Link Id="LMeH44NaOGXO9SMfBnGxSV" Ids="Jru5wUmLKIuLhiuBJJOuPG,KvM5HnBqGMpMEuZY2BsrXB,MGmrR9NqX68PDff3S7hWQh,AokGzNUt3vVNPqd3WWWFdh" />
         <Link Id="MfcpZzc9BtrN1ocH76CbVN" Ids="NNv5d7NxitzLx4hYHdBlNZ,D80WEOkyHFKPLEQNB3Cgk3" />
