@@ -1,9 +1,2 @@
 # VL.Interpolator.Addons
 Addons around VL.Interpolator
-
-nuget install VL.MiDi.Music.Utils
-nuget install VL.Interpolator
-nuget install Wacton.Unicolour
-nuget install VL.IO.MouseKeyGlobal
-nuget install VL.WinFormsUtils
-nuget install VL.ImGui.Extensions
