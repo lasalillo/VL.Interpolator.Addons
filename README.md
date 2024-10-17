@@ -1,2 +1,2 @@
 # VL.Interpolator.Addons
-Addons around VL.Interpolator
+Timeliner & addons around VL.Interpolator
