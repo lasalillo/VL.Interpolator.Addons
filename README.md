@@ -5,14 +5,9 @@ Timeliner & addons around VL.Interpolator
 
 ### Current stable
 
-To install the current stable version, type
-
 ```
 nuget install VL.Interpolator
 ```
-
-![](/Pictures/ico.png)
-
 
 ![](/Pictures/Timeliner_11.png)
 
