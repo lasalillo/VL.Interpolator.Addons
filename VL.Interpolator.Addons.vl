@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="TBUmdMnWrVJQFTFMbiJNcC" LanguageVersion="2024.6.7-0195-gbeba45077f" Version="0.128">
+  <NugetDependency Id="PifxPDOXcDVPYbYHR931Af" Location="VL.CoreLib" Version="2024.6.7-0195-gbeba45077f" />
+  <Patch Id="QFpmYBajs6iMLtJoEYPQhg">
+    <Canvas Id="GYcg3H8DS3hLITXeFTK8FJ" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Egxxp6ARwKlMsTMapwmV7x">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Tn7N4l0WYzWLgtlRtnJNZi">
+        <Canvas Id="Gr0VCAiX9chMp1DKbknfGS" CanvasType="Group">
+          <Pad Id="P6ZNcLFTksxPfwJktjSgwB" Bounds="192,206,515,42" ShowValueBox="true" isIOBox="true" Value="Explore the VL folder in this package">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">20</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DLJm7Y7D7YxQbW7VGv9cYe" Bounds="192,261,656,35" ShowValueBox="true" isIOBox="true" Value="This is just a file to make the package discoverable in VVVV Help">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">15</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="SaCW7Sl2rzcPlqDNc1pdMy" Name="Create" />
+        <Patch Id="Chjmw9FqPTTQAQQkQummXX" Name="Update" />
+        <ProcessDefinition Id="NiaXXEtny6dQQUznq6SjSb">
+          <Fragment Id="HIHaazBVutnQbWY1pVUST9" Patch="SaCW7Sl2rzcPlqDNc1pdMy" Enabled="true" />
+          <Fragment Id="ChOBvcCrsQ1PeRP3CsxHaf" Patch="Chjmw9FqPTTQAQQkQummXX" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+</Document>
