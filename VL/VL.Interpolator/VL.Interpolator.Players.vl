@@ -18986,7 +18986,7 @@
     ************************ Track ************************
 
 -->
-        <Node Name="Track" Bounds="248,269" Id="EVUvzgEJ4AtNmnAF7X9gUj">
+        <Node Name="Track" Category="Interpolator.Players.Model" Bounds="248,269" Id="EVUvzgEJ4AtNmnAF7X9gUj">
           <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
             <Choice Kind="RecordDefinition" Name="Record" />
           </p:NodeReference>
@@ -19908,6 +19908,7 @@
             <Slot Id="Dd7TfCJlILXLtY65DZr5Vn" Name="Track">
               <p:TypeAnnotation p:Type="TypeReference">
                 <Choice Kind="TypeFlag" Name="Track" />
+                <FullNameCategoryReference ID="Interpolator.Players.Model" />
               </p:TypeAnnotation>
             </Slot>
             <Patch Id="IKPKImTdvAJLMbS76EUkp7" Name="Create" />
@@ -19999,7 +20000,7 @@
     ************************ Multitrack ************************
 
 -->
-        <Node Name="Multitrack" Bounds="216,229" Id="OoWTsrA8FEDPLMmSZulgZo">
+        <Node Name="Multitrack" Category="Interpolator.Players.Model" Bounds="216,229" Id="OoWTsrA8FEDPLMmSZulgZo">
           <p:NodeReference>
             <Choice Kind="RecordDefinition" />
           </p:NodeReference>
@@ -21423,6 +21424,7 @@
                 <p:TypeArguments>
                   <TypeReference>
                     <Choice Kind="TypeFlag" Name="Track" />
+                    <FullNameCategoryReference ID="Interpolator.Players.Model" />
                   </TypeReference>
                 </p:TypeArguments>
               </p:TypeAnnotation>
