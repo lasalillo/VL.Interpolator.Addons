@@ -8,10 +8,10 @@ nuget install VL.Interpolator.Addons
 ```
 
 <p align="center">
-<img src="https://github.com/lasalillo/VL.Interpolator.Addons/blob/main/Resources/Pictures/Timeliner_11.png">
+<img src="https://gitlab.com/lasalillo/pictures/-/raw/main/Interpolator_Addons/Timeliner_11.png">
 </p>
 
 <p align="center">
-<img src="https://github.com/lasalillo/VL.Interpolator.Addons/blob/main/Resources/Pictures/Timeliner_01.png">
+<img src="https://gitlab.com/lasalillo/pictures/-/raw/main/Interpolator_Addons/Timeliner_01.png">
 </p>
 
