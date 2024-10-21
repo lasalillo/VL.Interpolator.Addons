@@ -7,10 +7,10 @@ Timeliner & addons around VL.Interpolator
 nuget install VL.Interpolator.Addons
 ```
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/lasalillo/VL.Interpolator.Addons/main/Resources/Pictures/Timeliner_11.png" title="" alt="screenshot 1" >
-</p>
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/lasalillo/VL.Interpolator.Addons/main/Resources/Pictures/Timeliner_01.png" title="" alt="screenshot 1" >
-</p>
+![Image](https://raw.githubusercontent.com/lasalillo/VL.Interpolator.Addons/main/Resources/Pictures/Timeliner_11.png)
+
+
+
+![Image](https://raw.githubusercontent.com/lasalillo/VL.Interpolator.Addons/main/Resources/Pictures/Timeliner_01.png)
+
