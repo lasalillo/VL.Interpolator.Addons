@@ -84,6 +84,8 @@
                   <Pin Id="K6wRrbC0QXbPGBTHilEvCd" Name="Vector3" Kind="InputPin" />
                   <Pin Id="Vz8otRtAEBNLW20fZnEIvy" Name="SpreadVector2" Kind="InputPin" />
                   <Pin Id="PzcropqD4OaN4T1inxWUvv" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="Cd3SeOlMHi5QHsCjR6tC75" Name="Integer2" Kind="InputPin" />
+                  <Pin Id="H5yciNdm4DqQYlzknR1GRd" Name="Integer4" Kind="InputPin" />
                 </Node>
                 <Pad Id="JwFfEqn3ak2Oh6VkLU7zEN" SlotId="ScLhTApuoFNNeKyGCSNdfF" Bounds="666,303" />
                 <ControlPoint Id="Bzlilh2Ol8fLMArMErgw8h" Bounds="666,363" />
@@ -298,6 +300,12 @@
                     <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   </p:ValueBoxSettings>
                 </Pad>
+                <Pad Id="Mf6n4tNKVS7N18j8TTTkqj" SlotId="BpsUAK7lTC4MbKrGGmydUt" Bounds="1344,370" />
+                <Pad Id="GZoLVdDIKlcMYlhXSk1E4o" SlotId="AmRdWjr4upYMw6OM6gx7QN" Bounds="1437,370" />
+                <ControlPoint Id="Lf7B79PRSICL23OD60EhlB" Bounds="1344,340" />
+                <ControlPoint Id="KpXTc6OrotAOYYPPsp1aWD" Bounds="1344,400" />
+                <ControlPoint Id="H6NxCEo8Uw8QSPSFInwSbA" Bounds="1437,340" />
+                <ControlPoint Id="C8N8ySnUzixLBt7uIyS5Tp" Bounds="1437,400" />
               </Canvas>
               <Patch Id="Re0fGatPFlqNEUVv8f883p" Name="Create" ParticipatingElements="NWisYiIzdAnMeNklLPj1DJ">
                 <Pin Id="L3J4waAXpr4QUM4NgJRBOj" Name="Float" Kind="InputPin" />
@@ -309,6 +317,8 @@
                 <Pin Id="Do5XLwpdkP0OK8U1mS4Kn9" Name="Matrix" Kind="InputPin" />
                 <Pin Id="QiL5JAgAuLlPjq5GV1WgK1" Name="Vector3" Kind="InputPin" />
                 <Pin Id="Kdgh8BPFfryPzOmY4hC6yg" Name="SpreadVector2" Kind="InputPin" />
+                <Pin Id="DPY8LZuZUJZNQ5K2ZntxyL" Name="Integer2" Kind="InputPin" />
+                <Pin Id="KwP7zz2lmz2PgViBtUDHl3" Name="Integer4" Kind="InputPin" />
               </Patch>
               <ProcessDefinition Id="BohLqghyDDIL6OAr238gnx" IsHidden="true">
                 <Fragment Id="Pj4yJ6AjTdOPdtT4BtbBvJ" Patch="Re0fGatPFlqNEUVv8f883p" Enabled="true" />
@@ -367,6 +377,8 @@
                 <Pin Id="NFurWtRvB7BOxEaJJI9uxe" Name="Matrix" Kind="OutputPin" />
                 <Pin Id="T1loBsUA6R7N3w1LZK2UuB" Name="Vector3" Kind="OutputPin" />
                 <Pin Id="RbOfEMM9osgNbFpAkBxq4G" Name="SpreadVector2" Kind="OutputPin" />
+                <Pin Id="TECPTJBYSvxNRhbUyW9QLD" Name="Integer2" Kind="OutputPin" />
+                <Pin Id="GsvfcKvuftlP9O9zcg44yc" Name="Integer4" Kind="OutputPin" />
               </Patch>
               <Link Id="CajxOaV90FWPyrUHzTMaOG" Ids="LP1ElG7TMGOMJDJhqqCj8m,E2cOoNTUcQFPYML7JrCsGT" IsHidden="true" />
               <Link Id="I56TsEQPoAeLPPFpyJ4p8J" Ids="UR1TrErcDXVMSxvGg9N1iK,LP1ElG7TMGOMJDJhqqCj8m" />
@@ -436,6 +448,24 @@
               <Link Id="MTTIxTNGL4ENqulIlIljY4" Ids="DGfhC7IdsebN2dzdswwSRv,PTuefJKflBwN2FjMU3T0OK" />
               <Link Id="NXKa1sqb7syMww1K5JLx7h" Ids="PTuefJKflBwN2FjMU3T0OK,Dt6gi7Vy9nBNiDy9qZC3nk" IsHidden="true" />
               <Link Id="NWisYiIzdAnMeNklLPj1DJ" Ids="PMoCJliEoAEOJmo7yVsm4i,DGfhC7IdsebN2dzdswwSRv" />
+              <Slot Id="BpsUAK7lTC4MbKrGGmydUt" Name="Integer2">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="Int2" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Slot Id="AmRdWjr4upYMw6OM6gx7QN" Name="Integer4">
+                <p:TypeAnnotation p:Type="TypeReference">
+                  <Choice Kind="TypeFlag" Name="Int4" />
+                </p:TypeAnnotation>
+              </Slot>
+              <Link Id="JTmfvuEzEVAL9tQ4MGrFoY" Ids="DPY8LZuZUJZNQ5K2ZntxyL,Lf7B79PRSICL23OD60EhlB" IsHidden="true" />
+              <Link Id="MzIzddtHrHyPVY8wmCy9PV" Ids="Lf7B79PRSICL23OD60EhlB,Mf6n4tNKVS7N18j8TTTkqj" />
+              <Link Id="UyenPbA7e85QbO3CdNoiQO" Ids="KpXTc6OrotAOYYPPsp1aWD,TECPTJBYSvxNRhbUyW9QLD" IsHidden="true" />
+              <Link Id="U0sosPwg2mcObGEHw8Jmoy" Ids="Mf6n4tNKVS7N18j8TTTkqj,KpXTc6OrotAOYYPPsp1aWD" />
+              <Link Id="DbMKV4ZQzRIOMUOhKeOSnA" Ids="KwP7zz2lmz2PgViBtUDHl3,H6NxCEo8Uw8QSPSFInwSbA" IsHidden="true" />
+              <Link Id="AGwztHVtL7EOTfyqgiZ1ZC" Ids="H6NxCEo8Uw8QSPSFInwSbA,GZoLVdDIKlcMYlhXSk1E4o" />
+              <Link Id="K33RapWvBKPOdJyybMvYlb" Ids="C8N8ySnUzixLBt7uIyS5Tp,GsvfcKvuftlP9O9zcg44yc" IsHidden="true" />
+              <Link Id="Ql41nDGHY1FMuSUhI22bBc" Ids="GZoLVdDIKlcMYlhXSk1E4o,C8N8ySnUzixLBt7uIyS5Tp" />
             </Patch>
           </Node>
           <Node Bounds="216,737,68,26" Id="IBH3rwYL1xzNq7NPemIU6E">
@@ -961,6 +991,8 @@
             <Pin Id="UtLfbvzZi5uOofgPIzsHge" Name="Matrix" Kind="OutputPin" />
             <Pin Id="Cny09mW0RDFPWm8KxvvUV9" Name="Vector3" Kind="OutputPin" />
             <Pin Id="NtQLgbOBZUOMTN3JuIFIxc" Name="SpreadVector2" Kind="OutputPin" />
+            <Pin Id="DL1YFFvaArXOOfqjI1F5Ic" Name="Integer2" Kind="OutputPin" />
+            <Pin Id="GWIEFLrmc7rMIZiB9EVfRo" Name="Integer4" Kind="OutputPin" />
           </Node>
           <Node Bounds="2762,1347,158,26" Id="Enc9b2Yv2DuOXi5SjnlzYi">
             <p:NodeReference LastCategoryFullName="Main.MySubType2" LastDependency="TIMELINER_Test.vl">
@@ -1075,6 +1107,8 @@
             <Pin Id="D5imdU1hdLeOCP9KFysGsG" Name="Matrix" Kind="OutputPin" />
             <Pin Id="Bc6F3sSljhHODE4cDBRbK4" Name="Vector3" Kind="OutputPin" />
             <Pin Id="ArYlYx0rq7UOvTxNR8Oirq" Name="SpreadVector2" Kind="OutputPin" />
+            <Pin Id="ImlsYuGcDaxLmi1Vpx53CM" Name="Integer2" Kind="OutputPin" />
+            <Pin Id="CnlpggZlOluNsQermQgEbB" Name="Integer4" Kind="OutputPin" />
           </Node>
           <Node Bounds="1696,1352,165,26" Id="L6tuYRYV4XgNPDaFuJNs1Q">
             <p:NodeReference LastCategoryFullName="Main.MySubType2" LastDependency="TIMELINER_Test.vl">
@@ -2504,6 +2538,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="LnGEtZ8nsgsLFL9gtfAfRn" Location="VL.Interpolator" Version="1.2.7" />
-  <NugetDependency Id="Vq6pZWQZ8lwOFSfu2C9vA4" Location="VL.Interpolator.Addons" Version="1.1.1" />
+  <NugetDependency Id="LnGEtZ8nsgsLFL9gtfAfRn" Location="VL.Interpolator" Version="1.2.8" />
+  <NugetDependency Id="Vq6pZWQZ8lwOFSfu2C9vA4" Location="VL.Interpolator.Addons" Version="1.1.3" />
 </Document>
