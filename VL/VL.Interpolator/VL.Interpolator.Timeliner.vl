@@ -1121,7 +1121,7 @@
               <Pin Id="FGJSI4yRu5nMgHlf9q8ApT" Name="Push Eagerly To" Kind="InputPin" DefaultValue="ChannelA" />
               <Pin Id="I2T1Hz3mCAjMMbfEFVUeyN" Name="Reset" Kind="InputPin" IsHidden="true" />
             </Node>
-            <Pad Id="BgcpS2EJrFrM27FqSPkvXe" Comment="" Bounds="519,482,67,15" ShowValueBox="true" isIOBox="true" Value="None">
+            <Pad Id="BgcpS2EJrFrM27FqSPkvXe" Comment="" Bounds="563,507,67,15" ShowValueBox="true" isIOBox="true" Value="None">
               <p:TypeAnnotation LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="ChannelSelection" />
               </p:TypeAnnotation>
@@ -1131,8 +1131,7 @@
                 <Choice Kind="TypeFlag" Name="ChannelMergeInitialization" />
               </p:TypeAnnotation>
             </Pad>
-            <ControlPoint Id="J8VVw6rVM47MxRVO9DENO8" Bounds="1466,250" />
-            <ControlPoint Id="L4NDK4aEA0tP2eOi1lFo5y" Bounds="1316,634" />
+            <ControlPoint Id="J8VVw6rVM47MxRVO9DENO8" Bounds="1449,254" />
             <Node Bounds="1588,407,43,19" Id="BCMc4l80BXyPUEjCoPTxNe">
               <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1288,17 +1287,6 @@
             </Node>
             <Pad Id="T2QG9Vv4RJHMZvX1ir9QF9" Comment="On Data" Bounds="1813,561,35,35" ShowValueBox="true" isIOBox="true" />
             <Pad Id="F7Rh9A4FesJLen736VwPfo" Comment="Paths" Bounds="1782,631,497,95" ShowValueBox="true" isIOBox="true" />
-            <Node Bounds="536,637,103,19" Id="OpG2k0mfLRTPH5ldLPLm4m">
-              <p:NodeReference LastCategoryFullName="Interpolator.Editor.Operations" LastDependency="VL.Interpolator.Editor.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="ProcessAppFlag" Name="ApplyTargetToPath" />
-              </p:NodeReference>
-              <Pin Id="KSBSDO5zLhpPNUvfRoD6m0" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="Gjmi84zdnmtLLDUzg9FdQv" Name="MultitrackChannel" Kind="InputPin" />
-              <Pin Id="LYDOmO5N2SzMLb2alUmI63" Name="TargetApplicationChannel" Kind="InputPin" />
-              <Pin Id="AYdvA9CHDi0MC7H1DUHq9f" Name="Active" Kind="OutputPin" />
-              <Pin Id="JbZMeMFGdj8PuIKmE7GUdB" Name="Messages" Kind="InputPin" />
-            </Node>
             <Node Bounds="1372,472,75,19" Id="KJLGSXIdwRyN9cAnVLslwa">
               <p:NodeReference LastCategoryFullName="ImGui.Extensions.Binder" LastDependency="VL.ImGui.Extensions.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1316,7 +1304,6 @@
               <Pin Id="LEglVXh7iCwP4hzpBpWRe7" Name="Force" Kind="InputPin" IsHidden="true" />
             </Node>
             <Pad Id="VIR77Ov0vTdNU580DwbzuB" Comment="On Data" Bounds="1374,517,35,15" ShowValueBox="true" isIOBox="true" />
-            <ControlPoint Id="Nd8EaKG4u0YLlYF5nEsBLw" Bounds="1350,634" />
             <Node Bounds="1426,826,45,26" Id="Ep6Q4hzZ1RLNkvj2RVPBuG">
               <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1397,7 +1384,7 @@
             </Pad>
             <ControlPoint Id="RPbzWPvX7YvNFWCWqLKzej" Bounds="1462,902" />
             <Pad Id="PktQVJ35B3oObcGVuTkcy5" Comment="" Bounds="1572,1008,35,35" ShowValueBox="true" isIOBox="true" />
-            <Node Bounds="456,707,85,19" Id="SNbI5JeNyQLLWmrOP5W60r">
+            <Node Bounds="456,524,65,19" Id="SNbI5JeNyQLLWmrOP5W60r">
               <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="MutableInterfaceType" Name="Channel" />
@@ -1408,18 +1395,16 @@
               <Pin Id="GzWp0msDNj3Nv2sNj3FyEN" Name="Channel B" Kind="InputPin" />
               <Pin Id="U9GpMRBqRs9NlNziieUMPg" Name="Initialization" Kind="InputPin" DefaultValue="UseB" />
               <Pin Id="TOAOAd0JqNkQQUi8bqiUZ3" Name="Push Eagerly To" Kind="InputPin" DefaultValue="None" />
-              <Pin Id="PpKZOAha5lmNorRhEV2fxq" Name="Reset" Kind="InputPin" DefaultValue="False" />
+              <Pin Id="CKX8VMldr3mL5fgirueckG" Name="Reset" Kind="InputPin" IsHidden="true" />
             </Node>
-            <Pad Id="CngsKVFhfK1M0si7XqKa03" Bounds="540,712,198,47" ShowValueBox="true" isIOBox="true" Value="Update only on Binder Actions, No delete, no new project">
+            <Pad Id="Fj1J2Rb9MvNOEsdNBGwjPF" Comment="Reset" Bounds="539,443,35,35" ShowValueBox="true" isIOBox="true" Value="false">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="String" />
+                <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
               <p:ValueBoxSettings>
-                <p:fontsize p:Type="Int32">9</p:fontsize>
-                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
               </p:ValueBoxSettings>
             </Pad>
-            <Pad Id="JOvZUvXyJ8VMmGl3ACkAAP" Comment="Active" Bounds="570,682,35,15" ShowValueBox="true" isIOBox="true" />
           </Canvas>
           <ProcessDefinition Id="P8keziVyoF5LTPf1jAKRWZ">
             <Fragment Id="Q0EZVWVYQrRLlquGB2yYLO" Patch="Hwl9jSdiYl4LX9uXfEO5OL" Enabled="true" />
@@ -1455,8 +1440,6 @@
           <Link Id="PFIXioE3pMuNet9Ujl0tVV" Ids="JiGCFCeqoptQRcx84VLVIt,U9GpMRBqRs9NlNziieUMPg" />
           <Link Id="BR1wDW0qDVwO46Pc6bKuhb" Ids="SRTbgspYaMsQI5Eb2u6iwx,PtIiKdpmpzEOyZMySxvPq4" />
           <Link Id="L93yUWf6mFUQQWWi3kvTNC" Ids="R00Mnb75Xr8PQVuCaykz00,J8VVw6rVM47MxRVO9DENO8" IsHidden="true" />
-          <Link Id="KcSruw9TEQjNlNhEwBO11h" Ids="S8y2Akkj8XfL4AdRV9p3hN,Gjmi84zdnmtLLDUzg9FdQv" />
-          <Link Id="CHOGlnJ5rSWNr3sGaYTXM6" Ids="SRTbgspYaMsQI5Eb2u6iwx,L4NDK4aEA0tP2eOi1lFo5y,LYDOmO5N2SzMLb2alUmI63" />
           <Patch Id="Hwl9jSdiYl4LX9uXfEO5OL" Name="Create" />
           <Patch Id="D2jyL8OQIWuODQRgK4cvV5" Name="Update">
             <Pin Id="N2LqOy236rULRVdbW1frZH" Name="MultitrackRuntime" Kind="InputPin" />
@@ -1540,7 +1523,6 @@
           <Link Id="D7jpj1AWlwcPwNRRjNx0Vp" Ids="ICbfL3RSxwDMQHA5zOh94e,T2QG9Vv4RJHMZvX1ir9QF9" />
           <Link Id="PiJ34poWHxfPNE4lBVRs46" Ids="F8kch7E5SsHMVmtVOIQiji,F7Rh9A4FesJLen736VwPfo" />
           <Link Id="LrxIBaxfl4NODl0j4LITD5" Ids="MGpdW41bzY2NgE8R2XJ8G3,VIR77Ov0vTdNU580DwbzuB" />
-          <Link Id="KJMS4k0MXOsLJzpVJC49ye" Ids="GPVPH6JCl6oNVhb1GzZBp1,Nd8EaKG4u0YLlYF5nEsBLw,JbZMeMFGdj8PuIKmE7GUdB" />
           <Link Id="LGT3goWvr6sLzHAOSg5qEw" Ids="QAdAa8bYGyrMvwCiVR1w5B,HnxBh6v8XihMGmouiIHE38" />
           <Link Id="J7zOzy6JCF3NisQyRrHEbf" Ids="EYCSaS3wyJjN7Z9ab5vmfo,NZ9pr6bgOWEQZymo36SFWd" />
           <Link Id="MG6xYqcQpElMugpHaWU8z8" Ids="VbGjqvyRxkRNyMFz2ned92,R2vEeLepK3VP0dQMDhdie4" />
@@ -1551,9 +1533,7 @@
           <Link Id="AAqb2tqtJKgMLR6BhpUS8S" Ids="HCax7nNIvCnMGxmc7YbIif,KSb9mfutJ4DP6OQbUJlMNf" />
           <Link Id="VmdKc5eN7AHM3piJe0EH3a" Ids="Da7B4hzBb7CMoedRZbO6bn,QPFCnmYuStIO7I0i6OU9XO" />
           <Link Id="E7Rwxp0LTk0LcJhfguxfFo" Ids="Da7B4hzBb7CMoedRZbO6bn,PktQVJ35B3oObcGVuTkcy5" />
-          <Link Id="MprAdfxlajhN8qacpkfvAT" Ids="AYdvA9CHDi0MC7H1DUHq9f,JOvZUvXyJ8VMmGl3ACkAAP" />
           <Link Id="ADYYfmPABNpQJ4BtgKKA7Q" Ids="BgcpS2EJrFrM27FqSPkvXe,TOAOAd0JqNkQQUi8bqiUZ3" />
-          <Link Id="SBMAkE2cmf1OqKDxMaflaX" Ids="AYdvA9CHDi0MC7H1DUHq9f,PpKZOAha5lmNorRhEV2fxq" />
         </Patch>
       </Node>
       <!--
