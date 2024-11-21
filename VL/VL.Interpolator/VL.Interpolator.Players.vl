@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="QMAAJvWF39POrsgkQbJTOR" LanguageVersion="2024.6.7-0235-g5172ef47fd" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="QMAAJvWF39POrsgkQbJTOR" LanguageVersion="2024.6.7-0237-g0353095d36" Version="0.128">
   <Patch Id="PMMt4HNnbGvOYiTm4td4VC">
     <Canvas Id="UZiBwmuKqeRQC7OL2eGgar" DefaultCategory="Interpolator.Players" CanvasType="FullCategory">
       <Canvas Id="SkfwhS3jXGhPLP3fbTiMrW" Name="Runtime" Position="199,377">
@@ -9279,7 +9279,7 @@
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="560,484,145,26" Id="ONeKAehFmWxLJaTSs03QCu">
+              <Node Bounds="560,479,145,26" Id="ONeKAehFmWxLJaTSs03QCu">
                 <p:NodeReference LastCategoryFullName="Interpolator.Players.Model.TimelinerControls" LastDependency="VL.Interpolator.Players.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="TimelinerControls" />
@@ -9306,7 +9306,7 @@
                 <Pin Id="NlgJ2cm08lgMLocSd4jwLB" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="EQJHIhOIg01Ndtx9d40tk1" Name="Value" Kind="OutputPin" />
               </Node>
-              <Node Bounds="640,554,57,19" Id="OBukOQeYhItNR7RALDdhdP">
+              <Node Bounds="639,566,57,19" Id="OBukOQeYhItNR7RALDdhdP">
                 <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="Changed" />
@@ -9366,7 +9366,7 @@
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
-              <Node Bounds="717,485,45,26" Id="QR1XTq9oVefOGhwd9QdVbF">
+              <Node Bounds="804,456,45,26" Id="QR1XTq9oVefOGhwd9QdVbF">
                 <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="MutableInterfaceType" Name="Channel" NeedsToBeDirectParent="true" />
@@ -9408,7 +9408,7 @@
               </Node>
               <ControlPoint Id="QASzraAiN6XLfv4jvlbCvz" Bounds="595,188" />
               <ControlPoint Id="DEJyXU4qTjKLLx6PNdhuWH" Bounds="717,999" />
-              <ControlPoint Id="EANeVzRcTUaMb2h6zHj9ia" Bounds="720,188" />
+              <ControlPoint Id="EANeVzRcTUaMb2h6zHj9ia" Bounds="809,194" />
               <ControlPoint Id="B5eQ60XCbzkOR2WwQCBjYP" Bounds="351,575" />
               <ControlPoint Id="NyPHAS0B9kmLVEfW3adbzJ" Bounds="408,719" />
               <ControlPoint Id="SpUiPirSSBaMvRLy0nKbTp" Bounds="427,749" />
@@ -9423,7 +9423,7 @@
               <ControlPoint Id="SOvJKpqTLl6PDIPIX8QVR1" Bounds="618,1171" />
               <ControlPoint Id="RKMcywwvKIhNGsW07vK1EF" Bounds="1077,309" />
               <ControlPoint Id="UXmttpfKHksL8UL47zZGGr" Bounds="1182,309" />
-              <Node Bounds="757,554,45,19" Id="VSFGVY1JTfxLrFH8Io2cU5">
+              <Node Bounds="843,555,45,19" Id="VSFGVY1JTfxLrFH8Io2cU5">
                 <p:NodeReference LastCategoryFullName="Math.Ranges" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Clamp" />
@@ -9442,6 +9442,24 @@
                 <Pin Id="PEFtgXriXfmN4tzdwmTumY" Name="Model" Kind="InputPin" />
                 <Pin Id="JKWRdrvzXdmLRsGm17diWk" Name="Runtime" Kind="InputPin" />
                 <Pin Id="KK0FCS2ezV4MPF5Yi24TLl" Name="Destination" Kind="InputPin" />
+              </Node>
+              <Node Bounds="739,539,27,19" Id="Szn9RGXQWEFPajiNV6LCEE">
+                <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="!=" />
+                </p:NodeReference>
+                <Pin Id="EX8liP1PE2zMgoOoQyv8Hl" Name="Input" Kind="InputPin" />
+                <Pin Id="OL6fWOR7OjlOVRrPkf1jWo" Name="Input 2" Kind="InputPin" />
+                <Pin Id="LjMBNqpetGFLjci5X9ctBo" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="739,564,37,19" Id="JQbLlAC3VDUMQC7O6miKzp">
+                <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="AND" />
+                </p:NodeReference>
+                <Pin Id="Qso50q6v2tjMRDySPg6spY" Name="Input" Kind="StateInputPin" />
+                <Pin Id="NU5FgZz2hL9OgRs0L6VE7S" Name="Input 2" Kind="InputPin" />
+                <Pin Id="Dpv8gZ3JOIXLlR11rWVAOf" Name="Output" Kind="StateOutputPin" />
               </Node>
             </Canvas>
             <Patch Id="L1xrJdgKk5ZLjVLRf6jTDl" Name="Create" />
@@ -9480,7 +9498,6 @@
             <Link Id="MY3adVwLdjNLeolMSbKsM5" Ids="APnMcY3MMMkPMSV9vk9FVt,TGFi4J7IIT2MgWpx6CSGS2" />
             <Link Id="FIQhOvVKkv2PCo9hqIb1RL" Ids="DSx1Kf4qNb8MEeb7pq5gNn,CEgnkWqJ6iPP0WkLLUO2Q3" />
             <Link Id="GvVxLroQpHQOU58LLuKskl" Ids="EQJHIhOIg01Ndtx9d40tk1,Q1abt0548V3L1W74gkJXKp" />
-            <Link Id="TCQ3HFjwE1MNn8H7AnzOKR" Ids="Jz9ABhkrnK1MTfxhNRUWD3,PCBiyNHxQubMAYRgqmLLIz" />
             <Link Id="OOdgPVe6LMGNp9FB1JVpaP" Ids="UxwjuklNP4YNY1JEF9K4Be,P35qNq0gH5WMRogeEHuWgf" />
             <Link Id="ASzFnRNsFXPMZO21aRxaas" Ids="HzBKBcTcO5wMjnUvCecbyW,GV3p8fDNL0ZPuBe7hmhRU0" />
             <Link Id="D3WfUNuLgecNybrkmfF5tB" Ids="T0kvbTcQuKKLKVzq70CtQt,Coj63BL67w6M4Z95VRiCqX" />
@@ -9541,6 +9558,11 @@
             <Link Id="RUjAHEeJbACLTrNpWlOTEG" Ids="G86VBWXadA5MiD7zl1mYFx,PEFtgXriXfmN4tzdwmTumY" />
             <Link Id="Gqg0wOPXrI7NLVqHUMLw7i" Ids="JTDMTyAaCnkNa1OGPfawCC,JKWRdrvzXdmLRsGm17diWk" />
             <Link Id="HOHJYelLdhWMecSsYgFiB7" Ids="UXmttpfKHksL8UL47zZGGr,KK0FCS2ezV4MPF5Yi24TLl" />
+            <Link Id="QMqEF5lkSXiO156Bekro9z" Ids="HzBKBcTcO5wMjnUvCecbyW,EX8liP1PE2zMgoOoQyv8Hl" />
+            <Link Id="TqQ5RW8fW6WQQzHNxWVMKb" Ids="T0kvbTcQuKKLKVzq70CtQt,OL6fWOR7OjlOVRrPkf1jWo" />
+            <Link Id="GEjKc9ESzSXMiEEJQDKuqV" Ids="Jz9ABhkrnK1MTfxhNRUWD3,NU5FgZz2hL9OgRs0L6VE7S" />
+            <Link Id="KlUZQl9sTblLEMfX2bICVR" Ids="LjMBNqpetGFLjci5X9ctBo,Qso50q6v2tjMRDySPg6spY" />
+            <Link Id="DyFDIrGijiIOVNrY1ykcED" Ids="Dpv8gZ3JOIXLlR11rWVAOf,PCBiyNHxQubMAYRgqmLLIz" />
           </Patch>
         </Node>
         <Canvas Id="TUUpmnmKlfIMpvCuEdq5Ne" Name="MTC" Position="245,326">
@@ -26922,12 +26944,12 @@
     </Node>
   </Patch>
   <NugetDependency Id="JRzWewSnj7INAUVLJ65LOe" Location="VL.IO.OSC" Version="1.1.4" />
-  <NugetDependency Id="DnGmZIK3vrBO5QjDJcPoEL" Location="VL.MiDi.Music.Utils" IsForward="true" Version="1.1.5" />
+  <NugetDependency Id="DnGmZIK3vrBO5QjDJcPoEL" Location="VL.MiDi.Music.Utils" IsForward="true" Version="1.1.6" />
   <NugetDependency Id="DIdU3PU7mu9LqI9KxZdwXA" Location="VL.Audio" Version="1.9.2" />
-  <NugetDependency Id="PGDvlrEEeRtLvJvZV6qPwo" Location="VL.Stride" Version="2024.6.7-0235-g5172ef47fd" />
-  <NugetDependency Id="Ja5lm4uVJYXP2lykLrKzjN" Location="VL.CoreLib" Version="2024.6.7-0235-g5172ef47fd" />
+  <NugetDependency Id="PGDvlrEEeRtLvJvZV6qPwo" Location="VL.Stride" Version="2024.6.7-0237-g0353095d36" />
+  <NugetDependency Id="Ja5lm4uVJYXP2lykLrKzjN" Location="VL.CoreLib" Version="2024.6.7-0237-g0353095d36" />
   <NugetDependency Id="QJ9WjAFjPZDLNU0p2KjAnm" Location="VL.Interpolator" IsForward="true" Version="1.2.10" />
-  <NugetDependency Id="HDh6pLhT6MhLyCDDzIG9ej" Location="VL.Video" Version="2024.6.7-0235-g5172ef47fd" />
+  <NugetDependency Id="HDh6pLhT6MhLyCDDzIG9ej" Location="VL.Video" Version="2024.6.7-0237-g0353095d36" />
   <DocumentDependency Id="BjSftYLL5JeQDAF6htLe8v" Location="../VL.Audio.Analysis/VL.Audio.Analysis.vl" IsForward="true" />
   <DocumentDependency Id="RY1BHxuHQd8M4yPa0uw9oR" Location="./VL.StreamRecorder.vl" />
 </Document>
