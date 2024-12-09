@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EGBRog0VOtWP9H2V0S7VUU" LanguageVersion="2024.6.7-0254-g03f33351e2" Version="0.128">
-  <NugetDependency Id="EzB9BxZq14BPoLDr2Tooqg" Location="VL.CoreLib" Version="2024.6.7-0254-g03f33351e2" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="EGBRog0VOtWP9H2V0S7VUU" LanguageVersion="2024.6.7-0274-g87fa1582f0" Version="0.128">
+  <NugetDependency Id="EzB9BxZq14BPoLDr2Tooqg" Location="VL.CoreLib" Version="2024.6.7-0274-g87fa1582f0" />
   <Patch Id="NLP1vsAFBC1QBqXwCMMkkO">
     <Canvas Id="K9mjpkT3CnWOnUVFlOVSs5" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -27,12 +27,12 @@
             <Pin Id="JQW245uSNs4OrAIOSkWdd2" Name="SyncModelDummy" Kind="InputPin" DefaultValue="True" IsHidden="true" />
             <Pin Id="LApUP4aZfmFMOR2eeGU0VL" Name="UpdateDummy" Kind="InputPin" DefaultValue="True" IsHidden="true" />
             <Pin Id="DSfFWeBvAOIPF81o8IDSqH" Name="TargetAppEditorFactory" Kind="InputPin" IsHidden="true" />
-            <Pin Id="JDmQClaUKh9PJsSwfyxats" Name="Window Name" Kind="InputPin" DefaultValue="Editor" />
             <Pin Id="Hm7F5Zv83TfO5cH2qtCKfT" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Qh8hSNkqPj9M7FXsLhQPF7" Name="SyncModelDummy" Kind="OutputPin" IsHidden="true" />
             <Pin Id="Qz5AtDOHhmBNKoxNUPHotk" Name="UpdateDummy" Kind="OutputPin" IsHidden="true" />
             <Pin Id="M7wfXAkOhHILc97GCUy61U" Name="EditorDummy" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="CsiluAdhclbPbl5XG82nhN" Name="Closing Message" Kind="InputPin" IsHidden="true" />
+            <Pin Id="QoPLjSD76xlMkVbpkIqZkc" Name="Window Name" Kind="InputPin" IsHidden="true" />
+            <Pin Id="N95VA2qnqKGPsjaTg6GzR7" Name="Closing Message" Kind="InputPin" IsHidden="true" />
             <Pin Id="C2QR3crKi8eQFjnDfFVxHa" Name="EditorDummy" Kind="InputPin" DefaultValue="False" IsHidden="true" />
             <Pin Id="LtIyl7MZq9FPpaiZnttqIE" Name="LaunchpadDummy" Kind="InputPin" DefaultValue="False" IsHidden="true" />
             <Pin Id="CIUGhsGR3HaNqEVQ9EGavO" Name="MTCDummy" Kind="InputPin" DefaultValue="False" IsHidden="true" />
@@ -1090,7 +1090,7 @@
             <Pin Id="UrrjUcQ9UL4LFq2nra1SNj" Name="HereAFloat" Kind="OutputPin" />
           </Node>
           <Pad Id="CYB3tCVqFPUM3TMNXUS5FN" Comment="HereAFloat" Bounds="1941,1361,64,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="1455,1352,172,26" Id="Dpz12xcc5XTNjKGuKgZO35">
+          <Node Bounds="1455,1352,205,26" Id="Dpz12xcc5XTNjKGuKgZO35">
             <p:NodeReference LastCategoryFullName="Main.MySubType1" LastDependency="TIMELINER_Test.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="MySubType1" />
@@ -1615,7 +1615,7 @@
           <Overlay Id="CuEMdTIFEhHNy5DguG7vzp" Name="These are Special, check MySubType2 to know more" Bounds="3015,1582,198,184">
             <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
           </Overlay>
-          <Overlay Id="FV3XWiO1D6xPGlqMoLQ8Sq" Name="Model (This is the initial model edited in the inspector)" Bounds="1383,1024,685,870">
+          <Overlay Id="FV3XWiO1D6xPGlqMoLQ8Sq" Name="Model (This is the initial model edited in the inspector)" Bounds="1383,1024,735,870">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
           <Overlay Id="Az4S2B9bbGTMMB9qhS8eij" Name="Interpolated (This will control your app)" Bounds="2218,1019,1050,987">
@@ -1855,11 +1855,6 @@
             <Pin Id="TzFNoP4yaBPPHNZAhpAIz1" Name="Result" Kind="OutputPin" />
             <Pin Id="SGGdhKYdnCdLEiQo5djteH" Name="Unchanged" Kind="OutputPin" />
           </Node>
-          <Pad Id="Ao3INpnBMz8L8fCvgOPI1P" Comment="Window Name" Bounds="277,918,107,15" ShowValueBox="true" isIOBox="true" Value="My Project Timeliner">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-          </Pad>
           <Overlay Id="FdmNJFSC6NILhcafsw32Je" Name="" Bounds="323,681,187,147">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
@@ -2058,7 +2053,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TwTnpPKYssyNxpRtUql852" Bounds="295,965,173,19" ShowValueBox="true" isIOBox="true" Value="&lt;- Right Click &amp; Configure">
+          <Pad Id="TwTnpPKYssyNxpRtUql852" Bounds="295,965,225,19" ShowValueBox="true" isIOBox="true" Value="&lt;- Right Click &amp; Configure Pins">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -2140,11 +2135,11 @@
           <Node Bounds="755,2471,178,26" Id="JSz7BhSOZXFMxU0JyNPDtL">
             <p:NodeReference LastCategoryFullName="Interpolator.Timeliner.TIMELINER" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="GetMultiChannelAudio_Interpolated" />
+              <Choice Kind="OperationCallFlag" Name="GetMultiChannelAudio" />
             </p:NodeReference>
             <Pin Id="GvQ4Sp4qzQHMo76XxFOLBw" Name="Input" Kind="StateInputPin" />
             <Pin Id="GxuabaJ55poLs426gpucOk" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="FnJTtqeKj8dLWQeruPG04h" Name="MultiChannelAudioCopy" Kind="OutputPin" />
+            <Pin Id="FnJTtqeKj8dLWQeruPG04h" Name="MultiChannelAudio" Kind="OutputPin" />
           </Node>
           <Node Bounds="1160,2572,43,19" Id="OLx8txyYf65M6PZ7CJN0fk">
             <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
@@ -2496,7 +2491,6 @@
         <Link Id="TEvdu2ZO7xWOEgA5NFpZDU" Ids="PlPEx1GIFKLLvZTSJePmPD,DGzSkiJlkCROtzfjX7Ebls" />
         <Link Id="D8vaDWuFr5TMWVA8Zclbl9" Ids="TzFNoP4yaBPPHNZAhpAIz1,R5xe6VwmeVPLTy7QkYcST7" />
         <Link Id="DQ3PL4ARSytP1Ral3lq76w" Ids="UJ6YIrNyYpdONy3uIQFoKA,S5ksS7pEWqwNp0LV630wY5" />
-        <Link Id="GI5wN1HB9JWLrXBG8bqwWO" Ids="Ao3INpnBMz8L8fCvgOPI1P,JDmQClaUKh9PJsSwfyxats" />
         <Link Id="UHIIQA2aBC5NnuvXho1JXU" Ids="QWiiYIaW18BQCxyXaTMUIO,RS0yGyAD2mPOYIsynQHubR" />
         <Link Id="NOn7iLbGSDqL4ywtVXP3CV" Ids="SbtZ8V5GeKkNBlIYTzcoef,VlRPsZkocKMMMiSHVKNmUx" />
         <Link Id="SdA80VxJjjXMdXTtTk2Bef" Ids="BQRlIANTptILYRUkG30ZtD,KBGoTwWoZEJPqpy3LCeVTb" />
@@ -2543,5 +2537,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="LnGEtZ8nsgsLFL9gtfAfRn" Location="VL.Interpolator" Version="1.2.10" />
-  <NugetDependency Id="Vq6pZWQZ8lwOFSfu2C9vA4" Location="VL.Interpolator.Addons" Version="1.2.8" />
+  <NugetDependency Id="Vq6pZWQZ8lwOFSfu2C9vA4" Location="VL.Interpolator.Addons" Version="1.3.3" />
 </Document>
