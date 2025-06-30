@@ -1,0 +1,41 @@
+shader TypoSpritesFromBuffer_ComputeFX : ComputeShaderBase, ComputeHelpers, InstanceWorldBuffer
+{
+	RWStructuredBuffer<InstanceTransform> Transformations;
+	
+	float4x4 Transform;
+	float Separation = 1.0;
+	float TextSize = 0.01;
+	
+	rgroup PerUpdate
+{
+    Buffer<float3> Positions;
+	Buffer<int3> TextData;
+}
+
+    override void Compute()
+    {
+    	// Get variables
+        uint index = CalcLinearDispatchThreadId();		
+    	
+		// Get Buffer values
+		
+		int Windex = TextData[index].z;
+		float TPos = TextData[index].y;
+        float4x4 iw = Transformations[index].Matrix;
+		
+		float3 Pos = Positions[Windex];
+		
+		
+		// Apply values
+		
+		TPos /= Transform._11;
+		TPos *= Separation * TextSize;
+		
+		Pos.xy = mul (float4(Pos.x + TPos, Pos.y, 0, 1), Transform).xy;
+		
+		iw = Translate   (iw, float3 (Pos.x, Pos.y, 0));
+		
+		Transformations[index].Matrix = iw;
+
+    } 
+};
