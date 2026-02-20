@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EGBRog0VOtWP9H2V0S7VUU" LanguageVersion="2025.7.0-0369-g117540fa59" Version="0.128">
-  <NugetDependency Id="EzB9BxZq14BPoLDr2Tooqg" Location="VL.CoreLib" Version="2025.7.0-0369-g117540fa59" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="EGBRog0VOtWP9H2V0S7VUU" LanguageVersion="2025.7.1-0169-g2e3c630a8f" Version="0.128">
+  <NugetDependency Id="EzB9BxZq14BPoLDr2Tooqg" Location="VL.CoreLib" Version="2025.7.1-0169-g2e3c630a8f" />
   <Patch Id="NLP1vsAFBC1QBqXwCMMkkO">
     <Canvas Id="K9mjpkT3CnWOnUVFlOVSs5" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -1615,7 +1615,7 @@
             <Pin Id="V66p2PNAIdzLfKjaNCh22m" Name="Index" Kind="InputPin" />
             <Pin Id="P1yU4yyD3K4O0DzLFS7MlE" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="SYZzvh0gzAiOraMcDMEhe8" Comment="Colour Space" Bounds="2817,1729,69,15" ShowValueBox="true" isIOBox="true" Value="Xyz">
+          <Pad Id="SYZzvh0gzAiOraMcDMEhe8" Comment="Colour Space" Bounds="2817,1729,76,15" ShowValueBox="true" isIOBox="true" Value="Xyz">
             <p:TypeAnnotation LastCategoryFullName="Wacton.Unicolour" LastDependency="VL.Interpolator.Timeliner.vl">
               <Choice Kind="TypeFlag" Name="ColourSpace" />
             </p:TypeAnnotation>
@@ -2127,8 +2127,18 @@
             <ControlPoint Id="VNjdRB1lhcuMm2pKybn2FB" Bounds="1859,2331" Alignment="Bottom" />
             <ControlPoint Id="PitQxTONYfNLlR7Z6theW7" Bounds="1904,2331" Alignment="Bottom" />
           </Node>
-          <Pad Id="Ru2HszIinAjPy6YuXXxwYy" Comment="Mean" Bounds="1859,2381,99,38" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="IcMRoAS0XH9ONjn2Id7Ry9" Comment="FFT4" Bounds="1984,2381,106,107" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Ru2HszIinAjPy6YuXXxwYy" Comment="Mean" Bounds="1859,2381,99,38" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">4</p:precision>
+              <p:stepsize p:Type="Single">0.01</p:stepsize>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IcMRoAS0XH9ONjn2Id7Ry9" Comment="FFT4" Bounds="1984,2381,106,107" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">4</p:precision>
+              <p:stepsize p:Type="Single">0.01</p:stepsize>
+            </p:ValueBoxSettings>
+          </Pad>
           <ControlPoint Id="KvM5HnBqGMpMEuZY2BsrXB" Bounds="1286,1163" />
           <ControlPoint Id="MGmrR9NqX68PDff3S7hWQh" Bounds="1286,1916" />
           <Overlay Id="Blz2NPlqs2iNQTfAWfZ0BA" Name="Audio Analysis" Bounds="1673,2054,473,445">
@@ -2693,6 +2703,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="LnGEtZ8nsgsLFL9gtfAfRn" Location="VL.Interpolator" Version="1.3.6" />
-  <NugetDependency Id="Vq6pZWQZ8lwOFSfu2C9vA4" Location="VL.Interpolator.Addons" Version="1.6.0" />
+  <NugetDependency Id="LnGEtZ8nsgsLFL9gtfAfRn" Location="VL.Interpolator" Version="1.3.7" />
+  <NugetDependency Id="Vq6pZWQZ8lwOFSfu2C9vA4" Location="VL.Interpolator.Addons" Version="1.5.7" />
 </Document>
