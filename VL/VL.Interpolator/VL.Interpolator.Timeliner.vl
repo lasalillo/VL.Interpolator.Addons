@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="I7dVCxgdGmCQAfXrupiHbk" LanguageVersion="2025.7.1-0169-g2e3c630a8f" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="I7dVCxgdGmCQAfXrupiHbk" LanguageVersion="2025.7.2-0014-g7ea6b56bb7" Version="0.128">
   <Patch Id="VCXuvwfr22DNsZ6cNBlImg">
     <Canvas Id="VtEItcFxFG4L6rgp9xltbu" DefaultCategory="Interpolator.Timeliner" CanvasType="FullCategory">
       <!--
@@ -1540,7 +1540,7 @@
             <ControlPoint Id="LDXttYsR87aN84zxyrZsjt" Bounds="263,257" />
             <ControlPoint Id="Uam8OG7kQ4kNGPLsVjlUWr" Bounds="460,257" />
             <ControlPoint Id="FkieISJKAiMOevrBkgKSKb" Bounds="353,257" />
-            <ControlPoint Id="IpSWxO9fE1FNXILcp9jCrc" Bounds="737,257" />
+            <ControlPoint Id="IpSWxO9fE1FNXILcp9jCrc" Bounds="727,260" />
             <Pad Id="GuVKmtacjQ2Nxe1tEexnUo" Comment="On Data" Bounds="338,446,35,35" ShowValueBox="true" isIOBox="true" />
             <Node Bounds="174,659,65,19" Id="UOqju76ZxxxNQ5YpV6LNzG">
               <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
@@ -1599,6 +1599,7 @@
             <ControlPoint Id="MeaxH5ZHFXqMREWEtFsygu" Bounds="148,257" />
             <ControlPoint Id="Szy3APSOtVoMtHdjuRJmOQ" Bounds="900,639" />
             <Pad Id="JcMO5aweNADMfofiZ1RcBt" Comment="On Data" Bounds="566,438,35,35" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="DkGPQmjea1QOvwyZ1tFQbI" Comment="" Bounds="330,770,35,35" ShowValueBox="true" isIOBox="true" />
           </Canvas>
           <ProcessDefinition Id="KPHktZu8gsHNR2mA92dG5m">
             <Fragment Id="CDNdzSQgXYaNYuVl0OweWr" Patch="UkgNiXOSOCjORQGLEkHFiG" Enabled="true" />
@@ -1679,6 +1680,7 @@
           <Link Id="LfOvZAnMnw7LMFP2IvBOKO" Ids="MeaxH5ZHFXqMREWEtFsygu,P3KGE9lIdFmQBghbeJULsc" />
           <Link Id="VnQnToxPoPyLzbDt0zCYku" Ids="GnKS83SpVlBL5Kotg7snn7,JcMO5aweNADMfofiZ1RcBt" />
           <Link Id="Nf7G97aKzqcLF29U56dwFx" Ids="GnKS83SpVlBL5Kotg7snn7,AvQdR0zNIyFLp1WAFDqjn8" />
+          <Link Id="Nx4wrNPfasdL1vbEvuWoyr" Ids="JX88T2BSh2sQF7zRcnCczO,DkGPQmjea1QOvwyZ1tFQbI" />
         </Patch>
       </Node>
       <!--
@@ -2845,6 +2847,14 @@
                 <p:maxvisibleentries p:Type="Int32">224</p:maxvisibleentries>
               </p:ValueBoxSettings>
             </Pad>
+            <Pad Id="SpQ3DaF1c2ZMCCLpfUFTuf" Comment="Force" Bounds="196,250,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
           </Canvas>
           <Patch Id="KghLn0xReCPMbxFOAeEFYE" Name="Create" />
           <Patch Id="FxWVzT6QdspMyqXTovwUGw" Name="Update">
@@ -2899,6 +2909,7 @@
           <Link Id="QcPekHIDmVUP6ZLM97JY91" Ids="DcJL37a86TnPJTL4SrcS0i,Vr1UfhXK5K1QT11hNkW3Hz" />
           <Link Id="ItwSsryVqjKM0tCujPnUzM" Ids="U1P8Ab7RB3tOHV29ccgbHV,NQUXTrFbFcUMVIj7n0VDSG" />
           <Link Id="QPddJMAmrW7NqvWxQlMbJB" Ids="U1P8Ab7RB3tOHV29ccgbHV,DjyZI2lHYMhNRgfeRmsPGi" />
+          <Link Id="AkuVV3aA09tMkFTrZGXNlH" Ids="SpQ3DaF1c2ZMCCLpfUFTuf,BRauOaUtpjRNmpyh6wfSY2" />
         </Patch>
       </Node>
       <!--
@@ -3115,10 +3126,10 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="TCdMD8FegRDOKU96G5axAP" Location="VL.IO.Midi" Version="2.0.5" />
-  <NugetDependency Id="GClDIyYcXY4M5sy7OQT0Ge" Location="VL.CoreLib" Version="2025.7.1-0169-g2e3c630a8f" />
+  <NugetDependency Id="TCdMD8FegRDOKU96G5axAP" Location="VL.IO.Midi" Version="2.1.1" />
+  <NugetDependency Id="GClDIyYcXY4M5sy7OQT0Ge" Location="VL.CoreLib" Version="2025.7.2-0014-g7ea6b56bb7" />
   <DocumentDependency Id="BoqSXVzcfWMP1c95BfAipS" Location="./VL.Interpolator.Editor.vl" IsForward="true" />
   <DocumentDependency Id="UiXZJCOLsS4Pu6fuwuTTto" Location="./VL.Interpolator.LaunchpadControl.vl" />
-  <NugetDependency Id="NTea90qiwZmO3VDhLzSDNL" Location="VL.ImGui.Extensions" Version="1.2.9" />
+  <NugetDependency Id="NTea90qiwZmO3VDhLzSDNL" Location="VL.ImGui.Extensions" Version="1.3.0" />
   <DocumentDependency Id="MOg4O7ockD2MCXuAo9M3BZ" Location="./VL.Interpolator.Runtime.vl" />
 </Document>
