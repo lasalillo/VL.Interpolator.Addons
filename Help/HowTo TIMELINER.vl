@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EGBRog0VOtWP9H2V0S7VUU" LanguageVersion="2025.7.1-0169-g2e3c630a8f" Version="0.128">
-  <NugetDependency Id="EzB9BxZq14BPoLDr2Tooqg" Location="VL.CoreLib" Version="2025.7.1-0169-g2e3c630a8f" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="EGBRog0VOtWP9H2V0S7VUU" LanguageVersion="2025.7.2-0014-g7ea6b56bb7" Version="0.128">
+  <NugetDependency Id="EzB9BxZq14BPoLDr2Tooqg" Location="VL.CoreLib" Version="2025.7.2-0014-g7ea6b56bb7" />
   <Patch Id="NLP1vsAFBC1QBqXwCMMkkO">
     <Canvas Id="K9mjpkT3CnWOnUVFlOVSs5" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -167,7 +167,7 @@
                     <Choice Kind="TypeFlag" Name="Float32" />
                   </p:TypeAnnotation>
                 </Pad>
-                <Pad Id="SeiaDmgjyCUMctO3tXfeGe" Bounds="207,352,74,57" ShowValueBox="true" isIOBox="true" Value="Browsable Attribute = False">
+                <Pad Id="SeiaDmgjyCUMctO3tXfeGe" Bounds="147,352,201,19" ShowValueBox="true" isIOBox="true" Value="Visible In Object Editor = False">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -291,7 +291,13 @@
                 <Overlay Id="Ms25gpwFAMvQH8oPWJ1Zpg" Name="Important" Bounds="189,265,110,283">
                   <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
                 </Overlay>
-                <Pad Id="Q8AX9eC1o6iMJhFRfvKmSz" Bounds="199,475,74,57" ShowValueBox="true" isIOBox="true" Value="Browsable Attribute = False">
+                <Pad Id="Mf6n4tNKVS7N18j8TTTkqj" SlotId="BpsUAK7lTC4MbKrGGmydUt" Bounds="1344,370" />
+                <Pad Id="GZoLVdDIKlcMYlhXSk1E4o" SlotId="AmRdWjr4upYMw6OM6gx7QN" Bounds="1437,370" />
+                <ControlPoint Id="Lf7B79PRSICL23OD60EhlB" Bounds="1344,340" />
+                <ControlPoint Id="KpXTc6OrotAOYYPPsp1aWD" Bounds="1344,400" />
+                <ControlPoint Id="H6NxCEo8Uw8QSPSFInwSbA" Bounds="1437,340" />
+                <ControlPoint Id="C8N8ySnUzixLBt7uIyS5Tp" Bounds="1437,400" />
+                <Pad Id="GwOXi0rX8UHNVdL9S2AeCV" Bounds="145,467,201,19" ShowValueBox="true" isIOBox="true" Value="Visible In Object Editor = False">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -300,12 +306,6 @@
                     <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   </p:ValueBoxSettings>
                 </Pad>
-                <Pad Id="Mf6n4tNKVS7N18j8TTTkqj" SlotId="BpsUAK7lTC4MbKrGGmydUt" Bounds="1344,370" />
-                <Pad Id="GZoLVdDIKlcMYlhXSk1E4o" SlotId="AmRdWjr4upYMw6OM6gx7QN" Bounds="1437,370" />
-                <ControlPoint Id="Lf7B79PRSICL23OD60EhlB" Bounds="1344,340" />
-                <ControlPoint Id="KpXTc6OrotAOYYPPsp1aWD" Bounds="1344,400" />
-                <ControlPoint Id="H6NxCEo8Uw8QSPSFInwSbA" Bounds="1437,340" />
-                <ControlPoint Id="C8N8ySnUzixLBt7uIyS5Tp" Bounds="1437,400" />
               </Canvas>
               <Patch Id="Re0fGatPFlqNEUVv8f883p" Name="Create" ParticipatingElements="NWisYiIzdAnMeNklLPj1DJ">
                 <Pin Id="L3J4waAXpr4QUM4NgJRBOj" Name="Float" Kind="InputPin" />
@@ -502,15 +502,6 @@
                 <Overlay Id="EHen4OUdaXuLzH80a4Qlfc" Name="Important" Bounds="189,265,110,256">
                   <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
                 </Overlay>
-                <Pad Id="ANw7vNfzgstOhcnOFGk3KH" Bounds="199,454,74,57" ShowValueBox="true" isIOBox="true" Value="Browsable Attribute = False">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                    <Choice Kind="TypeFlag" Name="String" />
-                  </p:TypeAnnotation>
-                  <p:ValueBoxSettings>
-                    <p:fontsize p:Type="Int32">9</p:fontsize>
-                    <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-                  </p:ValueBoxSettings>
-                </Pad>
                 <Pad Id="NFnUpXWySkbMrcUF9DXRB6" SlotId="APmiPAkDroKLsCAf9FGwIa" Bounds="546,790" />
                 <ControlPoint Id="My6hhc2e4HIN2scpZ3phCg" Bounds="546,742" />
                 <ControlPoint Id="A8zWWISc3PCQHeb381PEEv" Bounds="546,849" />
@@ -587,7 +578,7 @@
                     <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   </p:ValueBoxSettings>
                 </Pad>
-                <Pad Id="LvfhR6bZv2QOAlTNyR21Jt" Bounds="844,749,85,26" ShowValueBox="true" isIOBox="true" Value="Use Float32 for LerpPosition">
+                <Pad Id="LvfhR6bZv2QOAlTNyR21Jt" Bounds="844,749,97,32" ShowValueBox="true" isIOBox="true" Value="Use Float32 for LerpPosition">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -719,7 +710,7 @@
                     <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   </p:ValueBoxSettings>
                 </Pad>
-                <Pad Id="SW8aPX922anPMmpj097rnQ" Bounds="1229,930,301,19" ShowValueBox="true" isIOBox="true" Value="Integer, Float, Boolean, Vectors, RGBA, Int2, 3 &amp; 4">
+                <Pad Id="SW8aPX922anPMmpj097rnQ" Bounds="1229,930,311,19" ShowValueBox="true" isIOBox="true" Value="Integer, Float, Boolean, Vectors, RGBA, Int2, 3 &amp; 4">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -728,7 +719,16 @@
                     <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                   </p:ValueBoxSettings>
                 </Pad>
-                <Pad Id="N3GT3BNsCoHPahEqyTxH9P" Bounds="698,725,215,19" ShowValueBox="true" isIOBox="true" Value="Browsable Attribute = False">
+                <Pad Id="CDcXX8MohfFNUt53LrNPgt" Bounds="144,448,201,19" ShowValueBox="true" isIOBox="true" Value="Visible In Object Editor = False">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                  <p:ValueBoxSettings>
+                    <p:fontsize p:Type="Int32">9</p:fontsize>
+                    <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                  </p:ValueBoxSettings>
+                </Pad>
+                <Pad Id="RsLsBU8E8YiQLmDPjU7voz" Bounds="715,729,201,19" ShowValueBox="true" isIOBox="true" Value="Visible In Object Editor = False">
                   <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="TypeFlag" Name="String" />
                   </p:TypeAnnotation>
@@ -2127,7 +2127,7 @@
             <ControlPoint Id="VNjdRB1lhcuMm2pKybn2FB" Bounds="1859,2331" Alignment="Bottom" />
             <ControlPoint Id="PitQxTONYfNLlR7Z6theW7" Bounds="1904,2331" Alignment="Bottom" />
           </Node>
-          <Pad Id="Ru2HszIinAjPy6YuXXxwYy" Comment="Mean" Bounds="1859,2381,99,38" ShowValueBox="true" isIOBox="true">
+          <Pad Id="Ru2HszIinAjPy6YuXXxwYy" Comment="Mean" Bounds="1859,2381,99,45" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:precision p:Type="Int32">4</p:precision>
               <p:stepsize p:Type="Single">0.01</p:stepsize>
@@ -2517,7 +2517,6 @@
           <Fragment Id="MxclTzm0i6ZMUmKgC5jeSa" Patch="Dvo0yaCOsCsNZ9nbmnbnVB" Enabled="true" />
           <Fragment Id="UtmzA5IZofTOokeAqJPEwV" Patch="H8eFsvTxjrNOA8fK5zaUi4" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="C7k0jy4lh5XMqNTGxclRfm" Ids="NrLGr8ws2jVLxlr21UR3HB,R7Pl31zmR3VOBx5ZNFycMW" />
         <Link Id="RMY8Yb3x7sxMjSwztimPN8" Ids="MkBcHvacUqkQb3O7kkUjsJ,J9x31PR69ROMwI56rtjM3W" />
         <Link Id="CAjw9y0Z4YcNR9F6yLKQHI" Ids="JzlGpgLKPOCLCUCxYjkqRu,JYUknV6NafANwIIVWNShFC" />
         <Link Id="Mt5O4A9oUadMW12ckEbXLP" Ids="R1QReZnT5G4NggljogkaCU,RnCVUHiytzPQX0prbIqEEF" />
@@ -2700,9 +2699,10 @@
         <Link Id="Ikplh5pV8gRPhF94mgX1M1" Ids="Pav8zGwrh6OMysSplm9CR6,R2hLNHng6x4QGMuEEpOgYn,UsmZJ6eAruRMS7JgLrrABL" />
         <Link Id="ROt7cO4DI5tMhg3Snpv6dZ" Ids="KDeaCKSgHcIMXnd8fFpvSb,J3qkpO4eyWhNiC7mxhQWfT,OHVibyVX07VMFZAgK6d6iF" />
         <Link Id="BoZVfWjeNidMCMDatDtWKj" Ids="DWAhDwTooKMMR5b1WkAlmN,OMzDZKuUzwYNQ208ZM5jdZ,HVBK2rXr32kQAwCG5DxOPA" />
+        <Link Id="Gb74EGrIYAwO4IjbleIoew" Ids="NrLGr8ws2jVLxlr21UR3HB,R7Pl31zmR3VOBx5ZNFycMW" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="LnGEtZ8nsgsLFL9gtfAfRn" Location="VL.Interpolator" Version="1.3.7" />
-  <NugetDependency Id="Vq6pZWQZ8lwOFSfu2C9vA4" Location="VL.Interpolator.Addons" Version="1.5.7" />
+  <NugetDependency Id="LnGEtZ8nsgsLFL9gtfAfRn" Location="VL.Interpolator" Version="1.3.9" />
+  <NugetDependency Id="Vq6pZWQZ8lwOFSfu2C9vA4" Location="VL.Interpolator.Addons" Version="1.5.8" />
 </Document>
